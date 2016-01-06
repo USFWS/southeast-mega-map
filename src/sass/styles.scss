@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial;
+  font-size: 1.2em;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+@import './vendor/leaflet';
+@import 'map';
+@import 'autocomplete';
+@import 'detail';

@@ -1,0 +1,6 @@
+node_modules
+dist
+
+# Mac junk
+.DS_Store
+._*

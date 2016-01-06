@@ -1,0 +1,55 @@
+{
+  "name": "mega-map",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
+  },
+  "scripts": {
+    "test": "karma start",
+    "prebuild:sass": "rimraf -rf dist/styles/*",
+    "build:sass": "node-sass --output-style compressed src/sass/styles.scss -o dist/css/styles.css",
+    "watch:sass": "node-sass -w src/sass/styles.scss dist/css/styles.css",
+    "minify:json": "json-minify ./src/data/offices.json > ./dist/js/offices.json",
+    "prebuild:js": "rimraf -rf dist/js/*",
+    "build:js": "browserify ./src/js/index.js | uglifyjs -mc > ./dist/js/bundle.js",
+    "watch:js": "watchify ./src/js/index.js -o ./dist/js/bundle.js -dv",
+    "serve": "browser-sync start --server dist --files 'dist/**/*'",
+    "start": "npm run minify:json & npm run watch:js & npm run watch:sass & npm run serve",
+    "build": "npm run build:js & npm run build:sass & npm run minify:json"
+  },
+  "keywords": [],
+  "author": "@r0yhewitt",
+  "license": "SAX-PD",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "browserify": "^12.0.1",
+    "chai": "^3.4.1",
+    "geojson-assert": "0.0.2",
+    "handlebars": "^4.0.5",
+    "hbsfy": "^2.4.1",
+    "json-minify": "^1.0.0",
+    "karma": "^0.13.15",
+    "karma-bro": "^0.11.1",
+    "karma-mocha": "^0.2.1",
+    "karma-spec-reporter": "0.0.23",
+    "mocha": "^2.3.4",
+    "node-sass": "^3.4.2",
+    "rimraf": "^2.4.4",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "events": "^1.1.0",
+    "leaflet": "^1.0.0-beta.2",
+    "lodash.defaults": "^3.1.2",
+    "lodash.find": "^3.2.1",
+    "lunr": "^0.6.0",
+    "superagent": "^1.6.1",
+    "url": "^0.11.0"
+  }
+}

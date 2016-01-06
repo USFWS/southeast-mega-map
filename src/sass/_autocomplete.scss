@@ -1,0 +1,46 @@
+$autocomplete-text: #336699;
+
+.autocomplete-widget {
+  background: white;
+  border-radius: 5px;
+  left: 10px;
+  margin-right: 10px;
+  padding: 1em;
+  position: absolute;
+  top: 10px;
+  z-index: 3;
+}
+
+.autocomplete-form {
+  width: 100%;
+
+  label {
+    font-size: 1.1em;
+    margin-right: 9px;
+  }
+
+  input {
+    color: $autocomplete-text;
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial;
+    font-size: 1em;
+    padding: 0 10px;
+    width: calc(100% - 90px);
+  }
+}
+
+.autocomplete-results {
+  color: $autocomplete-text;
+  list-style: none;
+  margin: 0;
+  max-height: 90vh;
+  overflow-y: scroll;
+  padding: 0;
+
+  li {
+    position: relative;
+
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+}
