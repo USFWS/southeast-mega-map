@@ -28,16 +28,15 @@
 
   function hideDetail() {
     active = false;
-    opts.output.classList.remote('active');
+    opts.output.classList.remove('active');
     emitter.emit('detail:hide', opts.output);
   }
 
   function toggleDetail() {
-    if (active)
-      hideDetail();
-    else
-      showDetail();
+    var eventName = (active) ? 'detail:hide' : 'detail:show';
+    opts.output.classList.toggle('active');
     active = !active;
+    emitter.emit(eventName, opts.output);
   }
 
   function renderOffice(office) {
