@@ -53,6 +53,7 @@
   }
 
   function inputKeyup() {
+    emitter.emit('autocomplete:keyup');
     if (opts.input.value.length < opts.minLength) return;
     search(opts.input.value);
   }
@@ -90,7 +91,6 @@
   }
 
   function render(data) {
-    console.log(data);
     data.forEach(function (office) {
       office.slug = '?q=' + _.slugify(office.name).toLowerCase();
     });

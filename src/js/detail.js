@@ -39,6 +39,7 @@
     opts.close.addEventListener('click', toggleDetail);
     emitter.on('office:selected', renderOffice);
     emitter.on('marker:click', renderOffice);
+    emitter.on('autocomplete:keyup', hideDetail);
   }
 
   function showDetail() {
