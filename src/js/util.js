@@ -5,7 +5,7 @@
     defaults: require('lodash.defaults'),
     find: require('lodash.find')
   };
-  
+
   module.exports = {
     _: _
   };

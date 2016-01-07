@@ -3,9 +3,7 @@
 
   var lunr = require('lunr');
   var emitter = require('./mediator');
-  var _ = {
-    defaults: require('lodash.defaults')
-  };
+  var _ = require('./util')._;
 
   var querystring = require('./querystring');
   var OfficeService = require('./offices');

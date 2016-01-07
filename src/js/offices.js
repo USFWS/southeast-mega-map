@@ -3,9 +3,7 @@
 
   var request = require('superagent');
   var emitter = require('./mediator');
-  var _ = {
-    find: require('lodash.find')
-  };
+  var _ = require('./util')._;
 
   var offices;
 

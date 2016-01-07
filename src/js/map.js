@@ -4,10 +4,7 @@
   var qs = require('./querystring');
   var emitter = require('./mediator');
 
-  var _  = {
-    defaults: require('lodash.defaults'),
-    find: require('lodash.find')
-  };
+  var _  = require('./util')._;
 
   L.Icon.Default.imagePath = './images';
 
