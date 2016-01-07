@@ -4,13 +4,12 @@
   require('leaflet.markercluster');
   var qs = require('./querystring');
   var emitter = require('./mediator');
-  var OfficeService = require('./offices');
 
   var _  = require('./util')._;
 
   L.Icon.Default.imagePath = './images';
 
-  var opts, map;
+  var opts, map, cluster;
   var defaults = {
     zoom: 7,
     mapId: 'map',
@@ -23,19 +22,29 @@
   function init(options) {
     opts = _.defaults({}, options, defaults);
     createMap();
+    opts.fullExtent = document.createElement('button');
+    opts.fullExtent.classList.add('leaflet-control', 'zoom-to-full-extent');
+    var img = document.createElement('img');
+    img.setAttribute('src', '../images/full-extent.svg');
+    opts.fullExtent.appendChild(img);
+    document.body.appendChild(opts.fullExtent);
     registerHandlers();
     if (opts.data) addMarkers();
   }
 
   function flyToOffice(office) {
-    var target = OfficeService.getOffice(office.properties.name);
     // Clone the coordinates array
-    var latlng = target.geometry.coordinates.slice(0).reverse();
+    var latlng = office.geometry.coordinates.slice(0).reverse();
     map.flyTo(latlng, 11);
   }
 
   function registerHandlers() {
     emitter.on('office:selected', flyToOffice);
+    opts.fullExtent.addEventListener('click', zoomToFullExtent);
+  }
+
+  function zoomToFullExtent() {
+    map.fitBounds(cluster.getBounds());
   }
 
   function createMap() {
@@ -70,7 +79,7 @@
       onEachFeature: onEachFeature,
     });
 
-    var cluster = L.markerClusterGroup({
+    cluster = L.markerClusterGroup({
       showCoverageOnHover: false
     });
 
