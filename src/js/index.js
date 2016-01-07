@@ -9,8 +9,8 @@
 
   OfficeService.init();
 
-  emitter.on('offices:loaded', function () {
-    var offices = OfficeService.getOffices();
+  emitter.on('offices:loaded', function (offices) {
+    
     map.init({
       center: [31.6817285,-77.4474468],
       data: offices
