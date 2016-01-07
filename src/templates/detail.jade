@@ -1,11 +1,14 @@
 h2
+  = office.name
+p
   a(href=office.url) Visit us online!
 p.detail-description
   = office.narrative
 ul.detail-activities
   if office.activities
     each activity in office.activities
-      li = activity
+      li
+        = activity
 address
   = office.address
   br
