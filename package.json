@@ -11,23 +11,31 @@
   },
   "watch": {
     "minify:html": "src/*.html",
-    "minify:json": "src/data/*.json"
+    "minify:json": "src/data/*.json",
+    "shrink:img": "src/images/**/*"
   },
   "scripts": {
     "test": "karma start",
     "prebuild:sass": "rimraf -rf dist/styles/*",
-    "build:sass": "node-sass --output-style compressed src/sass/styles.scss -o dist/css/styles.css",
+    "build:sass": "node-sass --output-style compressed src/sass/styles.scss -o dist/css/",
+    "prewatch:sass": "npm run build:sass",
     "watch:sass": "node-sass -w src/sass/styles.scss dist/css/styles.css",
     "minify:json": "json-minify src/data/offices.json > dist/data/offices.json",
     "minify:html": "htmlmin -o dist/index.html src/index.html",
     "prebuild:js": "rimraf -rf dist/js/*",
+    "clean:js": "rimraf -rf dist/js/*",
     "build:js": "browserify src/js/index.js | uglifyjs -mc > dist/js/bundle.js",
     "watch:js": "watchify src/js/index.js -o dist/js/bundle.js -dv",
+    "preshrink:img": "rimraf dist/images/*",
+    "shrink:img": "imagemin src/images/**/* dist/images/ -p",
     "serve": "browser-sync start --server dist --files 'dist/**/*'",
     "watch": "npm-watch",
-    "prestart": "node src/js/build.js",
-    "start": "npm run watch & npm run minify:json & npm run watch:js & npm run watch:sass & npm run serve",
-    "build": "npm run minify:html && npm run build:js && npm run build:sass && npm run minify:json"
+    "build:dist": "node src/js/build.js",
+    "prestart": "npm run clean:dist && npm run build:dist",
+    "start": "npm run shrink:img & npm run watch & npm run minify:json & npm run watch:js & npm run watch:sass & npm run serve",
+    "clean:dist": "rimraf -rf dist",
+    "prebuild": "npm run clean:dist && npm run build:dist",
+    "build": "npm run shrink:img & npm run minify:html && npm run build:js && npm run build:sass && npm run minify:json"
   },
   "keywords": [],
   "author": "@r0yhewitt",
