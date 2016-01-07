@@ -1,4 +1,4 @@
-.autocomplete-detail {
+.detail-container {
   background: white;
   bottom: 0;
   left: 0;
@@ -16,6 +16,9 @@
     transition: transform .3s;
   }
 }
+.detail-content {
+  overflow: scroll;
+}
 
 .detail-activities {
   list-style: none;
@@ -28,8 +31,15 @@
   }
 }
 
-.detail-close {
+.detail-toggle {
+  background: white;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 7px 15px;
   position: absolute;
-  right: 0;
-  width: 50px;
+  right: -30px;
+  transform: rotate(90deg);
+  top: 100px;
+  z-index: 10;
 }

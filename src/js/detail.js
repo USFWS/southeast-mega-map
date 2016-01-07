@@ -6,41 +6,67 @@
   var template = require('../templates/detail.jade');
   var _ = require('./util')._;
 
-  var opts, active;
+  var opts = {},
+      active;
 
-  function init(options) {
-    opts = _.defaults({}, options);
+  function init() {
+    createDetail();
     registerHandlers();
   }
 
+  function createDetail() {
+    opts.container = document.createElement('aside');
+    opts.container.classList.add('detail-container');
+    opts.content = document.createElement('section');
+    opts.content.classList.add('detail-content');
+    opts.close = document.createElement('button');
+    opts.close.innerHTML = '&#9650;';
+    opts.close.classList.add('detail-toggle');
+    opts.container.appendChild(opts.content);
+    opts.container.appendChild(opts.close);
+    document.body.appendChild(opts.container);
+  }
+
+  function addCloseButton() {
+    opts.close = document.createElement('button');
+    opts.close.innerHTML = 'Close';
+    opts.close.classList.add('detail-toggle');
+    opts.output.appendChild(opts.close);
+    console.log(opts.output);
+  }
+
   function registerHandlers() {
+    opts.close.addEventListener('click', toggleDetail);
     emitter.on('office:selected', renderOffice);
     emitter.on('marker:click', renderOffice);
   }
 
   function showDetail() {
     active = true;
-    opts.output.classList.add('active');
+    opts.close.innerHTML = '&#9660;';
+    opts.container.classList.add('active');
     emitter.emit('detail:show', opts.output);
   }
 
   function hideDetail() {
     active = false;
-    opts.output.classList.remove('active');
+    opts.close.innerHTML = '&#9650;';
+    opts.container.classList.remove('active');
     emitter.emit('detail:hide', opts.output);
   }
 
   function toggleDetail() {
     var eventName = (active) ? 'detail:hide' : 'detail:show';
-    opts.output.classList.toggle('active');
+    var arrow = (active) ? '&#9650;' : '&#9660;';
+    opts.close.innerHTML = arrow;
+    opts.container.classList.toggle('active');
     active = !active;
     emitter.emit(eventName, opts.output);
   }
 
   function renderOffice(office) {
     showDetail();
-    console.log(office.properties);
-    opts.output.innerHTML = template({ office: office.properties });
+    opts.content.innerHTML = template({ office: office.properties });
   }
 
   exports.init = init;
