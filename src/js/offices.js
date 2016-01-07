@@ -11,7 +11,7 @@
 
   function init() {
     request
-      .get('./js/offices.json')
+      .get('./data/offices.json')
       .set('Accept', 'application/json')
       .end(function (err, res) {
         offices = res.body;
