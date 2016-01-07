@@ -26,6 +26,7 @@
     opts.fullExtent.classList.add('leaflet-control', 'zoom-to-full-extent');
     var img = document.createElement('img');
     img.setAttribute('src', '../images/full-extent.svg');
+    img.setAttribute('title', 'Zoom to full extent');
     opts.fullExtent.appendChild(img);
     document.body.appendChild(opts.fullExtent);
     registerHandlers();
@@ -81,11 +82,9 @@
 
     cluster = L.markerClusterGroup({
       showCoverageOnHover: false
-    });
+    }).addLayer(geojson);
 
-    cluster.addLayer(geojson);
     map.addLayer(cluster);
-
     map.fitBounds(cluster.getBounds());
   }
 
