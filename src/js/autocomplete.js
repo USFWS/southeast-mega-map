@@ -7,7 +7,7 @@
 
   var querystring = require('./querystring');
   var OfficeService = require('./offices');
-  var template = require('../templates/autocomplete.hbs');
+  var template = require('../templates/autocomplete.jade');
 
   var opts, index;
   var defaults = {

@@ -1,0 +1,15 @@
+button.detail-toggle Close
+h2
+  a(href=office.url) Visit us online!
+p.detail-description
+  = office.narrative
+ul.detail-activities
+  if office.activities
+    each activity in office.activities
+      li = activity
+address
+  = office.address
+  br
+  = office.city
+  = office.state
+  = office.zip

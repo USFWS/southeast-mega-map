@@ -6,11 +6,6 @@
   var emitter = require('./mediator');
   var OfficeService = require('./offices');
   var map = require('./map');
-  var Handlebars = require('hbsfy/runtime');
-
-  Handlebars.registerHelper('slugify', function (component, options) {
-    return component.replace(/[^\w\s]+/gi, '').replace(/ +/gi, '-').toLowerCase();
-  });
 
   OfficeService.init();
 

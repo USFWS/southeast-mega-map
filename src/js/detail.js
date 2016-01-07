@@ -3,7 +3,7 @@
 
   var emitter = require('./mediator');
   var OfficeService = require('./offices');
-  var template = require('../templates/detail.hbs');
+  var template = require('../templates/detail.jade');
   var _ = require('./util')._;
 
   var opts, active;
@@ -39,7 +39,8 @@
 
   function renderOffice(office) {
     showDetail();
-    opts.output.innerHTML = template(office.properties);
+    console.log(office.properties);
+    opts.output.innerHTML = template({ office: office.properties });
   }
 
   exports.init = init;

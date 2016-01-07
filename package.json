@@ -6,7 +6,7 @@
   "main": "index.js",
   "browserify": {
     "transform": [
-      "hbsfy"
+      "jadeify"
     ]
   },
   "watch": {
@@ -45,8 +45,6 @@
     "browserify": "^12.0.1",
     "chai": "^3.4.1",
     "geojson-assert": "0.0.2",
-    "handlebars": "^4.0.5",
-    "hbsfy": "^2.4.1",
     "html-minifier-cli": "^0.1.0",
     "imagemin-cli": "^2.1.0",
     "json-minify": "^1.0.0",
@@ -64,6 +62,8 @@
   },
   "dependencies": {
     "events": "^1.1.0",
+    "jade": "^1.11.0",
+    "jadeify": "^4.5.0",
     "leaflet": "^1.0.0-beta.2",
     "lodash.defaults": "^3.1.2",
     "lodash.find": "^3.2.1",
