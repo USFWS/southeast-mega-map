@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mega Map</title>
+    <meta name="description" content="An interactive map of National Fish Hatcheries, National Wildlife Refuges and other field stations in the Southeast Region.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+
+    <div class="autocomplete-widget">
+      <form class="autocomplete-form">
+        <label for="autocomplete-input">Search:</label>
+        <input type="text" class="autocomplete-input" name="autocomplete-input">
+      </form>
+      <ul class="autocomplete-results"></ul>
+    </div>
+
+    <aside class="autocomplete-detail">
+      <button class="detail-close">&times;</button>
+    </aside>
+
+    <div id="map"></div>
+
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
