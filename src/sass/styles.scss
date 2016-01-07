@@ -16,6 +16,7 @@ body {
 }
 
 @import './vendor/leaflet';
+@import './vendor/markercluster';
 @import 'map';
 @import 'autocomplete';
 @import 'detail';

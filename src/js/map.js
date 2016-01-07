@@ -1,6 +1,7 @@
 (function () {
 
   var L = require('leaflet');
+  require('leaflet.markercluster');
   var qs = require('./querystring');
   var emitter = require('./mediator');
   var OfficeService = require('./offices');
@@ -19,18 +20,18 @@
     }
   };
 
-  function flyToOffice(office) {
-    var target = OfficeService.getOffice(office.properties.name);
-    // Clone the coordinates array
-    var latlng = target.geometry.coordinates.slice(0).reverse();
-    map.flyTo(latlng, 11);
-  }
-
   function init(options) {
     opts = _.defaults({}, options, defaults);
     createMap();
     registerHandlers();
     if (opts.data) addMarkers();
+  }
+
+  function flyToOffice(office) {
+    var target = OfficeService.getOffice(office.properties.name);
+    // Clone the coordinates array
+    var latlng = target.geometry.coordinates.slice(0).reverse();
+    map.flyTo(latlng, 11);
   }
 
   function registerHandlers() {
@@ -67,9 +68,16 @@
   function addMarkers() {
     var geojson = L.geoJson(opts.data, {
       onEachFeature: onEachFeature,
-    }).addTo(map);
+    });
 
-    map.fitBounds(geojson.getBounds());
+    var cluster = L.markerClusterGroup({
+      showCoverageOnHover: false
+    });
+
+    cluster.addLayer(geojson);
+    map.addLayer(cluster);
+
+    map.fitBounds(cluster.getBounds());
   }
 
   module.exports.init = init;
