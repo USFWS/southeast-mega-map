@@ -4,9 +4,7 @@
   var emitter = require('./mediator');
   var OfficeService = require('./offices');
   var template = require('../templates/detail.hbs');
-  var _ = {
-    defaults: require('lodash.defaults')
-  };
+  var _ = require('./util')._;
 
   var opts, active;
 
@@ -45,5 +43,8 @@
   }
 
   exports.init = init;
+  exports.toggle = toggleDetail;
+  exports.show = showDetail;
+  exports.hide = hideDetail;
 
 })();
