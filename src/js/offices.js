@@ -1,20 +1,17 @@
 (function () {
   'use strict';
 
-  var request = require('superagent');
+  var xhr = require('xhr');
   var emitter = require('./mediator');
   var _ = require('./util')._;
 
   var offices;
 
   function init() {
-    request
-      .get('./data/offices.json')
-      .set('Accept', 'application/json')
-      .end(function (err, res) {
-        offices = res.body;
-        emitter.emit('offices:loaded');
-      });
+    xhr.get('./data/offices.json', function (err, res) {
+      offices = JSON.parse(res.body);
+      emitter.emit('offices:loaded', offices);
+    });
   }
 
   function getOffices() {
