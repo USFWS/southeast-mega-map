@@ -3,6 +3,7 @@
   var L = require('leaflet');
   var qs = require('./querystring');
   var emitter = require('./mediator');
+  var OfficeService = require('./offices');
 
   var _  = require('./util')._;
 
@@ -19,12 +20,9 @@
   };
 
   function flyToOffice(office) {
-    console.log(office);
-    var zoomTarget = _.find(opts.data.features, function (feat) {
-      return feat.properties.name.toLowerCase() === office.properties.name.toLowerCase();
-    });
+    var target = OfficeService.getOffice(office.properties.name);
     // Clone the coordinates array
-    var latlng = zoomTarget.geometry.coordinates.slice(0).reverse();
+    var latlng = target.geometry.coordinates.slice(0).reverse();
     map.flyTo(latlng, 11);
   }
 
