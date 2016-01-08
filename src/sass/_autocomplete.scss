@@ -2,10 +2,8 @@ $autocomplete-text: #336699;
 
 .autocomplete-widget {
   background: white;
-  border-radius: 5px;
   left: 10px;
   margin-right: 10px;
-  padding: 1em;
   position: absolute;
   top: 10px;
   z-index: 3;
@@ -15,8 +13,11 @@ $autocomplete-text: #336699;
   width: 100%;
 
   label {
+    display: inline-block;
     font-size: 1.1em;
     margin-right: 9px;
+    width: 75px;
+    transition: width .3s;
   }
 
   input {
@@ -24,7 +25,21 @@ $autocomplete-text: #336699;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial;
     font-size: 1em;
     padding: 0 10px;
-    width: calc(100% - 90px);
+    width: 275px;
+    transition: width .3s;
+  }
+
+  &.active {
+    label {
+      margin: 0;
+      width: 0;
+      transition: all .3s;
+    }
+
+    input {
+      width: 355px;
+      transition: all .3s;
+    }
   }
 }
 
@@ -37,10 +52,18 @@ $autocomplete-text: #336699;
   padding: 0;
 
   li {
+    font-size: .9em;
+    padding: 2px 5px;;
     position: relative;
 
     &:first-child {
-      margin-top: 15px;
+      margin-top: 5px;
+    }
+  }
+
+  a {
+    &:hover {
+      color: darken(blue, 25);
     }
   }
 }
