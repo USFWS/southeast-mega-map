@@ -36,6 +36,8 @@
   function flyToOffice(office) {
     // Clone the coordinates array
     var latlng = office.geometry.coordinates.slice(0).reverse();
+    // Account for detail panel opening
+    latlng[1] = latlng[1] - 0.135;
     map.flyTo(latlng, 11);
   }
 
@@ -50,7 +52,7 @@
   }
 
   function zoomToFullExtent() {
-    map.fitBounds(cluster.getBounds());
+    map.flyToBounds(cluster.getBounds());
   }
 
   function createMap() {

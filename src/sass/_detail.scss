@@ -1,8 +1,10 @@
+$title-background: #00796b;;
+
 .detail-container {
   background: white;
   bottom: 0;
   left: 0;
-  padding: 60px 1em 15em;
+  padding: 60px 0 0 0;
   position: absolute;
   width: 400px;
   top: 0;
@@ -16,8 +18,16 @@
   }
 }
 .detail-content {
-  // To do can't overflow here.
-  overflow-y: scroll;
+  h2 {
+    background: $title-background;
+    color: white;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+.detail-content-wrap {
+  padding: 10px;
 }
 
 .detail-activities {
@@ -26,8 +36,8 @@
   padding: 0;
 
   li {
-    display: inline-block;
-    margin-right: 10px;
+    margin-left: 35px;
+    padding: 5px 10px;
   }
 }
 
@@ -41,5 +51,5 @@
   right: -30px;
   transform: rotate(90deg);
   top: 100px;
-  z-index: 10;
+  z-index: -1;
 }
