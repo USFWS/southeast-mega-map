@@ -1,18 +1,37 @@
 $autocomplete-text: #336699;
+$results-color: #00796b;
+$max-width: 355px;
 
 .autocomplete-widget {
-  background: white;
   left: 10px;
   margin-right: 10px;
   position: absolute;
   top: 10px;
   z-index: 3;
+
+  &.active {
+    label {
+      margin: 0;
+      width: 0;
+      transition: all .3s;
+    }
+
+    input {
+      width: $max-width;
+      transition: all .3s;
+    }
+
+    .autocomplete-results {
+      opacity: 1;
+    }
+  }
 }
 
 .autocomplete-form {
   width: 100%;
 
   label {
+    color: black;
     display: inline-block;
     font-size: 1.1em;
     margin-right: 9px;
@@ -28,32 +47,27 @@ $autocomplete-text: #336699;
     width: 275px;
     transition: width .3s;
   }
-
-  &.active {
-    label {
-      margin: 0;
-      width: 0;
-      transition: all .3s;
-    }
-
-    input {
-      width: 355px;
-      transition: all .3s;
-    }
-  }
 }
 
 .autocomplete-results {
+  background: white;
   color: $autocomplete-text;
   list-style: none;
   margin: 0;
   max-height: 90vh;
+  max-width: $max-width;
+  opacity: 0;
   overflow-y: scroll;
   padding: 0;
+  transition: opacity .2s;
+
+  &:focus {
+    opacity: 1;
+  }
 
   li {
     font-size: .9em;
-    padding: 2px 5px;;
+    padding: 5px 5px;;
     position: relative;
 
     &:first-child {
@@ -62,8 +76,11 @@ $autocomplete-text: #336699;
   }
 
   a {
+    color: $results-color;
+    text-decoration: none;
+
     &:hover {
-      color: darken(blue, 25);
+      color: darken($results-color, 15);
     }
   }
 }
