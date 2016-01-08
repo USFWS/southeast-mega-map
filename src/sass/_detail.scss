@@ -16,7 +16,8 @@
   }
 }
 .detail-content {
-  overflow: scroll;
+  // To do can't overflow here.
+  overflow-y: scroll;
 }
 
 .detail-activities {

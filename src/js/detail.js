@@ -32,7 +32,6 @@
     opts.close.innerHTML = 'Close';
     opts.close.classList.add('detail-toggle');
     opts.output.appendChild(opts.close);
-    console.log(opts.output);
   }
 
   function registerHandlers() {
@@ -40,6 +39,7 @@
     emitter.on('office:selected', renderOffice);
     emitter.on('marker:click', renderOffice);
     emitter.on('autocomplete:keyup', hideDetail);
+    emitter.on('found:office', renderOffice);
   }
 
   function showDetail() {
@@ -66,8 +66,10 @@
   }
 
   function renderOffice(office) {
+    console.log("RENDER");
     showDetail();
     opts.content.innerHTML = template({ office: office.properties });
+    emitter.emit('cache:office', office);
   }
 
   exports.init = init;
