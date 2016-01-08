@@ -18,22 +18,59 @@
     opts = _.defaults({}, options, defaults);
 
     if (!opts.data) throw 'You must provide an array of offices';
-    if (!opts.input) throw 'You must provide an html input';
-    if (!opts.output) throw 'You must provide a list to append the results';
 
+    createElements();
     registerHandlers();
     createIndex();
     seedIndex();
   }
 
+  function createElements() {
+    opts.container = document.createElement('div');
+    opts.container.classList.add('autocomplete-widget');
+    opts.form = document.createElement('form');
+    opts.form.classList.add('autocomplete-form');
+    opts.label = document.createElement('label');
+    opts.label.innerHTML = 'Search:';
+    opts.input = document.createElement('input');
+    opts.input.classList.add('autocomplete-input');
+    opts.output = document.createElement('ul');
+    opts.output.classList.add('autocomplete-results');
+    opts.form.appendChild(opts.label);
+    opts.form.appendChild(opts.input);
+    opts.container.appendChild(opts.form);
+    opts.container.appendChild(opts.output);
+    document.body.appendChild(opts.container);
+
+    // <div class="autocomplete-widget">
+    //   <form class="autocomplete-form">
+    //     <label for="autocomplete-input">Search:</label>
+    //     <input type="text" class="autocomplete-input" name="autocomplete-input">
+    //   </form>
+    //   <ul class="autocomplete-results"></ul>
+    // </div>
+  }
+
   function registerHandlers() {
     opts.output.addEventListener('click', delegatedOfficeLink);
     opts.input.addEventListener('keyup', inputKeyup);
+    opts.input.addEventListener('focus', hideLabel);
+    opts.input.addEventListener('blur', showLabel)
     emitter.on('marker:click', updateInputValue);
   }
 
   function updateInputValue(office) {
     opts.input.value = office.properties.name;
+  }
+
+  function hideLabel() {
+    opts.form.classList.add('active');
+    opts.input.setAttribute('placeholder', 'Search');
+  }
+
+  function showLabel() {
+    opts.form.classList.remove('active');
+    opts.input.setAttribute('placeholder', '');
   }
 
   function delegatedOfficeLink (e) {
