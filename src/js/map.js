@@ -42,6 +42,11 @@
   function registerHandlers() {
     emitter.on('office:selected', flyToOffice);
     opts.fullExtent.addEventListener('click', zoomToFullExtent);
+    map.on('click', blurInput);
+  }
+
+  function blurInput() {
+    emitter.emit('blur:input');
   }
 
   function zoomToFullExtent() {

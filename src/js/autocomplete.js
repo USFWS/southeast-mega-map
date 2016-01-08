@@ -41,35 +41,27 @@
     opts.container.appendChild(opts.form);
     opts.container.appendChild(opts.output);
     document.body.appendChild(opts.container);
-
-    // <div class="autocomplete-widget">
-    //   <form class="autocomplete-form">
-    //     <label for="autocomplete-input">Search:</label>
-    //     <input type="text" class="autocomplete-input" name="autocomplete-input">
-    //   </form>
-    //   <ul class="autocomplete-results"></ul>
-    // </div>
   }
 
   function registerHandlers() {
     opts.output.addEventListener('click', delegatedOfficeLink);
     opts.input.addEventListener('keyup', inputKeyup);
-    opts.input.addEventListener('focus', hideLabel);
-    opts.input.addEventListener('blur', showLabel)
+    opts.input.addEventListener('focus', focusInput);
     emitter.on('marker:click', updateInputValue);
+    emitter.on('blur:input', blurInput);
   }
 
   function updateInputValue(office) {
     opts.input.value = office.properties.name;
   }
 
-  function hideLabel() {
-    opts.form.classList.add('active');
+  function focusInput() {
+    opts.container.classList.add('active');
     opts.input.setAttribute('placeholder', 'Search');
   }
 
-  function showLabel() {
-    opts.form.classList.remove('active');
+  function blurInput() {
+    opts.container.classList.remove('active');
     opts.input.setAttribute('placeholder', '');
   }
 
@@ -86,6 +78,7 @@
       opts.output.innerHTML = '';
       opts.input.value = e.srcElement.textContent;
       emitter.emit('office:selected', office);
+      blurInput();
     }
   }
 

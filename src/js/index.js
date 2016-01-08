@@ -26,7 +26,7 @@
       output: document.querySelector('.autocomplete-detail')
     });
 
-    OfficeService.getRandomOffice();
+    // OfficeService.getRandomOffice();
   });
 
 })();

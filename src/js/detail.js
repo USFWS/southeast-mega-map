@@ -35,12 +35,17 @@
   }
 
   function registerHandlers() {
+    opts.container.addEventListener('click', blurInput);
     opts.close.addEventListener('click', toggleDetail);
     emitter.on('office:selected', renderOffice);
     emitter.on('marker:click', renderOffice);
     emitter.on('autocomplete:keyup', hideDetail);
     emitter.on('found:office', renderOffice);
     emitter.on('offices:random', renderOffice);
+  }
+
+  function blurInput() {
+    emitter.emit('blur:input');
   }
 
   function showDetail() {
@@ -67,7 +72,6 @@
   }
 
   function renderOffice(office) {
-    console.log('render random');
     showDetail();
     opts.content.innerHTML = template({ office: office.properties });
     // emitter.emit('cache:office', office);
