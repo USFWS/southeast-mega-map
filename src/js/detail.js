@@ -40,6 +40,7 @@
     emitter.on('marker:click', renderOffice);
     emitter.on('autocomplete:keyup', hideDetail);
     emitter.on('found:office', renderOffice);
+    emitter.on('offices:random', renderOffice);
   }
 
   function showDetail() {
@@ -66,10 +67,10 @@
   }
 
   function renderOffice(office) {
-    console.log("RENDER");
+    console.log('render random');
     showDetail();
     opts.content.innerHTML = template({ office: office.properties });
-    emitter.emit('cache:office', office);
+    // emitter.emit('cache:office', office);
   }
 
   exports.init = init;

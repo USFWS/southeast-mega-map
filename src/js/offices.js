@@ -9,16 +9,19 @@
   var offices;
 
   function init() {
-    getCache();
+    registerHandlers();
+    // getCache();
+    downloadOffices();
+  }
+
+  function downloadOffices() {
     xhr.get('./data/offices.json', function (err, res) {
       offices = JSON.parse(res.body);
       emitter.emit('offices:loaded', offices);
     });
-    registerHandlers();
   }
 
   function registerHandlers() {
-    console.log("REGISTER OFFICES");
     emitter.on('cache:office', setCache);
   }
 
@@ -41,8 +44,17 @@
     });
   }
 
+  function getRandomOffice() {
+    var list = offices.features;
+    var randomOffice = list[Math.floor(Math.random()*list.length)];
+    // ToDo: Functionality to call this function recursively if the random
+    //       office is not open to the public?  Needs to be added to dataset.
+    emitter.emit('offices:random', randomOffice);
+  }
+
   exports.getOffices = getOffices;
   exports.getOffice = getOffice;
+  exports.getRandomOffice = getRandomOffice;
   exports.init = init;
 
 })();
