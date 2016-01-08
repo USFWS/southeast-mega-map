@@ -225,7 +225,7 @@
         "url": "http://www.fws.gov/refuge/Banks_Lake/",
         "narrative": "Banks Lake consists of a shallow blackwater lake studded with moss-draped cypress trees and rimmed by marshes and uplands. The 4,049 acre site supports a variety of plants, fish and animals, and features a variety of habitat types, including cypress swamp, freshwater marsh, uplands, and open water.",
         "image": "banks-lake.jpg",
-        "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Fishing", "Boat Ramp", "Canoing"]
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Fishing", "Boat Ramp", "Canoeing"]
       },
       "geometry": {
         "type": "Point",
