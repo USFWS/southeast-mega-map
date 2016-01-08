@@ -72,8 +72,13 @@
   }
 
   function renderOffice(office) {
-    showDetail();
+    office.properties.icons = [];
+    office.properties.activities.map(function (activity) {
+      office.properties.icons.push(_.slugify(activity).toLowerCase());
+    });
+    console.log(office);
     opts.content.innerHTML = template({ office: office.properties });
+    showDetail();
     // emitter.emit('cache:office', office);
   }
 

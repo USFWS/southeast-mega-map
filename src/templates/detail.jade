@@ -1,3 +1,4 @@
+- var _ = require('../js/util')._;
 h2
   = office.name
 div.detail-content-wrap
@@ -9,9 +10,11 @@ div.detail-content-wrap
   ul.detail-activities
     if office.activities
       each activity in office.activities
+        - var slug = _.slugify(activity).toLowerCase();
         li
+          img(src="../images/#{slug}.svg")
           = activity
   address
     = office.address
     br
-    &nbsp;#{office.city}, #{office.state} #{office.zip}
+    | #{office.city}, #{office.state} #{office.zip}

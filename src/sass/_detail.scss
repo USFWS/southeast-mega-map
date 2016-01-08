@@ -36,8 +36,15 @@ $title-background: #00796b;;
   padding: 0;
 
   li {
-    margin-left: 35px;
+    margin-left: 15px;
     padding: 5px 10px;
+
+    img {
+      color: $title-background;
+      height: 20px;
+      margin-right: 25px;
+      width: 20px;
+    }
   }
 }
 
