@@ -25,7 +25,7 @@
     opts.fullExtent = document.createElement('button');
     opts.fullExtent.classList.add('leaflet-control', 'zoom-to-full-extent');
     var img = document.createElement('img');
-    img.setAttribute('src', '../images/full-extent.svg');
+    img.setAttribute('src', '../svg/full-extent.svg');
     img.setAttribute('title', 'Zoom to full extent');
     opts.fullExtent.appendChild(img);
     document.body.appendChild(opts.fullExtent);

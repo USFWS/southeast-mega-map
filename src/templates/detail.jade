@@ -23,7 +23,7 @@ div.detail-content-wrap
       each activity in office.activities
         - var slug = _.slugify(activity).toLowerCase();
         li
-          img(src="../images/#{slug}.svg")
+          img(src="../svg/#{slug}.svg")
           = activity
   address
     = office.address
