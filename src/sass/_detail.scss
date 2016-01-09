@@ -18,6 +18,12 @@ $title-background: #00796b;;
   }
 }
 .detail-content {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  overflow-y: scroll;
+  top: 50px;
+
   h2 {
     background: $title-background;
     color: white;
