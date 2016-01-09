@@ -42,6 +42,7 @@
     emitter.on('autocomplete:keyup', hideDetail);
     emitter.on('found:office', renderOffice);
     emitter.on('offices:random', renderOffice);
+    emitter.on('zoom:fullextent', hideDetail);
   }
 
   function blurInput() {

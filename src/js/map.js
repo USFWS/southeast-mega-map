@@ -53,6 +53,7 @@
 
   function zoomToFullExtent() {
     map.flyToBounds(cluster.getBounds());
+    emitter.emit('zoom:fullextent');
   }
 
   function createMap() {
