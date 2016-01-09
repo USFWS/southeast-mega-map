@@ -57,10 +57,11 @@
   }
 
   function hideDetail() {
+    if (active)
+      emitter.emit('detail:hide', opts.output);
     active = false;
     opts.close.innerHTML = '&#9650;';
     opts.container.classList.remove('active');
-    emitter.emit('detail:hide', opts.output);
   }
 
   function toggleDetail() {
