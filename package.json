@@ -12,7 +12,8 @@
   "watch": {
     "minify:html": "src/*.html",
     "minify:json": "src/data/*.json",
-    "shrink:img": "src/images/**/*"
+    "shrink:img": "src/images/**/*",
+    "shrink:svg": "src/svg/**/*"
   },
   "scripts": {
     "test": "karma start",
@@ -28,14 +29,16 @@
     "watch:js": "watchify src/js/index.js -o dist/js/bundle.js -dv",
     "preshrink:img": "rimraf dist/images/*",
     "shrink:img": "imagemin src/images/**/* dist/images/ -p",
+    "shrink:svg": "imagemin -P svgo src/svg/* dist/svg",
+    "shrink:graphics": "npm run shrink:img & npm run shrink:svg",
     "serve": "browser-sync start --server dist --files 'dist/**/*'",
     "watch": "npm-watch",
     "build:dist": "node src/js/build.js",
     "prestart": "npm run clean:dist && npm run build:dist",
-    "start": "npm run shrink:img & npm run watch & npm run minify:json & npm run watch:js & npm run watch:sass & npm run serve",
+    "start": "npm run shrink:graphics & npm run watch & npm run minify:json & npm run watch:js & npm run watch:sass & npm run serve",
     "clean:dist": "rimraf -rf dist",
     "prebuild": "npm run clean:dist && npm run build:dist",
-    "build": "npm run shrink:img & npm run minify:html && npm run build:js && npm run build:sass && npm run minify:json"
+    "build": "npm run shrink:graphics & npm run minify:html && npm run build:js && npm run build:sass && npm run minify:json"
   },
   "keywords": [],
   "author": "@r0yhewitt",
@@ -47,6 +50,7 @@
     "geojson-assert": "0.0.2",
     "html-minifier-cli": "^0.1.0",
     "imagemin-cli": "^2.1.0",
+    "imagemin-svgo": "^4.2.0",
     "json-minify": "^1.0.0",
     "karma": "^0.13.15",
     "karma-bro": "^0.11.1",
