@@ -50,15 +50,16 @@
   }
 
   function showDetail() {
+    if (!active)
+      emitter.emit('detail:show', -200);
     active = true;
     opts.close.innerHTML = '&#9660;';
     opts.container.classList.add('active');
-    emitter.emit('detail:show', opts.output);
   }
 
   function hideDetail() {
     if (active)
-      emitter.emit('detail:hide');
+      emitter.emit('detail:hide', 200);
     active = false;
     opts.close.innerHTML = '&#9650;';
     opts.container.classList.remove('active');
@@ -67,10 +68,11 @@
   function toggleDetail() {
     var eventName = (active) ? 'detail:hide' : 'detail:show';
     var arrow = (active) ? '&#9650;' : '&#9660;';
+    var distance = (active) ? 200 : -200;
     opts.close.innerHTML = arrow;
     opts.container.classList.toggle('active');
     active = !active;
-    emitter.emit(eventName, opts.output);
+    emitter.emit(eventName, distance);
   }
 
   function renderOffice(office) {

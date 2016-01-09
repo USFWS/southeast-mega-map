@@ -43,8 +43,15 @@
 
   function registerHandlers() {
     emitter.on('office:selected', flyToOffice);
+    emitter.on('detail:hide', panMap);
+    emitter.on('detail:show', panMap);
     opts.fullExtent.addEventListener('click', zoomToFullExtent);
     map.on('click', blurInput);
+  }
+
+  function panMap(distance) {
+    console.log(distance);
+    map.panBy([distance, 0]);
   }
 
   function blurInput() {
