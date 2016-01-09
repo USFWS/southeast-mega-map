@@ -1,9 +1,20 @@
 - var _ = require('../js/util')._;
 h2
   = office.name
+ul.detail-links
+  if office.url
+    li
+      a(href=office.url title="Website") 
+        include ../svg/webpage.svg
+  if office.facebook
+    li
+      a(href=office.facebook title="Facebook")
+        include ../svg/facebook.svg
+  if office.twitter
+    li
+      a(href=office.twitter title="Twitter")
+        include ../svg/twitter.svg
 div.detail-content-wrap
-  p
-    a(href=office.url) Visit us online!
   p.detail-description
     = office.narrative
   h3 Activities

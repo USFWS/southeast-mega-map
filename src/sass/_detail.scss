@@ -17,12 +17,14 @@ $title-background: #00796b;;
     transition: transform .3s;
   }
 }
+
 .detail-content {
   bottom: 0;
   left: 0;
   position: absolute;
   overflow-y: scroll;
   top: 50px;
+  width: 100%;
 
   h2 {
     background: $title-background;
@@ -50,6 +52,33 @@ $title-background: #00796b;;
       height: 20px;
       margin-right: 25px;
       width: 20px;
+    }
+  }
+}
+
+.detail-links {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  list-stye: none;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+
+  svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  a {
+    color: $title-background;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($title-background, 15);
     }
   }
 }
