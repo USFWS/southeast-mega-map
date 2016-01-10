@@ -4,11 +4,11 @@
   var _ = {
     defaults: require('lodash.defaults'),
     find: require('lodash.find'),
-    slugify: require('slug')
+    string: require('underscore.string')
   };
 
   module.exports = {
     _: _
   };
-  
+
 })();

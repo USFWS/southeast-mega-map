@@ -21,7 +21,7 @@ div.detail-content-wrap
   ul.detail-activities
     if office.activities
       each activity in office.activities
-        - var slug = _.slugify(activity).toLowerCase();
+        - var slug = _.string.slugify(activity).toLowerCase();
         li
           img(src="../svg/#{slug}.svg")
           = activity
