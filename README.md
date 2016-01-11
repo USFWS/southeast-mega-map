@@ -18,6 +18,10 @@ To produce a production ready build:
 
 `npm run build`
 
+Bundling packages can lead to bloat if you're not careful.  To visualize files contributing to bundle size:
+
+`npm run inspect:bundle`
+
 To run tests:
 
 `npm test`
