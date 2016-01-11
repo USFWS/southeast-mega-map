@@ -4,6 +4,7 @@
   var lunr = require('lunr');
   var emitter = require('./mediator');
   var _ = require('./util')._;
+  var domUtil = require('./domUtil');
 
   var querystring = require('./querystring');
   var OfficeService = require('./offices');
@@ -26,21 +27,12 @@
   }
 
   function createElements() {
-    opts.container = document.createElement('div');
-    opts.container.classList.add('autocomplete-widget');
-    opts.form = document.createElement('form');
-    opts.form.classList.add('autocomplete-form');
-    opts.label = document.createElement('label');
+    opts.container = domUtil.create('div', 'autocomplete-widget', document.body);
+    opts.form = domUtil.create('form', 'autocomplete-form', opts.container);
+    opts.label = domUtil.create('label', '', opts.form);
     opts.label.innerHTML = 'Search:';
-    opts.input = document.createElement('input');
-    opts.input.classList.add('autocomplete-input');
-    opts.output = document.createElement('ul');
-    opts.output.classList.add('autocomplete-results');
-    opts.form.appendChild(opts.label);
-    opts.form.appendChild(opts.input);
-    opts.container.appendChild(opts.form);
-    opts.container.appendChild(opts.output);
-    document.body.appendChild(opts.container);
+    opts.input = domUtil.create('input', 'autocomplete-input', opts.form);
+    opts.output = domUtil.create('ul', 'autocomplete-results', opts.container);
   }
 
   function registerHandlers() {
