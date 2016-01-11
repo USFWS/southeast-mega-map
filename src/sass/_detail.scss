@@ -1,4 +1,4 @@
-$title-background: #00796b;;
+$green: #00796b;
 
 .detail-container {
   background: white;
@@ -27,7 +27,7 @@ $title-background: #00796b;;
   width: 100%;
 
   h2 {
-    background: $title-background;
+    background: $green;
     color: white;
     margin: 0;
     padding: 10px;
@@ -47,8 +47,7 @@ $title-background: #00796b;;
     margin-left: 15px;
     padding: 5px 10px;
 
-    img {
-      color: $title-background;
+    svg {
       height: 20px;
       margin-right: 25px;
       width: 20px;
@@ -74,11 +73,11 @@ $title-background: #00796b;;
   }
 
   a {
-    color: $title-background;
+    color: $green;
     text-decoration: none;
 
     &:hover {
-      color: darken($title-background, 15);
+      color: darken($green, 15);
     }
   }
 }

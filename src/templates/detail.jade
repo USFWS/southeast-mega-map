@@ -1,10 +1,9 @@
-- var _ = require('../js/util')._;
 h2
   = office.name
 ul.detail-links
   if office.url
     li
-      a(href=office.url title="Website") 
+      a(href=office.url title="Website")
         include ../svg/webpage.svg
   if office.facebook
     li
@@ -21,10 +20,42 @@ div.detail-content-wrap
   ul.detail-activities
     if office.activities
       each activity in office.activities
-        - var slug = _.string.slugify(activity).toLowerCase();
-        li
-          img(src="../svg/#{slug}.svg")
-          = activity
+        if activity === "Wildlife Photography"
+          li
+            include ../svg/wildlife-photography.svg
+            = activity
+        if activity === "Wildlife Observation"
+          li
+            include ../svg/wildlife-observation.svg
+            = activity
+        if activity === "Hiking"
+          li
+            include ../svg/hiking.svg
+            = activity
+        if activity === "Fishing"
+          li
+            include ../svg/fishing.svg
+            = activity
+        if activity === "Hunting"
+          li
+            include ../svg/hunting.svg
+            = activity
+        if activity === "Boat Ramp"
+          li
+            include ../svg/boat-ramp.svg
+            = activity
+        if activity === "Canoeing"
+          li
+            include ../svg/canoeing.svg
+            = activity
+        if activity === "Lighthouse"
+          li
+            include ../svg/lighthouse.svg
+            = activity
+        if activity === "Picnic"
+          li
+            include ../svg/picnic-shelter.svg
+            = activity
   address
     = office.address
     br
