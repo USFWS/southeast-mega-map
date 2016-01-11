@@ -48,12 +48,12 @@
   }
 
   function focusInput() {
-    opts.container.classList.add('active');
+    domUtil.addClass(opts.container, 'active');
     opts.input.setAttribute('placeholder', 'Search');
   }
 
   function blurInput() {
-    opts.container.classList.remove('active');
+    domUtil.removeClass(opts.container, 'active');
     opts.input.setAttribute('placeholder', '');
   }
 
