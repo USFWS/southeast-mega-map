@@ -113,9 +113,6 @@
   }
 
   function render(data) {
-    data.forEach(function (office) {
-      office.slug = '?q=' + _.slugify(office.name).toLowerCase();
-    });
     opts.output.innerHTML = template({ offices: data });
   }
 
