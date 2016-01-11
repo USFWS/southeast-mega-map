@@ -72,7 +72,7 @@
     var eventName = (active) ? 'detail:hide' : 'detail:show';
     var distance = (active) ? 200 : -200;
     opts.close.innerHTML = (active) ? '&#9650;' : '&#9660;';
-    domUtil.toggleClass('active');
+    domUtil.toggleClass(opts.container, 'active');
     active = !active;
     emitter.emit(eventName, distance);
   }
