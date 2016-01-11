@@ -412,7 +412,7 @@
         "zip": "31331",
         "url": "http://www.fws.gov/blackbeardisland/",
         "narrative": "Blackbeard Island was named for Edward Teach, aka Blackbeard the Pirate. The refuge is only accessible by a privately chartered boat. It provides habitat to a variety of wintering birds, deer, alligators and well as sea turtles. There are approximately 1,163 acres of open freshwater or freshwater marsh, 2,000 acres of regularly flooded salt marsh, 2,115 acres of maritime forest, and 340 acres of sandy beach.",
-        "activities": ["binoculars", "camera", "trail", "biking", "hunting"]
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Biking", "Hunting"]
       },
       "geometry": {
         "type": "Point",
@@ -499,7 +499,7 @@
         "url": "http://www.fws.gov/bondswamp/",
         "narrative": "Bond Swamp was established to protect, maintain, and enhance the ecosystem of the Ocmulgee River floodplain. It is home to one of three black bear populations in the state of Georgia, as well as bobcats, deer, fish, reptiles, amphibians and over 200 species of birds. Habitat types range from mixed hardwood/pine ridges to bottomland hardwoods and swamp forests mixed with creeks, beaver swamps and oxbow lakes.",
         "image": "georgia_bond-swamp.jpg",
-        "activities": ["binoculars", "camera", "trail", "hunting", "fishing"]
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Hunting", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -892,7 +892,7 @@
         "facebook": "https://www.facebook.com/ChattahoocheeForestNationalFishHatchery",
         "narrative": "The primary responsibility of Chattahoochee Forest National Fish Hatchery is to raise rainbow trout, and station facilities are currently used to produce one million trout each year. These fish are stocked into tailwaters, streams and lakes of Northern Georgia The hatchery also produces brown and brook trout, and also holds populations of threatened and endangered fish.",
         "image": "georgia_chattahoochee-forest.jpg",
-        "activities": ["office", "fishing"]
+        "activities": ["Office", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -1468,7 +1468,7 @@
         "facebook": "https://www.facebook.com/GeorgiaFieldOffice",
         "narrative": "Serving the entire state of Georgia, our biologists work with partners to provide scientific expertise on a variety of projects. They also administer permits under the Endangered Species Act.",
         "image": "georgia_es.jpg",
-        "activities": ["office"]
+        "activities": ["Office"]
       },
       "geometry": {
         "type": "Point",
@@ -1657,7 +1657,7 @@
         "facebook": "https://www.facebook.com/HarrisNeckNWR",
         "narrative": "Harris Neck serves as an important link in the chain of refuges along the eastern seaboard, and is the inland base for two neighboring barrier island refuges, Blackbeard Island and Wolf Island. Since its designation as a wildlife refuge in 1962, Harris Neck has served as a premier nesting, foraging, and wintering habitat for many species of wildlife.  Signature species include wood storks, which nest in a large colony on Woody Pond, and the colorful and uncommon painted bunting, which favors nesting habitat in the refuge's maritime scrub areas.",
         "image": "georgia_blackbeard-island.jpg",
-        "activities": ["binoculars", "camera", "trail", "biking", "hunting", "fishing"]
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Biking", "Hunting", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -2608,7 +2608,7 @@
         "facebook": "https://www.facebook.com/okefenokeewildliferefuge",
         "narrative": "Okefenokee National Wildlife Refuge conserves the unique qualities of the Okefenokee Swamp, one of the world’s largest intact freshwater ecosystems. Habitats provide for threatened and endangered species, such as red-cockaded woodpecker, wood storks, indigo snakes, and a wide variety of other wildlife species.  It is world renowned for its amphibian populations that are bio-indicators of global health.  More than 600 plant species have been identified on refuge lands.",
         "image": "georgia_okefenokee.jpg",
-        "activities": ["binoculars", "camera", "hunting", "fishing", "canoeing", "office"]
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hunting", "Fishing", "Canoeing", "Office"]
       },
       "geometry": {
         "type": "Point",
@@ -2858,7 +2858,7 @@
         "url": "http://www.fws.gov/piedmont/",
         "narrative": "The refuge was established in 1939 as a combination wildlife and game-management demonstration area to demonstrate that wildlife could be restored on worn out, eroded lands. Today, through the efforts of the U.S. Fish & Wildlife Service, the 35,000 acre wildlife refuge once again hosts loblolly pines on the ridges with hardwoods found along creek bottoms and in scattered upland coves. Clear streams and beaver ponds provide ideal wetlands for migrating waterfowl. Wildlife populations have been restored, and Piedmont National Wildlife Refuge now serves as a model forest ecosystem for the management of wildlife.",
         "image": "georgia_piedmont.jpg",
-        "activities": ["office", "binoculars", "camera", "trails", "hunting", "fishing", "boat-launch"]
+        "activities": ["Office", "Wildlife Observation", "Wildlife Photography", "Hiking", "Hunting", "Fishing", "Boat Ramp"]
       },
       "geometry": {
         "type": "Point",
@@ -3252,7 +3252,7 @@
         "url": "http://www.fws.gov/refuge/savannah/",
         "narrative": "Savannah National Wildlife Refuge, established April 6, 1927, consists of 29,175 acres of freshwater marshes, tidal rivers and creeks, and bottomland hardwoods. Waterfowl are most abundant from November through February, while alligators and other reptiles are frequently seen from March through October. Birdwatching opportunities are good all year, but are best from October through April when temperatures are mild and many species of waterfowl and other wintering birds are present. Access to many areas is by boat only.",
         "image": "georgia_savannah.jpg",
-        "activities": ["office", "binoculars", "camera", "trails", "biking", "hunting", "fishing", "canoeing"]
+        "activities": ["Office", "Wildlife Observation", "Wildlife Photography", "Hiking", "Biking", "Hunting", "Fishing", "Canoeing"]
       },
       "geometry": {
         "type": "Point",
@@ -4336,7 +4336,7 @@
         "url": "http://www.fws.gov/warmsprings/FishHatchery/",
         "narrative": "Warm Springs is an all-in-one fish center, providing warmwater hatchery services for species such as striped bass, sturgeon, and paddlefish, as well as scientific innovations in fish health and technology. The health center provides state-of-the-art fish disease diagnostic and fish health certification services to a variety of national fish hatcheries, state fish hatcheries, and private fish farms.",
         "image": "georgia_warm-springs.jpg",
-        "activities": ["office", "fishing"]
+        "activities": ["Office", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -4360,7 +4360,7 @@
         "url": "http://www.fws.gov/wassaw/",
         "narrative": "Only accessible by boat, this 10,053-acre refuge includes beaches with rolling dunes, maritime forest, and vast salt marshes. The island supports rookeries for egrets and herons, and a variety of wading birds are abundant in the summer months. In summer, telltale tracks on Wassaw's beach attest to nocturnal visits by the threatened loggerhead sea turtles which come ashore for egg laying and then return secretively to the sea. Birdwatching is particularly fruitful during the spring and fall migrations.",
         "image": "georgia_wassaw.jpg",
-        "activities": ["binoculars", "camera", "trails", "hunting", "fishing", "boat-launch"]
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Hunting", "Fishing", "Boat Ramp"]
       },
       "geometry": {
         "type": "Point",
