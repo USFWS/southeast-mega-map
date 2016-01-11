@@ -5,6 +5,7 @@
   var OfficeService = require('./offices');
   var template = require('../templates/detail.jade');
   var _ = require('./util')._;
+  var domUtil = require('./domUtil');
 
   var opts = {},
       active;
@@ -15,23 +16,10 @@
   }
 
   function createDetail() {
-    opts.container = document.createElement('aside');
-    opts.container.classList.add('detail-container');
-    opts.content = document.createElement('section');
-    opts.content.classList.add('detail-content');
-    opts.close = document.createElement('button');
+    opts.container = domUtil.create('aside', 'detail-container', document.body);
+    opts.content = domUtil.create('section', 'detail-content', opts.container);
+    opts.close = domUtil.create('button', 'detail-toggle', opts.container);
     opts.close.innerHTML = '&#9650;';
-    opts.close.classList.add('detail-toggle');
-    opts.container.appendChild(opts.content);
-    opts.container.appendChild(opts.close);
-    document.body.appendChild(opts.container);
-  }
-
-  function addCloseButton() {
-    opts.close = document.createElement('button');
-    opts.close.innerHTML = 'Close';
-    opts.close.classList.add('detail-toggle');
-    opts.output.appendChild(opts.close);
   }
 
   function registerHandlers() {
@@ -78,7 +66,6 @@
   function renderOffice(office) {
     opts.content.innerHTML = template({ office: office.properties });
     showDetail();
-    // emitter.emit('cache:office', office);
   }
 
   exports.init = init;
