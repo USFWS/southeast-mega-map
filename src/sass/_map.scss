@@ -2,23 +2,33 @@
   height: 100vh;
 }
 
-.zoom-to-full-extent {
+.leaflet-control-roy {
   background: white;
   border: none;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.65098) 0px 1px 5px 0px;
   padding: 2px;
   position: fixed;
-  right: 10px;
-  top: 70px;
   z-index: 41;
 
   &:hover {
     background: darken(white, 5);
     cursor: pointer;
   }
+}
+
+.zoom-to-full-extent {
+  right: 10px;
+  top: 70px;
 
   img {
     width: 23px;
   }
+}
+
+.find-nearest {
+  top: 10px;
+  right: 45px;
+  width: 25px;
+  height: 25px;
 }

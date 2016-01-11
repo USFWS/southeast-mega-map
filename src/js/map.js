@@ -1,6 +1,7 @@
 (function () {
 
   var L = require('leaflet');
+  var leafletKnn = require('leaflet-knn');
   require('leaflet.markercluster');
   var qs = require('./querystring');
   var emitter = require('./mediator');
@@ -10,7 +11,7 @@
 
   L.Icon.Default.imagePath = './images';
 
-  var opts, map, cluster;
+  var opts, map, cluster, index;
   var defaults = {
     zoom: 7,
     mapId: 'map',
@@ -24,7 +25,9 @@
     opts = _.defaults({}, options, defaults);
     createMap();
     opts.fullExtent = domUtil.create('button', 'zoom-to-full-extent', document.body);
-    domUtil.addClass(opts.fullExtent, 'leaflet-control');
+    opts.nearest = domUtil.create('button', 'find-nearest', document.body);
+    domUtil.addClass(opts.nearest, 'leaflet-control-roy');
+    domUtil.addClass(opts.fullExtent, 'leaflet-control-roy');
     opts.img = domUtil.create('img', '', opts.fullExtent);
     opts.img.setAttribute('src', '../svg/full-extent.svg');
     opts.img.setAttribute('title', 'Zoom to full extent');
@@ -45,7 +48,12 @@
     emitter.on('detail:hide', panMap);
     emitter.on('detail:show', panMap);
     opts.fullExtent.addEventListener('click', zoomToFullExtent);
+    opts.nearest.addEventListener('click', function () {
+      domUtil.addClass(opts.nearest, 'loading');
+      map.locate();
+    });
     map.on('click', blurInput);
+    map.on('locationfound', findNearest);
   }
 
   function panMap(distance) {
@@ -88,10 +96,18 @@
     emitter.emit('marker:click', office);
   }
 
+  function findNearest(e) {
+    var nearest = index.nearest(e.latlng, 5);
+    domUtil.removeClass(opts.nearest, 'loading');
+    emitter.emit('found:nearest', nearest);
+  }
+
   function addMarkers() {
     var geojson = L.geoJson(opts.data, {
       onEachFeature: onEachFeature,
     });
+
+    index = leafletKnn(geojson);
 
     cluster = L.markerClusterGroup({
       showCoverageOnHover: false
