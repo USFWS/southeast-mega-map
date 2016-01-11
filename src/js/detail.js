@@ -42,7 +42,7 @@
       emitter.emit('detail:show', -200);
     active = true;
     opts.close.innerHTML = '&#9660;';
-    opts.container.classList.add('active');
+    domUtil.addClass(opts.container, 'active');
   }
 
   function hideDetail() {
@@ -50,15 +50,14 @@
       emitter.emit('detail:hide', 200);
     active = false;
     opts.close.innerHTML = '&#9650;';
-    opts.container.classList.remove('active');
+    domUtil.removeClass(opts.container, 'active');
   }
 
   function toggleDetail() {
     var eventName = (active) ? 'detail:hide' : 'detail:show';
-    var arrow = (active) ? '&#9650;' : '&#9660;';
     var distance = (active) ? 200 : -200;
-    opts.close.innerHTML = arrow;
-    opts.container.classList.toggle('active');
+    opts.close.innerHTML = (active) ? '&#9650;' : '&#9660;';;
+    domUtil.toggleClass('active');
     active = !active;
     emitter.emit(eventName, distance);
   }
