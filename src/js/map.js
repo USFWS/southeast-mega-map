@@ -96,6 +96,14 @@
     layer.on({ click: onMarkerClick });
   }
 
+  function pointToLayer(feature, latlng) {
+    var icons = require('./icons');
+    if (feature.properties.type === 'National Wildlife Refuge')
+      return L.marker(latlng, { icon: icons.blueGoose });
+    else
+      return L.marker(latlng, { icon: icons.office });
+  }
+
   function onMarkerClick(feature) {
     var office = feature.target.feature;
     flyToOffice(office);
@@ -112,6 +120,7 @@
   function addMarkers() {
     var geojson = L.geoJson(opts.data, {
       onEachFeature: onEachFeature,
+      pointToLayer: pointToLayer
     });
 
     index = leafletKnn(geojson);
