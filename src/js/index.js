@@ -2,6 +2,7 @@
   'use strict';
 
   var autocomplete = require('./autocomplete');
+  var toolbar = require('./toolbar');
   var detail = require('./detail');
   var emitter = require('./mediator');
   var OfficeService = require('./offices');
@@ -25,6 +26,8 @@
     detail.init({
       output: document.querySelector('.autocomplete-detail')
     });
+
+    toolbar.init();
 
     // OfficeService.getRandomOffice();
   });
