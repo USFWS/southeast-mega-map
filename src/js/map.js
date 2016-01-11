@@ -4,6 +4,7 @@
   require('leaflet.markercluster');
   var qs = require('./querystring');
   var emitter = require('./mediator');
+  var domUtil = require('./domUtil');
 
   var _  = require('./util')._;
 
@@ -22,13 +23,11 @@
   function init(options) {
     opts = _.defaults({}, options, defaults);
     createMap();
-    opts.fullExtent = document.createElement('button');
-    opts.fullExtent.classList.add('leaflet-control', 'zoom-to-full-extent');
-    var img = document.createElement('img');
-    img.setAttribute('src', '../svg/full-extent.svg');
-    img.setAttribute('title', 'Zoom to full extent');
-    opts.fullExtent.appendChild(img);
-    document.body.appendChild(opts.fullExtent);
+    opts.fullExtent = domUtil.create('button', 'zoom-to-full-extent', document.body);
+    domUtil.addClass(opts.fullExtent, 'leaflet-control');
+    opts.img = domUtil.create('img', '', opts.fullExtent);
+    opts.img.setAttribute('src', '../svg/full-extent.svg');
+    opts.img.setAttribute('title', 'Zoom to full extent');
     registerHandlers();
     if (opts.data) addMarkers();
   }
@@ -50,7 +49,6 @@
   }
 
   function panMap(distance) {
-    console.log(distance);
     map.panBy([distance, 0]);
   }
 
