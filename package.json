@@ -18,13 +18,12 @@
   "scripts": {
     "test": "karma start",
     "prebuild:sass": "rimraf -rf dist/styles/*",
-    "build:sass": "node-sass --output-style compressed src/sass/styles.scss -o dist/css/",
+    "build:sass": "node-sass --output-style compressed src/sass/styles.scss | postcss -u autoprefixer -o dist/css/styles.css",
     "prewatch:sass": "npm run build:sass",
     "watch:sass": "node-sass -w src/sass/styles.scss dist/css/styles.css",
     "minify:json": "json-minify src/data/offices.json > dist/data/offices.json",
     "minify:html": "htmlmin -o dist/index.html src/index.html",
     "prebuild:js": "rimraf -rf dist/js/*",
-    "clean:js": "rimraf -rf dist/js/*",
     "build:js": "browserify src/js/index.js | uglifyjs -mc > dist/js/bundle.js",
     "watch:js": "watchify src/js/index.js -o dist/js/bundle.js -dv",
     "preshrink:img": "rimraf dist/images/*",
@@ -45,6 +44,7 @@
   "author": "@r0yhewitt",
   "license": "SAX-PD",
   "devDependencies": {
+    "autoprefixer": "^6.2.3",
     "browser-sync": "^2.10.1",
     "browserify": "^12.0.1",
     "chai": "^3.4.1",
@@ -61,6 +61,7 @@
     "mocha": "^2.3.4",
     "node-sass": "^3.4.2",
     "npm-watch": "^0.1.1",
+    "postcss-cli": "^2.3.3",
     "rimraf": "^2.4.4",
     "uglifyjs": "^2.4.10",
     "watchify": "^3.6.1"
