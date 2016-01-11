@@ -5,6 +5,7 @@
   var OfficeService = require('./offices');
   var template = require('../templates/detail.jade');
   var nearestTemplate = require('../templates/nearest.jade');
+  var querystring = require('./querystring');
   var _ = require('./util')._;
   var domUtil = require('./domUtil');
 
@@ -18,6 +19,7 @@
   function createDetail() {
     opts.container = domUtil.create('aside', 'detail-container', document.body);
     opts.content = domUtil.create('section', 'detail-content', opts.container);
+    opts.nearest = domUtil.create('section', 'detail-nearest', opts.content);
     opts.close = domUtil.create('button', 'detail-toggle', opts.container);
     opts.close.innerHTML = '&#9650;';
   }
@@ -25,6 +27,7 @@
   function registerHandlers() {
     opts.container.addEventListener('click', blurInput);
     opts.close.addEventListener('click', toggleDetail);
+    opts.nearest.addEventListener('click', delegatedOfficeLink);
     emitter.on('office:selected', renderOffice);
     emitter.on('marker:click', renderOffice);
     emitter.on('autocomplete:keyup', hideDetail);
@@ -32,6 +35,16 @@
     emitter.on('offices:random', renderOffice);
     emitter.on('zoom:fullextent', hideDetail);
     emitter.on('found:nearest', renderNearest);
+  }
+
+  function delegatedOfficeLink (e) {
+    e.preventDefault();
+
+    if (e.target.nodeName === 'A'){
+      var officeName = querystring.stringify(e.srcElement.href);
+      var office = OfficeService.getOffice(officeName);
+      renderOffice(office);
+    }
   }
 
   function blurInput() {
@@ -69,7 +82,7 @@
   }
 
   function renderNearest(nearest) {
-    opts.content.innerHTML = nearestTemplate({ nearest: nearest });
+    opts.nearest.innerHTML = nearestTemplate({ nearest: nearest });
     showDetail();
   }
 
