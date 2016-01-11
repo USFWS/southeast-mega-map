@@ -44,6 +44,7 @@
       var officeName = querystring.stringify(e.srcElement.href);
       var office = OfficeService.getOffice(officeName);
       renderOffice(office);
+      emitter.emit('office:selected', office);
     }
   }
 
