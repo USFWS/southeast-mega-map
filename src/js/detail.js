@@ -4,11 +4,11 @@
   var emitter = require('./mediator');
   var OfficeService = require('./offices');
   var template = require('../templates/detail.jade');
+  var nearestTemplate = require('../templates/nearest.jade');
   var _ = require('./util')._;
   var domUtil = require('./domUtil');
 
-  var opts = {},
-      active;
+  var opts = {}, active;
 
   function init() {
     createDetail();
@@ -31,6 +31,7 @@
     emitter.on('found:office', renderOffice);
     emitter.on('offices:random', renderOffice);
     emitter.on('zoom:fullextent', hideDetail);
+    emitter.on('found:nearest', renderNearest);
   }
 
   function blurInput() {
@@ -64,6 +65,11 @@
 
   function renderOffice(office) {
     opts.content.innerHTML = template({ office: office.properties });
+    showDetail();
+  }
+
+  function renderNearest(nearest) {
+    opts.content.innerHTML = nearestTemplate({ nearest: nearest });
     showDetail();
   }
 

@@ -1,0 +1,8 @@
+- var _ = require('../js/util')._;
+ul
+  each office in nearest
+    - var office = office.layer.feature.properties;
+    - var slug = "?q=" + _.string.slugify(office.name).toLowerCase();
+    li
+      a(href=slug)
+        = office.name
