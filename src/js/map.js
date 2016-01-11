@@ -28,9 +28,12 @@
     opts.nearest = domUtil.create('button', 'find-nearest', document.body);
     domUtil.addClass(opts.nearest, 'leaflet-control-roy');
     domUtil.addClass(opts.fullExtent, 'leaflet-control-roy');
-    opts.img = domUtil.create('img', '', opts.fullExtent);
-    opts.img.setAttribute('src', '../svg/full-extent.svg');
-    opts.img.setAttribute('title', 'Zoom to full extent');
+    opts.imgLocate = domUtil.create('img', '', opts.nearest);
+    opts.imgLocate.setAttribute('src', '../svg/current-location.svg');
+    opts.imgLocate.setAttribute('title', 'Find 5 nearest offices');
+    opts.imgExtent = domUtil.create('img', '', opts.fullExtent);
+    opts.imgExtent.setAttribute('src', '../svg/full-extent.svg');
+    opts.imgExtent.setAttribute('title', 'Zoom to full extent');
     registerHandlers();
     if (opts.data) addMarkers();
   }
@@ -48,12 +51,15 @@
     emitter.on('detail:hide', panMap);
     emitter.on('detail:show', panMap);
     opts.fullExtent.addEventListener('click', zoomToFullExtent);
-    opts.nearest.addEventListener('click', function () {
-      domUtil.addClass(opts.nearest, 'loading');
-      map.locate();
-    });
+    opts.nearest.addEventListener('click', getLocation);
     map.on('click', blurInput);
     map.on('locationfound', findNearest);
+  }
+
+  function getLocation() {
+    domUtil.addClass(opts.nearest, 'loading');
+    opts.imgLocate.setAttribute('src', '../svg/loading.svg');
+    map.locate();
   }
 
   function panMap(distance) {
@@ -99,6 +105,7 @@
   function findNearest(e) {
     var nearest = index.nearest(e.latlng, 5);
     domUtil.removeClass(opts.nearest, 'loading');
+    opts.imgLocate.setAttribute('src', '../svg/current-location.svg');
     emitter.emit('found:nearest', nearest);
   }
 
