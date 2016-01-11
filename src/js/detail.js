@@ -56,7 +56,7 @@
   function toggleDetail() {
     var eventName = (active) ? 'detail:hide' : 'detail:show';
     var distance = (active) ? 200 : -200;
-    opts.close.innerHTML = (active) ? '&#9650;' : '&#9660;';;
+    opts.close.innerHTML = (active) ? '&#9650;' : '&#9660;';
     domUtil.toggleClass('active');
     active = !active;
     emitter.emit(eventName, distance);
