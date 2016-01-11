@@ -38,7 +38,8 @@
     "clean:dist": "rimraf -rf dist",
     "prebuild": "npm run clean:dist && npm run build:dist",
     "build": "npm run shrink:graphics & npm run minify:html && npm run build:js && npm run build:sass && npm run minify:json",
-    "inspect:bundle": "browserify --full-paths src/js/index.js | uglifyjs -mc | Discify --open"
+    "inspect:bundle": "browserify --full-paths src/js/index.js | uglifyjs -mc | Discify --open",
+    "publish:demo": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "@r0yhewitt",
@@ -50,6 +51,7 @@
     "chai": "^3.4.1",
     "disc": "^1.3.2",
     "geojson-assert": "0.0.2",
+    "gh-pages": "^0.8.0",
     "html-minifier-cli": "^0.1.0",
     "imagemin-cli": "^2.1.0",
     "imagemin-svgo": "^4.2.0",

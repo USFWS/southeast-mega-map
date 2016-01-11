@@ -22,6 +22,10 @@ Bundling packages can lead to bloat if you're not careful.  To visualize files c
 
 `npm run inspect:bundle`
 
+Publish a production demo to gh-pages:
+
+`npm run publish:demo`
+
 To run tests:
 
 `npm test`

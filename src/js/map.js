@@ -29,10 +29,10 @@
     domUtil.addClass(opts.nearest, 'leaflet-control-roy');
     domUtil.addClass(opts.fullExtent, 'leaflet-control-roy');
     opts.imgLocate = domUtil.create('img', '', opts.nearest);
-    opts.imgLocate.setAttribute('src', '../svg/current-location.svg');
+    opts.imgLocate.setAttribute('src', './svg/current-location.svg');
     opts.imgLocate.setAttribute('title', 'Find 5 nearest offices');
     opts.imgExtent = domUtil.create('img', '', opts.fullExtent);
-    opts.imgExtent.setAttribute('src', '../svg/full-extent.svg');
+    opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
     opts.imgExtent.setAttribute('title', 'Zoom to full extent');
     registerHandlers();
     if (opts.data) addMarkers();
@@ -58,7 +58,7 @@
 
   function getLocation() {
     domUtil.addClass(opts.nearest, 'loading');
-    opts.imgLocate.setAttribute('src', '../svg/loading.svg');
+    opts.imgLocate.setAttribute('src', './svg/loading.svg');
     map.locate();
   }
 
@@ -105,7 +105,7 @@
   function findNearest(e) {
     var nearest = index.nearest(e.latlng, 5);
     domUtil.removeClass(opts.nearest, 'loading');
-    opts.imgLocate.setAttribute('src', '../svg/current-location.svg');
+    opts.imgLocate.setAttribute('src', './svg/current-location.svg');
     emitter.emit('found:nearest', nearest);
   }
 
