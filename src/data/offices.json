@@ -700,8 +700,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Caribbean Landscape Conservation Cooperative",
-        "type": "To Be Classified",
+        "name": "Caribbean Landscape Conservation Cooperativeservation Cooperative",
+        "type": "Landscape Conservation Cooperative",
         "program": "Director/deputy Director",
         "address": "International Institue Of Tropical Forestry",
         "PHYSADD2": "Jardin Botanico Sur, 1201 Calle Ceiba",
@@ -1153,7 +1153,7 @@
       "type": "Feature",
       "properties": {
         "name": "Deepwater Horizon Natural Resources Damage Assessment and Restoration Office",
-        "type": "To Be Classified",
+        "type": "Landscape Conservation Cooperative",
         "program": "Business Management And Operations",
         "address": "8111 Mcgowin Ave",
         "city": "Fairhope",
@@ -1206,25 +1206,6 @@
         "coordinates": [
           -67.480801,
           18.38364799943465
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Digital Evidence Recovery and Technical Support Branch",
-        "type": "Special Agent In Charge Office",
-        "program": "Law Enforcement",
-        "address": "701 San Marco Blvd., Suite 7 West",
-        "city": "Jacksonville",
-        "state": "FL",
-        "zip": "32207"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.659722,
-          30.318217999177293
         ]
       }
     },
@@ -1605,7 +1586,7 @@
       "type": "Feature",
       "properties": {
         "name": "Gulf Coast Plains and Ozarks Landscape Conservation Cooperative",
-        "type": "To Be Classified",
+        "type": "Landscape Conservation Cooperative",
         "program": "Director/deputy Director",
         "address": "United States Geological Survey/national Wetlands Research Center",
         "PHYSADD2": "700 Cajundome Boulevard",
@@ -2829,7 +2810,7 @@
       "type": "Feature",
       "properties": {
         "name": "Peninsular Florida Landscape Conservation Cooperative",
-        "type": "To Be Classified",
+        "type": "Landscape Conservation Cooperative",
         "program": "Director/deputy Director",
         "address": "620 South Meridian Street",
         "city": "Tallahassee",
@@ -3036,106 +3017,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Resident Agent in Charge-Atlanta, Georgia",
-        "type": "Resident Agent In Charge Office",
-        "program": "Law Enforcement",
-        "address": "4341 International Parkway, 104",
-        "PHYSADD2": null,
-        "city": "Atlanta",
-        "state": "GA",
-        "zip": "30354"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -84.397509,
-          33.635367999129457
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Resident Agent in Charge-Groveland, Florida",
-        "type": "Resident Agent In Charge Office",
-        "program": "Law Enforcement",
-        "address": "20501 Independence Blvd.",
-        "PHYSADD2": null,
-        "city": "Groveland",
-        "state": "FL",
-        "zip": "34736"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.830018,
-          28.644698999205605
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Resident Agent in Charge-Lacombe, Louisiana",
-        "type": "Resident Agent In Charge Office",
-        "program": "Law Enforcement",
-        "address": "61387 Highway 434",
-        "PHYSADD2": null,
-        "city": "Lacombe",
-        "state": "LA",
-        "zip": "70445"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -89.937221,
-          30.321698999177212
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Resident Agent in Charge-Miami, Florida",
-        "type": "Resident Agent In Charge Office",
-        "program": "Law Enforcement",
-        "address": "10426 Nw 31st Terrace",
-        "PHYSADD2": null,
-        "city": "Miami",
-        "state": "FL",
-        "zip": "33172"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -80.366288,
-          25.802869999259958
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Resident Agent in Charge-Nashville, Tennessee",
-        "type": "Resident Agent In Charge Office",
-        "program": "Law Enforcement",
-        "address": "240 Great Circle Road",
-        "PHYSADD2": "Suite 312",
-        "city": "Nashville",
-        "state": "TN",
-        "zip": "37228"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -86.793186,
-          36.19600799910048
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Roanoke River National Wildlife Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
@@ -3327,7 +3208,7 @@
       "type": "Feature",
       "properties": {
         "name": "South Atlantic Landscape Conservation Cooperative",
-        "type": "To Be Classified",
+        "type": "Landscape Conservation Cooperative",
         "program": "Director/deputy Director",
         "address": "1751 Varsity Drive",
         "PHYSADD2": "2nd Floor, Rm. 217",
