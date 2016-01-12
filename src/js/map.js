@@ -126,6 +126,14 @@
       pointToLayer: pointToLayer
     });
 
+    geojson.on('mouseover', function(e) {
+      e.layer.openPopup();
+    });
+
+    geojson.on('mouseout', function(e) {
+      e.layer.closePopup();
+    });
+
     index = leafletKnn(geojson);
 
     cluster = L.markerClusterGroup({
