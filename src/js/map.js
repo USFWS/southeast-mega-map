@@ -98,9 +98,10 @@
 
   function pointToLayer(feature, latlng) {
     var icons = require('./icons');
-    if (feature.properties.type === 'National Wildlife Refuge')
+    var type = feature.properties.type;
+    if (type === 'National Wildlife Refuge')
       return L.marker(latlng, { icon: icons.blueGoose });
-    else if (feature.properties.type === 'National Fish Hatchery')
+    else if (type === 'National Fish Hatchery' || type === 'Associated Fish Facility')
       return L.marker(latlng, { icon: icons.fisheries });
     else
       return L.marker(latlng, { icon: icons.office });
