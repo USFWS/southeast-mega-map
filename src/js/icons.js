@@ -15,8 +15,15 @@
     popupAnchor: [0, -20]
   });
 
+  var fisheries = L.icon({
+    iconUrl: './svg/fisheries.svg',
+    iconSize: [70, 50],
+    popupAnchor: [0, -20]
+  });
+
   module.exports = {
     blueGoose: blueGoose,
-    office: office
+    office: office,
+    fisheries: fisheries
   };
 })();
