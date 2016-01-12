@@ -124,13 +124,9 @@
     var geojson = L.geoJson(opts.data, {
       onEachFeature: onEachFeature,
       pointToLayer: pointToLayer
-    });
-
-    geojson.on('mouseover', function(e) {
+    }).on('mouseover', function(e) {
       e.layer.openPopup();
-    });
-
-    geojson.on('mouseout', function(e) {
+    }).on('mouseout', function(e) {
       e.layer.closePopup();
     });
 
