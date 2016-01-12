@@ -100,6 +100,8 @@
     var icons = require('./icons');
     if (feature.properties.type === 'National Wildlife Refuge')
       return L.marker(latlng, { icon: icons.blueGoose });
+    else if (feature.properties.type === 'National Fish Hatchery')
+      return L.marker(latlng, { icon: icons.fisheries });
     else
       return L.marker(latlng, { icon: icons.office });
   }
