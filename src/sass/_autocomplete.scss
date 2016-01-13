@@ -31,12 +31,16 @@ $max-width: 355px;
   width: 100%;
 
   label {
-    color: black;
-    display: inline-block;
-    font-size: 1.1em;
-    margin-right: 9px;
-    width: 75px;
-    transition: width .3s;
+    display: none;
+
+    @media (min-width: 500px) {
+      color: black;
+      display: inline-block;
+      font-size: 1.1em;
+      margin-right: 9px;
+      width: 75px;
+      transition: width .3s;
+    }
   }
 
   input {
