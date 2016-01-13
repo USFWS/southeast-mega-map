@@ -23,14 +23,10 @@
   function init(options) {
     opts = _.defaults({}, options, defaults);
     createMap();
-    opts.fullExtent = domUtil.create('button', 'zoom-to-full-extent', document.body);
+    opts.fullExtent = domUtil.create('button', ['tt-w', 'zoom-to-full-extent', 'leaflet-control-roy'], document.body);
     opts.fullExtent.setAttribute('data-tt', 'Zoom to full extent');
-    domUtil.addClass(opts.fullExtent, 'tt-w');
-    opts.nearest = domUtil.create('button', 'find-nearest', document.body);
+    opts.nearest = domUtil.create('button', ['find-nearest', 'tt-w', 'leaflet-control-roy'], document.body);
     opts.nearest.setAttribute('data-tt', 'Find nearest offices');
-    domUtil.addClass(opts.nearest, 'tt-w');
-    domUtil.addClass(opts.nearest, 'leaflet-control-roy');
-    domUtil.addClass(opts.fullExtent, 'leaflet-control-roy');
     opts.imgLocate = domUtil.create('img', '', opts.nearest);
     opts.imgLocate.setAttribute('src', './svg/current-location.svg');
     opts.imgExtent = domUtil.create('img', '', opts.fullExtent);
