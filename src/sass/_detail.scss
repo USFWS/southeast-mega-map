@@ -32,6 +32,10 @@ $green: #00796b;
     margin: 0;
     padding: 10px;
   }
+
+  ul {
+    list-style: none;
+  }
 }
 
 .detail-content-wrap {
@@ -39,9 +43,6 @@ $green: #00796b;
 }
 
 .detail-activities {
-  list-style: none;
-  margin: 1em 0;
-  padding: 0;
 
   li {
     margin-left: 15px;
@@ -78,6 +79,24 @@ $green: #00796b;
 
     &:hover {
       color: darken($green, 15);
+    }
+  }
+}
+
+.nearest-offices {
+  margin: 0;
+  padding: 1em;
+
+  li {
+    a {
+      color: $green;
+      display: block;
+      padding: .3em 0;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
