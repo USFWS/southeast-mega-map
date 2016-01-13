@@ -11,7 +11,7 @@
 
   L.Icon.Default.imagePath = './images';
 
-  var opts, map, cluster, index;
+  var opts, map, cluster, index, layers;
   var defaults = {
     zoom: 7,
     mapId: 'map',
@@ -35,6 +35,7 @@
     opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
     opts.imgExtent.setAttribute('title', 'Zoom to full extent');
     registerHandlers();
+    index = leafletKnn(L.geoJson(opts.data));
     if (opts.data) addMarkers();
   }
 
@@ -54,6 +55,16 @@
     opts.nearest.addEventListener('click', getLocation);
     map.on('click', blurInput);
     map.on('locationfound', findNearest);
+    map.on('overlayadd', layerAdd);
+    map.on('overlayremove', layerRemove);
+  }
+
+  function layerAdd(layer) {
+    cluster.addLayer(layers[layer.name]);
+  }
+
+  function layerRemove(layer) {
+    cluster.removeLayer(layers[layer.name]);
   }
 
   function getLocation() {
@@ -83,7 +94,7 @@
     var imagery = L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/{type}/{z}/{x}/{y}.{ext}', {
     	type: 'sat',
     	ext: 'jpg',
-    	attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/">MapQuest</a> &mdash; Portions Courtesy NASA/JPL-Caltech and U.S. Depart. of Agriculture, Farm Service Agency',
+    	attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/">MapQuest</a> &mdash; Portions Courtesy NASA/JPL-Caltech and U.S.D.A. Farm Service Agency',
     	subdomains: '1234'
     });
 
@@ -100,8 +111,16 @@
     };
 
     map = L.map(opts.mapId, mapOptions);
+
+    var layers = {
+      "Refuges": L.layerGroup().addTo(map),
+      "Hatcheries": L.layerGroup().addTo(map),
+      "Ecological Services": L.layerGroup().addTo(map),
+      "Fish and Wildlife Conservation Offices": L.layerGroup().addTo(map)
+    };
+
     new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
-    L.control.layers(baseLayers).addTo(map);
+    L.control.layers(baseLayers, layers).addTo(map);
   }
 
   function onEachFeature(feature, layer) {
@@ -114,7 +133,7 @@
     var type = feature.properties.type;
     if (type === 'National Wildlife Refuge')
       return L.marker(latlng, { icon: icons.blueGoose });
-    else if (type === 'National Fish Hatchery' || type === 'Associated Fish Facility')
+    else if (type === 'National Fish Hatchery')
       return L.marker(latlng, { icon: icons.fisheries });
     else
       return L.marker(latlng, { icon: icons.office });
@@ -133,8 +152,14 @@
     emitter.emit('found:nearest', nearest);
   }
 
-  function addMarkers() {
-    var geojson = L.geoJson(opts.data, {
+  function createOfficeLayer(type) {
+    return L.geoJson(opts.data, {
+      filter: function (feature, latlng) {
+        switch (feature.properties.type) {
+          case type: return true;
+          default: return false;
+        }
+      },
       onEachFeature: onEachFeature,
       pointToLayer: pointToLayer
     }).on('mouseover', function(e) {
@@ -142,12 +167,28 @@
     }).on('mouseout', function(e) {
       e.layer.closePopup();
     });
+  }
 
-    index = leafletKnn(geojson);
+  function addMarkers() {
+    layers = {
+      "Refuges": createOfficeLayer('National Wildlife Refuge'),
+      "Hatcheries": createOfficeLayer('National Fish Hatchery'),
+      "Ecological Services": createOfficeLayer('Ecological Services Field Office'),
+      "Fish and Wildlife Conservation Offices": createOfficeLayer('Fish And Wildlife Conservation Office')
+    };
 
     cluster = L.markerClusterGroup({
       showCoverageOnHover: false
-    }).addLayer(geojson);
+    });
+
+    cluster.addLayer(layers.Refuges);
+    cluster.addLayer(layers.Hatcheries);
+    cluster.addLayer(layers["Ecological Services"]);
+    cluster.addLayer(layers["Fish and Wildlife Conservation Offices"]);
+
+    // There seems to be an issue with adding multiple layers in markercluster beta
+    // https://github.com/Leaflet/Leaflet.markercluster/issues/623
+    // cluster.addLayers([ refuges, hatcheries, es, conservationOffices ]);
 
     map.addLayer(cluster);
     map.fitBounds(cluster.getBounds());
