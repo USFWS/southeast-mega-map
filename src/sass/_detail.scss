@@ -6,7 +6,7 @@ $green: #00796b;
   left: 0;
   padding: 60px 0 0 0;
   position: absolute;
-  width: 400px;
+  width: 100%;
   top: 0;
   transform: translateX(-100%);
   transition: transform .3s;
@@ -15,6 +15,10 @@ $green: #00796b;
   &.active {
     transform: translateX(0);
     transition: transform .3s;
+  }
+
+  @media (min-width: 600px) {
+    width: 400px;
   }
 }
 

@@ -31,14 +31,19 @@ $max-width: 355px;
   width: 100%;
 
   label {
-    display: none;
+    display: block;
+    height: 0;
+    text-indent: -9999px;
+    width: 0;
 
     @media (min-width: 500px) {
       color: black;
       display: inline-block;
+      height: auto;
       font-size: 1.1em;
       margin-right: 9px;
       width: 75px;
+      text-indent: 0;
       transition: width .3s;
     }
   }
