@@ -12,10 +12,11 @@
 
   function init() {
     opts.about = domUtil.create('button', 'leaflet-control-roy', document.body);
+    opts.about.setAttribute('data-tt', 'About this map');
+    domUtil.addClass(opts.about, 'tt-w');
     domUtil.addClass(opts.about, 'about-map');
     opts.imgAbout = domUtil.create('img', '', opts.about);
     opts.imgAbout.setAttribute('src', './svg/help.svg');
-    opts.imgAbout.setAttribute('title', 'About this map');
     opts.modal = domUtil.create('aside', 'about-modal', document.body);
     opts.close = domUtil.create('button', 'modal-close', opts.modal);
     opts.close.innerHTML = '&times;';
