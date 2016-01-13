@@ -5,8 +5,8 @@
 
   var blueGoose = L.icon({
     iconUrl: './svg/blue-goose.svg',
-    iconSize: [50, 70],
-    popupAnchor: [0, -10]
+    iconSize: [70, 90],
+    popupAnchor: [5, -17]
   });
 
   var office = L.icon({
