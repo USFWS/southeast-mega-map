@@ -11,10 +11,8 @@
       modal = false;
 
   function init() {
-    opts.about = domUtil.create('button', 'leaflet-control-roy', document.body);
+    opts.about = domUtil.create('button', ['about-map', 'leaflet-control-roy', 'tt-w'], document.body);
     opts.about.setAttribute('data-tt', 'About this map');
-    domUtil.addClass(opts.about, 'tt-w');
-    domUtil.addClass(opts.about, 'about-map');
     opts.imgAbout = domUtil.create('img', '', opts.about);
     opts.imgAbout.setAttribute('src', './svg/help.svg');
     opts.modal = domUtil.create('aside', 'about-modal', document.body);
