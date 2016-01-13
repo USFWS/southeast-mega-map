@@ -4,7 +4,11 @@
 
   function create(tagName, className, container) {
     var el = document.createElement(tagName);
-    el.className = className;
+
+    if (typeof className === 'string')
+      el.className = className;
+    else if (typeof className === 'object')
+      addClasses(el, className);
 
     if (container)
       container.appendChild(el);
@@ -20,6 +24,12 @@
 
   function addClass(el, name) {
     el.classList.add(name);
+  }
+
+  function addClasses(el, classes) {
+    classes.forEach(function (name) {
+      el.classList.add(name);
+    });
   }
 
   function removeClass(el, name) {
