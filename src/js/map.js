@@ -146,7 +146,8 @@
   }
 
   function findNearest(e) {
-    var nearest = index.nearest(e.latlng, 5);
+    L.popup().setLatLng(e.latlng).setContent('Your Current Location').openOn(map);
+    var nearest = index.nearest(e.latlng, 10);
     domUtil.removeClass(opts.nearest, 'loading');
     opts.imgLocate.setAttribute('src', './svg/current-location.svg');
     emitter.emit('found:nearest', nearest);
