@@ -4,6 +4,10 @@ Mega map is a one-stop-shop interactive map for exploring details about U.S. Fis
 
 This project is under active development.
 
+## Known Issue
+
+Jpegtran-bin is a pain;  I can't get the newer version to install.  I had to install a specific version `npm i -D jpegtran-bin@3.0.4`, then copy the `vendor` folder over to `node_modules/imagemin-cli/node_modules/imagemin-jpegtran/`.
+
 ### Development
 
 First install project dependencies:
