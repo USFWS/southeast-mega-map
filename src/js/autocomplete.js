@@ -31,6 +31,7 @@
     opts.label = _.create('label', '', opts.form);
     opts.label.innerHTML = 'Search:';
     opts.input = _.create('input', 'autocomplete-input', opts.form);
+    opts.input.focus();
     opts.output = _.create('ul', 'autocomplete-results', opts.container);
   }
 
