@@ -6,8 +6,7 @@
   var template = require('../templates/detail.jade');
   var nearestTemplate = require('../templates/nearest.jade');
   var querystring = require('./querystring');
-  var _ = require('./util')._;
-  var domUtil = require('./domUtil');
+  var _ = require('./util');
 
   var opts = {}, active;
 
@@ -17,9 +16,9 @@
   }
 
   function createDetail() {
-    opts.container = domUtil.create('aside', 'detail-container', document.body);
-    opts.content = domUtil.create('section', 'detail-content', opts.container);
-    opts.close = domUtil.create('button', 'detail-toggle', opts.container);
+    opts.container = _.create('aside', 'detail-container', document.body);
+    opts.content = _.create('section', 'detail-content', opts.container);
+    opts.close = _.create('button', 'detail-toggle', opts.container);
     opts.close.innerHTML = '&#9650;';
   }
 
@@ -56,7 +55,7 @@
       emitter.emit('detail:show', -200);
     active = true;
     opts.close.innerHTML = '&#9660;';
-    domUtil.addClass(opts.container, 'active');
+    _.addClass(opts.container, 'active');
   }
 
   function hideDetail() {
@@ -64,14 +63,14 @@
       emitter.emit('detail:hide', 200);
     active = false;
     opts.close.innerHTML = '&#9650;';
-    domUtil.removeClass(opts.container, 'active');
+    _.removeClass(opts.container, 'active');
   }
 
   function toggleDetail() {
     var eventName = (active) ? 'detail:hide' : 'detail:show';
     var distance = (active) ? 200 : -200;
     opts.close.innerHTML = (active) ? '&#9650;' : '&#9660;';
-    domUtil.toggleClass(opts.container, 'active');
+    _.toggleClass(opts.container, 'active');
     active = !active;
     emitter.emit(eventName, distance);
   }

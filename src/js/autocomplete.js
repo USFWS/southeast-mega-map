@@ -3,8 +3,7 @@
 
   var lunr = require('lunr');
   var emitter = require('./mediator');
-  var _ = require('./util')._;
-  var domUtil = require('./domUtil');
+  var _ = require('./util');
 
   var querystring = require('./querystring');
   var OfficeService = require('./offices');
@@ -27,12 +26,12 @@
   }
 
   function createElements() {
-    opts.container = domUtil.create('div', 'autocomplete-widget', document.body);
-    opts.form = domUtil.create('form', 'autocomplete-form', opts.container);
-    opts.label = domUtil.create('label', '', opts.form);
+    opts.container = _.create('div', 'autocomplete-widget', document.body);
+    opts.form = _.create('form', 'autocomplete-form', opts.container);
+    opts.label = _.create('label', '', opts.form);
     opts.label.innerHTML = 'Search:';
-    opts.input = domUtil.create('input', 'autocomplete-input', opts.form);
-    opts.output = domUtil.create('ul', 'autocomplete-results', opts.container);
+    opts.input = _.create('input', 'autocomplete-input', opts.form);
+    opts.output = _.create('ul', 'autocomplete-results', opts.container);
   }
 
   function registerHandlers() {
@@ -48,12 +47,12 @@
   }
 
   function focusInput() {
-    domUtil.addClass(opts.container, 'active');
+    _.addClass(opts.container, 'active');
     opts.input.setAttribute('placeholder', 'Search');
   }
 
   function blurInput() {
-    domUtil.removeClass(opts.container, 'active');
+    _.removeClass(opts.container, 'active');
     opts.input.setAttribute('placeholder', '');
   }
 

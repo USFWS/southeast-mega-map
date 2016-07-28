@@ -3,7 +3,7 @@
 
   var xhr = require('xhr');
   var emitter = require('./mediator');
-  var _ = require('./util')._;
+  var _ = require('./util');
 
   var offices;
 

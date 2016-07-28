@@ -5,9 +5,8 @@
   require('leaflet.markercluster');
   var qs = require('./querystring');
   var emitter = require('./mediator');
-  var domUtil = require('./domUtil');
 
-  var _  = require('./util')._;
+  var _  = require('./util');
 
   L.Icon.Default.imagePath = './images';
 
@@ -23,13 +22,13 @@
   function init(options) {
     opts = _.defaults({}, options, defaults);
     createMap();
-    opts.fullExtent = domUtil.create('button', ['tt-w', 'zoom-to-full-extent', 'leaflet-control-roy'], document.body);
+    opts.fullExtent = _.create('button', ['tt-w', 'zoom-to-full-extent', 'leaflet-control-roy'], document.body);
     opts.fullExtent.setAttribute('data-tt', 'Zoom to full extent');
-    opts.nearest = domUtil.create('button', ['find-nearest', 'tt-w', 'leaflet-control-roy'], document.body);
+    opts.nearest = _.create('button', ['find-nearest', 'tt-w', 'leaflet-control-roy'], document.body);
     opts.nearest.setAttribute('data-tt', 'Find nearest offices');
-    opts.imgLocate = domUtil.create('img', '', opts.nearest);
+    opts.imgLocate = _.create('img', '', opts.nearest);
     opts.imgLocate.setAttribute('src', './svg/current-location.svg');
-    opts.imgExtent = domUtil.create('img', '', opts.fullExtent);
+    opts.imgExtent = _.create('img', '', opts.fullExtent);
     opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
     registerHandlers();
     index = leafletKnn(L.geoJson(opts.data));
@@ -65,7 +64,7 @@
   }
 
   function getLocation() {
-    domUtil.addClass(opts.nearest, 'loading');
+    _.addClass(opts.nearest, 'loading');
     opts.imgLocate.setAttribute('src', './svg/loading.svg');
     map.locate();
   }
@@ -144,7 +143,7 @@
   function findNearest(e) {
     L.popup().setLatLng(e.latlng).setContent('Your Current Location').openOn(map);
     var nearest = index.nearest(e.latlng, 10);
-    domUtil.removeClass(opts.nearest, 'loading');
+    _.removeClass(opts.nearest, 'loading');
     opts.imgLocate.setAttribute('src', './svg/current-location.svg');
     emitter.emit('found:nearest', nearest);
   }
