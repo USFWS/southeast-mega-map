@@ -1,9 +1,9 @@
-- var _ = require('../js/util')._;
+- var _ = require('../js/util');
 h2 Nearest Offices
 ul.nearest-offices
   each office in nearest
     - var office = office.layer.feature.properties;
-    - var slug = "?q=" + _.string.slugify(office.name).toLowerCase();
+    - var slug = "?q=" + _.slugify(office.name).toLowerCase();
     li
       a(href=slug)
         = office.name

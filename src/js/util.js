@@ -6,7 +6,8 @@
   var _ = {
     defaults: require('lodash.defaults'),
     find: require('lodash.find'),
-    string: require('underscore.string'),
+    includes: require('lodash.includes'),
+    slugify: require('underscore.string/slugify'),
     create: create,
     remove: remove,
     addClass: addClass,

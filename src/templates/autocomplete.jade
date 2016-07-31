@@ -1,6 +1,6 @@
 - var _ = require('../js/util');
 each office in offices
-  - var slug = "?q=" + _.string.slugify(office.name).toLowerCase();
+  - var slug = "?q=" + _.slugify(office.name).toLowerCase();
   li
     a(href=slug)
       = office.name
