@@ -1,22 +1,17 @@
 (function () {
 
   var L = require('leaflet');
-  var leafletKnn = require('leaflet-knn');
-  require('leaflet.markercluster');
-  var qs = require('./querystring');
-  var emitter = require('./mediator');
+  var emitter = require('../mediator');
+  var mapLayers = require('./layers');
 
-  var _  = require('./util');
+  var _  = require('../util');
 
   L.Icon.Default.imagePath = './images';
 
   var opts, map, cluster, index, layers;
   var defaults = {
     zoom: 7,
-    mapId: 'map',
-    basemap: {
-      url: 'http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png'
-    }
+    mapId: 'map'
   };
 
   function init(options) {
@@ -31,8 +26,8 @@
     opts.imgExtent = _.create('img', '', opts.fullExtent);
     opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
     registerHandlers();
-    index = leafletKnn(L.geoJson(opts.data));
     if (opts.data) addMarkers();
+    return map;
   }
 
   function flyToOffice(office) {
@@ -83,31 +78,15 @@
   }
 
   function createMap() {
-    var basemap = L.tileLayer(opts.basemap.url, {
-      attribution: opts.basemap.attribution
-    });
-
-    var imagery = L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/{type}/{z}/{x}/{y}.{ext}', {
-    	type: 'sat',
-    	ext: 'jpg',
-    	subdomains: '1234'
-    });
-
-    var baseLayers = {
-      'Open Street Map': basemap,
-      'Imagery': imagery
-    };
 
     var mapOptions = {
-      center: opts.center,
-      zoom: opts.zoom,
       zoomControl: false,
-      layers: [basemap]
+      layers: [mapLayers.baseLayers['Open Street Map']]
     };
-
     map = L.map(opts.mapId, mapOptions);
+    map.fitBounds(opts.bounds);
 
-    var layers = {
+    var overlays = {
       "Refuges": L.layerGroup().addTo(map),
       "Hatcheries": L.layerGroup().addTo(map),
       "Ecological Services": L.layerGroup().addTo(map),
@@ -115,7 +94,7 @@
     };
 
     new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
-    L.control.layers(baseLayers, layers).addTo(map);
+    L.control.layers(mapLayers.baseLayers, mapLayers.overlays).addTo(map);
   }
 
   function onEachFeature(feature, layer) {
@@ -124,7 +103,7 @@
   }
 
   function pointToLayer(feature, latlng) {
-    var icons = require('./icons');
+    var icons = require('../icons');
     var type = feature.properties.type;
     if (type === 'National Wildlife Refuge')
       return L.marker(latlng, { icon: icons.blueGoose });
@@ -187,9 +166,24 @@
     // cluster.addLayers([ refuges, hatcheries, es, conservationOffices ]);
 
     map.addLayer(cluster);
-    map.fitBounds(cluster.getBounds());
   }
 
   module.exports.init = init;
 
 })();
+
+
+// Map.js
+//
+// Deal with query parameters first
+//  Figure out the bounds of the map (?office= or ?state=)
+//  Figure out what layers to enable
+//
+// Pass in some options to a Map constructor
+
+// Map buttons
+//
+// Should be in a separate file
+
+// Refactor
+// Use jade to template out tool buttons
