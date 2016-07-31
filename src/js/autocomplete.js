@@ -6,8 +6,8 @@
   var _ = require('./util');
 
   var querystring = require('./querystring');
-  var OfficeService = require('./offices');
   var template = require('../templates/autocomplete.jade');
+  var OfficeService = require('./offices');
 
   var opts, index;
   var defaults = {
@@ -17,7 +17,7 @@
   function init(options) {
     opts = _.defaults({}, options, defaults);
 
-    if (!opts.data) throw 'You must provide an array of offices';
+    if (!opts.data) throw new Error('You must provide an array of offices');
 
     createElements();
     registerHandlers();
@@ -31,16 +31,17 @@
     opts.label = _.create('label', '', opts.form);
     opts.label.innerHTML = 'Search:';
     opts.input = _.create('input', 'autocomplete-input', opts.form);
-    opts.input.focus();
     opts.output = _.create('ul', 'autocomplete-results', opts.container);
   }
 
   function registerHandlers() {
     opts.output.addEventListener('click', delegatedOfficeLink);
+    opts.form.addEventListener('submit', function (e) { e.preventDefault(); });
     opts.input.addEventListener('keyup', inputKeyup);
     opts.input.addEventListener('focus', focusInput);
     emitter.on('marker:click', updateInputValue);
     emitter.on('blur:input', blurInput);
+    opts.input.focus();
   }
 
   function updateInputValue(office) {
@@ -65,7 +66,7 @@
     // get office by name w/ OfficeService
     // emit event w/office
     if (e.target.nodeName === 'A'){
-      var officeName = querystring.stringify(e.srcElement.href);
+      var officeName = querystring.stringify(e.target.search);
       var office = OfficeService.getOffice(officeName);
       opts.output.innerHTML = '';
       opts.input.value = e.srcElement.textContent;
