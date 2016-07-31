@@ -2,20 +2,23 @@
   'use strict';
 
   var xhr = require('xhr');
+  var L = require('leaflet');
   var emitter = require('./mediator');
   var _ = require('./util');
 
   var offices;
 
-  function init() {
-    downloadOffices();
+  function init(cb) {
+    xhr.get('./data/offices.json', function (err, res) {
+      if (err) return cb(err);
+      if (res.statusCode !== 200) return cb(new Error('Could not download offices.'));
+      offices = JSON.parse(res.body);
+      return cb(null, offices);
+    });
   }
 
-  function downloadOffices() {
-    xhr.get('./data/offices.json', function (err, res) {
-      offices = JSON.parse(res.body);
-      emitter.emit('offices:loaded', offices);
-    });
+  function getBounds() {
+    return L.geoJson(offices).getBounds();
   }
 
   function getOffices() {
@@ -39,6 +42,7 @@
   exports.getOffices = getOffices;
   exports.getOffice = getOffice;
   exports.getRandomOffice = getRandomOffice;
+  exports.getBounds = getBounds;
   exports.init = init;
 
 })();
