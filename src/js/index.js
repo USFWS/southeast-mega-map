@@ -1,19 +1,37 @@
 (function() {
   'use strict';
 
+  var xhr = require('xhr');
+  var qs = require('query-string');
+  var parallel = require('async/parallel');
+
   var autocomplete = require('./autocomplete');
   var toolbar = require('./toolbar');
   var detail = require('./detail');
   var emitter = require('./mediator');
+  var map = require('./map/index.js');
   var OfficeService = require('./offices');
-  var map = require('./map');
+  var StateService = require('./states');
 
-  OfficeService.init();
+  var params = qs.parse(location.search);
 
-  emitter.on('offices:loaded', function (offices) {
+  init();
+
+  function init() {
+    var tasks = [OfficeService.init ];
+    if (params.state) tasks.push( StateService.init );
+
+    parallel(tasks, displayOffices);
+  }
+
+  function displayOffices(err, data) {
+    if (err) console.log(err);
+    var offices = data[0];
+
+    var bounds = (data.length > 1) ? StateService.getBounds(params.state, 'NAME') : OfficeService.getBounds();
 
     map.init({
-      center: [31.6817285,-77.4474468],
+      bounds: bounds,
       data: offices
     });
 
@@ -28,8 +46,43 @@
     });
 
     toolbar.init();
+  }
 
-    // OfficeService.getRandomOffice();
-  });
+  // function displayOffices(err, data) {
+  //   if (err) console.log(err);
+  //
+  //   var Offices = data[0],
+  //       States,
+  //       options = {
+  //         data: Offices.geojson
+  //       };
+  //
+  //   if (data[1])  States = data[1];
+  //
+  //   if (params.state) options.bounds = States.getBounds(params.state, 'NAME');
+  //   else options.bounds = Offices.getBounds();
+  //
+  //   map.init(options);
+  //
+  //   autocomplete.init({
+  //     data: Offices.forList(),
+  //     input: document.querySelector('.autocomplete-input'),
+  //     output: document.querySelector('.autocomplete-results')
+  //   });
+  //
+  //   detail.init({
+  //     output: document.querySelector('.autocomplete-detail')
+  //   });
+  //
+  //   toolbar.init();
+  // }
+  //
+  // function fetchData(url, Model, cb) {
+  //   xhr.get(url, function(err, res, body) {
+  //     if (err) cb(err);
+  //     if (res.statusCode !== 200) cb(new Error('Could not download data.'));
+  //     cb(null, new Model( JSON.parse(res.body) ));
+  //   });
+  // }
 
 })();
