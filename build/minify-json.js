@@ -9,7 +9,7 @@
 
   init();
 
-  fs.watch(input, readFile);
+  // fs.watch(input, readFile);
 
   function init() {
     fs.readdir(input, function(err, files) {
