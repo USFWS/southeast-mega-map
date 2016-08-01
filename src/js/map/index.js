@@ -88,11 +88,18 @@
     map = L.map(opts.mapId, mapOptions);
     map.fitBounds(opts.bounds);
 
+    var states = L.tileLayer.wms('https://maps.bts.dot.gov/services/services/NTAD/States/MapServer/WmsServer?', {
+      format: 'image/png',
+      transparent: true,
+      layers: '0'
+    }).addTo(map);
+
     var overlays = {
       "Refuges": L.layerGroup().addTo(map),
       "Hatcheries": L.layerGroup().addTo(map),
       "Ecological Services": L.layerGroup().addTo(map),
-      "Fish and Wildlife Conservation Offices": L.layerGroup().addTo(map)
+      "Fish and Wildlife Conservation Offices": L.layerGroup().addTo(map),
+      "States": states
     };
 
     new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
