@@ -45,6 +45,8 @@
       output: document.querySelector('.autocomplete-detail')
     });
 
+    if (params.detail === 'true') detail.show();
+
     toolbar.init();
   }
 
