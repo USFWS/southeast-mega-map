@@ -1,6 +1,7 @@
 (function () {
 
   var L = require('leaflet');
+  var leafletKnn = require('leaflet-knn');
   var emitter = require('../mediator');
   var mapLayers = require('./layers');
 
@@ -16,6 +17,7 @@
 
   function init(options) {
     opts = _.defaults({}, options, defaults);
+    index = leafletKnn( L.geoJson(opts.data) );
     createMap();
     opts.fullExtent = _.create('button', ['tt-w', 'zoom-to-full-extent', 'leaflet-control-roy'], document.body);
     opts.fullExtent.setAttribute('data-tt', 'Zoom to full extent');

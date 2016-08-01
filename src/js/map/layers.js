@@ -2,7 +2,6 @@
   'use strict';
 
   var L = require('leaflet');
-  var leafletKnn = require('leaflet-knn');
   var emitter = require('../mediator');
   require('leaflet.markercluster');
   require('leaflet-providers');
