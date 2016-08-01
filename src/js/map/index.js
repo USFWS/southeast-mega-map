@@ -27,7 +27,7 @@
     opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
     registerHandlers();
     if (opts.data) addMarkers();
-    return map;
+    return opts.map;
   }
 
   function flyToOffice(office) {
@@ -94,29 +94,9 @@
     };
 
     new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
-    L.control.layers(mapLayers.baseLayers, mapLayers.overlays).addTo(map);
-  }
+    L.control.layers(mapLayers.baseLayers, overlays).addTo(map);
 
-  function onEachFeature(feature, layer) {
-    layer.bindPopup(feature.properties.name);
-    layer.on({ click: onMarkerClick });
-  }
-
-  function pointToLayer(feature, latlng) {
-    var icons = require('../icons');
-    var type = feature.properties.type;
-    if (type === 'National Wildlife Refuge')
-      return L.marker(latlng, { icon: icons.blueGoose });
-    else if (type === 'National Fish Hatchery')
-      return L.marker(latlng, { icon: icons.fisheries });
-    else
-      return L.marker(latlng, { icon: icons.office });
-  }
-
-  function onMarkerClick(feature) {
-    var office = feature.target.feature;
-    flyToOffice(office);
-    emitter.emit('marker:click', office);
+    return map;
   }
 
   function findNearest(e) {
@@ -127,43 +107,10 @@
     emitter.emit('found:nearest', nearest);
   }
 
-  function createOfficeLayer(type) {
-    return L.geoJson(opts.data, {
-      filter: function (feature, latlng) {
-        switch (feature.properties.type) {
-          case type: return true;
-          default: return false;
-        }
-      },
-      onEachFeature: onEachFeature,
-      pointToLayer: pointToLayer
-    }).on('mouseover', function(e) {
-      e.layer.openPopup();
-    }).on('mouseout', function(e) {
-      e.layer.closePopup();
-    });
-  }
-
   function addMarkers() {
-    layers = {
-      "Refuges": createOfficeLayer('National Wildlife Refuge'),
-      "Hatcheries": createOfficeLayer('National Fish Hatchery'),
-      "Ecological Services": createOfficeLayer('Ecological Services Field Office'),
-      "Fish and Wildlife Conservation Offices": createOfficeLayer('Fish And Wildlife Conservation Office')
-    };
-
-    cluster = L.markerClusterGroup({
-      showCoverageOnHover: false
-    });
-
-    cluster.addLayer(layers.Refuges);
-    cluster.addLayer(layers.Hatcheries);
-    cluster.addLayer(layers["Ecological Services"]);
-    cluster.addLayer(layers["Fish and Wildlife Conservation Offices"]);
-
-    // There seems to be an issue with adding multiple layers in markercluster beta
-    // https://github.com/Leaflet/Leaflet.markercluster/issues/623
-    // cluster.addLayers([ refuges, hatcheries, es, conservationOffices ]);
+    var data = mapLayers.init(opts.data, map);
+    layers = data.overlays;
+    cluster = data.cluster;
 
     map.addLayer(cluster);
   }
