@@ -32,32 +32,14 @@
     return opts.map;
   }
 
-  function flyToOffice(office) {
-    // Clone the coordinates array
-    var latlng = office.geometry.coordinates.slice(0).reverse();
-    // Account for detail panel opening
-    latlng[1] = latlng[1] - 0.135;
-    map.flyTo(latlng, 11);
-  }
-
   function registerHandlers() {
-    emitter.on('office:selected', flyToOffice);
+    emitter.on('office:selected', mapLayers.flyToOffice);
     emitter.on('detail:hide', panMap);
     emitter.on('detail:show', panMap);
     opts.fullExtent.addEventListener('click', zoomToFullExtent);
     opts.nearest.addEventListener('click', getLocation);
     map.on('click', blurInput);
     map.on('locationfound', findNearest);
-    map.on('overlayadd', layerAdd);
-    map.on('overlayremove', layerRemove);
-  }
-
-  function layerAdd(layer) {
-    cluster.addLayer(layers[layer.name]);
-  }
-
-  function layerRemove(layer) {
-    cluster.removeLayer(layers[layer.name]);
   }
 
   function getLocation() {
@@ -91,7 +73,8 @@
     var states = L.tileLayer.wms('https://maps.bts.dot.gov/services/services/NTAD/States/MapServer/WmsServer?', {
       format: 'image/png',
       transparent: true,
-      layers: '0'
+      layers: '0',
+      attribution: '<a href="http://osav.usdot.opendata.arcgis.com/datasets/34f8a046fef944f39d8a65004a431a1f_0">Dept. of Transportation</a>'
     }).addTo(map);
 
     var overlays = {
@@ -99,7 +82,7 @@
       "Hatcheries": L.layerGroup().addTo(map),
       "Ecological Services": L.layerGroup().addTo(map),
       "Fish and Wildlife Conservation Offices": L.layerGroup().addTo(map),
-      "States": states
+      "State Boundaries": states
     };
 
     new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);

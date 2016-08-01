@@ -12,7 +12,7 @@
       cluster;
 
   var baseLayers = {
-    'Open Street Map': L.tileLayer.provider('Thunderforest.Outdoors'),
+    'Open Street Map': L.tileLayer.provider('Esri.OceanBasemap'),
     'Imagery': L.tileLayer.provider('Esri.WorldImagery')
   };
 
@@ -38,12 +38,21 @@
     cluster.addLayer(overlays.Hatcheries);
     cluster.addLayer(overlays["Ecological Services"]);
     cluster.addLayer(overlays["Fish and Wildlife Conservation Offices"]);
+    map.on('overlayadd', layerAdd);
+    map.on('overlayremove', layerRemove);
 
     return {
       overlays: overlays,
       cluster: cluster
     };
+  }
 
+  function layerAdd(layer) {
+    cluster.addLayer(overlays[layer.name]);
+  }
+
+  function layerRemove(layer) {
+    cluster.removeLayer(overlays[layer.name]);
   }
 
   function createOfficeLayer(type) {
@@ -92,6 +101,7 @@
 
   module.exports = {
     init: init,
+    flyToOffice: flyToOffice,
     baseLayers: baseLayers,
     overlays: overlays,
     cluster: cluster
