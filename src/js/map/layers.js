@@ -17,12 +17,20 @@
     'Imagery': L.tileLayer.provider('Esri.WorldImagery')
   };
 
-  var states = L.tileLayer.wms('https://maps.bts.dot.gov/services/services/NTAD/States/MapServer/WmsServer?', {
-    format: 'image/png',
-    transparent: true,
-    layers: '0',
-    attribution: '<a href="http://osav.usdot.opendata.arcgis.com/datasets/34f8a046fef944f39d8a65004a431a1f_0">Dept. of Transportation</a>'
-  });
+  var wms = {
+    "State Boundaries": L.tileLayer.wms('https://maps.bts.dot.gov/services/services/NTAD/States/MapServer/WmsServer?', {
+      format: 'image/png',
+      transparent: true,
+      layers: '0',
+      attribution: '<a href="http://osav.usdot.opendata.arcgis.com/datasets/34f8a046fef944f39d8a65004a431a1f_0">Dept. of Transportation</a>'
+    }),
+    "114th Congressional Districts": L.tileLayer.wms('https://www.sciencebase.gov/arcgis/services/Catalog/57a0e84fe4b006cb4554a439/MapServer/WMSServer?', {
+      format: 'image/png',
+      layers: '0',
+      transparent: true,
+      attribution: '<a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_cds.html">Census Bureau</a>'
+    })
+  };
 
   function init(officeData, layersOnLoad, theMap) {
     offices = officeData;
@@ -38,7 +46,8 @@
     if (layersOnLoad) addSomeLayers(overlays, layersOnLoad);
     else addAllLayers(overlays);
 
-    control.addOverlay(states, 'State Boundaries');
+    control.addOverlay(wms['114th Congressional Districts'], '114th Congressional Districts');
+    control.addOverlay(wms['State Boundaries'], 'State Boundaries');
     control.addTo(map);
     cluster.addTo(map);
 
@@ -62,15 +71,19 @@
       cluster.checkIn(layer);
       if (_.includes(layers, key.toLowerCase())) cluster.addLayer(layer);
     });
+
+    _.map(wms, function(layer, key) {
+      if (_.includes(layers, key.toLowerCase())) map.addLayer(layer);
+    });
   }
 
   function layerAdd(layer) {
-    if (layer.name === 'State Boundaries') return;
+    if (layer.layer._wmsVersion) return;
     cluster.addLayer(layer);
   }
 
   function layerRemove(layer) {
-    if (layer.name === 'State Boundaries') return;
+    if (layer.layer._wmsVersion) return;
     cluster.removeLayer(layer);
   }
 
