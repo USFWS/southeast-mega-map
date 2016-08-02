@@ -18,7 +18,7 @@
   init();
 
   function init() {
-    var tasks = [OfficeService.init ];
+    var tasks = [OfficeService.init];
     if (params.state) tasks.push( StateService.init );
 
     parallel(tasks, displayOffices);
@@ -28,12 +28,15 @@
     if (err) console.log(err);
     var offices = data[0];
 
-    var bounds = (data.length > 1) ? StateService.getBounds(params.state, 'NAME') : OfficeService.getBounds();
+    var bounds = (params.state) ? StateService.getBounds(params.state, 'NAME') : OfficeService.getBounds();
 
-    map.init({
+    var mapOptions = {
       bounds: bounds,
       data: offices
-    });
+    };
+    if (params.layers) mapOptions.layers = normalizeLayers(params.layers);
+
+    map.init(mapOptions);
 
     autocomplete.init({
       data: offices.features,
@@ -50,41 +53,10 @@
     toolbar.init();
   }
 
-  // function displayOffices(err, data) {
-  //   if (err) console.log(err);
-  //
-  //   var Offices = data[0],
-  //       States,
-  //       options = {
-  //         data: Offices.geojson
-  //       };
-  //
-  //   if (data[1])  States = data[1];
-  //
-  //   if (params.state) options.bounds = States.getBounds(params.state, 'NAME');
-  //   else options.bounds = Offices.getBounds();
-  //
-  //   map.init(options);
-  //
-  //   autocomplete.init({
-  //     data: Offices.forList(),
-  //     input: document.querySelector('.autocomplete-input'),
-  //     output: document.querySelector('.autocomplete-results')
-  //   });
-  //
-  //   detail.init({
-  //     output: document.querySelector('.autocomplete-detail')
-  //   });
-  //
-  //   toolbar.init();
-  // }
-  //
-  // function fetchData(url, Model, cb) {
-  //   xhr.get(url, function(err, res, body) {
-  //     if (err) cb(err);
-  //     if (res.statusCode !== 200) cb(new Error('Could not download data.'));
-  //     cb(null, new Model( JSON.parse(res.body) ));
-  //   });
-  // }
-
+  function normalizeLayers(layers) {
+    var normalized = [];
+    if (typeof layers === 'string') normalized.push(layers);
+    else normalized = layers;
+    return normalized.map(function (l) { return l.toLowerCase(); });
+  }
 })();
