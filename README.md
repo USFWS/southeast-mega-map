@@ -19,7 +19,9 @@ By default the map fit's it's bounds to the cluster of offices layers.  If inste
 
 ### Toggling Layers on Load
 
-By default all of the office types are enabled on page load.  If you would prefer to display one or more layers on load use the `layers` query parameter.  If this parameter is present only those layers including in the URL will be displayed on the map when it loads.
+By default all of the office types are enabled on page load.  If you would prefer to display one or more layers on load use the `layers` query parameter.  If this parameter is present only those layers including in the URL will be displayed on the map when it loads.  For the exact names of layers that can be toggled check out the layer switcher in the top right of the screen.  For example, if you want to toggle the FWC Offices layer check the layer switcher and you'll find you should use: `?layer=fish+and+wildlife+conservation+offices`
+
+![Layer Switcher](https://github.com/USFWS/southeast-mega-map/blob/master/layer-switcher.png)
 
 #### Example URLS:
 - Display only Refuges: [`https://usfws.github.io/southeast-mega-map/?layers=Refuges`](https://usfws.github.io/southeast-mega-map/?layers=Refuges)
