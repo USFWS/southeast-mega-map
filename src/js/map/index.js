@@ -28,7 +28,6 @@
     opts.imgExtent = _.create('img', '', opts.fullExtent);
     opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
     registerHandlers();
-    if (opts.data) addMarkers();
     return opts.map;
   }
 
@@ -57,36 +56,21 @@
   }
 
   function zoomToFullExtent() {
-    map.flyToBounds(cluster.getBounds());
+    map.flyToBounds(mapLayers.getBounds());
     emitter.emit('zoom:fullextent');
   }
 
   function createMap() {
-
     var mapOptions = {
       zoomControl: false,
-      layers: [mapLayers.baseLayers['Open Street Map']]
+      layers: [mapLayers.baseLayers['ESRI Oceans']]
     };
+
     map = L.map(opts.mapId, mapOptions);
     map.fitBounds(opts.bounds);
-
-    var states = L.tileLayer.wms('https://maps.bts.dot.gov/services/services/NTAD/States/MapServer/WmsServer?', {
-      format: 'image/png',
-      transparent: true,
-      layers: '0',
-      attribution: '<a href="http://osav.usdot.opendata.arcgis.com/datasets/34f8a046fef944f39d8a65004a431a1f_0">Dept. of Transportation</a>'
-    }).addTo(map);
-
-    var overlays = {
-      "Refuges": L.layerGroup().addTo(map),
-      "Hatcheries": L.layerGroup().addTo(map),
-      "Ecological Services": L.layerGroup().addTo(map),
-      "Fish and Wildlife Conservation Offices": L.layerGroup().addTo(map),
-      "State Boundaries": states
-    };
+    mapLayers.init(opts.data, opts.layers, map);
 
     new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
-    L.control.layers(mapLayers.baseLayers, overlays).addTo(map);
 
     return map;
   }
@@ -96,15 +80,8 @@
     var nearest = index.nearest(e.latlng, 10);
     _.removeClass(opts.nearest, 'loading');
     opts.imgLocate.setAttribute('src', './svg/current-location.svg');
+    console.log(nearest);
     emitter.emit('found:nearest', nearest);
-  }
-
-  function addMarkers() {
-    var data = mapLayers.init(opts.data, map);
-    layers = data.overlays;
-    cluster = data.cluster;
-
-    map.addLayer(cluster);
   }
 
   module.exports.init = init;
