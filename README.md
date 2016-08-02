@@ -28,6 +28,14 @@ By default all of the office types are enabled on page load.  If you would prefe
 - Display Refuges and Hatcheries: [`https://usfws.github.io/southeast-mega-map/?layers=Refuges&layers=hatcheries`](https://usfws.github.io/southeast-mega-map/?layers=Refuges&layers=hatcheries)
 - Display only Refuges and zoom to Louisiana: [`https://usfws.github.io/southeast-mega-map/?layers=Refuges&state=Louisiana`](https://usfws.github.io/southeast-mega-map/?layers=Refuges&state=Louisiana)
 
+### Display Detail Panel
+
+The detail panel is hidden by default when the page loads.  If you want to have it displayed just include `?detail=true` in the URL.
+
+### Example:
+
+- Zoom to Alabama with the Detail panel open: [`https://usfws.github.io/southeast-mega-map/?detail=true&state=Alabama`](https://usfws.github.io/southeast-mega-map/?detail=true&state=Alabama)
+
 ### Development
 
 First install project dependencies:
