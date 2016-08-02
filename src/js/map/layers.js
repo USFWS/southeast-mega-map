@@ -10,7 +10,7 @@
 
   var offices,
       map,
-      cluster = L.markerClusterGroup.layerSupport();
+      cluster = L.markerClusterGroup.layerSupport({ showCoverageOnHover: false });
 
   var baseLayers = {
     'ESRI National Geographic': L.tileLayer.provider('Esri.NatGeoWorldMap'),
