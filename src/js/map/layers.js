@@ -13,7 +13,7 @@
       cluster = L.markerClusterGroup.layerSupport();
 
   var baseLayers = {
-    'ESRI Oceans': L.tileLayer.provider('Esri.OceanBasemap'),
+    'ESRI National Geographic': L.tileLayer.provider('Esri.NatGeoWorldMap'),
     'Imagery': L.tileLayer.provider('Esri.WorldImagery')
   };
 

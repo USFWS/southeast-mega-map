@@ -63,7 +63,7 @@
   function createMap() {
     var mapOptions = {
       zoomControl: false,
-      layers: [mapLayers.baseLayers['ESRI Oceans']]
+      layers: [mapLayers.baseLayers['ESRI National Geographic']]
     };
 
     map = L.map(opts.mapId, mapOptions);
