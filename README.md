@@ -13,18 +13,18 @@ Deep linking refers to using a URL to content within a website or page rather th
 By default the map fit's it's bounds to the cluster of offices layers.  If instead you'd like to start the map over a state/territory or several states/territories use the `state` query parameter.  You can use either state names or abbreviations, both of which are case insensitive. Spaces might be replaced with the appropriate URL encoding automatically , but to be safe you should replace spaces with either `+`, or `%20` (`+` seems to be easier to read).
 
 #### Example URLS:
-- Alabama and Florida: `https://usfws.github.io/southeast-mega-map/?state=AL&state=GA`
-- Puerto Rico and Virgin Islands: `https://usfws.github.io/southeast-mega-map/?state=Puerto+Rico&state=VI`
-- North Carolina: `https://usfws.github.io/southeast-mega-map/?state=north%20carolina`
+- Alabama and Florida: [`https://usfws.github.io/southeast-mega-map/?state=AL&state=GA`](https://usfws.github.io/southeast-mega-map/?state=AL&state=GA)
+- Puerto Rico and Virgin Islands: [`https://usfws.github.io/southeast-mega-map/?state=Puerto+Rico&state=VI`](https://usfws.github.io/southeast-mega-map/?state=Puerto+Rico&state=VI)
+- North Carolina: [`https://usfws.github.io/southeast-mega-map/?state=north%20carolina`](https://usfws.github.io/southeast-mega-map/?state=north%20carolina)
 
 ### Toggling Layers on Load
 
 By default all of the office types are enabled on page load.  If you would prefer to display one or more layers on load use the `layers` query parameter.  If this parameter is present only those layers including in the URL will be displayed on the map when it loads.
 
 #### Example URLS:
-- Display only Refuges: `https://usfws.github.io/southeast-mega-map/?layers=Refuges`
-- Display Refuges and Hatcheries: `https://usfws.github.io/southeast-mega-map/?layers=Refuges&layers=hatcheries`
-- Display Refuges and zoom to Louisiana: `https://usfws.github.io/southeast-mega-map/?layers=Refuges&state=Louisiana`
+- Display only Refuges: [`https://usfws.github.io/southeast-mega-map/?layers=Refuges`](https://usfws.github.io/southeast-mega-map/?layers=Refuges)
+- Display Refuges and Hatcheries: [`https://usfws.github.io/southeast-mega-map/?layers=Refuges&layers=hatcheries`](https://usfws.github.io/southeast-mega-map/?layers=Refuges&layers=hatcheries)
+- Display only Refuges and zoom to Louisiana: [`https://usfws.github.io/southeast-mega-map/?layers=Refuges&state=Louisiana`](https://usfws.github.io/southeast-mega-map/?layers=Refuges&state=Louisiana)
 
 ### Development
 
