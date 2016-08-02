@@ -6,11 +6,14 @@
   var jade = require('jade');
   var fs = require('fs');
 
+  var officePath = './src/data/offices.json';
+  var htmlPath = './dist/index.html';
+
   var template = jade.compileFile('./src/templates/li.jade');
 
   var tasks = [
-    getFile.bind(null, './dist/index.html'),
-    getFile.bind(null, './dist/data/offices.json')
+    getFile.bind(null, htmlPath),
+    getFile.bind(null, officePath)
   ];
 
   parallel(tasks, injectOffices);
@@ -33,7 +36,7 @@
 
     $list.append(html);
 
-    fs.writeFile('./dist/index.html', $.html(), 'utf-8', function (err) {
+    fs.writeFile(htmlPath, $.html(), 'utf-8', function (err) {
       if (err) console.error(err);
     });
   }
