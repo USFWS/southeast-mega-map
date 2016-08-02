@@ -3,56 +3,75 @@
 
   var L = require('leaflet');
   var emitter = require('../mediator');
+  var _ = require('../util');
   require('leaflet.markercluster');
   require('leaflet-providers');
+  require('./marker-cluster-layer-support');
 
   var offices,
       map,
-      overlays,
-      cluster;
+      cluster = L.markerClusterGroup.layerSupport();
 
   var baseLayers = {
-    'Open Street Map': L.tileLayer.provider('Esri.OceanBasemap'),
+    'ESRI Oceans': L.tileLayer.provider('Esri.OceanBasemap'),
     'Imagery': L.tileLayer.provider('Esri.WorldImagery')
   };
 
-  function init(officeData, theMap) {
+  var states = L.tileLayer.wms('https://maps.bts.dot.gov/services/services/NTAD/States/MapServer/WmsServer?', {
+    format: 'image/png',
+    transparent: true,
+    layers: '0',
+    attribution: '<a href="http://osav.usdot.opendata.arcgis.com/datasets/34f8a046fef944f39d8a65004a431a1f_0">Dept. of Transportation</a>'
+  });
+
+  function init(officeData, layersOnLoad, theMap) {
     offices = officeData;
     map = theMap;
-
-    overlays = {
-      "Refuges": createOfficeLayer('National Wildlife Refuge'),
-      "Hatcheries": createOfficeLayer('National Fish Hatchery'),
-      "Ecological Services": createOfficeLayer('Ecological Services Field Office'),
-      "Fish and Wildlife Conservation Offices": createOfficeLayer('Fish And Wildlife Conservation Office')
+    var overlays = {
+      'Refuges': L.layerGroup().addLayer( createOfficeLayer('National Wildlife Refuge') ),
+      'Hatcheries': L.layerGroup().addLayer( createOfficeLayer('National Fish Hatchery') ),
+      'Ecological Services': L.layerGroup().addLayer( createOfficeLayer('Ecological Services Field Office') ),
+      'Fish and Wildlife Conservation Offices': L.layerGroup().addLayer( createOfficeLayer('Fish And Wildlife Conservation Office') )
     };
+    var control = L.control.layers(baseLayers, overlays);
 
-    cluster = L.markerClusterGroup({
-      showCoverageOnHover: false
-    });
+    if (layersOnLoad) addSomeLayers(overlays, layersOnLoad);
+    else addAllLayers(overlays);
 
-    // There seems to be an issue with adding multiple layers in markercluster beta
-    // https://github.com/Leaflet/Leaflet.markercluster/issues/623
-    // cluster.addLayers([ refuges, hatcheries, es, conservationOffices ]);
-    cluster.addLayer(overlays.Refuges);
-    cluster.addLayer(overlays.Hatcheries);
-    cluster.addLayer(overlays["Ecological Services"]);
-    cluster.addLayer(overlays["Fish and Wildlife Conservation Offices"]);
+    control.addOverlay(states, 'State Boundaries');
+    control.addTo(map);
+    cluster.addTo(map);
+
     map.on('overlayadd', layerAdd);
     map.on('overlayremove', layerRemove);
+  }
 
-    return {
-      overlays: overlays,
-      cluster: cluster
-    };
+  function addAllLayers(overlays) {
+    _.map(overlays, function(layer, key) {
+      cluster.checkIn(layer);
+      cluster.addLayer(layer);
+    });
+  }
+
+  function getBounds() {
+    return cluster.getBounds();
+  }
+
+  function addSomeLayers(overlays, layers) {
+    _.map(overlays, function(layer, key) {
+      cluster.checkIn(layer);
+      if (_.includes(layers, key.toLowerCase())) cluster.addLayer(layer);
+    });
   }
 
   function layerAdd(layer) {
-    cluster.addLayer(overlays[layer.name]);
+    if (layer.name === 'State Boundaries') return;
+    cluster.addLayer(layer);
   }
 
   function layerRemove(layer) {
-    cluster.removeLayer(overlays[layer.name]);
+    if (layer.name === 'State Boundaries') return;
+    cluster.removeLayer(layer);
   }
 
   function createOfficeLayer(type) {
@@ -92,6 +111,7 @@
   }
 
   function flyToOffice(office) {
+    console.log(office);
     // Clone the coordinates array
     var latlng = office.geometry.coordinates.slice(0).reverse();
     // Account for detail panel opening
@@ -103,7 +123,7 @@
     init: init,
     flyToOffice: flyToOffice,
     baseLayers: baseLayers,
-    overlays: overlays,
+    getBounds: getBounds,
     cluster: cluster
   };
 
