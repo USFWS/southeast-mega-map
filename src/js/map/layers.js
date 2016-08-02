@@ -29,6 +29,12 @@
       layers: '0',
       transparent: true,
       attribution: '<a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_cds.html">Census Bureau</a>'
+    }),
+    "Ducks Unlimited Flyways": L.tileLayer.wms('https://www.sciencebase.gov/arcgis/services/Catalog/57a102c1e4b006cb4554a4d3/MapServer/WMSServer?', {
+      format: 'image/png',
+      layers: '0',
+      transparent: true,
+      attribution: '<a href="http://www.ducks.org/conservation/gis/gis-spatial-data-download/page4">Ducks Unlimited</a>'
     })
   };
 
@@ -48,6 +54,7 @@
 
     control.addOverlay(wms['114th Congressional Districts'], '114th Congressional Districts');
     control.addOverlay(wms['State Boundaries'], 'State Boundaries');
+    control.addOverlay(wms['Ducks Unlimited Flyways'], 'Ducks Unlimited Flyways');
     control.addTo(map);
     cluster.addTo(map);
 
