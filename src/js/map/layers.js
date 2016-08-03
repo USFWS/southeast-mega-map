@@ -10,6 +10,7 @@
 
   var offices,
       map,
+      overlays,
       cluster = L.markerClusterGroup.layerSupport({ showCoverageOnHover: false });
 
   var baseLayers = {
@@ -42,7 +43,7 @@
   function init(officeData, layersOnLoad, theMap) {
     offices = officeData;
     map = theMap;
-    var overlays = {
+    overlays = {
       'Refuges': L.layerGroup().addLayer( createOfficeLayer('National Wildlife Refuge') ),
       'Hatcheries': L.layerGroup().addLayer( createOfficeLayer('National Fish Hatchery') ),
       'Ecological Services': L.layerGroup().addLayer( createOfficeLayer('Ecological Services Field Office') ),
@@ -132,12 +133,24 @@
   }
 
   function flyToOffice(office) {
-    console.log(office);
+    var type = office.properties.type.toLowerCase();
+    var filtered = _.filter(cluster.getLayers(), function(layer) {
+      return layer.feature == office;
+    });
+    if (filtered.length === 0) toggleByType(type);
     // Clone the coordinates array
     var latlng = office.geometry.coordinates.slice(0).reverse();
     // Account for detail panel opening
     latlng[1] = latlng[1] - 0.135;
     map.flyTo(latlng, 11);
+  }
+
+  function toggleByType(type) {
+    console.log(type);
+    if (type.indexOf('ecological') > -1) cluster.addLayer(overlays['Ecological Services']);
+    if (type.indexOf('refuge') > -1) cluster.addLayer(overlays.Refuges);
+    if (type.indexOf('hatchery') > -1) cluster.addLayer(overlays.Hatcheries);
+    if (type.indexOf('conservation') > -1) cluster.addLayer(overlays['Fish and Wildlife Conservation Offices']);
   }
 
   module.exports = {
