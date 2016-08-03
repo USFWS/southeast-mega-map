@@ -111,6 +111,7 @@
     });
 
     render(results);
+    emitter.emit('autocomplete:results', results);
   }
 
   function render(data) {
