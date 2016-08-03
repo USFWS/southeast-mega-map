@@ -4,6 +4,7 @@
   var leafletKnn = require('leaflet-knn');
   var emitter = require('../mediator');
   var mapLayers = require('./layers');
+  var OfficeService = require('../offices');
 
   var _  = require('../util');
 
@@ -69,6 +70,9 @@
     map = L.map(opts.mapId, mapOptions);
     map.fitBounds(opts.bounds);
     mapLayers.init(opts.data, opts.layers, map);
+
+    if (opts.initOnOffice)
+      mapLayers.flyToOffice( OfficeService.getOffice(opts.initOnOffice) );
 
     new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
 
