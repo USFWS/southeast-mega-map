@@ -1,0 +1,17 @@
+.office-list {
+  background: white;
+  height: 100vh;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 5em 3%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  &.active {
+    z-index: 3;
+  }
+}
