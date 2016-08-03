@@ -3,10 +3,31 @@ $green: #00796b;
 .logo {
   display: block;
   margin: 1em auto 0;
-  width: 125px;
+  width: 115px;
 }
 .map-title {
   text-align: center;
+}
+
+.icon {
+  width: 30px;
+}
+
+.marker {
+  width: 45px;
+}
+
+.icon-list,
+.office-list {
+  padding-left: 10px;
+
+  img {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 .detail-container {
