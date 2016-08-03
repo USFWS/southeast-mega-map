@@ -2,5 +2,5 @@
 each office in offices
   - var slug = "?q=" + _.slugify(office.name).toLowerCase();
   li
-    a(href=slug)
+    a(href=slug, class="autocomplete-link")
       = office.name

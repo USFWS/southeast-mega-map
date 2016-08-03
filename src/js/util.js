@@ -9,13 +9,16 @@
     map: require('lodash.map'),
     filter: require('lodash.filter'),
     includes: require('lodash.includes'),
+    each: require('lodash.foreach'),
     slugify: require('underscore.string/slugify'),
     create: create,
     remove: remove,
     addClass: addClass,
     addClasses: addClasses,
+    hasClass: require('has-class'),
     removeClass: removeClass,
-    toggleClass: toggleClass
+    toggleClass: toggleClass,
+    tabbable: require('tabbable')
   };
 
   function create(tagName, className, container) {

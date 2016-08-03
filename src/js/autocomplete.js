@@ -38,6 +38,7 @@
     opts.form.addEventListener('submit', function (e) { e.preventDefault(); });
     opts.input.addEventListener('keyup', inputKeyup);
     opts.input.addEventListener('focus', focusInput);
+    opts.container.addEventListener('keyup', navigationHandler);
     emitter.on('marker:click', updateInputValue);
     emitter.on('blur:input', blurInput);
     opts.input.focus();
@@ -74,7 +75,7 @@
     }
   }
 
-  function inputKeyup() {
+  function inputKeyup(e) {
     emitter.emit('autocomplete:keyup');
     if (opts.input.value.length === 0) {
       emitter.emit('autocomplete:empty', opts.data);
@@ -82,6 +83,43 @@
       return;
     } else if (opts.input.value.length < opts.minLength) return;
     search(opts.input.value);
+  }
+
+  function navigationHandler(e) {
+    // Up Key should go to the previous result in the list
+    if (e.which === 38) goToTabbableElement('previous');
+    // Down Key should go to the next result in the list
+    if (e.which === 40) goToTabbableElement('next');
+    // Escape should clear the results and focus on the input
+    if (e.which === 27) {
+      opts.input.focus();
+      opts.output.innerHTML = '';
+    }
+  }
+
+  function goToTabbableElement(direction) {
+    if ( !_.hasClass(opts.container, 'active') ) return;
+    var index, modifier;
+    var tabbable = _.tabbable(opts.container);
+    if (direction === 'next') modifier = 1;
+    else if (direction === 'previous') modifier = -1;
+    else throw new Error('Direction for _goToTabbableElement must be \'next\' or \'last\'.');
+
+    _.each(tabbable, function (el, i) {
+      if ( document.activeElement === el ) index = i + modifier;
+    });
+
+    if (index === -1) index = 0; // Don't go further than the first element
+    else if (index === tabbable.length) index = index -1; // Don't go further than the last element
+    tabbable[index].focus();
+  }
+
+  function focusResults() {
+    var active = document.activeElement;
+    var tabbable = _.tabbable(opts.container);
+    console.log(tabbable);
+    if ( _.hasClass(active, 'autocomplete-input') ) opts.output.querySelector('a').focus();
+
   }
 
   function createIndex () {
