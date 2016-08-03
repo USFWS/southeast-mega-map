@@ -34,6 +34,7 @@
       format: 'image/png',
       layers: '0',
       transparent: true,
+      opacity: .5,
       attribution: '<a href="http://www.ducks.org/conservation/gis/gis-spatial-data-download/page4">Ducks Unlimited</a>'
     })
   };
