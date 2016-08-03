@@ -10,12 +10,21 @@
   }
 
   function registerHandlers() {
-    emitter.on('autocomplete:results', render);
+    emitter.on('autocomplete:results', resultsHandler);
+    emitter.on('autocomplete:empty', emptyHandler);
+  }
+
+  function resultsHandler(offices) {
+    var data = offices.map(function (office) { return { properties: office } });
+    render(data);
+  }
+
+  function emptyHandler(offices) {
+    render(offices);
   }
 
   function render(offices) {
-    var data = offices.map(function (office) { return { properties: office } });
-    list.innerHTML = template({ offices: data });
+    list.innerHTML = template({ offices: offices });
   }
 
   module.exports.init = init;

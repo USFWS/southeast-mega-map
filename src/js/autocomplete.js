@@ -11,12 +11,11 @@
 
   var opts, index;
   var defaults = {
-    minLength: 0
+    minLength: 2
   };
 
   function init(options) {
     opts = _.defaults({}, options, defaults);
-
     if (!opts.data) throw new Error('You must provide an array of offices');
 
     createElements();
@@ -65,7 +64,7 @@
     // parse anchor query string for office name
     // get office by name w/ OfficeService
     // emit event w/office
-    if (e.target.nodeName === 'A'){
+    if (e.target.nodeName === 'A') {
       var officeName = querystring.stringify(e.target.search);
       var office = OfficeService.getOffice(officeName);
       opts.output.innerHTML = '';
@@ -77,7 +76,11 @@
 
   function inputKeyup() {
     emitter.emit('autocomplete:keyup');
-    if (opts.input.value.length < opts.minLength) return;
+    if (opts.input.value.length === 0) {
+      emitter.emit('autocomplete:empty', opts.data);
+      opts.output.innerHTML = '';
+      return;
+    } else if (opts.input.value.length < opts.minLength) return;
     search(opts.input.value);
   }
 
