@@ -17,6 +17,16 @@ By default the map fit's it's bounds to the cluster of offices layers.  If inste
 - Puerto Rico and Virgin Islands: [`https://usfws.github.io/southeast-mega-map/?state=Puerto+Rico&state=VI`](https://usfws.github.io/southeast-mega-map/?state=Puerto+Rico&state=VI)
 - North Carolina: [`https://usfws.github.io/southeast-mega-map/?state=north%20carolina`](https://usfws.github.io/southeast-mega-map/?state=north%20carolina)
 
+### Initialize On a Specific Office
+
+To zoom the map to a specific office when the map loads use the `?office` query parameter.  If you provide more than one office `?office=Currituck+National+Wildlife+Refuge&office=Kentucky+Ecological+Services+Field+Office` only the first office will be used.  To figure out what the field station is called click on or search for the office and take note of the office's name.
+
+#### Example URLS:
+
+- Currituck National Wildlife Refuge: [https://usfws.github.io/southeast-mega-map/?office=Currituck+National+Wildlife+Refuge](https://usfws.github.io/southeast-mega-map/?office=Currituck+National+Wildlife+Refuge)
+- Kentucky Ecological Service Field Office: [https://usfws.github.io/southeast-mega-map/?office=Kentucky+Ecological+Services+Field+Office](https://usfws.github.io/southeast-mega-map/?office=Kentucky+Ecological+Services+Field+Office)
+- Dale Hallow National Fish Hatchery: [https://usfws.github.io/southeast-mega-map/?office=Dale+Hollow+National+Fish+Hatchery](https://usfws.github.io/southeast-mega-map/?office=Dale+Hollow+National+Fish+Hatchery)
+
 ### Toggling Layers on Load
 
 By default all of the office types are enabled on page load.  If you would prefer to display one or more layers on load use the `layers` query parameter.  If this parameter is present only those layers including in the URL will be displayed on the map when it loads.  For the exact names of layers that can be toggled check out the layer switcher in the top right of the screen.  For example, if you want to toggle the FWC Offices layer check the layer switcher and you'll find you should use: `?layer=fish+and+wildlife+conservation+offices`
