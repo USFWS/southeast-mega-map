@@ -1,10 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import 'fonts';
 
 html {
   box-sizing: border-box;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial;
   font-size: 1.2em;
   max-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Merriweather, Georgia, Verdana, serif;
 }
 
 *, *:before, *:after {
