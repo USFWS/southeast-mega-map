@@ -44,7 +44,7 @@
     e.preventDefault();
 
     if (e.target.nodeName === 'A'){
-      var officeName = querystring.stringify(e.srcElement.href);
+      var officeName = querystring.stringify(e.target.href);
       var office = OfficeService.getOffice(officeName);
       renderOffice(office);
       emitter.emit('office:selected', office);
