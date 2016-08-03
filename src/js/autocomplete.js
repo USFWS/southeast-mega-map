@@ -68,7 +68,7 @@
       var officeName = querystring.stringify(e.target.search);
       var office = OfficeService.getOffice(officeName);
       opts.output.innerHTML = '';
-      opts.input.value = e.srcElement.textContent;
+      opts.input.value = e.target.textContent;
       emitter.emit('office:selected', office);
       blurInput();
     }
