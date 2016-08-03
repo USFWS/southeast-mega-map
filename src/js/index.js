@@ -28,6 +28,7 @@
   function displayOffices(err, data) {
     if (err) console.log(err);
     var offices = data[0];
+    var initOnOffice = null;
 
     var bounds = (params.state) ? StateService.getBounds(params.state, 'NAME') : OfficeService.getBounds();
 
@@ -35,7 +36,8 @@
       bounds: bounds,
       data: offices
     };
-    if (params.layers) mapOptions.layers = normalizeLayers(params.layers);
+    if (params.layers) mapOptions.layers = normalizeParams(params.layers);
+    if (params.office) mapOptions.initOnOffice = normalizeParams(params.office)[0];
 
     map.init(mapOptions);
     officeList.init();
@@ -55,10 +57,10 @@
     toolbar.init();
   }
 
-  function normalizeLayers(layers) {
+  function normalizeParams(params) {
     var normalized = [];
-    if (typeof layers === 'string') normalized.push(layers);
-    else normalized = layers;
-    return normalized.map(function (l) { return l.toLowerCase(); });
+    if (typeof params === 'string') normalized.push(params);
+    else normalized = params;
+    return normalized.map(function (p) { return p.toLowerCase(); });
   }
 })();

@@ -146,7 +146,6 @@
   }
 
   function toggleByType(type) {
-    console.log(type);
     if (type.indexOf('ecological') > -1) cluster.addLayer(overlays['Ecological Services']);
     if (type.indexOf('refuge') > -1) cluster.addLayer(overlays.Refuges);
     if (type.indexOf('hatchery') > -1) cluster.addLayer(overlays.Hatcheries);
