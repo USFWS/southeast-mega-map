@@ -3,8 +3,12 @@
 
   var emitter = require('./mediator');
   var OfficeService = require('./offices');
-  var template = require('../templates/detail.jade');
-  var nearestTemplate = require('../templates/nearest.jade');
+  var templates = {
+    init: require('../templates/detail-init.jade'),
+    detail: require('../templates/detail.jade'),
+    nearest: require('../templates/nearest.jade')
+  };
+
   var querystring = require('./querystring');
   var _ = require('./util');
 
@@ -17,9 +21,10 @@
 
   function createDetail() {
     opts.container = _.create('aside', 'detail-container', document.body);
-    opts.content = _.create('section', 'detail-content', opts.container);
     opts.close = _.create('button', 'detail-toggle', opts.container);
     opts.close.innerHTML = '&#9650;';
+    opts.content = _.create('section', 'detail-content', opts.container);
+    opts.content.innerHTML = templates.init();
   }
 
   function registerHandlers() {
@@ -76,12 +81,12 @@
   }
 
   function renderOffice(office) {
-    opts.content.innerHTML = template({ office: office.properties });
+    opts.content.innerHTML = templates.detail({ office: office.properties });
     showDetail();
   }
 
   function renderNearest(nearest) {
-    opts.content.innerHTML = nearestTemplate({ nearest: nearest });
+    opts.content.innerHTML = templates.nearest({ nearest: nearest });
     showDetail();
   }
 
