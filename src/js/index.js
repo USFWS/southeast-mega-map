@@ -6,6 +6,7 @@
   var parallel = require('async/parallel');
 
   var autocomplete = require('./autocomplete');
+  var officeList = require('./office-list');
   var toolbar = require('./toolbar');
   var detail = require('./detail');
   var emitter = require('./mediator');
@@ -37,6 +38,7 @@
     if (params.layers) mapOptions.layers = normalizeLayers(params.layers);
 
     map.init(mapOptions);
+    officeList.init();
 
     autocomplete.init({
       data: offices.features,
