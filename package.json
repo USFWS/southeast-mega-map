@@ -79,6 +79,7 @@
     "async": "^2.0.1",
     "classlist-polyfill": "^1.0.2",
     "events": "^1.1.0",
+    "has-class": "^1.0.6",
     "leaflet": "^1.0.0-beta.2",
     "leaflet-knn": "^0.1.0",
     "leaflet-providers": "^1.1.14",
@@ -86,11 +87,13 @@
     "lodash.defaults": "^3.1.2",
     "lodash.filter": "^4.5.1",
     "lodash.find": "^3.2.1",
+    "lodash.foreach": "^4.4.1",
     "lodash.includes": "^4.2.0",
     "lodash.map": "^4.5.1",
     "lunr": "^0.6.0",
     "madison": "^1.0.1",
     "query-string": "^4.2.2",
+    "tabbable": "^1.0.4",
     "underscore.string": "^3.2.2",
     "xhr": "^2.2.0"
   }
