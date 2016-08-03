@@ -80,7 +80,6 @@
     var nearest = index.nearest(e.latlng, 10);
     _.removeClass(opts.nearest, 'loading');
     opts.imgLocate.setAttribute('src', './svg/current-location.svg');
-    console.log(nearest);
     emitter.emit('found:nearest', nearest);
   }
 

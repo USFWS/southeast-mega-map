@@ -5,7 +5,7 @@
   var emitter = require('./mediator');
   var _ = require('./util');
 
-  var querystring = require('./querystring');
+  var querystring = require('query-string');
   var template = require('../templates/autocomplete.jade');
   var OfficeService = require('./offices');
 
@@ -65,7 +65,7 @@
     // get office by name w/ OfficeService
     // emit event w/office
     if (e.target.nodeName === 'A') {
-      var officeName = querystring.stringify(e.target.search);
+      var officeName = querystring.parse(e.target.search).q.replace(/-/g, ' ');
       var office = OfficeService.getOffice(officeName);
       opts.output.innerHTML = '';
       opts.input.value = e.target.textContent;

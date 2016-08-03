@@ -9,7 +9,7 @@
     nearest: require('../templates/nearest.jade')
   };
 
-  var querystring = require('./querystring');
+  var querystring = require('query-string');
   var _ = require('./util');
 
   var opts = {}, active;
@@ -44,7 +44,7 @@
     e.preventDefault();
 
     if (e.target.nodeName === 'A'){
-      var officeName = querystring.stringify(e.target.href);
+      var officeName = querystring.parse(e.target.search).q.replace(/-/g, ' ');
       var office = OfficeService.getOffice(officeName);
       renderOffice(office);
       emitter.emit('office:selected', office);
