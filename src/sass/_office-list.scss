@@ -5,13 +5,46 @@
   list-style: none;
   margin: 0;
   overflow-y: scroll;
-  padding: 5em 3%;
+  padding: 5em 3% 1em;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
 
+  li {
+    clear: both;
+    margin: 3em auto;
+    max-width: 750px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   &.active {
     z-index: 3;
+  }
+}
+
+.office-list-icon {
+  max-height: 80px;
+  max-width: 125px;
+}
+
+.office-image {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  width: 150px;
+}
+
+.office-details {
+  display: inline-block;
+  height: 100%;
+  width: 550px;
+
+  h2 {
+    color: $green;
+    margin-top: 0;
   }
 }
