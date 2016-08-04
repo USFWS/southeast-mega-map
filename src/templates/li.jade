@@ -5,6 +5,11 @@ for office in offices
       img(src=office.icon, class="office-list-icon")
     .office-details
       h2= office.name
+      img(src=office.icon, class="nested-office-list-icon")
       address| #{office.address} #[br] #{office.city}, #{office.state} #{office.zip}
       if office.url
         p| #[a(href=office.url, target="_blank") Visit us on the web!]
+      if office.facebook
+        p| #[a(href=office.facebook, target="_blank") Like us on Facebook!]
+      if office.twitter
+        p| #[a(href=office.twitter, target="_blank") Follow us on Twitter!]
