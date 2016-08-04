@@ -49,7 +49,7 @@
 
   function getIconPath(office) {
     var path = ['./svg/'];
-    switch (office.type) {
+    switch (office.properties.type) {
       case 'National Wildlife Refuge':
         path.push('blue-goose.svg');
         break;
