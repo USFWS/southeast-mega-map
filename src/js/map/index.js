@@ -74,7 +74,7 @@
     if (opts.initOnOffice)
       mapLayers.flyToOffice( OfficeService.getOffice(opts.initOnOffice) );
 
-    new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
+    new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
 
     return map;
   }
