@@ -11,6 +11,7 @@
     includes: require('lodash.includes'),
     each: require('lodash.foreach'),
     slugify: require('underscore.string/slugify'),
+    tabbable: require('tabbable'),
     create: create,
     remove: remove,
     addClass: addClass,
@@ -18,7 +19,7 @@
     hasClass: require('has-class'),
     removeClass: removeClass,
     toggleClass: toggleClass,
-    tabbable: require('tabbable')
+    getDimensions: getDimensions
   };
 
   function create(tagName, className, container) {
@@ -53,6 +54,18 @@
 
   function toggleClass(el, name) {
     el.classList.toggle(name);
+  }
+
+  function getDimensions(){
+  	var test = document.createElement( "div" );
+
+  	test.style.cssText = "position: fixed;top: 0;left: 0;bottom: 0;right: 0;";
+  	document.documentElement.insertBefore( test, document.documentElement.firstChild );
+
+  	var dims = { width: test.offsetWidth, height: test.offsetHeight };
+  	document.documentElement.removeChild( test );
+
+  	return dims;
   }
 
   module.exports = _;

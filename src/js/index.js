@@ -5,6 +5,7 @@
   var qs = require('query-string');
   var parallel = require('async/parallel');
 
+  var _ = require('./util');
   var autocomplete = require('./autocomplete');
   var officeList = require('./office-list');
   var toolbar = require('./toolbar');
@@ -13,9 +14,8 @@
   var map = require('./map/index.js');
   var OfficeService = require('./offices');
   var StateService = require('./states');
-  var viewport = require('./viewport-size');
 
-  var wideScreen = viewport.getDimensions().width > 1100;
+  var wideScreen = _.getDimensions().width > 1100;
   var params = qs.parse(location.search);
 
   init();
