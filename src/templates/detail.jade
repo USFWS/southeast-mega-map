@@ -15,47 +15,44 @@ ul.detail-links
 div.detail-content-wrap
   p.detail-description
     = office.narrative
-  h3 Activities
-  ul.detail-activities
-    if office.activities
+  if office.activities
+    h3 Activities
+    ul.detail-activities
       each activity in office.activities
         if activity === "Wildlife Photography"
           li
-            include ../svg/wildlife-photography.svg
+            img(src="./svg/wildlife-photography.svg")
             = activity
         if activity === "Wildlife Observation"
           li
-            include ../svg/wildlife-observation.svg
+            img(src="./svg/wildlife-observation.svg")
             = activity
         if activity === "Hiking"
           li
-            include ../svg/hiking.svg
+            img(src="./svg/hiking.svg")
             = activity
         if activity === "Fishing"
           li
-            include ../svg/fishing.svg
+            img(src="./svg/fishing.svg")
             = activity
         if activity === "Hunting"
           li
-            include ../svg/hunting.svg
+            img(src="./svg/hunting.svg")
             = activity
         if activity === "Boat Ramp"
           li
-            include ../svg/boat-ramp.svg
+            img(src="./svg/boat-ramp.svg")
             = activity
         if activity === "Canoeing"
           li
-            include ../svg/canoeing.svg
+            img(src="./svg/canoeing.svg")
             = activity
         if activity === "Lighthouse"
           li
-            include ../svg/lighthouse.svg
+            img(src="./svg/lighthouse.svg")
             = activity
         if activity === "Picnic"
           li
-            include ../svg/picnic-shelter.svg
+            img(src="./svg/picnic-shelter.svg")
             = activity
-  address
-    = office.address
-    br
-    | #{office.city}, #{office.state} #{office.zip}
+  address| #{office.address} #[br] #{office.city}, #{office.state} #{office.zip}
