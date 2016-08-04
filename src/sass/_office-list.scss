@@ -26,9 +26,27 @@
   }
 }
 
-.office-list-icon {
+.office-list-icon,
+.nested-office-list-icon {
   max-height: 80px;
   max-width: 125px;
+}
+
+.office-list-icon {
+  display: none;
+
+  @media (min-width: 745px) {
+    display: block;
+  }
+}
+
+.nested-office-list-icon {
+  display: block;
+  float: right;
+
+  @media (min-width: 745px) {
+    display: none;
+  }
 }
 
 .office-image {
@@ -41,10 +59,13 @@
 .office-details {
   display: inline-block;
   height: 100%;
-  width: 550px;
 
   h2 {
     color: $green;
     margin-top: 0;
+  }
+
+  @media (min-width: 745px) {
+    width: 550px;
   }
 }
