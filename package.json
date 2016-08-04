@@ -10,7 +10,7 @@
     ]
   },
   "watch": {
-    "minify:html": "src/*.html",
+    "minify:html": "src/index.html",
     "minify:json": "src/data/*.json",
     "shrink:img": "src/images/**/*",
     "shrink:svg": "src/svg/*.svg",

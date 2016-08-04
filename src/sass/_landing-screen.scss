@@ -1,0 +1,37 @@
+.landing-screen {
+  background: $cream;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &.loading {
+    z-index: 5000;
+  }
+
+  .logo {
+    color: $green;
+    display: block;
+    margin: auto;
+    padding-top: 25vh;
+    text-align: center;
+    width: 10em;
+
+    &.loading {
+      animation: scaling 3s ease infinite;
+    }
+  }
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

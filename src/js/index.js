@@ -17,6 +17,7 @@
 
   var wideScreen = _.getDimensions().width > 1100;
   var params = qs.parse(location.search);
+  var landing = document.querySelector('.landing-screen');
 
   init();
 
@@ -57,6 +58,7 @@
     if (params.detail === 'true' || wideScreen ) detail.show();
 
     toolbar.init();
+    _.remove(landing);
   }
 
   function normalizeParams(params) {

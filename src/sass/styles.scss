@@ -1,5 +1,6 @@
 @import 'fonts';
 $green: #00796b;
+$cream: #efeeeb;
 $serif: 'Merriweather', Georgia, Verdana, serif;
 
 html {
@@ -33,3 +34,4 @@ body {
 @import 'autocomplete';
 @import 'detail';
 @import 'modal';
+@import 'landing-screen';
