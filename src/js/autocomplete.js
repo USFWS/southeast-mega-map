@@ -11,7 +11,8 @@
 
   var opts, index;
   var defaults = {
-    minLength: 2
+    minLength: 2,
+    displayResults: true
   };
 
   function init(options) {
