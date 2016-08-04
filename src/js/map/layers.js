@@ -4,6 +4,7 @@
   var L = require('leaflet');
   var emitter = require('../mediator');
   var _ = require('../util');
+  var template = require('../../templates/popup.jade');
   require('leaflet.markercluster');
   require('leaflet-providers');
   require('./marker-cluster-layer-support');
@@ -114,7 +115,7 @@
   }
 
   function onEachFeature(feature, layer) {
-    layer.bindPopup(feature.properties.name);
+    layer.bindPopup(template({ office: feature.properties }));
     layer.on({ click: onMarkerClick });
   }
 
