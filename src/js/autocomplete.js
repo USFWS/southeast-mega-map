@@ -62,6 +62,7 @@
   function clearInput() {
     opts.input.value = '';
     opts.input.focus();
+    opts.output.innerHTML = '';
   }
 
   function focusInput() {
