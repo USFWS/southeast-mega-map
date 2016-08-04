@@ -32,6 +32,8 @@
     opts.label.setAttribute('for', 'autocomplete-input');
     opts.input = _.create('input', 'autocomplete-input', opts.form);
     opts.input.setAttribute('id', 'autocomplete-input');
+    opts.clear = _.create('button', 'autocomplete-clear', opts.form);
+    opts.clear.innerHTML = 'Clear';
     opts.output = _.create('ul', 'autocomplete-results', opts.container);
   }
 
@@ -40,6 +42,7 @@
     opts.form.addEventListener('submit', function (e) { e.preventDefault(); });
     opts.input.addEventListener('keyup', inputKeyup);
     opts.input.addEventListener('focus', focusInput);
+    opts.clear.addEventListener('click', clearInput);
     opts.container.addEventListener('keyup', navigationHandler);
     emitter.on('marker:click', updateInputValue);
     emitter.on('blur:input', blurInput);
@@ -54,6 +57,11 @@
 
   function updateInputValue(office) {
     opts.input.value = office.properties.name;
+  }
+
+  function clearInput() {
+    opts.input.value = '';
+    opts.input.focus();
   }
 
   function focusInput() {
