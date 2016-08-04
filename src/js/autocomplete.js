@@ -43,7 +43,13 @@
     opts.container.addEventListener('keyup', navigationHandler);
     emitter.on('marker:click', updateInputValue);
     emitter.on('blur:input', blurInput);
+    emitter.on('view:changed', toggleDisplayResults)
     opts.input.focus();
+  }
+
+  function toggleDisplayResults(view) {
+    if (view === 'map') opts.displayResults = true;
+    else opts.displayResults = false;
   }
 
   function updateInputValue(office) {
@@ -63,10 +69,6 @@
   function delegatedOfficeLink (e) {
     e.preventDefault();
 
-    // ToDo:
-    // parse anchor query string for office name
-    // get office by name w/ OfficeService
-    // emit event w/office
     if (e.target.nodeName === 'A') {
       var officeName = querystring.parse(e.target.search).q.replace(/-/g, ' ');
       var office = OfficeService.getOffice(officeName);
@@ -153,7 +155,7 @@
       results.push(opts.data[hit.ref].properties);
     });
 
-    render(results);
+    if (opts.displayResults) render(results);
     emitter.emit('autocomplete:results', results);
   }
 
