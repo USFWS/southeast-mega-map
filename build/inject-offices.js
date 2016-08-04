@@ -5,6 +5,7 @@
   var parallel = require('async/parallel');
   var jade = require('jade');
   var fs = require('fs');
+  var map = require('lodash.map');
 
   var officePath = './src/data/offices.json';
   var htmlPath = './dist/index.html';
@@ -30,7 +31,12 @@
     var offices = JSON.parse(results[1]);
 
     var $ = cheerio.load(results[0]);
-    var html = template({ offices: offices.features });
+
+    offices = map(offices.features, function (office) {
+      office.properties.icon = getIconPath(office);
+      return office;
+    });
+    var html = template({ offices: offices });
 
     var $list = $('.office-list');
 
@@ -39,6 +45,22 @@
     fs.writeFile(htmlPath, $.html(), 'utf-8', function (err) {
       if (err) console.error(err);
     });
+  }
+
+  function getIconPath(office) {
+    var path = ['./svg/'];
+    switch (office.type) {
+      case 'National Wildlife Refuge':
+        path.push('blue-goose.svg');
+        break;
+      case 'National Fish Hatchery':
+        path.push('fisheries.svg');
+        break;
+      default:
+        path.push('building.svg');
+        break;
+     }
+     return path.join('');
   }
 
 
