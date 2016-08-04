@@ -1,6 +1,6 @@
 $autocomplete-text: #336699;
 $results-color: #00796b;
-$max-width: 355px;
+$max-width: 345px;
 
 .autocomplete-widget {
   left: 10px;
@@ -49,12 +49,29 @@ $max-width: 355px;
   }
 
   input {
+    border: 2px solid $green;
     color: $autocomplete-text;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial;
     font-size: 1em;
     padding: 0 10px;
-    width: 275px;
+    width: 260px;
     transition: width .3s;
+  }
+}
+
+.autocomplete-clear {
+  background: $green;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-family: $sans-serif;
+  height: 27px;
+  margin: 0;
+  position: relative;
+  top: -3px;
+
+  &:hover {
+    background: lighten($green, 5);
   }
 }
 
