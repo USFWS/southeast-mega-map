@@ -14,6 +14,7 @@
   var map = require('./map/index.js');
   var OfficeService = require('./offices');
   var StateService = require('./states');
+  var switcher = require('./view-switcher');
 
   var wideScreen = _.getDimensions().width > 1100;
   var params = qs.parse(location.search);
@@ -44,6 +45,8 @@
 
     map.init(mapOptions);
     officeList.init();
+
+    switcher.init();
 
     autocomplete.init({
       data: offices.features,
