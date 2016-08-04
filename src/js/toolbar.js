@@ -27,11 +27,18 @@
   function registerHandlers() {
     opts.about.addEventListener('click', toggleModal);
     opts.close.addEventListener('click', hideModal);
+    document.body.addEventListener('keyup', keyHandler);
+  }
+
+  function keyHandler(e) {
+    // Close the modal if the user hits escape
+    if (e.which === 27 && modal) hideModal();
   }
 
   function showModal() {
     modal = true;
     _.addClass(opts.modal, 'active');
+    opts.close.focus();
     emitter.emit('modal:open');
   }
 
