@@ -1,5 +1,10 @@
 for office in offices
   - office = office.properties;
   li
-    h2| #[a(href=office.url, target="_blank")= office.name]
-    address= office.address
+    .office-image
+      img(src=office.icon, class="office-list-icon")
+    .office-details
+      h2= office.name
+      address| #{office.address} #[br] #{office.city}, #{office.state} #{office.zip}
+      if office.url
+        p| #[a(href=office.url, target="_blank") Visit us on the web!]
