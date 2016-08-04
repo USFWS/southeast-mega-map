@@ -14,7 +14,8 @@
     "minify:json": "src/data/*.json",
     "shrink:img": "src/images/**/*",
     "shrink:svg": "src/svg/*.svg",
-    "fonts": "src/fonts/*"
+    "fonts": "src/fonts/*",
+    "inject:offices": "src/templates/li.jade"
   },
   "scripts": {
     "watch:test": "watch -p 'test/*.spec.js' -c 'npm test'",
