@@ -1,0 +1,43 @@
+.layer-switcher {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 150px;
+  z-index: 3;
+
+  button {
+    background: $cream;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.65098) 0px 1px 5px 0px;
+
+    font-family: $sans-serif;
+    font-size: 13px;
+    padding: 7px;
+
+    &:first-child {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &:last-child {
+      border-left: 0;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    &:hover {
+      background: white;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 700px) {
+    left: auto;
+    margin: inherit;
+    right: 60px;
+    top: 10px;
+  }
+}
