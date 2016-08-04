@@ -38,6 +38,7 @@
     emitter.on('offices:random', renderOffice);
     emitter.on('zoom:fullextent', hideDetail);
     emitter.on('found:nearest', renderNearest);
+    emitter.on('view:changed', hideDetail);
   }
 
   function delegatedOfficeLink (e) {
