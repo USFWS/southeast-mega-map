@@ -41,6 +41,25 @@
   }
 }
 
+.popup {
+  max-width: 225px;
+  text-align: center;
+
+  .office-name {
+    color: $green;
+    font-family: $serif;
+    font-size: 1.2em;
+  }
+
+  address {
+    margin-top: 10px;
+  }
+}
+
+.leaflet-popup {
+  max-width: 225px;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(360deg);
