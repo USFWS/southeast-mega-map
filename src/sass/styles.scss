@@ -2,6 +2,7 @@
 $green: #00796b;
 $cream: #efeeeb;
 $serif: 'Merriweather', Georgia, Verdana, serif;
+$sans-serif: 'Open Sans', Helvetica, 'Helvetica Neue', sans-serif;
 
 html {
   box-sizing: border-box;
@@ -35,3 +36,4 @@ body {
 @import 'detail';
 @import 'modal';
 @import 'landing-screen';
+@import 'layer-switcher';
