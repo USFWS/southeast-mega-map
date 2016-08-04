@@ -13,7 +13,9 @@
   var map = require('./map/index.js');
   var OfficeService = require('./offices');
   var StateService = require('./states');
+  var viewport = require('./viewport-size');
 
+  var wideScreen = viewport.getDimensions().width > 1100;
   var params = qs.parse(location.search);
 
   init();
@@ -52,7 +54,7 @@
       output: document.querySelector('.autocomplete-detail')
     });
 
-    if (params.detail === 'true') detail.show();
+    if (params.detail === 'true' || wideScreen ) detail.show();
 
     toolbar.init();
   }
