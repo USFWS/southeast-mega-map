@@ -53,7 +53,7 @@ $max-width: 345px;
     color: $autocomplete-text;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial;
     font-size: 1em;
-    padding: 0 10px;
+    padding: 5px 10px;
     width: 260px;
     transition: width .3s;
   }
@@ -65,7 +65,7 @@ $max-width: 345px;
   color: white;
   cursor: pointer;
   font-family: $sans-serif;
-  height: 27px;
+  height: 37px;
   margin: 0;
   position: relative;
   top: -3px;
@@ -77,9 +77,12 @@ $max-width: 345px;
 
 .autocomplete-results {
   background: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.65098) 0px 1px 5px 0px;
   color: $autocomplete-text;
   list-style: none;
-  margin: 0;
+  margin: -3px 0 0 0;
   max-height: 90vh;
   max-width: $max-width;
   opacity: 0;
@@ -93,6 +96,7 @@ $max-width: 345px;
 
   li {
     font-size: .9em;
+    margin: 2px;
     position: relative;
 
     &:first-child {
