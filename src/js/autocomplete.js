@@ -29,7 +29,9 @@
     opts.form = _.create('form', 'autocomplete-form', opts.container);
     opts.label = _.create('label', '', opts.form);
     opts.label.innerHTML = 'Search:';
+    opts.label.setAttribute('for', 'autocomplete-input');
     opts.input = _.create('input', 'autocomplete-input', opts.form);
+    opts.input.setAttribute('id', 'autocomplete-input');
     opts.output = _.create('ul', 'autocomplete-results', opts.container);
   }
 
