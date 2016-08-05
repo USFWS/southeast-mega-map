@@ -26,8 +26,10 @@
     opts.nearest.setAttribute('data-tt', 'Find nearest offices');
     opts.imgLocate = _.create('img', '', opts.nearest);
     opts.imgLocate.setAttribute('src', './svg/current-location.svg');
+    opts.imgLocate.setAttribute('alt', 'Icon representing your current location');
     opts.imgExtent = _.create('img', '', opts.fullExtent);
     opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
+    opts.imgExtent.setAttribute('alt', 'Icon representing zoom to full extent');
     registerHandlers();
     return opts.map;
   }
