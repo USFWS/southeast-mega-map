@@ -59,21 +59,26 @@ $max-width: 325px;
 }
 
 .autocomplete-clear {
-  background: $green;
-  border: 0;
-  color: white;
-  cursor: pointer;
-  font-family: $sans-serif;
-  height: 37px;
-  margin: 0;
-  position: relative;
+  display: none;
 
-  &:hover {
-    background: lighten($green, 5);
-  }
+  @media (min-width: 700px) {
+    display: inline-block;
+    background: $green;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-family: $sans-serif;
+    height: 37px;
+    margin: 0;
+    position: relative;
 
-  &:focus {
-    background: $blue;
+    &:hover {
+      background: lighten($green, 5);
+    }
+
+    &:focus {
+      background: $blue;
+    }
   }
 }
 
