@@ -122,9 +122,9 @@
   function pointToLayer(feature, latlng) {
     var icons = require('../icons');
     var type = feature.properties.type;
-    if (type === 'National Wildlife Refuge') return L.marker(latlng, { icon: icons.blueGoose });
-    else if (type === 'National Fish Hatchery') return L.marker(latlng, { icon: icons.fisheries });
-    else return L.marker(latlng, { icon: icons.office });
+    if (type === 'National Wildlife Refuge') return L.marker(latlng, { icon: icons.blueGoose, alt: 'Official logo of the National Wildlife Refuge System' });
+    else if (type === 'National Fish Hatchery') return L.marker(latlng, { icon: icons.fisheries, alt: 'Logo for the U.S. Fish and Wildlife Service Fisheries program' });
+    else return L.marker(latlng, { icon: icons.office, alt: 'Icon representing a field station' });
   }
 
   function onMarkerClick(feature) {
