@@ -77,12 +77,14 @@ $max-width: 345px;
 
 .autocomplete-results {
   background: white;
+  border: 2px solid $green;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-top: 0;
   box-shadow: rgba(0, 0, 0, 0.65098) 0px 1px 5px 0px;
   color: $autocomplete-text;
   list-style: none;
-  margin: -3px 0 0 0;
+  margin: -5px 0 0 0;
   max-height: 90vh;
   max-width: $max-width;
   opacity: 0;
