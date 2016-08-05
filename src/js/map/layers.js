@@ -109,8 +109,6 @@
       pointToLayer: pointToLayer
     }).on('mouseover', function(e) {
       e.layer.openPopup();
-    }).on('mouseout', function(e) {
-      e.layer.closePopup();
     });
   }
 
