@@ -158,14 +158,13 @@
       results.push(opts.data[hit.ref].properties);
     });
 
-    if (opts.displayResults) {
-      render(results);
-      _.addClass(opts.output, 'active');
-    }
+    if (opts.displayResults) render(results);
     emitter.emit('autocomplete:results', results);
   }
 
   function render(data) {
+    if (data.length === 0) _.removeClass(opts.output, 'active');
+    else _.addClass(opts.output, 'active');
     opts.output.innerHTML = template({ offices: data });
   }
 
