@@ -94,6 +94,7 @@
     if (opts.input.value.length === 0) {
       emitter.emit('autocomplete:empty', opts.data);
       opts.output.innerHTML = '';
+      _.removeClass(opts.output, 'active');
       return;
     } else if (opts.input.value.length < opts.minLength) return;
     search(opts.input.value);
@@ -128,14 +129,6 @@
     tabbable[index].focus();
   }
 
-  function focusResults() {
-    var active = document.activeElement;
-    var tabbable = _.tabbable(opts.container);
-    console.log(tabbable);
-    if ( _.hasClass(active, 'autocomplete-input') ) opts.output.querySelector('a').focus();
-
-  }
-
   function createIndex () {
     index = lunr(function() {
       this.field('name', { boost: 10 });
@@ -165,7 +158,10 @@
       results.push(opts.data[hit.ref].properties);
     });
 
-    if (opts.displayResults) render(results);
+    if (opts.displayResults) {
+      render(results);
+      _.addClass(opts.output, 'active');
+    }
     emitter.emit('autocomplete:results', results);
   }
 
