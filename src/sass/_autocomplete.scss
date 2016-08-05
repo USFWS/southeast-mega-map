@@ -71,6 +71,10 @@ $max-width: 325px;
   &:hover {
     background: lighten($green, 5);
   }
+
+  &:focus {
+    background: $blue;
+  }
 }
 
 .autocomplete-results {
@@ -101,12 +105,8 @@ $max-width: 325px;
 
   li {
     font-size: .9em;
-    margin: 2px;
+    margin: 4px 0;
     position: relative;
-
-    &:first-child {
-      margin-top: 5px;
-    }
   }
 
   a {
@@ -118,6 +118,11 @@ $max-width: 325px;
 
     &:hover {
       color: darken($results-color, 15);
+    }
+
+    &:focus {
+      background: $green;
+      color: white;
     }
   }
 }
