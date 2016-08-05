@@ -23,7 +23,6 @@
   }
 
   function showText() {
-    _.removeClass(mapView, 'active');
     _.addClass(textView, 'active');
     currentView = 'text';
     emitter.emit('view:changed', 'text');
@@ -31,7 +30,6 @@
 
   function showMap() {
     _.removeClass(textView, 'active');
-    _.addClass(mapView, 'active');
     currentView = 'map';
     emitter.emit('view:changed', 'map');
   }
