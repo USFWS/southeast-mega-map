@@ -33,6 +33,7 @@
     opts.label.setAttribute('for', 'autocomplete-input');
     opts.input = _.create('input', 'autocomplete-input', opts.form);
     opts.input.setAttribute('id', 'autocomplete-input');
+    opts.input.setAttribute('autocomplete', 'off');
     opts.clear = _.create('button', 'autocomplete-clear', opts.form);
     opts.clear.innerHTML = 'Clear';
     opts.output = _.create('ul', 'autocomplete-results', opts.container);
