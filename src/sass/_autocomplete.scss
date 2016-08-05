@@ -80,6 +80,7 @@ $max-width: 325px;
   border-top: 0;
   box-shadow: rgba(0, 0, 0, 0.65098) 0px 1px 5px 0px;
   color: $autocomplete-text;
+  height: 0;
   list-style: none;
   margin: -2px 0 0 0;
   max-height: 90vh;
@@ -91,6 +92,7 @@ $max-width: 325px;
 
   &.active {
     border: 2px solid $green;
+    height: auto;
   }
 
   &:focus {
