@@ -15,6 +15,7 @@
     opts.about.setAttribute('data-tt', 'About this map');
     opts.imgAbout = _.create('img', '', opts.about);
     opts.imgAbout.setAttribute('src', './svg/help.svg');
+    opts.imgAbout.setAttribute('alt', 'Icon representing help');
     opts.modal = _.create('aside', 'about-modal', document.body);
     opts.close = _.create('button', 'modal-close', opts.modal);
     opts.close.innerHTML = '&times;';
