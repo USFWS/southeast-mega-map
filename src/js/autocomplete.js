@@ -110,6 +110,7 @@
     if (e.which === 27) {
       opts.input.focus();
       opts.output.innerHTML = '';
+      _.removeClass(opts.output, 'active');
     }
   }
 
