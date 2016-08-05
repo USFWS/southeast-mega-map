@@ -48,19 +48,26 @@
   }
 
   function getIconPath(office) {
-    var path = ['./svg/'];
+    var path = ['./svg/'],
+        alt;
     switch (office.properties.type) {
       case 'National Wildlife Refuge':
         path.push('blue-goose.svg');
+        alt = 'Official Logo of the National Wildlife Refuge System';
         break;
       case 'National Fish Hatchery':
         path.push('fisheries.svg');
+        alt = 'Logo for the Fisheries program';
         break;
       default:
         path.push('building.svg');
+        alt = 'Icon representing a Field Station';
         break;
      }
-     return path.join('');
+     return {
+       src: path.join(''),
+       alt: alt
+     };
   }
 
 
