@@ -10,6 +10,7 @@
   require('./marker-cluster-layer-support');
 
   var offices,
+      control,
       map,
       overlays,
       cluster = L.markerClusterGroup.layerSupport({ showCoverageOnHover: false });
@@ -19,27 +20,7 @@
     'Imagery': L.tileLayer.provider('Esri.WorldImagery')
   };
 
-  var wms = {
-    "State Boundaries": L.tileLayer.wms('https://maps.bts.dot.gov/services/services/NTAD/States/MapServer/WmsServer?', {
-      format: 'image/png',
-      transparent: true,
-      layers: '0',
-      attribution: '<a href="http://osav.usdot.opendata.arcgis.com/datasets/34f8a046fef944f39d8a65004a431a1f_0">Dept. of Transportation</a>'
-    }),
-    "114th Congressional Districts": L.tileLayer.wms('https://www.sciencebase.gov/arcgis/services/Catalog/57a0e84fe4b006cb4554a439/MapServer/WMSServer?', {
-      format: 'image/png',
-      layers: '0',
-      transparent: true,
-      attribution: '<a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_cds.html">Census Bureau</a>'
-    }),
-    "Ducks Unlimited Flyways": L.tileLayer.wms('https://www.sciencebase.gov/arcgis/services/Catalog/57a102c1e4b006cb4554a4d3/MapServer/WMSServer?', {
-      format: 'image/png',
-      layers: '0',
-      transparent: true,
-      opacity: .5,
-      attribution: '<a href="http://www.ducks.org/conservation/gis/gis-spatial-data-download/page4">Ducks Unlimited</a>'
-    })
-  };
+  var wms = require('./wms');
 
   function init(officeData, layersOnLoad, theMap) {
     offices = officeData;
@@ -50,19 +31,23 @@
       'Ecological Services': L.layerGroup().addLayer( createOfficeLayer('Ecological Services Field Office') ),
       'Fish and Wildlife Conservation Offices': L.layerGroup().addLayer( createOfficeLayer('Fish And Wildlife Conservation Office') )
     };
-    var control = L.control.layers(baseLayers, overlays);
+    control = L.control.layers(baseLayers, overlays);
 
     if (layersOnLoad) addSomeLayers(overlays, layersOnLoad);
     else addAllLayers(overlays);
 
-    control.addOverlay(wms['114th Congressional Districts'], '114th Congressional Districts');
-    control.addOverlay(wms['State Boundaries'], 'State Boundaries');
-    control.addOverlay(wms['Ducks Unlimited Flyways'], 'Ducks Unlimited Flyways');
+    addOverlaysToLayersControl();
     control.addTo(map);
     cluster.addTo(map);
 
     map.on('overlayadd', layerAdd);
     map.on('overlayremove', layerRemove);
+  }
+
+  function addOverlaysToLayersControl() {
+    _.map(wms, function(layer, name) {
+      control.addOverlay(layer, name);
+    });
   }
 
   function addAllLayers(overlays) {
