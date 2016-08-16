@@ -65,14 +65,11 @@
   }
 
   function createMap() {
-    var mapDiv = document.getElementById(opts.mapId);
-    var disable = _.closest(mapDiv, opts.disableScrollSelector);
     var mapOptions = {
       zoomControl: false,
       layers: [mapLayers.baseLayers['ESRI National Geographic']]
     };
-
-    if ( disable ) mapOptions.scrollWheelZoom = false;
+    if (opts.scrollWheelZoom == false) mapOptions.scrollWheelZoom = false;
 
     map = L.map(opts.mapId, mapOptions);
     map.fitBounds(opts.bounds);

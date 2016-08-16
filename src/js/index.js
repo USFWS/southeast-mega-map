@@ -42,6 +42,7 @@
     };
     if (params.layers) mapOptions.layers = normalizeParams(params.layers);
     if (params.office) mapOptions.initOnOffice = normalizeParams(params.office)[0];
+    if (params.scroll === 'false') mapOptions.scrollWheelZoom = false;
 
     map.init(mapOptions);
     officeList.init();
