@@ -14,7 +14,7 @@
   var defaults = {
     zoom: 7,
     mapId: 'map',
-    disableScrollClass: 'disable-scroll-wheel'
+    disableScrollSelector: '.disable-scroll-wheel'
   };
 
   function init(options) {
@@ -66,7 +66,7 @@
 
   function createMap() {
     var mapDiv = document.getElementById(opts.mapId);
-    var disable = shouldDisableScrollWheel(mapDiv);
+    var disable = _.closest(mapDiv, opts.disableScrollSelector);
     var mapOptions = {
       zoomControl: false,
       layers: [mapLayers.baseLayers['ESRI National Geographic']]
