@@ -79,7 +79,6 @@
   "dependencies": {
     "async": "^2.0.1",
     "classlist-polyfill": "^1.0.2",
-    "closest": "0.0.1",
     "events": "^1.1.0",
     "has-class": "^1.0.6",
     "leaflet": "^1.0.0-beta.2",

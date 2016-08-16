@@ -12,7 +12,6 @@
     each: require('lodash.foreach'),
     slugify: require('underscore.string/slugify'),
     tabbable: require('tabbable'),
-    closest: require('closest'),
     create: create,
     remove: remove,
     addClass: addClass,
