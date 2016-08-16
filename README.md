@@ -6,7 +6,7 @@ This project is under active development.
 
 ## Disable Scroll Wheel Zoom
 
-If you embed this map into your webpage you'll want to disable scroll wheel zoom such that the user can scroll down the page without getting stuck in the map.  By default the map module supports an option `disableScrollClass`, which takes a string (defaults to `.disable-scroll-wheel`).  If you add the `disableScrollClass` to the map DOM element or any of it's parent nodes you can avoid the scroll trap.  Users can still double click or use the `+` or `-` buttons in the bottom right corner of the map to zoom in and out.
+If you embed this map into your webpage you'll want to disable scroll wheel zoom such that the user can scroll down the page without getting stuck in the map.  Add the `scroll` query parameter to the URL: `?scroll=false` to [disable scroll wheel zoom](http://leafletjs.com/reference.html#map-scrollwheelzoom).
 
 ## Deep Linking
 
