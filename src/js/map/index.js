@@ -13,13 +13,13 @@
   var opts, map, cluster, index, layers;
   var defaults = {
     zoom: 7,
-    mapId: 'map'
+    mapId: 'map',
+    disableScrollClass: 'disable-scroll-wheel'
   };
 
   function init(options) {
     opts = _.defaults({}, options, defaults);
     index = leafletKnn( L.geoJson(opts.data) );
-    createMap();
     opts.fullExtent = _.create('button', ['tt-w', 'zoom-to-full-extent', 'leaflet-control-roy'], document.body);
     opts.fullExtent.setAttribute('data-tt', 'Zoom to full extent');
     opts.nearest = _.create('button', ['find-nearest', 'tt-w', 'leaflet-control-roy'], document.body);
@@ -30,6 +30,7 @@
     opts.imgExtent = _.create('img', '', opts.fullExtent);
     opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
     opts.imgExtent.setAttribute('alt', 'Icon representing zoom to full extent');
+    createMap();
     registerHandlers();
     return opts.map;
   }
@@ -64,10 +65,14 @@
   }
 
   function createMap() {
+    var mapDiv = document.getElementById(opts.mapId);
+    var disable = shouldDisableScrollWheel(mapDiv);
     var mapOptions = {
       zoomControl: false,
       layers: [mapLayers.baseLayers['ESRI National Geographic']]
     };
+
+    if ( disable ) mapOptions.scrollWheelZoom = false;
 
     map = L.map(opts.mapId, mapOptions);
     map.fitBounds(opts.bounds);
@@ -89,22 +94,13 @@
     emitter.emit('found:nearest', nearest);
   }
 
+  function shouldDisableScrollWheel(node) {
+    var nodeHasClass = _.hasClass(node, opts.disableScrollClass);
+    var parentHasClass = _.hasClass(node.parentNode, opts.disableScrollClass);
+    if (nodeHasClass || parentHasClass) return true;
+    else return false;
+  }
+
   module.exports.init = init;
 
 })();
-
-
-// Map.js
-//
-// Deal with query parameters first
-//  Figure out the bounds of the map (?office= or ?state=)
-//  Figure out what layers to enable
-//
-// Pass in some options to a Map constructor
-
-// Map buttons
-//
-// Should be in a separate file
-
-// Refactor
-// Use jade to template out tool buttons

@@ -4,6 +4,10 @@ Mega map is a one-stop-shop interactive map for exploring details about U.S. Fis
 
 This project is under active development.
 
+## Disable Scroll Wheel Zoom
+
+If you embed this map into your webpage you'll want to disable scroll wheel zoom such that the user can scroll down the page without getting stuck in the map.  By default the map module supports an option `disableScrollClass`, which takes a string (defaults to `.disable-scroll-wheel`).  If you add the `disableScrollClass` to the map DOM element or it's parent you can avoid the scroll trap.  Users can still double click or use the `+` or `-` buttons in the bottom right corner of the map to zoom in and out.
+
 ## Deep Linking
 
 Deep linking refers to using a URL to content within a website or page rather than the homepage.  In the context of mega map deep linking refers to controlling map state through the construction of a URL.  Mega map currently supports setting the initial map bounds (zoom) over a state/territory or list of states/territories as well as toggling of layers when the map initializes.
