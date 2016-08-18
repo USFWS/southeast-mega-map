@@ -39,7 +39,12 @@
         "state": "NC",
         "zip": "27954",
         "url": "http://www.fws.gov/refuge/alligator_river/",
-        "facebook": "https://www.facebook.com/USFWS.NC"
+        "facebook": "https://www.facebook.com/USFWS.NC",
+        "image": "alligator-river.jpg",
+        "alt": "Two black bear cubs running down a rocky path.",
+        "imageurl": "https://flic.kr/p/GZw5Jd",
+        "caption": "Black bear cubs. Photo: Jackie Orsulak, USFWS.",
+        "narrative": "Alligator River National Wildlife Refuge was established to protect and preserve unique wetland habitat types and associated wildlife species, endangered species such as red wolves, red-cockaded woodpeckers, and American alligators as well as other Trust species including black bears, waterfowl and other migratory birds. In addition to conservation efforts the Refuge provides wildlife-dependent opportunities for the public including hunting; fishing; wildlife interpretation; observation; photography; and environmental education."
       },
       "geometry": {
         "type": "Point",
@@ -79,7 +84,12 @@
         "state": "FL",
         "zip": "32951",
         "url": "http://www.fws.gov/archiecarr/",
-        "facebook": "https://www.facebook.com/ArchieCarrNWR"
+        "facebook": "https://www.facebook.com/ArchieCarrNWR",
+        "image": "archie-carr.jpg",
+        "alt": "Colorful sunset over the surf at the beach.",
+        "imageurl": "https://flic.kr/p/9NtNtX",
+        "caption": "Sunrise at Archie Carr National Wildlife Refuge. Photo: Keenan Adams, USFWS.",
+        "narrative": "Archie Carr National Wildlife Refuge stretches across 20.5 miles between Melbourne Beach and Wabasso Beach along Florida's east coast. The refuge was established in 1991 and was named after the late Dr. Archie Carr, Jr., in honor of his extraordinary contribution to sea turtle conservation. The refuge was designated to protect habitat for what is the most significant area for loggerhead sea turtle nesting in the Western Hemisphere, and the most significant area for green turtle nesting in North America. The long stretches of quiet, undisturbed sandy beaches, with little or no artificial light, are essential to the reproductive success and survival of the 15,000 to 20,000 sea turtles nesting annually."
       },
       "geometry": {
         "type": "Point",
@@ -120,7 +130,12 @@
         "city": "Boynton Beach",
         "state": "FL",
         "zip": "33473",
-        "url": "http://www.fws.gov/loxahatchee/"
+        "url": "http://www.fws.gov/loxahatchee/",
+        "image": "loxahatchee.jpg",
+        "alt": "Colorful sunrise over a marsh sillhouette.",
+        "imageurl": "https://flic.kr/p/7WQqyN",
+        "caption": "Sunrise at Arthur R. Marshall Loxahatchee National Wildlife Refuge. Photo: Phil Kloer.",
+        "narrative": "Arthur R. Marshall Loxahatchee National Wildlife Refuge is the only remnant of the northern Everglades in Palm Beach County, Florida. In the late 1800's and early 1900's excessive drainage activities occurred in the Everglades to pave the way for agriculture and development to meet the ever-increasing water needs of agriculture and population expansion.  To the northwest of the refuge is the Everglades Agriculture Area which includes sugar cane farms, winter vegetables, sod farms, and cattle ranches. The land east of the refuge is predominately urban with the exception of the agricultural lands of the East Coast Buffer area. To the south and southwest of the refuge lie Water Conservation Areas 2 and 3, and Everglades National Park the only remaining portions of the Everglades fresh water marsh."
       },
       "geometry": {
         "type": "Point",
@@ -163,7 +178,12 @@
         "city": "Lacombe",
         "state": "LA",
         "zip": "70445",
-        "url": "http://www.fws.gov/atchafalaya/"
+        "url": "http://www.fws.gov/atchafalaya/",
+        "image": "atchafalaya.jpg",
+        "alt": "A bright yellow bird perched on a branch with small twigs in it's beak.",
+        "imageurl": "https://flic.kr/p/9nytxf",
+        "caption": "Prothonotary Warbler at Atchafalaya National Wildlife Refuge. Photo: Garry Tucker, USFWS.",
+        "narrative": "Atchafalaya National Wildlife Refuge was established in 1984.  Its 15,000 acres are part of the largest bottomland hardwood swamp in the country.  This beautiful swampland offers a multitude of recreational options.  Hunting, fishing, hiking  and some of the best wildlife viewing opportunities in the country exist in the Atchafalaya Basin. The refuge is managed cooperatively with the Louisiana Department of Wildlife and Fisheries Sherburne Wildlife Management Area and the Corps of Engineers Atchafalaya Spillway Water Diversion Project."
       },
       "geometry": {
         "type": "Point",
@@ -202,7 +222,12 @@
         "city": "Bald Knob",
         "state": "AR",
         "zip": "72010",
-        "url": "http://www.fws.gov/baldknob/"
+        "url": "http://www.fws.gov/baldknob/",
+        "image": "bald-knob.jpg",
+        "alt": "A bright white wading bird near the shore.",
+        "imageurl": "https://flic.kr/p/nMc4jB",
+        "caption": "Snowy egret. Photo: Hannah Thomas, <a href='https://creativecommons.org/licenses/by-nc/2.0/legalcode'>CC BY-NC 2.0</a>.",
+        "narrative": "Bald Knob National Wildlife Refuge, lying along the Little Red River and adjacent to the Henry Gray/ Hurricane Lake State Wildlife Management Area, was established in 1993 and encompasses approximately 15,000 acres of forested wetlands and croplands.  The refuge protects and provides feeding and resting areas for migrating waterfowl. Acquired as part of the North American Waterfowl Management Plan, this refuge provides a winter home for large concentrations of a number of species of ducks and geese, although it was purchased specifically for pintail management due to its identification as a major staging and wintering area for this prairie species."
       },
       "geometry": {
         "type": "Point",
@@ -225,6 +250,9 @@
         "url": "http://www.fws.gov/refuge/Banks_Lake/",
         "narrative": "Banks Lake consists of a shallow blackwater lake studded with moss-draped cypress trees and rimmed by marshes and uplands. The 4,049 acre site supports a variety of plants, fish and animals, and features a variety of habitat types, including cypress swamp, freshwater marsh, uplands, and open water.",
         "image": "banks-lake.jpg",
+        "imageurl": "https://flic.kr/p/ecrTTr",
+        "alt": "Tall cypress trees emergin from the bayou draped in spanish moss.",
+        "caption": "Banks Lake National Wildlife Refuge. Photo: <a href='https://www.flickr.com/photos/vlmpo/'>vlmpo</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a>",
         "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Fishing", "Boat Ramp", "Canoeing"]
       },
       "geometry": {
@@ -266,7 +294,12 @@
         "city": "Ferriday",
         "state": "LA",
         "zip": "71373",
-        "url": "http://www.fws.gov/refuge/bayou_cocodrie/"
+        "url": "http://www.fws.gov/refuge/bayou_cocodrie/",
+        "image": "bayou-cocodrie.jpg",
+        "imageurl": "https://www.fws.gov/uploadedImages/Region_4/NWRS/Zone_2/St_Catherine_Creek_Complex/Bayou_Cocodrie/Images/SizedWhitefacedIbisGroup.JPG",
+        "alt": "",
+        "caption": "",
+        "narrative": "After acquisition from The Nature Conservancy, Bayou Cocodrie National Wildlife Refuge was established in 1990 for the conservation and enhancement of wetlands; general wildlife management as a unit of the National Wildlife Refuge System, including management of migratory birds; and fish and wildlife-oriented recreational activities. Today, Bayou Cocodrie National Wildlife Refuge covers more than 14,600 acres in east central Louisiana, nestled between Ferriday and Monterey. Named after the bayou meandering through it, the refuge consists of critical habitats within the Lower Mississippi River Valley. It is part of a network of over 550 refuges throughout the country managed by the U.S. Fish and Wildlife Service for wildlife and people to enjoy."
       },
       "geometry": {
         "type": "Point",
@@ -286,7 +319,12 @@
         "city": "Lacombe",
         "state": "LA",
         "zip": "70445",
-        "url": "http://www.fws.gov/refuge/Bayou_Sauvage/"
+        "url": "http://www.fws.gov/refuge/Bayou_Sauvage/",
+        "image": "bayou-sauvage.jpg",
+        "imageurl": "https://flic.kr/p/D4hW51",
+        "alt": "Marsh photo on a cloudy day.",
+        "caption": "Bayou Sauvage National Wildlife Refuge. Photo: Chris Dunn, public domain.",
+        "narrative": "One of the last remaining marsh areas adjacent to Lakes Pontchartrain and Borgne, the refuge contains a wide variety of wildlife habitat, including bottomland hardwoods, freshwater and brackish marshes, lagoons, canals, borrow pits, and natural bayous. <br><br>An important stop over along the Mississippi Flyway, these diverse habitats meet the needs of approximately 340 bird species throughout the year. The American alligator is also a common sight on the refuge.<br><br>Most of the refuge is located inside hurricane protection levees built to protect New Orleans from storm surge and flooding. Because the levees interrupt the natural water flow, a network of pumps and flap gates regulate seasonal water levels. This, in turn, encourages the summer growth of emergent grasses and provides waterfowl with winter food supplies."
       },
       "geometry": {
         "type": "Point",
@@ -307,7 +345,12 @@
         "city": "Franklin",
         "state": "LA",
         "zip": "70538",
-        "url": "http://www.fws.gov/bayouteche/"
+        "url": "http://www.fws.gov/bayouteche/",
+        "image": "bayou-teche.jpg",
+        "imageurl": "https://flic.kr/p/ntHYRC",
+        "alt": "Tall cypress trees emerging from the swamp.",
+        "caption": "Bayou Teche. Photo: <a href='https://www.flickr.com/photos/47566319@N00/'>remster_9</a> <a href='https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode'>CC BY-NC-ND 2.0</a>",
+        "narrative": "The 9,028 acre refuge is forested with bottomland hardwoods and cypress-gum forests. The refuge was established in St. Mary Parish in 2001. The surrounding area includes oil and gas wells and canals.  The refuge supports a healthy population of Lousiana black bear, American alligator, wading birds, ducks and bald eagles. The refuge allows compatible public use such as nature trails, recreational boating, fishing, hunting, wildlife observation and photography, environmental education, and interpretation."
       },
       "geometry": {
         "type": "Point",
@@ -327,7 +370,12 @@
         "city": "Wadmalaw Island",
         "state": "SC",
         "zip": "29487",
-        "url": "http://www.fws.gov/warmsprings/BearsBluff/"
+        "url": "http://www.fws.gov/warmsprings/BearsBluff/",
+        "image": "bears-bluff.jpg",
+        "imageurl": "https://flic.kr/p/dcwptU",
+        "alt": "The welcome sign at the Hatchery surrounded by vegetation.",
+        "caption": "Bears Bluff entrance. Photo: Robert H. Pos, USFWS.",
+        "narrative": "Bears Bluff National Fish Hatchery consists of 31 acres bordering the North Edisto River south of Charleston, South Carolina. The hatchery has flexible and unique capabilities available to propagate and study most freshwater and saltwater aquatic species found in the South Atlantic Coastal Region. The station's goal is to restore and manage interjurisdictional coastal and riverine fishes, such as the American shad, anadromous sturgeon, and red drum; Recovery of species listed under the Endangered Species Act, such as the shortnose sturgeon and candidate species such as the Atlantic sturgeon; Pioneer and develop culture techniques for both freshwater and saltwater species."
       },
       "geometry": {
         "type": "Point",
@@ -348,7 +396,12 @@
         "city": "Lacombe",
         "state": "LA",
         "zip": "70445",
-        "url": "http://www.fws.gov/refuge/big_branch_marsh/"
+        "url": "http://www.fws.gov/refuge/big_branch_marsh/",
+        "image": "big-branch-marsh.jpg",
+        "imageurl": "https://flic.kr/p/9HqnZz",
+        "alt": "A brown bird with spotty black featers and long beak wading in the water.",
+        "caption": "King rail. Photo: <a href='https://www.flickr.com/photos/dermoidhome/'>Carol Foil</a> <a href='https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode'>CC BY-NC-ND 2.0</a>.",
+        "narrative": "Big Branch Marsh NWR is one of eight refuges managed as part of the Southeast Louisiana National Wildlife Refuges Complex. Prior to establishing the refuge, area wetlands were threatened by urban expansion from the city of New Orleans. The refuge is comprised of over 18,000 acres of offshore grass beds, marshes, hardwood hammocks and pine ridges. With a variety of habitat on the refuge, shorebirds, wading birds, neotropical songbird migrants and a host of year-round resident waterfowl can be found here.  Deer, rabbit, mink, otter, raccoon, muskrat, and nutria all make their home here, and the marshes provide critical spawning and nursery habitat for a number of fresh and saltwater species."
       },
       "geometry": {
         "type": "Point",
@@ -369,7 +422,12 @@
         "city": "Manila",
         "state": "AR",
         "zip": "72442",
-        "url": "http://www.fws.gov/biglake/"
+        "url": "http://www.fws.gov/biglake/",
+        "image": "big-lake.jpg",
+        "imageurl": "https://flic.kr/p/jJndai",
+        "alt": "Cypress trees emerging from the swamp.",
+        "caption": "Big Lake National Wildlife Refuge. Photo: Jeremy Bennett, USFWS.",
+        "narrative": "Big Lake NWR was established in 1915 to provide habitat and protection for migrating and wintering birds and is recognized as an important link in the Mississippi migration corridor. Big Lake was important in the recovery of the bald eagle from its endangered status. Due to the fact that Big Lake NWR is an oasis of bottomland hardwood in an agriculturally developed area, 6,400 acres are designated as a National Natural Landmark and 2,100 acres of the Natural Landmark are included in the Wilderness Preservation System.<br><br>The refuge annually winters several species of waterfowl. Peak numbers in January and February can exceed 200,000. Wood ducks are year-round residents and annually raise approximately 2,500 young in natural cavities and nest boxes. Over 225 bird species have been observed on the refuge and recorded by visiting ornithologists. Other wildlife to look for are beavers, otters, raccoons, wild turkeys, white-tailed deer, bobcat and the occasional armadillo."
       },
       "geometry": {
         "type": "Point",
@@ -390,7 +448,12 @@
         "city": "Monroe",
         "state": "LA",
         "zip": "71203",
-        "url": "http://www.fws.gov/northlouisiana/blackbayoulake/"
+        "url": "http://www.fws.gov/northlouisiana/blackbayoulake/",
+        "image": "black-bayou-lake.jpg",
+        "imageurl": "https://flic.kr/p/9nyu9s",
+        "alt": "A white-breasted bird with brown wings and back sings from a tree.",
+        "caption": "Carolina wren at Black Bayou Lake. Photo: Garry Tucker, USFWS.",
+        "narrative": "Black Bayou Lake is a 5300 acre refuge providing habitat for waterfowl, endangered wildlife, neo-tropical migrants, and resident wildlife. Located within the city limits of Monroe, the refuge provides easily accessible opportunities for local residents to spend time in nature as well as options for fishing and hunting. Bottomland hardwood forests provide habitat for a variety of species including prothonotary warblers. A cypress swamp showcases the stereotypical Louisiana of swamps and bald cypress that shelter a variety of species from broad-banded water snakes to a multitude of frogs. The 1600 acre lake provides a variety of recreational opportunities including fishing and canoeing. Through a strong environmental education program, we also serve as a destination for field-trips for local students. A variety of interpretive programs provide opportunities for visitors to learn more about the ecosystems represented at the refuge. The lake is the back-up water source for the City of Monroe and is managed under a 99 year lease by the US Fish and Wildlife Service to ensure water quality."
       },
       "geometry": {
         "type": "Point",
@@ -411,7 +474,11 @@
         "state": "GA",
         "zip": "31331",
         "url": "http://www.fws.gov/blackbeardisland/",
-        "narrative": "Blackbeard Island was named for Edward Teach, aka Blackbeard the Pirate. The refuge is only accessible by a privately chartered boat. It provides habitat to a variety of wintering birds, deer, alligators and well as sea turtles. There are approximately 1,163 acres of open freshwater or freshwater marsh, 2,000 acres of regularly flooded salt marsh, 2,115 acres of maritime forest, and 340 acres of sandy beach.",
+        "image": "blackbeard-island.jpg",
+        "imageurl": "https://flic.kr/p/cDvumq",
+        "alt": "A tiny turtle moving towards the ocean on the beach.",
+        "caption": "A baby turtle hustles towards the ocean. Photo: Becky Skiba, USFWS.",
+        "narrative": "Blackbeard Island NWR is one of the seven refuges administered as part of the Savannah Coastal Refuges Complex. The refuge's 5,618 acres include maritime forest, salt marsh, freshwater marsh, and beach habitat. In 1975, three thousand acres of the refuge were designated as National Wilderness. This barrier island refuge is located off the coast of McIntosh County, Georgia, about 50 miles south of the port city of Savannah. Blackbeard Island is accessible only by boat, and transportation to the refuge is not provided by the Fish and Wildlife Service. Visitors may use their own boats to reach the refuge or arrangements can be made through local boat captains and charter services. A public boat ramp on Harris Neck NWR (Barbour River Landing) may be used as a launching site for trips to the island.<br><br>The refuge offers visitors a variety of wildlife-dependent recreational activities year-round. Wildlife observation, especially birdwatching, is excellent throughout the year. In winter months, concentrations of migrating waterfowl and shorebirds utilize the marshlands and beaches, while songbirds abound in the wooded areas in the spring and fall. The existing trails and roads provide hikers with scenic paths ideal for nature study. Saltwater creeks that pass through the refuge marshes are open to fishing the entire year. Presently, two archery hunts for deer are scheduled on the island in the fall and winter (click here for hunting information).",
         "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Biking", "Hunting"]
       },
       "geometry": {
@@ -454,7 +521,12 @@
         "city": "Lacombe",
         "state": "LA",
         "zip": "70445",
-        "url": "http://www.fws.gov/boguechitto/"
+        "url": "http://www.fws.gov/boguechitto/",
+        "image": "bogue-chitto.jpg",
+        "imageurl": "https://flic.kr/p/7NBc1n",
+        "alt": "Still water with bare trees during fall.",
+        "caption": "Bogue Chitto National Wildlife Refuge. Photo: <a href='https://www.flickr.com/photos/locosteve/'>Loco Steve</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a>",
+        "narrative": "The Refuge encompasses 36,500 acres of the Pearl River Basin, most of which is accessible only by boat. The Refuge's remoteness is the draw for many visitors.<br><br>Bogue Chitto NWR is primarily composed of swamps and bottomland hardwoods, interlaced by the Pearl and Bogue Chitto River systems. Water levels fluctuate from the summer months when the river is at its lowest, to high flood stages in the winter and spring. Over 90% of the Refuge can become flooded during these seasonal high river periods, creating numerous sloughs, bayous and lakes."
       },
       "geometry": {
         "type": "Point",
@@ -475,7 +547,12 @@
         "state": "AL",
         "zip": "36542",
         "url": "http://www.fws.gov/bonsecour/",
-        "facebook": "https://www.facebook.com/BonSecourNWR"
+        "facebook": "https://www.facebook.com/BonSecourNWR",
+        "image": "bon-secour.jpg",
+        "imageurl": "https://flic.kr/p/eyRz9F",
+        "alt": "Vegetation emerges from a sand dune with the ocean in the background.",
+        "caption": "Dunes at Perdue Unit. Photo: USFWS.",
+        "narrative": "Bon Secour National Wildlife Refuge was established by Congress in 1980 for the protection of neotropical migratory songbird habitat and threatened and endangered species.  Bon Secour represents an important stopover and staging habitat for neotropical migratory songbirds during the fall and spring migration along the Alabama coastline. Migratory birds utilize this area for resting and building fat reserves critical to successful migration.<br><br>The refuge also provides crucial habitat for the endangered Alabama beach mouse that inhabits the beach dune and scrub/shrub habitats found along the Fort Morgan Peninsula. Beach mice have experienced a substantial reduction in available habitat, primarily due to coastal development. Bon Secour National Wildlife Refuge protects the last remaining undisturbed beach mouse habitat found in Alabama, consisting of several key plant communities that form a mosaic of micro-habitats.<br><br>Loggerhead, green, and Kemp's Ridley sea turtles nest on Bon Secour National Wildlife Refuge beaches. Conservation strategies to protect these turtles under the Endangered Species Act include on-site nest monitoring and protection, as well as fostering a public ethic through educational programs."
       },
       "geometry": {
         "type": "Point",
@@ -498,7 +575,10 @@
         "zip": "31038",
         "url": "http://www.fws.gov/bondswamp/",
         "narrative": "Bond Swamp was established to protect, maintain, and enhance the ecosystem of the Ocmulgee River floodplain. It is home to one of three black bear populations in the state of Georgia, as well as bobcats, deer, fish, reptiles, amphibians and over 200 species of birds. Habitat types range from mixed hardwood/pine ridges to bottomland hardwoods and swamp forests mixed with creeks, beaver swamps and oxbow lakes.",
-        "image": "georgia_bond-swamp.jpg",
+        "image": "bond-swamp.jpg",
+        "imageurl": "https://flic.kr/p/jME85M",
+        "alt": "A long-necked, colorful bird wading in the shallows next to a bank.",
+        "caption": "Tricolored heron. Photo: Allie Stewart, USFWS.",
         "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Hunting", "Fishing"]
       },
       "geometry": {
@@ -520,7 +600,12 @@
         "city": "Venice",
         "state": "LA",
         "zip": "70091",
-        "url": "http://www.fws.gov/breton/"
+        "url": "http://www.fws.gov/breton/",
+        "image": "breton.jpg",
+        "imageurl": "https://flic.kr/p/aiUArF",
+        "alt": "A large pelican lands in vegetation surrounded by many small white birds.",
+        "caption": "A brown pelican among royal terns. Photo: Greg Thompson, USFWS.",
+        "narrative": "Breton National Wildlife Refuge, established in 1904, is the second oldest National Wildlife Refuge. President Theodore Roosevelt heard about the destruction of birds and their eggs on Chandeleur and Breton Islands and soon afterward created Breton Island Reservation to serve as a refuge and breeding ground for migratory birds and other wildlife. Roosevelt visited the islands in June of 1915, and this is the only refuge Roosevelt ever visited. The name was changed to Breton NWR on October 4, 1938.<br><br>Historically, Breton NWR has been the site of a Lighthouse Station (destroyed by Hurricane Katrina), a quarantine station, a small fishing village and even an oil production facility.  Currently the only infrastructure remaining on Breton NWR is a remnant of the oil production facility on Breton Island. Many anglers and birdwatchers have visited the island to enjoy its bounty, and the beauty of Breton and its wildlife has even been captured in artworks by the noted Gulf Coast artist Walter Inglis Anderson, who visited the islands on solo trips from Mississippi."
       },
       "geometry": {
         "type": "Point",
@@ -541,7 +626,12 @@
         "city": "Christiansted",
         "state": "VI",
         "zip": "00820",
-        "url": "http://www.fws.gov/caribbean/refuges/Buckisland/default.htm"
+        "url": "http://www.fws.gov/caribbean/refuges/Buckisland/default.htm",
+        "image": "buck-island.jpg",
+        "imageurl": "https://www.unc.edu/~rowlett/lighthouse/photos/Caribbean/BuckIsland/Buck%20Island3.jpg",
+        "alt": "A black/white image of a lighthouse in disrepair.",
+        "caption": "Buck Island Lighthouse. Photo: U.S. Coast Guard.",
+        "narrative": "The island was transferred from the U.S. Navy and Coast Guard to the Fish and Wildlife Service due to its value for migratory birds. The surrounding waters contain reefs and a shipwreck that attract large numbers of snorkelers, divers, and boaters. A lighthouse previously maintained by the Coast Guard is on the refuge.  The refuge is characterized by a thorn scrub habitat with rocky coastline surrounded by spectacular reefs."
       },
       "geometry": {
         "type": "Point",
@@ -563,7 +653,11 @@
         "zip": "00622",
         "url": "http://www.fws.gov/caribbean/refuges/Caborojo/default.htm",
         "facebook": "https://www.facebook.com/CaboRojoNWR",
-        "narrative":"Nestled within the gently rolling hills of Puerto Rico’s subtropical dry forest, Cabo Rojo National Wildlife Refuge and the Salt Flats Unit serve as a vital stopover for birds that migrate between North and South America. These birds use the refuge during the cooler months, while resident species are present year-round. The refuge’s Salt Flats are designated as an “Important Regional Site” by the Western Hemisphere Shorebird Reserve Network and an “Important Bird Area” by BirdLife International. In addition, for hundreds of years the Salt Flats have been the main salt production area in Puerto Rico and plays an important part in contributing to the local economy. The Salt Flats has its own visitor center. There are also three walking trails and a five mile biking trail."
+        "narrative":"Nestled within the gently rolling hills of Puerto Rico’s subtropical dry forest, Cabo Rojo National Wildlife Refuge and the Salt Flats Unit serve as a vital stopover for birds that migrate between North and South America. These birds use the refuge during the cooler months, while resident species are present year-round. The refuge’s Salt Flats are designated as an “Important Regional Site” by the Western Hemisphere Shorebird Reserve Network and an “Important Bird Area” by BirdLife International. In addition, for hundreds of years the Salt Flats have been the main salt production area in Puerto Rico and plays an important part in contributing to the local economy. The Salt Flats has its own visitor center. There are also three walking trails and a five mile biking trail.",
+        "image": "cabo-rojo.jpg",
+        "imageurl": "https://flic.kr/p/9U7iRb",
+        "caption": "Endangered Sahila monosperma flower. Photo: Carolos Pacheco.",
+        "alt": "Small yellow flowers with pink stamen emerge from a long stem."
       },
       "geometry": {
         "type": "Point",
@@ -583,7 +677,12 @@
         "city": "Augusta",
         "state": "AR",
         "zip": "72006",
-        "url": "http://www.fws.gov/cacheriver/"
+        "url": "http://www.fws.gov/cacheriver/",
+        "image": "cache-river.jpg",
+        "imageurl": "https://flic.kr/p/9LS6Kp",
+        "alt": "Tall narrow trees innundated by flood waters.",
+        "caption": "Innundated bottomland hardwoods. Photo: USFWS.",
+        "narrative": "Cache River National Wildlife Refuge was established in 1986 to protect significant wetland habitats and provide feeding and resting areas for migrating waterfowl. As one of the few remaining areas in the Lower Mississippi River Valley not drastically altered by channelization and drainage, the Cache River basin contains a variety of wetland communities including some of the most intact and least disturbed bottomland hardwood forests in the Mississippi Valley region. These unique and valuable wetlands have been protected by the RAMSAR Convention as “Wetlands of International Importance”.<br><br>At present the refuge currently encompasses over 72,000 acres located in numerous non-contiguous tracts in Jackson, Woodruff, Monroe and Prairie counties in east central Arkansas. The boundary of this refuge changes frequently as land acquisition continues along the Cache River, White River and Bayou Deview."
       },
       "geometry": {
         "type": "Point",
@@ -604,7 +703,12 @@
         "state": "AL",
         "zip": "36205",
         "url": "http://www.fws.gov/cahabariver/",
-        "facebook": "https://www.facebook.com/CahabaRiverNWR"
+        "facebook": "https://www.facebook.com/CahabaRiverNWR",
+        "image": "cahaba-river.jpg",
+        "imageurl": "https://flic.kr/p/9ExpuK",
+        "alt": "A large, prehistoric looking turtle, with sharp beaked mouth held by a biologist.",
+        "caption": "Alligator snapping turtle. Photo: Garry Tucker, USFWS.",
+        "narrative": "Cahaba River National Wildlife Refuge was established September 25, 2002 for the purpose of protecting and managing a unique section of the Cahaba River and land adjacent to it. Cahaba River NWR is home to five federally listed species including the Cahaba shiner, goldline darter, round rocksnail, and cylindrical lioplax snail.<br><br>The Cahaba River itself stretches for almost 200 miles and is Alabama's longest free-flowing stream. The river currently supports 64 rare and imperiled plant and animal species, 13 of which are found nowhere else in the world. The river has more fish species at 131 than any other river it's size in North America. Over seven miles of the Cahaba lie within the approved acquisition boundary. The rolling uplands surrounding the river are forested with mountain longleaf and loblolly pines. Mixed upland hardwood species line ravines and the river's edge.<br><br>The largest known stand of the imperiled shoals lily (known locally as the Cahaba lily) also occurs within the Refuge. During summer months, this beautiful plant blooms and people come from across the region to view this magnificent display of nature. There is even an annual Cahaba lily festival that draws thousands of visitors to the area the last Saturday in May."
       },
       "geometry": {
         "type": "Point",
@@ -625,7 +729,12 @@
         "city": "Sanibel",
         "state": "FL",
         "zip": "33957",
-        "url": "http://www.fws.gov/dingdarling/caloosahatchee/"
+        "url": "http://www.fws.gov/dingdarling/caloosahatchee/",
+        "image": "caloosahatchee.jpg",
+        "imageurl": "https://flic.kr/p/prdiDc",
+        "alt": "Colorful light reflected off of the river with a palm tree silhouette.",
+        "caption": "Sunset over the Caloosahatchee river. Photo: <a href='https://www.flickr.com/photos/dalesbest/'>Dale</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a>",
+        "narrative": "The Caloosahatchee National Wildlife Refuge, administered as a satellite refuge of J.N. \"Ding\" Darling NWR, is located in Lee County on the Caloosahatchee River within the city of Fort Myers. The refuge was established by President Woodrow Wilson on July 1, 1920, through Executive Order 3299 as a \"... preserve and breeding ground for native birds\". Originally, the Caloosahatchee refuge consisted of several mangrove islands. However, shoreline development, dredging of the river, and construction of the I-75 bridge has changed the physical arrangement and appearance of these islands. Today, the refuge still remains approximately 40 acres of mangrove shorelines and upland island habitats. The refuge is located adjacent to the Florida Power and Light Company's Orange River Power Plant and the Orange River's outflow. The warm water outflow from the power plant is a major wintering area for the endangered West Indian manatee."
       },
       "geometry": {
         "type": "Point",
@@ -646,7 +755,12 @@
         "state": "SC",
         "zip": "29429",
         "url": "http://www.fws.gov/caperomain/",
-        "facebook": "https://www.facebook.com/caperomain"
+        "facebook": "https://www.facebook.com/caperomain",
+        "image": "cape-romain.jpg",
+        "imageurl": "https://flic.kr/p/jJpP4J",
+        "alt": "A group of black shouldered birds next to a group of smaller grey shouldered birds standing on a sand bank.",
+        "caption": "Oystercatchers, marbled godwits and dowitchers in the Cape Romain National Wildlife Refuge wilderness. Photo: Ed Pivorun.",
+        "narrative": "The refuge's original objectives were to preserve in public ownership habitat for waterfowl, shorebirds, and resident species. In recent years, objectives have expanded to include: managing endangered species, protecting the 29,000 acre Class I Wilderness Area, and preserving the Bulls Island and Cape Island forests and their diverse plant communities. Currently, the refuge is actively working to aid the recovery of the threatened loggerhead sea turtle. "
       },
       "geometry": {
         "type": "Point",
@@ -728,7 +842,12 @@
         "city": "Mcbee",
         "state": "SC",
         "zip": "29101",
-        "url": "http://www.fws.gov/refuge/Carolina_Sandhills/"
+        "url": "http://www.fws.gov/refuge/Carolina_Sandhills/",
+        "image": "carolina-sandhills.jpg",
+        "imageurl": "https://flic.kr/p/c4cwFj",
+        "alt": "Tall narrow trees emerge from a relatively bare forest floor.",
+        "caption": "Mature open stand of longleaf pine. Photo: Jack Culpepper, USFWS.",
+        "narrative": "Carolina Sandhills National Wildlife Refuge was established in 1939 to provide habitat for migratory birds, to demonstrate sound management practices that enhance natural resource conservation, and to provide wildlife-oriented recreation opportunities.<br><br>Restoration and enhancement of longleaf pine habitat has becoming increasingly important for the benefit of the red-cockaded woodpecker, named as an endangered species in 1970. The refuge operates under mandates to provide environmental education and interpretation of its work.<br><br>Today, Carolina Sandhills National Wildlife Refuge is comprised of 47,850 acres, including fee ownership of 45,348 acres, and nine conservation easements totaling 2,502 acres. The majority of the refuge lies in Chesterfield County, South Carolina. There is one fee title tract totaling 210 acres in Marlboro County. Numerous small creeks and tributaries, along with thirty man-made lakes and ponds and 1,200 acres of fields, support a diversity of habitats for wildlife."
       },
       "geometry": {
         "type": "Point",
@@ -749,7 +868,12 @@
         "state": "MS",
         "zip": "39120",
         "url": "http://www.fws.gov/refuge/cat_island/",
-        "facebook": "https://www.facebook.com/LowerMissNWRComplex#!/LowerMissNWRComplex"
+        "facebook": "https://www.facebook.com/LowerMissNWRComplex#!/LowerMissNWRComplex",
+        "image": "cat-island.jpg",
+        "imageurl": "https://flic.kr/p/a1tnry",
+        "alt": "A refuge road approaches a creek.",
+        "caption": "Pintail lane at Cat Island National Wildlife Refuge. Photo: USFWS.",
+        "narrative": "Cat Island National Wildlife Refuge was established on October 27, 2000 as the 526th refuge in the National Wildlife Refuge System. It is located near the town of St. Francisville, Louisiana, which is 30 miles north of Baton Rouge. The refuge was established to conserve, restore, and manage native forested wetland habitats for migratory birds, aquatic resources, and endangered and threatened plants and animals. Additionally, it was created to encourage the use of volunteers and facilitate partnerships among the U.S. Fish and Wildlife Service, local communities, and conservation organizations to promote public awareness of resources of the refuge and the National Wildlife Refuge System."
       },
       "geometry": {
         "type": "Point",
@@ -769,7 +893,12 @@
         "city": "Jonesville",
         "state": "LA",
         "zip": "71343",
-        "url": "http://www.fws.gov/catahoula/"
+        "url": "http://www.fws.gov/catahoula/",
+        "image": "catahoula.jpg",
+        "imageurl": "https://flic.kr/p/8ZUBAa",
+        "alt": "Tall, wide trees emerge from shallow water on the forest floor.",
+        "caption": "Cypress swamp. Photo: <a href='https://www.flickr.com/photos/walmartcorporate/'>Walmart</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a>.",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -789,7 +918,12 @@
         "city": "Cedar Island",
         "state": "NC",
         "zip": "28520",
-        "url": "http://www.fws.gov/refuge/cedar_island/"
+        "url": "http://www.fws.gov/refuge/cedar_island/",
+        "image": "cedar-island.jpg",
+        "imageurl": "https://flic.kr/p/qRWeZD",
+        "alt": "A red/navy bird with long curvy neck wading in the shallow water.",
+        "caption": "Tricolored heron. Photo: <a href='https://www.flickr.com/photos/jvancisephotos/'>j van cise photos</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a>.",
+        "narrative": "Cedar Island National Wildlife Refuge, located in Carteret County, North Carolina is on the end of a peninsula marking the southern end of Pamlico Sound. The refuge lies five miles West of the Atlantic ocean and about 40 miles northeast of Beaufort, North Carolina. Established in 1964, the refuge consists of approximately 11,000 acres of irregularly-flooded, brackish marsh and 3,494 acres of pocosin and woodland habitat. The dominant marsh plants include black needlerush, saltmarsh cordgrass, saltmeadow hay, and saltgrass. The woodland areas are dominated by loblolly, longleaf and pond pine. Live oak is also abundant on some upland sites. The marsh and surrounding waters provide wintering habitat for thousands of ducks and nesting habitat for colonial waterbirds."
       },
       "geometry": {
         "type": "Point",
@@ -810,7 +944,12 @@
         "city": "Chiefland",
         "state": "FL",
         "zip": "32626",
-        "url": "http://www.fws.gov/cedarkeys/"
+        "url": "http://www.fws.gov/cedarkeys/",
+        "image": "cedar-keys.jpg",
+        "imageurl": "https://flic.kr/p/Di7YZC",
+        "alt": "Hundreds of birds taking flight from a sandbar.",
+        "caption": "Cedar Key birds. Photo: FWC.",
+        "narrative": "Cedar Keys National Wildlife Refuge provides a safe haven for wildlife and terrific recreation opportunities for people in the Gulf of Mexico.<br><br>Cedar Island, now named Atsena Otie, is open for visitors from dawn to dusk. Enter on the boardwalk that crosses the marsh. To the right about 20 yards is an information kiosk and restroom facility near the observation deck. Remnants of the old village can be seen on the main trail. Brick ruins of the Faber Mill remain on the west end of the island. The trail travels past a kiln for drying the cedar slats meant for pencils; a windmill remains adjacent to the trail. The most remarkable sign of civilization is the 19th century cemetery, the final resting place for victims of yellow fever and the hard life of the times. "
       },
       "geometry": {
         "type": "Point",
@@ -829,7 +968,12 @@
         "address": "26320 Highway 33 South",
         "city": "Augusta",
         "state": "AR",
-        "zip": "72006"
+        "zip": "72006",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -848,7 +992,12 @@
         "address": "401 Island Road",
         "city": "Marksville",
         "state": "LA",
-        "zip": "71351"
+        "zip": "71351",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -868,7 +1017,12 @@
         "city": "Crystal River",
         "state": "FL",
         "zip": "34429",
-        "url": "http://www.fws.gov/chassahowitzka/"
+        "url": "http://www.fws.gov/chassahowitzka/",
+        "image": "chassahowitzka.jpg",
+        "imageurl": "https://flic.kr/p/czmmcd",
+        "alt": "Aerial photo showing landscape dotted by coastal marshes and sparse forest stands.",
+        "caption": "Aerial photo of Chassahowitzka National Wildife Refuge. Photo: Joyce Kleen, USFWS.",
+        "narrative": "The Chassahowitzka National Wildlife Refuge, established in 1941, is comprised of over 31,000 acres of saltwater bays, estuaries and brackish marshes at the mouth of the Chassahowitzka River. The refuge, located approximately 65 miles north of St. Petersburg, FL, was established primarily to protect waterfowl habitat and is home to over 250 species of birds, over 50 species of retiles and amphibians, and at least 25 different species of mammals, including the endangered West Indian Manatee."
       },
       "geometry": {
         "type": "Point",
@@ -891,8 +1045,11 @@
         "url": "http://www.fws.gov/chattahoocheeforest/",
         "facebook": "https://www.facebook.com/ChattahoocheeForestNationalFishHatchery",
         "narrative": "The primary responsibility of Chattahoochee Forest National Fish Hatchery is to raise rainbow trout, and station facilities are currently used to produce one million trout each year. These fish are stocked into tailwaters, streams and lakes of Northern Georgia The hatchery also produces brown and brook trout, and also holds populations of threatened and endangered fish.",
-        "image": "georgia_chattahoochee-forest.jpg",
-        "activities": ["Office", "Fishing"]
+        "activities": ["Office", "Fishing"],
+        "image": "chattahoochee-forest.jpg",
+        "imageurl": "https://flic.kr/p/dcz77i",
+        "alt": "Brown sign at the entrance of the hatchery.",
+        "caption": "Chattahoochee Forest National Fish Hatchery. Photo: Robert H. Pos, USFWS."
       },
       "geometry": {
         "type": "Point",
@@ -913,7 +1070,12 @@
         "city": "Dyersburg",
         "state": "TN",
         "zip": "38024",
-        "url": "http://www.fws.gov/chickasaw/"
+        "url": "http://www.fws.gov/chickasaw/",
+        "image": "chickasaw.jpg",
+        "imageurl": "https://flic.kr/p/nrAR8h",
+        "alt": "Reflected sunset with cypress tree silhouettes.",
+        "caption": "Cypress reflections. Photo: <a href='https://www.flickr.com/photos/jimmydspics/'>Jim Denham</a> <a href='https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode'>CC BY-NC-ND</a>.",
+        "narrative": "Chickasaw National Wildlife Refuge has the largest tract of bottomland hardwood forest in Tennessee, and lies in the Lower Mississippi River floodplain with eight miles of the refuge’s western boundary adjoining the Mississippi River. The refuge extends east two to six miles to the edge of the heavily dissected Chickasaw Bluff. The dominant land forms of the Lower Mississippi River Ecosystem are the alluvial plain of the Mississippi River downstream of its confluence with the Ohio River, and the deltaic plain and associated marshes and swamps created by the meanderings of the Mississippi River and its tributaries.<br><br>Chickasaw National Wildlife Refuge provides a variety of habitat types for a diversity of wildlife species. The habitats on the refuge consist of approximately 94 acres of open administrative land; 1,186 acres of agriculture and moist soil open lands (the agricultural/moist soil breakdown varies from year to year); 1,874 acres of bald cypress/tupelo forest; 18,419 acres of mixed bottomland hardwood forest; 966 acres of open water; 1,018 acres of sandbars; 515 acres of osage orange savanna; 431 acres of scrub-shrub; and 503 acres of upland forest. The total current deeded acreage being managed as Chickasaw National Wildlife Refuge is over 26,000 acres."
       },
       "geometry": {
         "type": "Point",
@@ -933,7 +1095,12 @@
         "city": "Gilbertown",
         "state": "AL",
         "zip": "36908",
-        "url": "http://www.fws.gov/choctaw/"
+        "url": "http://www.fws.gov/choctaw/",
+        "image": "choctaw.jpg",
+        "imageurl": "https://flic.kr/p/4QfM7m",
+        "alt": "Vegetated banks of a creek.",
+        "caption": "Orange milkwort, used by the Choctaw tribe as a dermatological aid. Photo: USFWS Volunteer, Robin Rickel Vroegop.",
+        "narrative": "The Choctaw National Wildlife Refuge is located in southwest Alabama along the Tombigbee River approximately 80 miles north of Mobile. The Refuge was established in 1964 on lands acquired by the Corp of Engineers in conjunction with the Coffeeville Lock and Dam project. The 4,218 acre refuge encompasses approximately 1,802 acres of lakes, sloughs, and creeks, 2,265 acres of bottomland hardwoods, and 151 acres of croplands and moist soil units.<br><br>The primary purpose of the refuge is to provide wood duck brood habitat and serve as a protected wintering area for waterfowl. Up to 200 broods of wood ducks are produced anually in the refuge's artificial nest boxes, and wintering waterfowl numbers can exceed 10,000. In addition, numerous neotropical migrant and wading birds benefit from management activities. Following a successful bald eagle hacking program in the early 1990's the refuge has played host to a nesting pair of eagles each winter. During the summer months wood storks can be found resting and feeding in the back-water sloughs and moist soil units. Resident wildlife includes white-tailed deer, gray squirrels, turkey, raccoons, opossum, American alligator, and beaver."
       },
       "geometry": {
         "type": "Point",
@@ -954,7 +1121,12 @@
         "state": "KY",
         "zip": "42025",
         "url": "http://www.fws.gov/refuge/Clarks_River/",
-        "facebook": "https://www.facebook.com/clarks.river"
+        "facebook": "https://www.facebook.com/clarks.river",
+        "image": "clarks-river.jpg",
+        "imageurl": "https://flic.kr/p/buzGMg",
+        "alt": "Fall colors on the banks of a small creek.",
+        "caption": "Clarks River in Fall. Photo: Andy Eller, USFWS.",
+        "narrative": "Clarks River National Wildlife Refuge was established in 1997 and the first track of land was purchased in 1998, so it is relatively new refuge. It is the only National Wildlife Refuge in the state of Kentucky and is comprised of one of the largest remaining bottomland hardwood forests in the region.<br><br>Bottomland hardwood forests are one of the most biologically productive ecosystems on land, and the rich moist soils from seasonal flooding nourish an explosion of wildlife diversity. Freshwater mussels, amphibians, fish, and mammals are all found in abundance here, and migratory songbirds and waterfowl take advantage of this rich habitat on their long flights from nesting to wintering grounds. This diversity and abundance of wildlife provides ample hunting, fishing, and other recreational opportunities. Clarks River National Wildlife Refuge protects, manages, and enhances this ecosystem and healthy and viable populations of wildlife found here through habitat and wildlife management, environmental education, and cooperative partnerships with conservation agencies and landowners."
       },
       "geometry": {
         "type": "Point",
@@ -975,7 +1147,12 @@
         "city": "Grenada",
         "state": "MS",
         "zip": "38901",
-        "url": "http://www.fws.gov/refuge/coldwater_river/"
+        "url": "http://www.fws.gov/refuge/coldwater_river/",
+        "image": "coldwater-river.jpg",
+        "imageurl": "https://www.fws.gov/uploadedImages/Region_4/NWRS/Zone_2/North_Mississippi_Refuges_Complex/Coldwater_River/Images/Coldwater_billboard%20.jpg",
+        "alt": "Marsh vegetation in front of a small river with a deciduous forest in the background.",
+        "caption": "Coldwater Creek National Wildlife Refuge. Photo: USFWS.",
+        "narrative": "Coldwater River National Wildlife Refuge is located in northwest Mississippi, 4 1/2 miles south of the town of Crowder.  Established in 2000,  this refuge consists of 2,374 acres.  At the center of the refuge are 24 retired catfish ponds, ranging in size from 12 to 21 acres and totaling 497 acres.  These ponds are intensively managed for migrating waterfowl, shorebirds, and wading birds.  A majority of the refuge has been reforested in native bottomland hardwood species.  Almost all of this forested land is flooded annually during the winter and spring by backwater flooding.<br><br>Up to 10,000 migratory waterfowl winter on the refuge, and 34 species of shorebirds have been recorded during the spring and fall migration.  Peregrine falcons, least terns, black terns, bald and golden eagles, and wood storks have  been observed.  Due to intensive management, the refuge is critically important as a sanctuary for waterfowl and neotropical migratory birds.  For this  reason, the refuge is closed to public access except for an observation tower at the north end of the ponds."
       },
       "geometry": {
         "type": "Point",
@@ -995,7 +1172,12 @@
         "city": "Key Largo",
         "state": "FL",
         "zip": "33037",
-        "url": "http://www.fws.gov/nationalkeydeer/crocodilelake/"
+        "url": "http://www.fws.gov/nationalkeydeer/crocodilelake/",
+        "image": "crocodile-lake.jpg",
+        "imageurl": "https://flic.kr/p/cAqP23",
+        "alt": "A small alligator with it's mouth wide open.",
+        "caption": "American alligator. Photo: Molly Martin, USFWS.",
+        "narrative": "Crocodile Lake National Wildlife Refuge, operating as a satellite of the National Key Deer Refuge, is on upper Key Largo in Monroe County, Florida, and was established under the Endangered Species Act of 1973 and the Land and Water Conservation Fund Act of 1965. The refuge was established in April 1980 and currently covers 6,700 acres, including 650 acres of open water. It contains a mosaic of habitat types including tropical hardwood hammock, mangrove forest, and salt marsh. These habitats are vital for hundreds of plants and animals, including eight federally listed species."
       },
       "geometry": {
         "type": "Point",
@@ -1015,7 +1197,12 @@
         "city": "Dover",
         "state": "TN",
         "zip": "37058",
-        "url": "http://www.fws.gov/crosscreeks/"
+        "url": "http://www.fws.gov/crosscreeks/",
+        "image": "cross-creeks.jpg",
+        "imageurl": "https://flic.kr/p/GmdqtG",
+        "alt": "A navy blue bird with what looks like slicked back hair.",
+        "caption": "Belted kingfisher. Photo: Jessica Bolser, USFWS.",
+        "narrative": "Cross Creeks National Wildlife Refuge is located four miles east of Dover, in Stewart County, Tennessee and approximately seventy-five miles northwest of Nashville, Tennessee. The refuge was established in 1962 as a result of mitigation proceedings with the U.S. Army Corps of Engineers when portion of the Kentucky Woodlands NWR was inundated with the creation of the Lake Barkely Project. Its primary purpose is to provide feeding and resting habitat for migratory birds with an emphasis placed on providing habitat for wintering waterfowl."
       },
       "geometry": {
         "type": "Point",
@@ -1036,7 +1223,12 @@
         "state": "FL",
         "zip": "34429",
         "url": "http://www.fws.gov/refuge/crystal_river/",
-        "facebook": "https://www.facebook.com/CrystalRiverComplex"
+        "facebook": "https://www.facebook.com/CrystalRiverComplex",
+        "image": "crystal-river.jpg",
+        "imageurl": "https://flic.kr/p/9U78gu",
+        "alt": "A large aquatic mammal under water with lots of brown algae growing on it's back.",
+        "caption": "Manatee. Photo: Darryl Stansbury, USFWS.",
+        "narrative": "Established in 1983, Crystal River National Wildlife Refuge is the only refuge created specifically for the protection of the endangered Florida Manatee, a subspecies of the West Indian Manatee.  This unique refuge preserves the last unspoiled and undeveloped spring habitat in Kings Bay, which forms the headwaters of the Crystal River.  The refuge preserves the most important aquifer fed spring havens in Kings Bay (King Spring and Three Sisters Springs), which provide critical habitat for the manatee populations that migrate here each winter. In addition to the establishment of Crystal River National Wildlife Refuge, manatees are also protected in Kings Bay by seven federal manatee sanctuaries (November-March), and the recent designation (2012) of the entire Kings Bay area as the Kings Bay Manatee Refuge (or Kings Bay Manatee Protection Area). All three (the refuge, sanctuaries and protection area) are managed by th U.S. Fish and Wildlife Service to help protect nearly 600 manatees in Kings Bay each winter."
       },
       "geometry": {
         "type": "Point",
@@ -1057,7 +1249,12 @@
         "state": "PR",
         "zip": "00775",
         "url": "http://www.fws.gov/caribbean/refuges/culebra/",
-        "facebook": "https://www.facebook.com/culebra.nwr"
+        "facebook": "https://www.facebook.com/culebra.nwr",
+        "image": "culebra.jpg",
+        "imageurl": "https://flic.kr/p/8SEros",
+        "alt": "A group on a beach digs to find a sea turtle nest.",
+        "caption": "Relocating sea turtle nests. Photo: USFWS.",
+        "narrative": "Culebra may be the most precious jewel in the treasure chest of Caribbean refuges. More than 50,000 seabirds of 13 species find their way to this dot in the ocean every year to breed and nurture their young, with a the largest Sooty Tern nesting in the Culebra archipelago being found on Peninsula Flamenco. Many other bird species permanently call Culebra home while three species of sea turtles use the waters surrounding Culebra and nest on refuge beaches."
       },
       "geometry": {
         "type": "Point",
@@ -1078,7 +1275,12 @@
         "city": "Knotts Island",
         "state": "NC",
         "zip": "27950",
-        "url": "http://www.fws.gov/refuge/currituck/"
+        "url": "http://www.fws.gov/refuge/currituck/",
+        "image": "currituck.jpg",
+        "imageurl": "https://flic.kr/p/dfQGqY",
+        "alt": "Aerial photo of the visitor center right on the coast.",
+        "caption": "Refuge Headquarters at Currituck National Wildlife Refuge. Photo: Cindy Dohner, USFWS.",
+        "narrative": "Primary purposes of the Currituck NWR are to preserve, protect and maintain healthy and viable populations of migratory birds, wildlife, fish and plants, including federal and state endangered species and trust species. The refuge restores, enhances and maintains the natural processes and diversity of beach, dune, interdunal, maritime forest and marsh habitats to ensure optimum ecological productivity as well as to protect the water quality of Currituck Sound. The Refuge also provides opportunities for wildlife-oriented interpretation, outdoor recreation and environmental education focusing on the wildlife and habitats of the refuge."
       },
       "geometry": {
         "type": "Point",
@@ -1098,7 +1300,12 @@
         "city": "Boyle",
         "state": "MS",
         "zip": "38901",
-        "url": "http://www.fws.gov/refuge/Dahomey/"
+        "url": "http://www.fws.gov/refuge/Dahomey/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1118,7 +1325,12 @@
         "city": "Celina",
         "state": "TN",
         "zip": "38551",
-        "url": "http://www.fws.gov/dalehollow/"
+        "url": "http://www.fws.gov/dalehollow/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
