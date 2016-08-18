@@ -1,4 +1,11 @@
 h2= office.name
+
+if office.image
+  - var url = './images/' + office.image;
+  a(href=office.imageurl, target="_blank")
+    img(src=url, alt="office.alt", class="detail-image")
+  p| !{office.caption}
+
 ul.detail-links
   if office.url
     li
@@ -12,9 +19,9 @@ ul.detail-links
     li
       a(href=office.twitter title="Twitter")
         include ../svg/twitter.svg
+
 div.detail-content-wrap
-  p.detail-description
-    = office.narrative
+  p.detail-description| !{office.narrative}
   if office.activities
     h3 Activities
     ul.detail-activities
@@ -55,4 +62,5 @@ div.detail-content-wrap
           li
             img(src="./svg/picnic-shelter.svg")
             = activity
+  h3 Address:
   address| #{office.address} #[br] #{office.city}, #{office.state} #{office.zip}
