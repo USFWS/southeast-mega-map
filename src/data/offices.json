@@ -898,7 +898,7 @@
         "imageurl": "https://flic.kr/p/8ZUBAa",
         "alt": "Tall, wide trees emerge from shallow water on the forest floor.",
         "caption": "Cypress swamp. Photo: <a href='https://www.flickr.com/photos/walmartcorporate/'>Walmart</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a>.",
-        "narrative": ""
+        "narrative": "Catahoula NWR was established in 1958 as a wintering area for migratory waterfowl.  Most of the Refuge's approximately 25,000 acres are lowland hardwood forests subject to backwater flooding from the Ouachita, Black, and Red Rivers.<br><br>White-tailed deer, small game mammals, songbirds, raptors, waterbirds, reptiles, and amphibians are commonly seen throughout the refuge. Waterfowl are abundant during the winter. Peak waterfowl populations of 75,000 ducks have been recorded. In 1979, the Duck Lake Impoundment was created to provide 1200 acres of waterfowl habitat. Management of the impoundment is to manipulate water levels to promote the growth of aquatic and moist soil vegetation. In 2001, Catahoula NWR was designated a Globally Important Bird Area. Catahoula Lake is recognized as a Wetlands of International Importance (RAMSAR site): a historic concentration area for shorebirds, waterbirds, and migrating/wintering waterfowl. Catahoula NWR also borders a portion of the Dewey Wills Wildlife Management Area. Together, these areas provide a haven for wildlife and preserve representative samples of the unique habitats originally found in the Lower Mississippi River Ecosystem."
       },
       "geometry": {
         "type": "Point",
@@ -1301,11 +1301,11 @@
         "state": "MS",
         "zip": "38901",
         "url": "http://www.fws.gov/refuge/Dahomey/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "dahomey.jpg",
+        "imageurl": "https://flic.kr/p/c8wxQ7",
+        "alt": "A bright yellow bird with grey wings perched on a tree.",
+        "caption": "Prothonotary warbler. Photo: <a href='https://www.flickr.com/photos/lgooch/'>Laura Gooch</a> <a href='https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode'>CC BY-NC-SA 2.0</a>.",
+        "narrative": "Dahomey National Wildlife Refuge is the largest remaining tract of bottomland hardwood forest in the northwest portion of Mississippi outside of the mainline levee.  Located within the Mississippi Alluvial Valley, the refuge was established in 1991 to provide habitat for migratory birds and protect wetlands.  The 9,691 acres which make up the refuge have been purchased from The Nature Conservancy (TNC), donated by the Mississippi Department of Transportation (MDOT), and leased from the West Bolivar School Board (16th Section tract)."
       },
       "geometry": {
         "type": "Point",
@@ -1326,11 +1326,11 @@
         "state": "TN",
         "zip": "38551",
         "url": "http://www.fws.gov/dalehollow/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "dale-hallow.jpg",
+        "imageurl": "https://flic.kr/p/ojyXoV",
+        "alt": "A small fish held by a biologist with a net in the background.",
+        "caption": "Eastern brook trout. Photo: Steve Droter, Chesapeake Bay Program <a href='https://creativecommons.org/licenses/by-nc/2.0/legalcode'>CC BY-NC 2.0</a>.",
+        "narrative": "Operated by the U.S. Fish and Wildlife Service, Department of the Interior, this National Fish Hatchery (NFH) is one of many serving a vital role in the management of our country’s fishery resources. Dale Hollow NFH was established to mitigate for fishery resources which were lost due to the construction of federal water development projects in the Southeast. This is accomplished by stocking rainbow, brown, lake, and brook trout in waters impacted by federal dams. Stocking trout in public waters supports a significant recreational fishery which generates a substantial amount of economic activity for local and regional economies. This facility is also involved in the conservation of imperiled, freshwater, non-game fishes, and mussels."
       },
       "geometry": {
         "type": "Point",
@@ -1351,7 +1351,12 @@
         "city": "Farmerville",
         "state": "LA",
         "zip": "71241",
-        "url": "http://www.fws.gov/darbonne/"
+        "url": "http://www.fws.gov/darbonne/",
+        "image": "darbonne.jpg",
+        "imageurl": "https://flic.kr/p/fF5CiY",
+        "alt": "A brown bird with striped white features on the wing.",
+        "caption": "Red cockaded woodpecker. Photo: Martjan Lammertink, USFS.",
+        "narrative": "D'Arbonne National Wildlife Refuge, located north of West Monroe, Louisiana, lies on the western edge of the Mississippi Alluvial Valley. It was established in 1975 to protect bottomland hardwoods and provide wintering habitat for migratory waterfowl. Additionally the refuge provides habitat for alligators, bald eagles, the little known Rafinesque's big-eared bat and the endangered red-cockaded woodpecker. The refuge is bisected by 13 miles of Bayou D'Arbonne, a stream in the Louisiana Natural and Scenic Rivers System, and is crisscrossed by numerous creeks, sloughs and oxbow lakes. Cypress swamps, bottomland hardwood and upland forests complete the landscape that is habitat for a diverse group of plants and animals. D'Arbonne NWR also has the national record mayhaw tree, a wetland species with fruit that makes delicious jelly. D'Arbonne is one of five refuges managed in the North Louisiana Refuges Complex.<br><br>In years of normal or above rainfall, the refuge's bottomland hardwood forest is a very important overflow area for the Ouachita River basin. High water levels, which usually occur between January and May, can flood up to 87% of the refuge. The wetland forests not only provide habitat to wetland dependent wildlife, but they also reduce damage from flooding in developed areas, they filter silt and other particles from the water, they help neutralize pollutants in the water, and they provide recharge areas for aquifers (natural underground water storage areas)."
       },
       "geometry": {
         "type": "Point",
@@ -1390,7 +1395,12 @@
         "city": "Venice",
         "state": "LA",
         "zip": "70091",
-        "url": "http://www.fws.gov/delta/"
+        "url": "http://www.fws.gov/delta/",
+        "image": "delta.jpg",
+        "imageurl": "https://flic.kr/p/GWtrZ8",
+        "alt": "The sky is nearly blocked out with many flying birds with black tipped wings.",
+        "caption": "Snow geese. Photo: Eve Turek, USFWS.",
+        "narrative": "Delta National Wildlife Refuge was established in 1935.  Its 49,000 acres were formed by the deposition of sediment carried by the Mississippi River.  This area combines the warmth of the Gulf and the wealth of the river.  Its lush vegetation is the food source for a multitude of fish, waterfowl and animals.  Delta is the winter home for hundreds of thousands of snow geese, coots and ducks.<br><br>The refuge lands are accessible only by boat. Despite this limitation, the area has a long record of public use. The majority of this public use has been in the form of consumptive uses such as hunting, fishing, and trapping. Numerous recreational opportunities are available. Hunting programs allow the use of renewable natural resources. Sport fishing is enjoyed by numerous visitors. Other public use includes wildlife observation, canoeing and kayaking and photography. Camping is not allowed on the refuge."
       },
       "geometry": {
         "type": "Point",
@@ -1411,7 +1421,12 @@
         "city": "Boqueron",
         "state": "PR",
         "zip": "00622",
-        "url": "http://www.fws.gov/caribbean/refuges/desecheo/"
+        "url": "http://www.fws.gov/caribbean/refuges/desecheo/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1452,7 +1467,12 @@
         "city": "Edenton",
         "state": "NC",
         "zip": "27932",
-        "url": "http://www.fws.gov/edenton/"
+        "url": "http://www.fws.gov/edenton/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1473,7 +1493,12 @@
         "city": "Crystal River",
         "state": "FL",
         "zip": "34429",
-        "url": "http://www.fws.gov/egmontkey/"
+        "url": "http://www.fws.gov/egmontkey/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1493,7 +1518,12 @@
         "city": "Hollywood",
         "state": "SC",
         "zip": "29449",
-        "url": "http://www.fws.gov/refuge/ACE_basin/"
+        "url": "http://www.fws.gov/refuge/ACE_basin/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1513,7 +1543,12 @@
         "city": "Erwin",
         "state": "TN",
         "zip": "37650",
-        "url": "http://www.fws.gov/erwin/"
+        "url": "http://www.fws.gov/erwin/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1534,7 +1569,12 @@
         "state": "AL",
         "zip": "36027",
         "url": "http://www.fws.gov/eufaula/",
-        "facebook": "https://www.facebook.com/EufaulaNWR"
+        "facebook": "https://www.facebook.com/EufaulaNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1555,7 +1595,12 @@
         "state": "FL",
         "zip": "32963",
         "url": "http://www.fws.gov/southeast/evergladesheadwaters/",
-        "facebook": "https://www.facebook.com/EvergladesHeadwaters"
+        "facebook": "https://www.facebook.com/EvergladesHeadwaters",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1576,7 +1621,12 @@
         "state": "AR",
         "zip": "71635",
         "url": "http://www.fws.gov/refuge/felsenthal/",
-        "facebook": "https://www.facebook.com/southarkansasrefugescomplex"
+        "facebook": "https://www.facebook.com/southarkansasrefugescomplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1597,7 +1647,12 @@
         "city": "Decatur",
         "state": "AL",
         "zip": "35603",
-        "url": "http://www.fws.gov/refuge/fern_cave/"
+        "url": "http://www.fws.gov/refuge/fern_cave/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -1637,7 +1692,12 @@
         "city": "Naples",
         "state": "FL",
         "zip": "34114",
-        "url": "http://www.fws.gov/refuge/florida_panther/"
+        "url": "http://www.fws.gov/refuge/florida_panther/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
