@@ -4,7 +4,7 @@ if office.image
   - var url = './images/' + office.image;
   a(href=office.imageurl, target="_blank")
     img(src=url, alt="office.alt", class="detail-image")
-  p| !{office.caption}
+  p.office-photo-caption| !{office.caption}
 
 ul.detail-links
   if office.url
