@@ -1422,11 +1422,11 @@
         "state": "PR",
         "zip": "00622",
         "url": "http://www.fws.gov/caribbean/refuges/desecheo/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "desecheo.jpg",
+        "imageurl": "https://flic.kr/p/8XewHq",
+        "alt": "A partially forested mountainous island in a vast open ocean.",
+        "caption": "Desecheo island, Puerto Rico. Photo: Island Conservation <a href='https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode'>CC BY-NC-ND 2.0</a>",
+        "narrative": "Desecheo National Wildlife Refuge was established in 1976 and is administered by the Caribbean Islands Refuge Complex.  The refuge is a 360 acre island 14 miles off the west coast of Puerto Rico.  Much of the rocky terrain is covered by a native forest adapted to a dry climate. Large gumbo limbo trees are common in interior valleys while a variety of cactus species, including the endangered higo chumbo (Harrisia portoricensis), form a part of the thorny scrub vegetation covering the steep coastal slopes."
       },
       "geometry": {
         "type": "Point",
@@ -1468,11 +1468,11 @@
         "state": "NC",
         "zip": "27932",
         "url": "http://www.fws.gov/edenton/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "edenton.jpg",
+        "imageurl": "https://flic.kr/p/Apx5Mz",
+        "alt": "A prehistoric looking fish with spiny back and sides in a hand.",
+        "caption": "Lake sturgeon. Photo: USFWS.",
+        "narrative": "The Edenton National Fish Hatchery, located in the historic port town of Edenton, North Carolina, has been producing fish for public use and restoration since the Hatchery was established in 1898.  The hatchery provides American shad, Striped Bass, Blueback Herring, Lake sturgeon among other species fishery restoration in the Neuse, Chowan, Tennessee and Cumberland river systems."
       },
       "geometry": {
         "type": "Point",
@@ -1494,11 +1494,11 @@
         "state": "FL",
         "zip": "34429",
         "url": "http://www.fws.gov/egmontkey/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "egmont-key.jpg",
+        "imageurl": "https://flic.kr/p/acaKYx",
+        "alt": "A very colorful sunset over the surf on a beach.",
+        "caption": "Sunset on Egmont Key. Photo: <a href='https://www.flickr.com/photos/killkudzu/'>Michael Lusk</a> <a href='https://creativecommons.org/licenses/by-nc/2.0/legalcode'>CC BY-NC 2.0</a>.",
+        "narrative": "The Egmont Key National Wildlife Refuge, was established in 1974 and protects a diverse community of animals and plants, many of which are either threatened or endangered. This island refuge was once the site of the former United States Army Fort Dade Military Reservation, and abundant reminders of this unique military past can be found scattered throughout the island today. Silent gun batteries testify to a time when mighty battleships reigned supreme on the world's oceans, and a brick carriage road meanders across the island recalling the days when mules and horses carried military personnel and their dependents on sunny picnics to the beaches. Today, gulls, least terns and other birds perch on the now silent batteries, while Gopher Tortoises, box turtles and an occasional tourist traverse the old carriage roads. Egmont key, an island that once quaked under the sound of massive coastal cannon fire, now resides quietly amid the sounds of wildlife as, once more, nature has taken over this little slice of Florida paradise."
       },
       "geometry": {
         "type": "Point",
