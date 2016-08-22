@@ -968,12 +968,7 @@
         "address": "26320 Highway 33 South",
         "city": "Augusta",
         "state": "AR",
-        "zip": "72006",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "zip": "72006"
       },
       "geometry": {
         "type": "Point",
@@ -992,12 +987,7 @@
         "address": "401 Island Road",
         "city": "Marksville",
         "state": "LA",
-        "zip": "71351",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "zip": "71351"
       },
       "geometry": {
         "type": "Point",
@@ -1519,11 +1509,11 @@
         "state": "SC",
         "zip": "29449",
         "url": "http://www.fws.gov/refuge/ACE_basin/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "ace-basin.jpg",
+        "imageurl": "https://flic.kr/p/Dnz2zN",
+        "alt": "Entrance sign with many bird species engraved on the front.",
+        "caption": "Entrance sign to Ernest F. Hollings ACE Basin National Wildlife Refuge. Photo: <a href='https://www.flickr.com/photos/sashajazevedo/'>Sasha Azevedo</a> <a href='https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode'>CC BY-NC-ND 2.0</a>.",
+        "narrative": "The Ernest F. Hollings ACE Basin National Wildlife Refuge helps protect the largest undeveloped estuary along the Atlantic Coast, with rich bottomland hardwoods and fresh and salt water marsh offering food and cover to a variety of wildlife.  ACE Basin stands for the Ashepoo, Combahee, and  Edisto Rivers, which form the estuary and parts of the Refuge boundary. The entire basin encompasses more than 350,000 acres, of which the Refuge comprises just less than 12,000 acres.<br><br>Part of the historical values of the ACE Basin were also protected. The refuge office, a former rice plantation house built in 1828, is one of only three antebellum mansions that survived the civil war in the ACE Basin area. Former owners ensured it would be preserved by placing it on the National Register of Historical Places. Undeveloped and unpolluted, the habitat remains diverse and extremely productive."
       },
       "geometry": {
         "type": "Point",
@@ -1544,11 +1534,11 @@
         "state": "TN",
         "zip": "37650",
         "url": "http://www.fws.gov/erwin/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "erwin.jpg",
+        "imageurl": "https://flic.kr/p/ejHPWS",
+        "alt": "Brown entrance sign with fish jumping out of the water.",
+        "caption": "Entrance sign at Erwin National Fish Hatchery. Photo: USFWS.",
+        "narrative": "Established in 1894 by the U.S. Fish and Wildlife Service, Erwin National Fish Hatchery produces 10 million disease-free eggs annually from four strains of rainbow trout broodstock. These eggs are shipped to other Federal, State and Tribal hatcheries to support their fishery management efforts. The station also provides eggs to research centers, classrooms, and universities.  Broodstock operations are performed in a manner that will preserve or optimize the genetic diversity of hatchery fish."
       },
       "geometry": {
         "type": "Point",
@@ -1570,11 +1560,11 @@
         "zip": "36027",
         "url": "http://www.fws.gov/eufaula/",
         "facebook": "https://www.facebook.com/EufaulaNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "eufaula.jpg",
+        "imageurl": "https://flic.kr/p/yrv7rq",
+        "alt": "A brown duck with navy wing feathers floats on the cold water.",
+        "caption": "Female wood duck. &copy; Quincey Banks.",
+        "narrative": "The Eufaula National Wildlife Refuge was established in 1964 through community support and in cooperation with the U. S. Army Corps of Engineers. It is located on both banks of the Chattahoochee River in southeast Alabama and southwest Georgia. Named after the city of Eufaula, the refuge offers a variety of wetland and upland habitats for diverse fauna. A prominent feature of the abundant wetlands is Lake Eufaula (Walter F. George Reservoir) and several feeder streams.<br><br>The refuge's primary purpose is to provide habitat for wintering waterfowl, other migratory birds and resident species; to provide habitat and protection for endangered or threatened species; and to provide wildlife oriented recreational opportunities for the public."
       },
       "geometry": {
         "type": "Point",
@@ -1595,12 +1585,7 @@
         "state": "FL",
         "zip": "32963",
         "url": "http://www.fws.gov/southeast/evergladesheadwaters/",
-        "facebook": "https://www.facebook.com/EvergladesHeadwaters",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "facebook": "https://www.facebook.com/EvergladesHeadwaters"
       },
       "geometry": {
         "type": "Point",
@@ -1622,11 +1607,11 @@
         "zip": "71635",
         "url": "http://www.fws.gov/refuge/felsenthal/",
         "facebook": "https://www.facebook.com/southarkansasrefugescomplex",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "felsenthal.jpg",
+        "imageurl": "https://flic.kr/p/ciG2q3",
+        "alt": "A black winged bird with white spots snacks on a bug.",
+        "caption": "Red-cockaded woodpecker feeds on a bug. Photo: USFWS.",
+        "narrative": "Established in 1975, Felsenthal National Wildlife Refuge (NWR) is located in southeast Arkansas, approximately eight miles west of the town of Crossett. Named for a small community located at its southwest corner, this 65,000 acre refuge contains an abundance of water resources dominated by the Ouachita and Saline Rivers and the Felsenthal Pool.<br><br>This low lying area is dissected by an intricate system of rivers, creeks, sloughs, buttonbush swamps and lakes throughout a vast bottomland hardwood forest that gradually rises to an upland forest community. Historically, periodic flooding of the \"bottoms\" during winter and spring provided excellent wintering waterfowl habitat. These wetlands, in combination with the pine and upland hardwood forest on the higher ridges, support a wide diversity of native plants and animals."
       },
       "geometry": {
         "type": "Point",
@@ -1648,11 +1633,13 @@
         "state": "AL",
         "zip": "35603",
         "url": "http://www.fws.gov/refuge/fern_cave/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "fern-cave.jpg",
+        "imageurl": "https://flic.kr/p/9EBqXC",
+        "alt": "A grown mass of furry bats clings to the top of a cave.",
+        "caption": "Cluster of hibernating gray bats. Photo: Ann Froschauer, USFWS.",
+        "narrative": "Fern Cave NWR consists of 199 acres of forested hillside underlain by a massive cave with many stalactite and stalagmite-filled rooms. The cave has five hidden entrances with four occurring on the Refuge. Access is extremely difficult and has been described as a vertical and horizontal maze by expert cavers. Horizontal sections of the cave are known to be more than 15 miles long and vertical drops of 450 feet are found within. Spectacular features including unrivaled formations, important paleological and archaeological finds, and a diverse cave fauna have contributed to Fern Cave as being described as the most spectacular cave in the U.S. and has fame both nationally and internationally.
+
+"
       },
       "geometry": {
         "type": "Point",
@@ -1693,11 +1680,11 @@
         "state": "FL",
         "zip": "34114",
         "url": "http://www.fws.gov/refuge/florida_panther/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "florida-panther.jpg",
+        "imageurl": "https://flic.kr/p/H6qKW6",
+        "alt": "A beige panther in front of some low-growing palms.",
+        "caption": "Adult florida panther. Photo: David Shindle, FWC.",
+        "narrative": "In 1989, the US Fish & Wildlife Service purchased the initial 24,300 acres from the Collier family for $10.3 million dollars to become the Florida Panther National Wildlife Refuge, under the authority of the Endangered Species Act, to protect the Florida panther and its habitat. The refuge is located in the core of occupied panther territory, and protection of this important area was needed to ensure that not only panthers and their habitat were protected, but also important wildlife corridors that connected adjacent private and public lands.  In 1996, the refuge was expanded to 26,400 acres with the addition of more Collier family land through the Arizona-Florida Land Exchange Act of 1988.  Today, in addition to the 5-11 Florida panthers that den, hunt and roam the refuge each month, numerous other wildlife also call the refuge home, including black bears, bobcats, white-tailed deer, Big Cypress fox squirrels, alligators and wood storks."
       },
       "geometry": {
         "type": "Point",
