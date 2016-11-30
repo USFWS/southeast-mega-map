@@ -2962,11 +2962,8 @@
         "city": "St. Marks",
         "state": "FL",
         "zip": "32355",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "https://www.fws.gov/refuge/St_Marks/About_the_Complex.html",
+        "narrative": "The North Florida National Wildlife Refuge Complex encompasses the St. Marks National Wildlife Refuge and the St. Vincent National Wildlife Refuge and associated conservation easements across 13 counties in southwestern Georgia and the Florida panhandle protecting close to 95,000 acres for wildlife.<br><br>A National Wildlife Refuge Complex is an administrative grouping of two or more refuges, wildlife management areas or other refuge conservation areas that are primarily managed from a central office location.  Refuges are grouped into a complex structure because they occur in a similar ecological region, such as a watershed or specific habitat type, and have a related purpose and management needs.  Typically, a project leader or complex manager oversees the general management of all refuges within the complex and refuge managers are responsible for operations at specific refuges. Supporting staff, composed of administrative, law enforcement, refuge manager, biological, fire, visitor services, and maintenance professionals, are centrally located and support all refuges within the complex."
       },
       "geometry": {
         "type": "Point",
@@ -2986,12 +2983,7 @@
         "city": "Farmerville",
         "state": "LA",
         "zip": "71241",
-        "url": "http://www.fws.gov/northlouisiana/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "http://www.fws.gov/northlouisiana/"
       },
       "geometry": {
         "type": "Point",
@@ -3011,7 +3003,8 @@
         "PHYSADD2": null,
         "city": "Grenada",
         "state": "MS",
-        "zip": "38901"
+        "zip": "38901",
+        "narrative": "In 1989, the North Mississippi Refuges Complex was established to manage U.S. Fish and Wildlife Service lands in the northern twenty-six counties of Mississippi. With its headquarters in Grenada, the Complex is responsible for the management of Coldwater River, Dahomey and Tallahatchie National Wildlife Refuges, plus smaller fee-title properties and floodplain and conservation easements. The habitat consists of bottomland hardwoods, early successional reforestation areas, agricultural fields, and moist soil units."
       },
       "geometry": {
         "type": "Point",
@@ -3035,7 +3028,12 @@
         "facebook": "http://facebook.com/usfwssoutheast",
         "twitter": "http://twitter.com/usfwssoutheast",
         "flickr": "http://www.flickr.com/photos/usfwssoutheast/",
-        "youtube": "http://www.youtube.com/playlist?list=PL5225C01A38A652EA&feature=plcp"
+        "youtube": "http://www.youtube.com/playlist?list=PL5225C01A38A652EA&feature=plcp",
+        "image": "regional-office.jpg",
+        "imageurl": "https://flic.kr/p/9FBayM",
+        "alt": "A raptor with sharp beak and tallons standing on a National Wildlife Refuge System sign.",
+        "caption": "Red-tailed hawk on refuge boundary sign. Photo by George Gentry, USFWS.",
+        "narrative": "The Service’s Southeast Region is home to a rich diversity of natural resources spread across 10 states stretching from the Appalachian Mountains south to the Caribbean islands and west to the Ozarks, including the southern half of the Mississippi River Basin. The Regional Office is located in Atlanta, Georgia, a vibrant and exciting Southern city. Our region covers an area more than 430,000 square miles, which includes the states of Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Tennessee, as well as the Commonwealth of Puerto Rico and the Virgin Islands."
       },
       "geometry": {
         "type": "Point",
@@ -3058,7 +3056,10 @@
         "url": "http://www.fws.gov/refuge/okefenokee/",
         "facebook": "https://www.facebook.com/okefenokeewildliferefuge",
         "narrative": "Okefenokee National Wildlife Refuge conserves the unique qualities of the Okefenokee Swamp, one of the world’s largest intact freshwater ecosystems. Habitats provide for threatened and endangered species, such as red-cockaded woodpecker, wood storks, indigo snakes, and a wide variety of other wildlife species.  It is world renowned for its amphibian populations that are bio-indicators of global health.  More than 600 plant species have been identified on refuge lands.",
-        "image": "georgia_okefenokee.jpg",
+        "image": "okefenokee.jpg",
+        "imageurl": "https://flic.kr/p/8TGjVJ",
+        "caption": "Gator watching. Photo by Steve Brooks.",
+        "alt": "A large gator on the edge of a pond in tall vegetation.",
         "activities": ["Wildlife Observation", "Wildlife Photography", "Hunting", "Fishing", "Canoeing", "Office"]
       },
       "geometry": {
@@ -3079,7 +3080,12 @@
         "city": "Orangeburg",
         "state": "SC",
         "zip": "29115",
-        "url": "http://www.fws.gov/orangeburg/"
+        "url": "http://www.fws.gov/orangeburg/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3100,7 +3106,12 @@
         "state": "AR",
         "zip": "71661",
         "url": "http://www.fws.gov/refuge/overflow/",
-        "facebook": "https://www.facebook.com/southarkansasrefugescomplex"
+        "facebook": "https://www.facebook.com/southarkansasrefugescomplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3121,7 +3132,12 @@
         "state": "FL",
         "zip": "32405",
         "url": "http://www.fws.gov/panamacity",
-        "facebook": "https://www.facebook.com/usfwspanamacity"
+        "facebook": "https://www.facebook.com/usfwspanamacity",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3140,7 +3156,12 @@
         "address": "1601 Balboa Avenue",
         "city": "Panama City",
         "state": "FL",
-        "zip": "32405"
+        "zip": "32405",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3161,7 +3182,12 @@
         "state": "MS",
         "zip": "39194",
         "url": "http://www.fws.gov/refuge/panther_swamp/",
-        "facebook": "https://www.facebook.com/TRComplex"
+        "facebook": "https://www.facebook.com/TRComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3183,7 +3209,12 @@
         "state": "FL",
         "zip": "34429",
         "url": "http://www.fws.gov/chassahowitzka/passagekey/",
-        "facebook": "https://www.facebook.com/CrystalRiverComplex/timeline"
+        "facebook": "https://www.facebook.com/CrystalRiverComplex/timeline",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3205,7 +3236,12 @@
         "state": "NC",
         "zip": "27954",
         "url": "http://www.fws.gov/refuge/pea_island/",
-        "facebook": "http://www.facebook.com/USFWS.NC"
+        "facebook": "http://www.facebook.com/USFWS.NC",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3226,7 +3262,12 @@
         "state": "NC",
         "zip": "28170",
         "url": "http://www.fws.gov/refuge/pee_dee/",
-        "facebook": "http://www.facebook.com/USFWS.NC"
+        "facebook": "http://www.facebook.com/USFWS.NC",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3247,7 +3288,12 @@
         "state": "FL",
         "zip": "32963",
         "url": "http://www.fws.gov/pelicanisland/",
-        "facebook": "https://www.facebook.com/PelicanIslandNWR"
+        "facebook": "https://www.facebook.com/PelicanIslandNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3266,7 +3312,12 @@
         "address": "1339 20th Street",
         "city": "Vero Beach",
         "state": "FL",
-        "zip": "32960"
+        "zip": "32960",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3286,7 +3337,12 @@
         "city": "Tallahassee",
         "state": "FL",
         "zip": "32399",
-        "url": "http://peninsularfloridalcc.org/"
+        "url": "http://peninsularfloridalcc.org/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3330,7 +3386,12 @@
         "city": "Hardeeville",
         "state": "GA",
         "zip": "29927",
-        "url": "http://www.fws.gov/refuge/pinckney_island/"
+        "url": "http://www.fws.gov/refuge/pinckney_island/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3351,7 +3412,12 @@
         "city": "Sanibel",
         "state": "FL",
         "zip": "33957",
-        "url": "http://www.fws.gov/dingdarling/pineisland/"
+        "url": "http://www.fws.gov/dingdarling/pineisland/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3373,7 +3439,12 @@
         "state": "FL",
         "zip": "34429",
         "url": "http://www.fws.gov/chassahowitzka/pinellas/",
-        "facebook": "https://www.facebook.com/CrystalRiverComplex"
+        "facebook": "https://www.facebook.com/CrystalRiverComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3393,7 +3464,12 @@
         "city": "Columbia",
         "state": "NC",
         "zip": "27925",
-        "url": "http://www.fws.gov/refuge/pocosin_lakes/"
+        "url": "http://www.fws.gov/refuge/pocosin_lakes/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3414,7 +3490,12 @@
         "state": "MS",
         "zip": "38804",
         "url": "http://www.fws.gov/pvtjohnallen/",
-        "facebook": "https://www.facebook.com/pvtjohnallennfh"
+        "facebook": "https://www.facebook.com/pvtjohnallennfh",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3434,7 +3515,12 @@
         "city": "Rio Grande",
         "state": "PR",
         "zip": "00745",
-        "url": "http://www.fws.gov/caribbean/es/Parrot.html"
+        "url": "http://www.fws.gov/caribbean/es/Parrot.html",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3454,7 +3540,12 @@
         "city": "Raleigh",
         "state": "NC",
         "zip": "27606",
-        "url": "http://www.fws.gov/raleigh"
+        "url": "http://www.fws.gov/raleigh",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3474,7 +3565,12 @@
         "city": "Dyersburg",
         "state": "TN",
         "zip": "38024",
-        "url": "http://www.fws.gov/reelfoot/"
+        "url": "http://www.fws.gov/reelfoot/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3495,7 +3591,12 @@
         "state": "NC",
         "zip": "27983",
         "url": "http://www.fws.gov/refuge/roanoke_river/",
-        "facebook": "https://www.facebook.com/USFWS.NC"
+        "facebook": "https://www.facebook.com/USFWS.NC",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3516,7 +3617,12 @@
         "state": "MS",
         "zip": "39739",
         "url": "http://www.fws.gov/refuge/Noxubee/",
-        "facebook": "https://www.facebook.com/NoxubeeNWR"
+        "facebook": "https://www.facebook.com/NoxubeeNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3538,7 +3644,12 @@
         "state": "VI",
         "zip": "00820",
         "url": "http://www.fws.gov/Caribbean/Refuges/Sandypoint/default.htm",
-        "facebook": "https://www.facebook.com/SandyPointNWR"
+        "facebook": "https://www.facebook.com/SandyPointNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
