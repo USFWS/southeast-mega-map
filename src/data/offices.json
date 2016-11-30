@@ -1773,7 +1773,13 @@
         "state": "FL",
         "zip": "33043",
         "url": "http://www.fws.gov/nationalkeydeer/greatwhiteheron/",
-        "facebook": "https://www.facebook.com/floridakeysrefuges"
+        "facebook": "https://www.facebook.com/floridakeysrefuges",
+        "image": "great-white-heron.jpg",
+        "imageurl": "https://flic.kr/p/DGCWKc",
+        "alt": "Three canoes, one carrying a dog, sit on calm water in front of a colorful sunset.",
+        "caption": "Participants enjoy FAVOR’s monthly Full Moon Kayak adventure, a trip that goes north into Great White Heron National Wildlife Refuge. Photo by Mary Lou Dickson.",
+        "narrative": "Great White Heron NWR was established in 1938 as a haven for great white herons, migratory birds, and other wildlife.  The refuge consists of almost 200,000 acres of open water and islands, and is known locally as the &ldquo;backcountry.&rdquo;  The refuge provides critical nesting, feeding, and resting areas for hundreds of species of birds and sea turtles.<br><br>The refue was created to protect great white herons from extinction since the population was decimated by the demand for feathered hats in the early 1900's.  Protection of great white herons was successful, and these magnificent, powder-white birds can be observed feeding on tidal flats around backcountry islands.<br><br>Wildlife dependent activities are allowed; these include saltwater fishing, boating (with some restrictions), snorkeling and scuba diving, wildlife observation and photography, interpretation, and environmental education.",
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -1789,12 +1795,17 @@
         "name": "Green Cay National Wildlife Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
-        "address": "C/o Sandy Point Nwr, Federal Building",
+        "address": "C/o Sandy Point NWR, Federal Building",
         "PHYSADD2": "3013 Estate Golden Rock, Suite 167",
         "city": "Christiansted",
         "state": "VI",
         "zip": "00820",
-        "url": "http://www.fws.gov/caribbean/refuges/greencay/default.htm"
+        "url": "http://www.fws.gov/caribbean/refuges/greencay/",
+        "image": "green-cay.jpg",
+        "imageurl": "https://commons.wikimedia.org/wiki/File:Ameiva_polops_St._Croix_Ground_Lizard.JPG",
+        "alt": "A brown lizard with black brown and white streaks on it's side.",
+        "caption": "St. Croix Ground Lizard on Protestant Island. Photo by Auratus Nicole <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC BY-SA 3.0.</a>",
+        "narrative": "Thirty-three thousand conch shells buried under volcanic rock tell of human use. The 14 acre refuge was established in 1977 to protect the population natural population of the endangered St. Croix ground lizard, as well as preserve bird nesting habitat.<br><br>The Island consists of dry, forested areas with cactus scrub and small rocky beaches. Management involves habitat improvement protection and study of the St. Croix ground lizard."
       },
       "geometry": {
         "type": "Point",
@@ -1814,7 +1825,13 @@
         "city": "Heber Springs",
         "state": "AR",
         "zip": "72543",
-        "url": "http://www.fws.gov/greersferry/"
+        "url": "http://www.fws.gov/greersferry/",
+        "image": "geers-ferry.jpg",
+        "imageurl": "https://flic.kr/p/9PYe82",
+        "alt": "Children cast their rods into a glassy calm river banked by mature trees.",
+        "caption": "Geers Ferry National Fish Hatchery Kids Fishing Derby. Photo by Larry Jernigan, USFWS volunteer.",
+        "narrative": "Greers Ferry NFH was established to mitigate for fishery resources which were lost due to the construction of federal water development projects in the Southeast. This is accomplished by stocking rainbow and brook trout in waters impacted by federal dams. Stocking trout in public waters supports a significant recreational fishery which generates a substantial amount of economic activity for local and regional economies.",
+        "activities": ["Fishing"]
       },
       "geometry": {
         "type": "Point",
