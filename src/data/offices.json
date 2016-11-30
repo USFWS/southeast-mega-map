@@ -2278,11 +2278,11 @@
         "zip": "33827",
         "url": "http://www.fws.gov/lakewalesridge/",
         "facebook": "https://www.facebook.com/LakeWalesRidgeNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "lake-wales-ridge.jpg",
+        "imageurl": "https://flic.kr/p/9Q26aN",
+        "alt": "A bright white orchid with dark pink markings.",
+        "caption": "Endangered Garrett's mint flower is protected at a single site, the Lake Wales Ridge National Wildlife Refuge. Photo by Dave Bender, USFWS.",
+        "narrative": "The Lake Wales Ridge National Wildlife Refuge is managed as part of the Merritt Island NWR complex located about 100 miles away.  The Refuge was established in 1993 as the first Refuge designated for the recovery of endangered and threatened plants.  The Refuge contains 23 listed plants, at least four listed animals, and more than 40 endemic invertebrates.  The Refuge is part of a network of scrub preserves owned by the state of Florida, The Nature Conservancy, Archbold Biological Station, two water management districts and Polk and Highland Counties.<br><br>The refuge is composed of four tracts within Polk and Highlands Counties.  Because of the potential impact to the plants and animals, the refuge has not been opened to the public.  However, this Refuge is an exciting place where researchers from Archbold Biological Station have conducted important ecological studies.  Per acre, the Refuge has a very high density of listed species. "
       },
       "geometry": {
         "type": "Point",
@@ -2302,13 +2302,13 @@
         "city": "De Leon Springs",
         "state": "FL",
         "zip": "32130",
-        "url": "http://www.fws.gov/lakewoodruff/",
+        "url": "http://www.fws.gov/refuge/lake_woodruff/",
         "facebook": "https://www.facebook.com/LakeWoodruffNationalWildlifeRefuge",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "lake-woodruff.jpg",
+        "imageurl": "https://flic.kr/p/k5VZao",
+        "alt": "A firefighter walks through waist-high slash scrub in front of a roaring fire.",
+        "caption": "Prescribed fire at Lake Woodruff National Wildlife Refuge in 2014. Photo by Tom Sykes, USFWS.",
+        "narrative": "Lake Woodruff National Wildlife Refuge was established in 1964 as a migratory bird refuge, part of five million-plus acres purchased by U.S. Fish and Wildlife Service with proceeds from the Federal Duck Stamp Program. It is located in Volusia County, Florida near the community of DeLeon Springs. The famed St Johns River forms the western boundary of the 22,000-acre refuge. The refuge contains myriad habitats: among them are marshes, swamps, creeks, hammocks and uplands.<br><br>Visitors explore the miles of man-made dikes that form the pools. The pools attract marsh birds and waterfowl throughout the year, especially during the winter months. A sharp-eyed visitor may glimpse a variety of creatures: bald eagles, deer, marsh rabbits, otters and gopher tortoises. "
       },
       "geometry": {
         "type": "Point",
@@ -2389,7 +2389,11 @@
         "city": "Dyersburg",
         "state": "TN",
         "zip": "38024",
-        "url": "http://www.fws.gov/lowerhatchie/"
+        "url": "http://www.fws.gov/refuge/lower_hatchie/",
+        "image": "lower-hatchie.jpg",
+        "alt": "Cypress trees emerge from the lake's edge.",
+        "caption": "Cypress trees hanging over Champion Lake. Photo by USFWS.",
+        "narrative": "Lower Hatchie Refuge is located at the confluence of the Hatchie and Mississippi Rivers in Lauderdale and Tipton Counties in west Tennessee. The refuge encompasses the lower reaches of the Hatchie River and consists of bottomland hardwoods, moist-soil units, agricultural fields, and associated uplands. The large forested tracts, open lands, and aquatic features found on the refuge provide an important ecological niche for fish, wildlife, and plant species. The primary purpose of the Refuge is to protect and enhance populations of migratory birds."
       },
       "geometry": {
         "type": "Point",
