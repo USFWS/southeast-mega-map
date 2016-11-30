@@ -2531,11 +2531,11 @@
         "zip": "72554",
         "url": "http://www.fws.gov/mammothspring/",
         "facebook": "https://www.facebook.com/MammothSpringNFH",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "mammoth-spring.jpg",
+        "imageurl": "https://flic.kr/p/dcwq9E",
+        "alt": "Entrance sign at the hatchery.",
+        "caption": "Mammoth Spring National Fish Hatchery Entrance Sign. Photo by Rober H. Pos, USFWS.",
+        "narrative": "Established in 1903, the Mammoth Spring National Fish Hatchery is located in Mammoth Spring, Arkansas, just across from the Missouri border about 65 miles northwest of Jonesboro, Arkansas. The hatchery is one of the oldest in the United States, and was built in the Ozark foothills in northeast Arkansas due to the availability of cool gravity flow water from the world’s tenth largest spring and easy access to the railroad. Current programs involve the restoration of interjurisdictional fishes (paddlefish and sturgeon); recovery of endangered and threatened species including freshwater mussels; restoration of Gulf Coast Striped Bass populations; restoration of walleye, smallmouth bass and rainbow trout in the White River drainage; and fishery management and stocking recreational fish on national wildlife refuges."
       },
       "geometry": {
         "type": "Point",
