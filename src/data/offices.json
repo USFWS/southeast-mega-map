@@ -3445,11 +3445,11 @@
         "zip": "34429",
         "url": "http://www.fws.gov/chassahowitzka/pinellas/",
         "facebook": "https://www.facebook.com/CrystalRiverComplex",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "pinellas.jpg",
+        "imageurl": "https://flic.kr/p/84LyAm",
+        "alt": "A brown pelican landing in a royal tern colony.",
+        "caption": "Brown pelican surrounded by royal terns. Photo by Greg Thompson, USFWS.",
+        "narrative": "The Pinellas National Wildlife Refuge, was established in 1951 as a breeding ground for colonial bird species. Herons, cormorants, egrets, endangered brown pelicans and many more species use this quiet refuge for nesting. Tarpon key, one of the islands making-up the refuge, hosts the largest brown pelican rookery in the state of Florida. The abundant green sea grass beds around the island are protected from motorized boat activity.<br><br>Because of its small size and importance to wildlife, the refuge is closed to all public use."
       },
       "geometry": {
         "type": "Point",
@@ -3470,11 +3470,12 @@
         "state": "NC",
         "zip": "27925",
         "url": "http://www.fws.gov/refuge/pocosin_lakes/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "pocosin-lakes.jpg",
+        "imageurl": "https://flic.kr/p/GZsSGy",
+        "alt": "Hundreds of birds fly early in the morning in front of a colorful sky.",
+        "caption": "'Birdrise' at Pocosin Lakes National Wildlife Refuge. Photo by Orsulak, USFWS.",
+        "narrative": "The refuge is located six miles south of Columbia, NC off Highway 94 on the east and 18 miles south of Plymouth, NC on Highway 45 on the west.  The refuge headquarters and Walter B. Jones, Sr. Center for the Sounds is located on the south side of Highway 64 on the Scuppernong River in Columbia, NC.<br><br>Take a walk on the Scuppernong River Interpretive Boardwalk located behind the visitor center in Columbia. <br><br>Visit the observation platform for optimal viewing on the shores of Pungo Lake or take a walk along Duck Pen trail located on the Pungo Unit of Pocosin Lakes. This half mile trail leads visitors to a blind constructed for viewing wintering waterfowl and migratory birds on Pungo Lake.",
+        "activities": ["Hunting", "Fishing", "Wildlife Observation", "Wildlife Photography", "Canoeing", "Hiking"]
       },
       "geometry": {
         "type": "Point",
@@ -3496,11 +3497,11 @@
         "zip": "38804",
         "url": "http://www.fws.gov/pvtjohnallen/",
         "facebook": "https://www.facebook.com/pvtjohnallennfh",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "private-john-allen.jpg",
+        "imageurl": "https://flic.kr/p/fv59FU",
+        "alt": "A small fish with a very long nose in a biologist's hand.",
+        "caption": "60 day-old paddlefish raised in a hatchery. Photo by Spencer Neuharth, USFWS.",
+        "narrative": "Established in 1901, Private John Allen National Fish Hatchery is located in Tupelo, Mississippi. The hatchery is named after the representative who appealed to the Congress in his famous ‘hatchery speech’: “Fish will travel overland for miles to get into the water we have at Tupelo ... thousands and millions of unborn fish are clamoring to this Congress today for an opportunity to be hatched at the Tupelo hatchery.”<br><br>Today, quality water helps ensure a quality brood stock of Gulf Coast walleye. Behemoths like paddlefish, alligator gar, and lake sturgeon are cultured here for restoration projects. Striped bass are also produced and stocked as part of a large national restoration effort. National Wildlife Refuges are benefited by thousands of largemouth and bluegill produced and stocked by the hatchery. Private John Allen NFH raises a variety of fish specifically to host the parasitic stage of mussels as part of a multi-hatchery mussel conservation partnership."
       },
       "geometry": {
         "type": "Point",
