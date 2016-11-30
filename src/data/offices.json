@@ -3653,11 +3653,12 @@
         "zip": "00820",
         "url": "http://www.fws.gov/Caribbean/Refuges/Sandypoint/default.htm",
         "facebook": "https://www.facebook.com/SandyPointNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "sandy-point.jpg",
+        "imageurl": "https://flic.kr/p/4Y28n7",
+        "alt": "A tiny sea turtle with streaks down it's back on white sand.",
+        "caption": "Juvenile leatherback sea turtle. Photo by <a href=\"https://www.flickr.com/photos/by-ken/\" target=\"_blank\">Ken Clifton</a>, <a href=\"https://creativecommons.org/licenses/by-nc/2.0/\" target=\"_blank\">CC BY-NC 2.0.</a>",
+        "narrative": "Long before the arrival of Europeans, St. Croix was home to prehistoric people. Conch middens bleached and hardened over thousands of years, remind visitors of Sandy Point's important archaeological history. The Aklis Site, dating back to 400 A.D. and occupied for over 200 years, is on the National Register of Historic Places. Two miles of continuous sandy beach, deep near shore water access and lack of fringing reef provide ideal conditions and nesting habitat for leatherback sea turtles. Inland, coastal woodland plants dominate. Permanent and ephemeral salt ponds with associated mangrove fringe provide habitat for a variety of birds.",
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking"]
       },
       "geometry": {
         "type": "Point",
