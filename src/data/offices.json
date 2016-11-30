@@ -2556,11 +2556,12 @@
         "state": "LA",
         "zip": "70360",
         "url": "http://www.fws.gov/mandalay/",
-        "image": "",
-        "imageurl": "",
+        "image": "mandalay.jpg",
+        "imageurl": "https://flic.kr/p/PvEZLw",
         "alt": "",
-        "caption": "",
-        "narrative": ""
+        "caption": "Bald eagle looking for a fish. Photo by <a href=\"https://www.flickr.com/photos/con4tini/\" target=\"_blank\">dconvertini</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\" target=\"_blank\">CC BY-SA 2.0.</a>",
+        "narrative": "Mandalay National Wildlife Refuge was established in 1996 in Terrebonne Parish, Louisiana, which protects 4,416 acres. The refuge has a beautiful fresh-water marsh with ponds, levees and man-made canals. Oil and gas wells, and the Gulf-Intracoastal Waterway are important man-made features in the area. is located approximately 6 miles southwest of Houma, Louisiana, which is approximately 55 miles southwest of New Orleans. The refuge is only accessible by boat.  The Refuge was established to protect the American alligator, which was reclassified from endangered to threatened in 1987 and the bald eagle, which was removed from the Endangered Species list in 2007.  The refuge is also home to many migratory birds, raptors, wading birds, and waterfowl.",
+        "activities": ["Hunting", "Fishing", "Wildlife Observation", "Wildlife Photography", "Canoeing"]
       },
       "geometry": {
         "type": "Point",
