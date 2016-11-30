@@ -3392,11 +3392,11 @@
         "state": "GA",
         "zip": "29927",
         "url": "http://www.fws.gov/refuge/pinckney_island/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "pinckney-island.jpg",
+        "imageurl": "https://flic.kr/p/a5wSeL",
+        "alt": "Three species of bird crowd the vegetated edge of a pond.",
+        "caption": "White ibis and herons. Photo by <a href=\"https://www.flickr.com/photos/jeffgunn/\" target=\"_blank\">Jeff Gunn</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0.</a>",
+        "narrative": "Pinckney Island NWR, established December 4, 1975, was once included in the plantation of Major General Charles Cotesworth Pinckney, a prominent lawyer active in South Carolina politics from 1801 to 1815. Few traces of the island's plantation in the 1800's exist today. From 1937 to 1975, when it was donated to the Fish and Wildlife Service, Pinckney Island was privately owned and managed as a game preserve.,br><br>The 4,053 acre refuge includes Pinckney Island, Corn Island, Big and Little Harry Islands, Buzzard Island and numerous small hammocks. Pinckney is the largest of the islands and the only one open to public use. Nearly 67% of the refuge consists of salt marsh and tidal creeks. A wide variety of land types are found on Pinckney Island alone: salt marsh, forestland, brushland, fallow field and freshwater ponds. In combination, these habitats support a diversity of bird and plant life. Wildlife commonly observed on Pinckney Island include waterfowl, shorebirds, wading birds, raptors, neo-tropical migrants, white-tailed deer and American alligators, with large concentrations of white ibis, herons, and egrets.<br><br>The refuge is located in Beaufort County, South Carolina and is 1/2 miles west of Hilton Head Island off of U.S. Highway 278. The island is bounded by Skull Creek (the Intracoastal Waterway) on the east, Mackay Creek on the west, and its northern tip faces Port Royal Sound. From I-95, take SC Exit 8 east towards Hilton Head Island approximately 16 miles to the entrance gate on the left."
       },
       "geometry": {
         "type": "Point",
@@ -3418,11 +3418,11 @@
         "state": "FL",
         "zip": "33957",
         "url": "http://www.fws.gov/dingdarling/pineisland/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "pine-island.jpg",
+        "imageurl": "https://flic.kr/p/7mCryg",
+        "alt": "A wet fluffy bird with neck crooked such that it's beak rests on it's breast.",
+        "caption": "Brown pelican. Photo by <a href=\"https://www.flickr.com/photos/seabamirum/\" target=\"_blank\">Tim Lenz</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0.</a>",
+        "narrative": "Pine Island National Wildlife Refuge is located on the southwest coast of Florida, north of Sanibel Island in the Pine Island Sound. It is administered as part of the J.N. &ldquo;Ding&rdquo; Darling NWR. The refuge was established by President Theodore Roosevelt in 1908 to protect the thousands of herons, egrets, and pelicans that were being hunted to support the plume trade in the early 1900's. The refuge has also been designated as a Florida State Aquatic Preserve.<br><br>The 500-acre refuge has been expanded to over 17 islands and consists of densely forested red and black mangroves with little uplands habitat. Indian shell mounds located on Benedict Island show evidence of Calusa Indians once inhabiting the area at the time of European exploration. Several of the islands, including Hemp Island and Bird Key, are important nesting and roosting areas for colonial birds, particularly the Brown pelican. Raccoons are the primary mammal found on the islands and dolphins and manatees can be seen in the surrounding waters.<br><br>Small colonies of gopher tortoises may be found on some of the larger islands. Endangered and threatened species include bald eagles, wood storks, sea turtles, and manatees."
       },
       "geometry": {
         "type": "Point",
