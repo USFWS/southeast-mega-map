@@ -2661,13 +2661,13 @@
         "city": "Titusville",
         "state": "FL",
         "zip": "32796",
-        "url": "http://www.fws.gov/merrittisland/",
+        "url": "http://www.fws.gov/refuge/merritt_island/",
         "facebook": "https://www.facebook.com/MerrittIslandNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "merritt-island.jpg",
+        "imageurl": "https://flic.kr/p/f3jZCH",
+        "alt": "A bright white bird with curved neck flying with a fish in it's beak.",
+        "caption": "Egret with a fish at Merritt Island National Wildlife Refuge. Photo by USFWS.",
+        "narrative": "Merritt Island National Wildlife Refuge traces its beginnings to the development of the nation’s Space Program. In 1962, NASA acquired 140,000 acres of land, water, and marshes adjacent to Cape Canaveral to establish the John F. Kennedy Space Center. NASA built a launch complex and other space-related facilities, but development of most of the area was not necessary. In1963 the U.S. Fish and Wildlife Service signed an agreement to establish the refuge and in 1975 a second agreement established Canaveral National Seashore. Today, the Department of Interior manages most of the unused portions of the Kennedy Space Center as a National Wildlife Refuge and National Seashore."
       },
       "geometry": {
         "type": "Point",
@@ -2739,11 +2739,11 @@
         "zip": "39553",
         "url": "http://www.fws.gov/refuge/mississippi_sandhill_crane/",
         "facebook": "https://www.facebook.com/MSSandhillCraneNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "mississippi-sandhill-crane.jpg",
+        "imageurl": "https://flic.kr/p/eyUEHj",
+        "alt": "A tall beige bird with bright red markings on it's face and a band on it's leg.",
+        "caption": "Endangered Mississippi sandhill crane. Photo by Scott Hereford, USFWS.",
+        "narrative": "The Mississippi Sandhill Crane National Wildlife Refuge (NWR) is part of the Gulf Coast Refuge Complex, which includes Grand Bay NWR and Bon Secour NWR. The refuge was established in 1975 under authority of the Endangered Species Act to protect the critically endangered Mississippi sandhill cranes and their unique, and itself endangered, wet pine savanna habitat. The crane population, at that time only 30-35 birds, is currently at approximately 110 birds. Through captive rearing and reintroduction to the area as well as wild birds nesting in the savannas, the crane population continues to grow. <br><br>The refuge also protects and restores the last large expanses of wet pine savanna, primarily through the use of prescribed fire. The wet pine savanna is one of the most diverse ecosystems in the U.S. with more than 30 plants found in a square meter of land."
       },
       "geometry": {
         "type": "Point",
@@ -2766,11 +2766,12 @@
         "zip": "38924",
         "url": "http://www.fws.gov/refuge/morgan_brake/",
         "facebook": "https://www.facebook.com/TRComplex",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "morgan-brake.jpg",
+        "imageurl": "https://flic.kr/p/9FnMBw",
+        "alt": "A colorful brown, beige, and green duck takes off from a fallen tree stump in a shallow pond.",
+        "caption": "Wood duck taking off.  Photo by George Gentry, USFWS.",
+        "narrative": "Morgan Brake NWR was established in 1977 via the Migratory Bird Conservation Act and the Fish and Wildlife Coordination Act to contribute to the perpetuation of the migratory waterfowl resource in the lower Mississippi River Delta and for the conservation, maintenance and management of the wildlife resource and its habitat. The refuge is located in Holmes county situated along the ecotone of the Mississippi alluvial plain and loessal hills in the biologically and culturally unique Delta region of Mississippi.",
+        "activities": ["Hunting", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -2792,11 +2793,12 @@
         "zip": "36205",
         "url": "http://www.fws.gov/southeast/mountainlongleaf/",
         "facebook": "https://www.facebook.com/MountainLongleafNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "mountain-longleaf.jpg",
+        "imageurl": "https://flic.kr/p/9MhqRC",
+        "alt": "Tall narrow pine trees emerge from a grassy meadow.",
+        "caption": "Longleaf pine stand. Photo by Keenan Adams, USFWS.",
+        "narrative": "Mountain Longleaf National Wildlife Refuge is situated within the Southern Appalachian Mountain Range between Atlanta, Georgia and Birmingham, Alabama. The refuge was established May 29, 2003 on the former military training lands of Fort McClellan.  Mountain Longleaf NWR became the 542nd refuge in the country.<br><br>The primary objective in establishing the refuge was the protection and management of the last remaining old growth stands and the best remaining mountain longleaf pine (<em>Pinus palustris</em>) forests in the Southeast.  The 9,000-acre mountain refuge contains beautiful vistas and a rugged landscape of unfragmented forests.<br><br>The refuge is situated along the rugged landscape of Choccolocco Mountain, one of the highest mountain ridges in Alabama. High elevation vistas (2063 feet ASL) provide an array of beautiful fall colors and breathtaking views of the surrounding region. Hardwood forests along mountain ridges contain species typical of the Blue Ridge Mountains to the north, while slopes and lower elevations are covered by longleaf pine and hardwoods commonly associated with the Coastal Plain.<br><br>A hundred years of army wildfires have maintained healthy longleaf pine forests over much of the refuge. Without recurring fire, these same forests have disappeared from much of the surrounding region. The refuge provides a unique laboratory for studying and understanding the natural composition of fire maintained second and old-growth longleaf pine forests.",
+        "activities": ["Hiking", "Wildlife Observation", "Wildlife Photography"]
       },
       "geometry": {
         "type": "Point",
@@ -2816,13 +2818,14 @@
         "city": "Big Pine Key",
         "state": "FL",
         "zip": "33043",
-        "url": "http://www.fws.gov/nationalkeydeer/",
+        "url": "http://www.fws.gov/refuges/national_key_deer_refuge/",
         "facebook": "https://www.facebook.com/floridakeysrefuges",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "national-key-deer.jpg",
+        "imageurl": "https://flic.kr/p/8zjeHg",
+        "alt": "A diminuative deer looks for food in a recently burned forest.",
+        "caption": "Key deer in a recently burned area of the refuge. Photo by Josh O'Connor, USFWS.",
+        "narrative": "The National Key Deer Refuge was established in 1957 to protect and preserve in the national interest the Key deer and other wildlife resources in the Florida Keys. The Refuge is located in the lower Florida Keys and currently consists of approximately 9,200 acres of land that includes pine rockland forests, tropical hardwood hammocks, freshwater wetlands, salt marsh wetlands, and mangrove forests. It is home to 23 endangered and threatened plant and animal species and hundreds of others.  Wildlife dependent activities are allowed; these include saltwater fishing, wildlife observation and photography, interpretation, and environmental education.",
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Fishing"]
       },
       "geometry": {
         "type": "Point",
