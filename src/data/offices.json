@@ -3366,7 +3366,10 @@
         "zip": "31038",
         "url": "http://www.fws.gov/piedmont/",
         "narrative": "The refuge was established in 1939 as a combination wildlife and game-management demonstration area to demonstrate that wildlife could be restored on worn out, eroded lands. Today, through the efforts of the U.S. Fish & Wildlife Service, the 35,000 acre wildlife refuge once again hosts loblolly pines on the ridges with hardwoods found along creek bottoms and in scattered upland coves. Clear streams and beaver ponds provide ideal wetlands for migrating waterfowl. Wildlife populations have been restored, and Piedmont National Wildlife Refuge now serves as a model forest ecosystem for the management of wildlife.",
-        "image": "georgia_piedmont.jpg",
+        "image": "piedmont.jpg",
+        "imageurl": "https://flic.kr/p/ciG2q3",
+        "alt": "A black and white bird perched on the side of a tree with a crevace has an insect in it's beak.",
+        "caption": "A red-cockaded woodpecker feasts on a bug. Photo by USFWS.",
         "activities": ["Office", "Wildlife Observation", "Wildlife Photography", "Hiking", "Hunting", "Fishing", "Boat Ramp"]
       },
       "geometry": {
