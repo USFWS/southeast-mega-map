@@ -2584,11 +2584,12 @@
         "zip": "38924",
         "url": "http://www.fws.gov/refuge/mathews_brake/",
         "facebook": "https://www.facebook.com/TRComplex",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "matthews-brake.jpg",
+        "imageurl": "https://flic.kr/p/7CjQCr",
+        "alt": "A duck with splotched markings on it's breast, and blue coloring on it's wings and beak.",
+        "caption": "Blue-winged teal. Photo by <a href=\"https://www.flickr.com/photos/lgooch/\" target=\"_blank\">Laura Gooch</a>, <a href=\"https://creativecommons.org/licenses/by-nc-sa/2.0/\" target=\"_blank\">CC BY-NC-SA 2.0.</a>",
+        "narrative": "Mathews Brake NWR was established in 1980 via the Migratory Bird Conservation Act. The refuge is located in the Yazoo River Basin on the eastern edge of the Mississippi River Valley in Holmes and Leflore counties.  The refuge’s primary purpose is to provide habitat for wintering and resident waterfowl. Management goals include preservation of deep water areas as well as mast producing hardwood ridges.  Deep water and bottomland hardwoods make Mathews Brake attractive to migratory bird species throughout the year. The brake’s permanent water serves as a valuable resting area for large numbers of migrating ducks during fall and winter.<br><br>Mallards, widgeon, gadwall, blue-winged teal and pintails seek shelter and feed in refuge wetlands throughout the winter months. The cypress trees in and around the brake provide excellent nesting habitat for resident wood ducks. Many species of songbirds, shorebirds and wading birds utilize the refuge throughout the year.",
+        "activities": ["Hunting", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -2610,11 +2611,11 @@
         "state": "FL",
         "zip": "33957",
         "url": "http://www.fws.gov/dingdarling/matlachapass/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
+        "image": "matlacha-pass.jpg",
+        "imageurl": "https://flic.kr/p/asaU8t",
+        "alt": "A raptor with sharp talons and beak flies through the air.",
         "caption": "",
-        "narrative": ""
+        "narrative": "Matlacha Pass National Wildlife Refuge, administered as a satellite refuge of J.N. &ldquo;Ding&rdquo; Darling NWR, is located within the Matlacha Pass Charlotte Harbor estuary, Lee County, Florida, approximately 8 miles northwest of Fort Myers. On September 26, 1908, three small islands were established as a &ldquo;... preserve and breeding ground for native birds&rdquo; by President Theodore Roosevelt.<br><br>Since then, the refuge has grown to 23 islands encompassing about 512 acres. Designated by the State of Florida as an Aquatic Preserve, the refuge islands are part of a highly productive estuary which supports a diverse array of wildlife. The islands contain two basic vegetative zones, upland sand ridges and mangroves.<br><br>Fisherman Key, one of the largest islands of the refuge, once had fish camps and permanent residents on it. Several islands of the Matlacha Pass Refuge are used as roosting and nesting sites for a variety of wading and water birds. The beaches and shores provide loafing, feeding, and nesting areas for migratory ducks, shorebirds, gulls, and terns.<br><br>Ospreys, which are listed as a priority species in the Regional Resource Plan, can be observed nesting and feeding in Matlacha Pass area. Several endangered and threatened species benefit from the habitats described including: bald eagles, wood storks, sea turtles, and manatees."
       },
       "geometry": {
         "type": "Point",
@@ -2635,11 +2636,12 @@
         "state": "NC",
         "zip": "27885",
         "url": "http://www.fws.gov/refuge/mattamuskeet/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "mattamuskeet.jpg",
+        "imageurl": "https://flic.kr/p/jMGntS",
+        "alt": "Thousands of birds flying over a lake surrounded by tall dormant reeds and trees.",
+        "caption": "A mixed flock of waterfowl. Photo by Allie Stewart, USFWS.",
+        "narrative": "Mattamuskeet National Wildlife Refuge is located on the Albemarle-Pamlico Peninsula in Hyde County, North Carolina. Established in 1934, the 50,180-acre Refuge consists of open water, marsh, forest and croplands. The centerpiece of the Refuge is the shallow Lake Mattamuskeet. At 40,100 acres, it is North Carolina’s largest natural lake.<br><br>The Refuge’s strategic location along the Atlantic Flyway makes it a vitally important stopover for wintering waterfowl. Over the past 35 years, up to 80 percent of the Northern Pintail and up to 30 percent of Green-wing Teal that annually migrate along the Flyway utilize Mattamuskeet. In total, the Refuge attracts more than 200,000 ducks, geese and swans from November through February.<br><br>About 58,000 visitors use the Refuge annually to hunt, fish, and observe and photograph wildlife.",
+        "activities": ["Hunting", "Fishing", "Wildlife Observation", "Wildlife Photography"]
       },
       "geometry": {
         "type": "Point",
