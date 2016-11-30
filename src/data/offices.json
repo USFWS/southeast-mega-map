@@ -3081,11 +3081,11 @@
         "state": "SC",
         "zip": "29115",
         "url": "http://www.fws.gov/orangeburg/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "orangeburg.jpg",
+        "imageurl": "https://flic.kr/p/Apx5Mz",
+        "alt": "A dark brown/black fish with ridges along is back and sides in a biologist's hands.",
+        "caption": "Lake sturgeon.  Photo by USFWS.",
+        "narrative": "Established in 1911, the Orangeburg National Fish Hatchery is dedicated to supporting the conservation, protection and enhancement of endangered and recreational fish species and their habitats for the continuing benefit of the American people. It is part of a network of more than 70 federal fish hatcheries located across the country that help make up the U.S. Fish and Wildlife Service’s National Fish Hatchery System. The hatchery works in collaboration with a wide variety of partners including other federal and state natural resource agencies, local governments, universities, landowners, community organizations and others."
       },
       "geometry": {
         "type": "Point",
@@ -3107,11 +3107,11 @@
         "zip": "71661",
         "url": "http://www.fws.gov/refuge/overflow/",
         "facebook": "https://www.facebook.com/southarkansasrefugescomplex",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "overflow.jpg",
+        "imageurl": "https://flic.kr/p/qmywf5",
+        "alt": "A close-up photograph of a flock of mallards covered in water.",
+        "caption": "Mallards. Photo by Tom Koerner, USFWS.",
+        "narrative": "Located in southeast Arkansas in Ashley County, Overflow National Wildlife Refuge was established in 1980 to protect one of the remaining bottomland hardwood forests considered vital for maintaining mallard, wood duck, and other waterfowl populations in the Mississippi Flyway. This 13,000 + acre wetland complex consists of seasonally flooded bottomland hardwood forests, impoundments, and croplands. During the winter, a 4,000 acre greentree reservoir is created when the bottomland hardwood forests are allowed to flood. This seasonally flooded area provides a haven for mallards, wood ducks, and other waterfowl species.<br><br>This refuge is a wetland complex within the watershed of Overflow Creek which flows southerly along the length of the refuge. On the west boundary, there are only about 100 acres of uplands found on a narrow strip along the escarpment that separates the Mississippi Alluvial Valley from the Gulf Coastal Plain. The majority of the refuge is bottomland hardwood forest consisting primarily of willow and overcup oaks. Willow oaks, found here in abundance, produce small acorns that are an excellent source of food for the mallards and wood ducks that make their winter home here.<br><br>Throughout the refuge are a number of impoundments, where the water and the plants are managed to benefit wildlife living on the refuge, especially waterfowl. These areas, called moist soil units, are very important in insuring that there is enough food for the birds that spend the winter here. Natural foods provide essential nutrients for birds to survive the winter and nest successfully in the spring. These moist soil units, along with the croplands, and bottomland hardwoods forest, provide a mix of habitats that support a variety of wildlife throughout the year."
       },
       "geometry": {
         "type": "Point",
@@ -3187,7 +3187,7 @@
         "imageurl": "",
         "alt": "",
         "caption": "",
-        "narrative": ""
+        "narrative": "Established in 1978, Panther Swamp National Wildlife Refuge is noted for its large waterfowl population, resident game and its numerous sloughs and wetlands. Although limited archaeological evidence exists about the earliest inhabitants of the Lower Mississippi Delta, early Native Americans probably hunted, fished, and even farmed much of the area now included in the boundaries of Panther Swamp National Wildlife Refuge. Unlike the more nomadic tribes of the northern and western plains, the Yazoo Indians built small villages and retreated into the loessal bluffs along present-day Yazoo City only when forced to by rising flood waters. Many raised “Indian Mounds” can be found still visible throughout the Delta.<br><br>Panther Swamp National Wildlife Refuge's expansive bottomland hardwood forests, cypress-tupelo sloughs, and meandering bayous represent some of the best remaining examples of the historically predominant habitat types that once characterized the entire Mississippi floodplain."
       },
       "geometry": {
         "type": "Point",
