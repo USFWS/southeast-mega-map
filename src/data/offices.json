@@ -2024,7 +2024,13 @@
         "city": "Hollandale",
         "state": "MS",
         "zip": "38748",
-        "url": "http://www.fws.gov/holtcollier/"
+        "url": "http://www.fws.gov/refuge/holt_collier/",
+        "image": "holt-collier.jpg",
+        "imageurl": "https://flic.kr/p/8ZBRZK",
+        "atl": "Two tiny black bear cubs yaning.",
+        "caption": "Louisiana black bear cubs. Photo by USDA.",
+        "narrative": "Holt Collier NWR was established in 2004 and currently covers approximately 2,200 acres.  The Refuge was named for the legendary African-American hunting guide who led President Theodore Roosevelt on his famous Mississippi bear hunting trip. When President Theodore Roosevelt, a passionate sportsman, traveled to Mississippi for a private bear hunt in 1902, Collier was tasked with planning almost every aspect of the adventure, including tracking and driving a bear to the President’s hunting blind to offer him a clear shot. However, the timing didn’t work out as planned, and President Roosevelt left the blind for lunch at the camp before Collier’s team could bring the bear into position. To protect his hunting team, Collier restrained the bear and tied it to a tree. When President Roosevelt arrived, he, like any hunter of honor, would not shoot the restrained animal. The event was publicized nationwide and resulted in the creation of the first stuffed toy bear called “Teddy’s bear.” President Roosevelt told Collier during the trip that he, &ldquo;…was the best guide and hunter he’d ever seen.&rdquo;",
+        "activities": ["Fishing", "Hunting", "Hiking"]
       },
       "geometry": {
         "type": "Point",
@@ -2040,12 +2046,17 @@
         "name": "Island Bay National Wildlife Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
-        "address": "C/o J.n. Ding Darling Nwr",
+        "address": "C/o J.N. Ding Darling Nwr",
         "PHYSADD2": "1 Wildlife Drive",
         "city": "Sanibel",
         "state": "FL",
         "zip": "33957",
-        "url": "http://www.fws.gov/dingdarling/islandbay/"
+        "url": "http://www.fws.gov/dingdarling/islandbay/",
+        "image": "island-bay.jpg",
+        "imageurl": "https://flic.kr/p/dyxdkJ",
+        "alt": "A deep black snake coiled next to a scorched tree stump.",
+        "caption": "Eastern indigo snake. Photo by FWC.",
+        "narrative": "Island Bay National Wildlife Refuge, administered as a satellite of the J.N. &ldquo;Ding&rdquo; Darling NWR, is located in the Cape Haze area of Charlotte Harbor, Charlotte County, Florida &mdash; southwest of Punta Gorda. The Refuge was established as a &ldquo;... preserve and breeding ground for native birds&rdquo; on October 23, 1908. Access to the waters surrounding the islands that make up the Island Bay NWR is by boat only. The islands are not accessible to visitors. Boaters should consult navigational charts and tide schedules before attempting to visit any waters surrounding the refuge. Numerous oyster bars and shallow back bay/estuary waters are difficult to navigate and fragile seagrass beds must not be damaged."
       },
       "geometry": {
         "type": "Point",
@@ -2066,7 +2077,12 @@
         "state": "FL",
         "zip": "33957",
         "url": "http://www.fws.gov/refuge/jn_ding_darling/",
-        "facebook": "https://www.facebook.com/dingdarlingrefuge"
+        "facebook": "https://www.facebook.com/dingdarlingrefuge",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2107,7 +2123,12 @@
         "city": "Decatur",
         "state": "AL",
         "zip": "35603",
-        "url": "http://www.fws.gov/refuge/key_cave/"
+        "url": "http://www.fws.gov/refuge/key_cave/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2128,7 +2149,12 @@
         "city": "Big Pine Key",
         "state": "FL",
         "zip": "33043",
-        "url": "http://www.fws.gov/nationalkeydeer/keywest/"
+        "url": "http://www.fws.gov/nationalkeydeer/keywest/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2148,7 +2174,12 @@
         "city": "Lake Arthur",
         "state": "LA",
         "zip": "70549",
-        "url": "http://www.fws.gov/swlarefugecomplex/lacassine/"
+        "url": "http://www.fws.gov/swlarefugecomplex/lacassine/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2170,7 +2201,12 @@
         "state": "PR",
         "zip": "00622",
         "url": "http://www.fws.gov/caribbean/refuges/Lagunacartegena/default.htm",
-        "facebook": "https://www.facebook.com/CaboRojoNWR"
+        "facebook": "https://www.facebook.com/CaboRojoNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2191,7 +2227,12 @@
         "city": "Dyersburg",
         "state": "TN",
         "zip": "38024",
-        "url": "http://www.fws.gov/reelfoot/lakeisom/"
+        "url": "http://www.fws.gov/reelfoot/lakeisom/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2211,7 +2252,12 @@
         "city": "Marksville",
         "state": "LA",
         "zip": "71351",
-        "url": "http://www.fws.gov/lakeophelia/"
+        "url": "http://www.fws.gov/lakeophelia/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2232,7 +2278,12 @@
         "state": "FL",
         "zip": "33827",
         "url": "http://www.fws.gov/lakewalesridge/",
-        "facebook": "https://www.facebook.com/LakeWalesRidgeNWR"
+        "facebook": "https://www.facebook.com/LakeWalesRidgeNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2253,7 +2304,12 @@
         "state": "FL",
         "zip": "32130",
         "url": "http://www.fws.gov/lakewoodruff/",
-        "facebook": "https://www.facebook.com/LakeWoodruffNationalWildlifeRefuge"
+        "facebook": "https://www.facebook.com/LakeWoodruffNationalWildlifeRefuge",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
