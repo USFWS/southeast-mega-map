@@ -2202,11 +2202,11 @@
         "zip": "00622",
         "url": "http://www.fws.gov/caribbean/refuges/Lagunacartegena/default.htm",
         "facebook": "https://www.facebook.com/CaboRojoNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "laguna-cartagena.jpg",
+        "imageurl": "https://flic.kr/p/9U4sJg",
+        "alt": "A leafy plant with pinkish orange buds.",
+        "caption": "Lyonia truncata var proctorii. Photo by Carlos Pacheco.",
+        "narrative": "The present lagoon is a remnant of what was once a large open expanse of water and one of the most important freshwater habitats for migrating and aquatic birds in Puerto Rico.<br><br>The lands surrounding the lagoon are being managed to convert agricultural and grazing lands to a forested area for native birds. Through water management the lagoon will be opened for aquatic birds. This challenging management project will take time to accomplish, but it's result will improve habitat for native wildlife.<br><br>Historically, almost half the birds recorded in Puerto Rico have been observed in the lagoon and adjcent hills. Visitors have a good chance of seeing a Magnificent Frigatebird, several species of herons, Smooth -billed Ani and occasionally the Yellow-shouldered Blackbird."
       },
       "geometry": {
         "type": "Point",
@@ -2227,12 +2227,11 @@
         "city": "Dyersburg",
         "state": "TN",
         "zip": "38024",
-        "url": "http://www.fws.gov/reelfoot/lakeisom/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "http://www.fws.gov/refuge/lake_isom/",
+        "image": "lake-isom.jpg",
+        "alt": "A flock of hundreds of birds on a chilly lake surrounded by dormant trees.",
+        "caption": "Mallards and white-fronted geese at Lake Isom National Wildlife Refuge. Photo by USFWS.",
+        "narrative": "Lake Isom National Wildlife Refuge currently encompasses 1,850 acres and is located in Lake County, Tennessee, about 2 miles south of Reelfoot Lake and five miles southeast of Tiptonville, Tennessee.<br><br>Lake Isom National Wildlife Refuge was established on August 12, 1938, by Executive Order 7953. Subsequent lands were acquired under the authority of the Migratory Bird Treaty Act. The refuge was specifically authorized “... as a refuge and breeding ground for migratory birds and other wildlife ...” , and also “... for use as an inviolate sanctuary, or for any other management purpose, for migratory birds”."
       },
       "geometry": {
         "type": "Point",
@@ -2252,12 +2251,12 @@
         "city": "Marksville",
         "state": "LA",
         "zip": "71351",
-        "url": "http://www.fws.gov/lakeophelia/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "http://www.fws.gov/refugelake_ophelia/",
+        "image": "lake-ophelia.jpg",
+        "alt": "A rainbow extends over a vast lilly-covered lake.",
+        "caption": "Rainbow over the lake. Photo by USFWS.",
+        "narrative": "Lake Ophelia National Wildlife Refuge was once part of a large contiguous Mississippi River bottomland hardwood forest. During the seventies, much of the area that would become Lake Ophelia NWR was cleared for agriculture. The refuge consists of 17,500 acres. Topography on the refuge is characterized by ridges and swales that create a great diversity of plant and animal communities. The refuge is named for Lake Ophelia, a 350-acre permanently flooded lake / swale.  Major habitat types found on the refuge include: 8,400 acres bottomland forest, 4,200 acres reforestation and 3,400 acres cropland that are used to provide winter forage for migratory waterfowl, 500 acres of managed moist soil wetlands and 1,000 acres of lakes and bayous.",
+        "activities": ["Hunting"]
       },
       "geometry": {
         "type": "Point",
@@ -2570,7 +2569,7 @@
         "name": "Matlacha Pass National Wildlife Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
-        "address": "C/o J.n. Ding Darling Nwr",
+        "address": "C/o J.N. Ding Darling Nwr",
         "PHYSADD2": "1 Wildlife Drive",
         "city": "Sanibel",
         "state": "FL",
