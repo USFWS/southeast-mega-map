@@ -2078,11 +2078,11 @@
         "zip": "33957",
         "url": "http://www.fws.gov/refuge/jn_ding_darling/",
         "facebook": "https://www.facebook.com/dingdarlingrefuge",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "jn-ding-darling.jpg",
+        "imageurl": "https://flic.kr/p/dYgMU6",
+        "alt": "Bright pink birds with long rounded beaks face off in shallow water with their wings raised.",
+        "caption": "Roseate Spoonbills. Photo by Harold Wagle, finalist, NWRA 2012 photo contest.",
+        "narrative": "The J.N. &ldquo;Ding&rdquo; Darling National Wildlife Refuge is located on the subtropical barrier island of Sanibel in the Gulf of Mexico. The refuge is part of the largest undeveloped mangrove ecosystem in the United States. It is world famous for its spectacular migratory bird populations.<br><br>Jay Norwood Darling was instrumental in the effort to block the sale of a parcel of environmentally valuable land to developers on Sanibel Island. At Darling's urging, President Harry S. Truman signed an Executive Order creating the Sanibel National Wildlife Refuge in 1945.<br><br>The refuge was renamed in 1967 in honor of the pioneer conservationist. The refuge consists of over 6,400 acres of mangrove forest, submerged seagrass beds, cordgrass marshes, and West Indian hardwood hammocks. Approximately 2,800 acres of the refuge are designated by Congress as a Federal Wilderness Area."
       },
       "geometry": {
         "type": "Point",
@@ -2124,11 +2124,11 @@
         "state": "AL",
         "zip": "35603",
         "url": "http://www.fws.gov/refuge/key_cave/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "key-cave.jpg",
+        "imageurl": "https://flic.kr/p/8zkWQS",
+        "alt": "A firefighter backlight by a prescribed fire looks into the camera.",
+        "caption": "Prescribed fire is an important management technique to maintain early successional habitat. Photo by Josh O'Connor, USFWS.",
+        "narrative": "Key Cave lies on the northern shore of Pickwick Lake in a limestone karst area that contains numerous sinkholes and several underground cave systems. The area’s sinkholes are an integral component of groundwater recharge for the cave. In 1990, the Ozark Underground Laboratory determined the underground recharge area using dye traces. The recharge area was divided into four potential risk areas: high hazard, moderately high hazard, moderate hazard, and low hazard.<br><br>Key Cemetery, which may have been a slave cemetery, is located on the refuge and may yield clues as to the historical land use of the refuge. Lands within the Key Cave recharge area have been in agricultural production for many years. Historically, lands that are now part of the refuge were used primarily for cotton farming."
       },
       "geometry": {
         "type": "Point",
@@ -2149,12 +2149,12 @@
         "city": "Big Pine Key",
         "state": "FL",
         "zip": "33043",
-        "url": "http://www.fws.gov/nationalkeydeer/keywest/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "http://www.fws.gov/refuge/key_west/",
+        "image": "key-west.jpg",
+        "imageurl": "https://flic.kr/p/eRqZoK",
+        "alt": "A pod of three dolphins in turquoise water.",
+        "caption": "Dolphin watching at Key West National Wildlife Refuge. Photo by Dan Ashe.",
+        "narrative": "Key West National Wildlife Refuge is among the first refuges established in the United States. President Theodore Roosevelt created the refuge in 1908 as a preserve and breeding ground for colonial nesting birds and other wildlife, during the period when widespread plume hunting was devastating bird populations throughout Florida. Key West NWR is west of Key West, Florida, and accessible only by boat. Key West NWR consists of the Marquesas Keys and 13 other keys distributed across over 375 square miles of open water.  The refuge encompasses 208,308 acres of land and water, with only 1 percent (2,019 acres) being land. Most islands are dominated by mangrove plant communities. Exceptions are the hardwood hammock in the Marquesas Keys and the beaches and dunes there and on Boca Grande and Woman Keys. All islands lack freshwater and native, terrestrial mammals are absent.<br><br>Key West NWR provides habitat and protection for federally listed species, including piping plover and roseate terns. The refuge harbors the largest wintering population of piping plovers and the largest colony of white-crowned pigeons in the Florida Keys. It is a haven for over 250 species of birds, including 10 wading bird species that nest in the refuge. Other notable imperiled species include the Miami blue butterfly and sea turtles. Waters within the refuge’s administrative boundaries are important developmental habitat for green, loggerhead, and hawksbill turtles. More loggerhead and green sea turtle nests are found each year in Key West NWR than any area of the Florida Keys except for the Dry Tortugas."
       },
       "geometry": {
         "type": "Point",
@@ -2175,11 +2175,11 @@
         "state": "LA",
         "zip": "70549",
         "url": "http://www.fws.gov/swlarefugecomplex/lacassine/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "lacassine.jpg",
+        "imageurl": "https://flic.kr/p/8SxYi4",
+        "alt": "A black bird standing on a piling in front of a vast marsh.",
+        "caption": "Neotropical cormorant in front of lacassine pools.  Photo by <a href=\"https://www.flickr.com/photos/dermoidhome/\" target=\"_blank\">Carol Foil</a>, <a href=\"https://creativecommons.org/licenses/by-nc-nd/2.0/\" target=\"_blank\">CC BY-NC-ND 2.0.</a>",
+        "narrative": "Lacassine National Wildlife Refuge is located at 209 Nature Road, at the end of Highway 3056, eleven miles southwest of Lake Arthur, Louisiana off Hwy. 14. The office is open year round, weekdays only, from 7:30 a.m. to 4:00 p.m., excluding federal holidays. Portions of the refuge are open year round from one hour before sunrise until one hour after sunset. Please consult refuge brochures or contact the refuge office for more details. Vicinity and refuge maps are available.<br><br>Refuge staff are responsible for managing the nearly 35,000 acre refuge, most of which is freshwater marsh habitat. The refuge preserves a major wintering site for waterfowl in the United States. Historical wintering duck populations and geese at Lacassine are among the largest in the National Wildlife Refuge System. The sanctuary provided at Lacassine Pool is critical to the long-term viability of continental pintail populations and is one of the key pintail wintering areas in the continent, with a wintering pintail population that has reached almost 400,000 - which is 50% to 80% of the entire southwest Louisiana midwinter survey."
       },
       "geometry": {
         "type": "Point",
