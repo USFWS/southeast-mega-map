@@ -3183,10 +3183,10 @@
         "zip": "39194",
         "url": "http://www.fws.gov/refuge/panther_swamp/",
         "facebook": "https://www.facebook.com/TRComplex",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
+        "image": "panther-swamp.jpg",
+        "imageurl": "https://flic.kr/p/eWJaqn",
+        "alt": "A white bird with black tipped wings and a long curved beak slows down for a landing in the water.",
+        "caption": "White ibis. Photo by Steve Hillebrand, USFWS.",
         "narrative": "Established in 1978, Panther Swamp National Wildlife Refuge is noted for its large waterfowl population, resident game and its numerous sloughs and wetlands. Although limited archaeological evidence exists about the earliest inhabitants of the Lower Mississippi Delta, early Native Americans probably hunted, fished, and even farmed much of the area now included in the boundaries of Panther Swamp National Wildlife Refuge. Unlike the more nomadic tribes of the northern and western plains, the Yazoo Indians built small villages and retreated into the loessal bluffs along present-day Yazoo City only when forced to by rising flood waters. Many raised “Indian Mounds” can be found still visible throughout the Delta.<br><br>Panther Swamp National Wildlife Refuge's expansive bottomland hardwood forests, cypress-tupelo sloughs, and meandering bayous represent some of the best remaining examples of the historically predominant habitat types that once characterized the entire Mississippi floodplain."
       },
       "geometry": {
@@ -3210,11 +3210,11 @@
         "zip": "34429",
         "url": "http://www.fws.gov/chassahowitzka/passagekey/",
         "facebook": "https://www.facebook.com/CrystalRiverComplex/timeline",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "passage-key.jpg",
+        "imageurl": "https://flic.kr/p/7Zmwvj",
+        "alt": "A large group of white birds with black caps and bright orange beeks on a beach with eggs.",
+        "caption": "Royal terns nesting.  Photo by USFWS.",
+        "narrative": "One of the first national wildlife refuges, Passage Key National Wildlife Refuge was established in 1905. This 30-acre meandering barrier island was once a mangrove island with a fresh water lake but a hurricane in 1920 had destroyed most of the island. The island hosts the largest royal tern and sandwich tern colonies in the state of Florida."
       },
       "geometry": {
         "type": "Point",
@@ -3237,11 +3237,12 @@
         "zip": "27954",
         "url": "http://www.fws.gov/refuge/pea_island/",
         "facebook": "http://www.facebook.com/USFWS.NC",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "pea-island.jpg",
+        "imageurl": "https://www.flickr.com/gp/usfwssoutheast/dYm4LX",
+        "alt": "A small hawk with sharp beak and brown breast.",
+        "caption": "American kestrel, the smalest falcon species in North America. Photo by Garry Tucker, USFWS.",
+        "narrative": "Pea Island National Wildlife Refuge was established in 1938 to provide nesting, resting, and wintering habitat for migratory birds, including the greater snow geese and other migratory waterfowl, shorebirds, wading birds, raptors, and neotropical migrants; to provide habitat and protection for endangered and threatened species, such as Loggerhead sea turtles; and to provide opportunities for public enjoyment of wildlife and wildlands resources.<br><br>he refuge is located on the north end of Hatteras Island, a coastal barrier island and part of a chain of islands known as the Outer Banks. The bird list for Pea Island Refuge boasts more than 365 species; the wildlife list has 25 species of mammals, 24 species of reptiles, and 5 species (low number due to salt environment) of amphibians.",
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -3263,11 +3264,12 @@
         "zip": "28170",
         "url": "http://www.fws.gov/refuge/pee_dee/",
         "facebook": "http://www.facebook.com/USFWS.NC",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "pee-dee.jpg",
+        "imageurl": "https://flic.kr/p/qUTReD",
+        "alt": "A blue heron in shallow water lunges it's head into the water for a fish.",
+        "caption": "Little blue heron. Photo by <a href=\"https://www.flickr.com/photos/russ-w/\" target=\"_blank\">Russ</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0.</a>",
+        "narrative": "Pee Dee Refuge was established in 1963 as a migratory bird sanctuary, specifically to provide habitat for waterfowl and other migratory birds. The refuge includes 8,500 acres, and has a diverse landscape.  The distinct habitats include bottomland hardwood forests, pine forests, mixed pine-hardwood forests, croplands, old fields, wetlands and open waters.",
+        "activities": ["Wildlife Observation", "Wildlife Photography", "Hunting", "Fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -3287,13 +3289,13 @@
         "city": "Vero Beach",
         "state": "FL",
         "zip": "32963",
-        "url": "http://www.fws.gov/pelicanisland/",
+        "url": "http://www.fws.gov/refuge/pelican_island/",
         "facebook": "https://www.facebook.com/PelicanIslandNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "pelican-island.jpg",
+        "imageurl": "https://flic.kr/p/brwB1L",
+        "alt": "A deep blue and purple heron perched on rubber in front of a watery background.",
+        "caption": "Tricolored heron. Photo by Keenan Adams, USFWS.",
+        "narrative": "With a history that symbolizes our nation’s dedication to her cherished lands, the Refuge holds the distinction of being our nation’s first national wildlife Refuge. The Refuge has provided a natural home for fish and wildlife, while proudly serving as the ambassador for the development of the National Wildlife Refuge System. Through the creation of 563 refuges throughout the nation since its designation in 1903, Pelican Island National Wildlife Refuge has stood as a testament to our nation’s commitment to the conservation of natural lands.<br><br>Near the Atlantic coastal community of Sebastian, Florida, lays a little island in the Indian River Lagoon, a dot on the map really but with a very large international footprint. This is Pelican Island, and its surrounding 5400+ acres of protected waters and lands, are known as the Pelican Island National Wildlife Refuge."
       },
       "geometry": {
         "type": "Point",
