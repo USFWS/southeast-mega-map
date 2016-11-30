@@ -252,7 +252,7 @@
         "image": "banks-lake.jpg",
         "imageurl": "https://flic.kr/p/ecrTTr",
         "alt": "Tall cypress trees emergin from the bayou draped in spanish moss.",
-        "caption": "Banks Lake National Wildlife Refuge. Photo: <a href='https://www.flickr.com/photos/vlmpo/'>vlmpo</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a>",
+        "caption": "Banks Lake National Wildlife Refuge. Photo by <a href='https://www.flickr.com/photos/vlmpo/'>vlmpo</a> <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0.</a>",
         "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Fishing", "Boat Ramp", "Canoeing"]
       },
       "geometry": {
@@ -2847,11 +2847,11 @@
         "state": "PR",
         "zip": "00622",
         "url": "http://www.fws.gov/caribbean/refuges/Navassa/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "red-footed-boobies.jpg",
+        "imageurl": "https://flic.kr/p/aMVL8t",
+        "alt": "Dozens of seabirds fly overhead.",
+        "caption": "Red-footed boobies overhead. Photo by <a href='https://www.flickr.com/photos/islandconservation/'>Island Conservation</a> <a href='https://creativecommons.org/licenses/by-nc-nd/2.0/'>CC BY-NC-ND 2.0.</a>",
+        "narrative": "Navassa National Wildlife Refuge is located on a remote island to the west of Jamaica, east of Haiti and south of Cuba.  The island is home to massive seabird colonies including over 5,000 nesting red-footed booby.  Four lizard species rely on Navassa NWR as their only home.  In 1917 the U.S. Coast Guard built a 162 foot lighthouse on the island.<br><br>The refuge objectives include preservation and protection of coral reef ecosystems and the local marine environment.  The island also provides opportunities for scientific research."
       },
       "geometry": {
         "type": "Point",
@@ -2872,11 +2872,11 @@
         "state": "AR",
         "zip": "72653",
         "url": "http://www.fws.gov/norfork/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "norfork.jpg",
+        "imageurl": "https://flic.kr/p/fhiVMN",
+        "alt": "A small colorful trout being measured by a biologist.",
+        "caption": "Juvenile rainbow trout.  Photo by Katrina Mueller, USFWS.",
+        "narrative": "Established in 1955, the Norfork National Fish Hatchery is a cold water hatchery primarily for the production of trout to restock the tailwaters below Norfork, Bull Shoals and other dams. The hatchery is responsible for raising three kinds of trout: rainbow, brown and cutthroat. In addition, Norfork National Fish Hatchery also provides trout to reservoirs and in cooperation with state game and fish agencies distributes fish throughout Arkansas and other nearby states. The Hatchery's geographic area covers eastern Oklahoma and the White River Basin in Northern Arkansas."
       },
       "geometry": {
         "type": "Point",
@@ -2896,11 +2896,8 @@
         "city": "Manteo",
         "state": "NC",
         "zip": "27954",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "https://www.fws.gov/refuge/Pea_Island/About_the_Complex.html",
+        "narrative": "A National Wildlife Refuge Complex is an administrative grouping of two or more refuges, wildlife management areas or other refuge conservation areas that are primarily managed from a central office location.  Refuges are grouped into a complex structure because they occur in a similar ecological region, such as a watershed or specific habitat type, and have a related purpose and management needs.  Typically, a project leader or complex manager oversees the general management of all refuges within the complex and refuge managers are responsible for operations at specific refuges. Supporting staff, composed of administrative, law enforcement, refuge manager, biological, fire, visitor services, and maintenance professionals, are centrally located and support all refuges within the complex.<br><br>Other refuges in the North Carolina Coastal Plain National Wildlife Refuge Complex include:  Alligator River, Currituck, Mackay Island, Pocosin Lakes, and Roanoke River. The Refuge Complex headquarters is located at Alligator River National Wildlife Refuge Administrative Offices, located at the National Wildlife Refuges Visitor Center on Roanoke Island."
       },
       "geometry": {
         "type": "Point",
@@ -2945,12 +2942,7 @@
         "city": "Jacksonville",
         "state": "FL",
         "zip": "32256",
-        "url": "http://www.fws.gov/northflorida",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "http://www.fws.gov/northflorida"
       },
       "geometry": {
         "type": "Point",
@@ -2969,7 +2961,12 @@
         "address": "1255 Lighthouse Road",
         "city": "St. Marks",
         "state": "FL",
-        "zip": "32355"
+        "zip": "32355",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2989,7 +2986,12 @@
         "city": "Farmerville",
         "state": "LA",
         "zip": "71241",
-        "url": "http://www.fws.gov/northlouisiana/"
+        "url": "http://www.fws.gov/northlouisiana/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
