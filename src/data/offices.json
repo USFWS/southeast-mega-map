@@ -3571,12 +3571,12 @@
         "city": "Dyersburg",
         "state": "TN",
         "zip": "38024",
-        "url": "http://www.fws.gov/reelfoot/",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "url": "http://www.fws.gov/refuge/reelfoot/",
+        "image": "reelfoot.jpg",
+        "alt": "Children gather on the bank of a lake to catch insects.",
+        "caption": "Catching macro-invertebrates is just plain fun! You can also learn a lot about water quality based on what you catch. Photo by USFWS.",
+        "narrative": "Reelfoot National Wildlife Refuge is located within four miles of the Mississippi River in rural northwest Tennessee, about 35 miles north of the city of Dyersburg and 15 miles southwest of Union City.  It encompasses part of Lake and Obion counties in Tennessee, and extends northward into Fulton County, Kentucky.<br><br>Reelfoot National Wildlife Refuge was established on August 28, 1941. The primary stated purpose of the refuge is to protect and enhance populations of migratory birds.<br><br>In conjunction with their primary establishing purposes, these refuges will provide inviolate sanctuaries for migratory birds and preserve for the public benefit a representative portion of the bottomland hardwood forests of the Lower Mississippi Alluvial Valley. The refuges would also help support the priorities established by the Service’s Lower Mississippi River Valley Ecosystem Team.  These ecosystem priorities involve migratory bird populations and their habitats; wetlands; threatened and endangered species and their habitats; fisheries and aquatic resources; and national wildlife refuges and national fish hatcheries.",
+        "activities": ["Fishing", "Canoeing"]
       },
       "geometry": {
         "type": "Point",
@@ -3598,11 +3598,12 @@
         "zip": "27983",
         "url": "http://www.fws.gov/refuge/roanoke_river/",
         "facebook": "https://www.facebook.com/USFWS.NC",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "roanoke-river.jpg",
+        "imageurl": "https://flic.kr/p/bUGMbe",
+        "alt": "A short beige bird with black and white markings on it's face and a tassle off the back of it's head.",
+        "caption": "Yellow-crowned night heron. Photo by Keenan Adams, USFWS.",
+        "narrative": "The mission of Roanoke River National Wildlife Refuge is to protect and conserve migratory birds and other wildlife resources through the protection of wetlands.  These wetlands provide habitat for migratory waterfowl, neo-tropical migrants, and other birds.",
+        "activities": ["Hunting", "Fishing", "Wildlife Observation", "Wildlife Photography"]
       },
       "geometry": {
         "type": "Point",
@@ -3624,11 +3625,12 @@
         "zip": "39739",
         "url": "http://www.fws.gov/refuge/Noxubee/",
         "facebook": "https://www.facebook.com/NoxubeeNWR",
-        "image": "",
-        "imageurl": "",
-        "alt": "",
-        "caption": "",
-        "narrative": ""
+        "image": "noxubee.jpg",
+        "imageurl": "https://flic.kr/p/ciG2ib",
+        "alt": "A large eagle perched on a snag with a large nest composed of sticks.",
+        "caption": "Bald eagle perched next to a nest. Photo by USFWS.",
+        "narrative": "Sam D. Hamilton Noxubee National Wildlife Refuge (NWR) is located in three counties (Noxubee, Oktibbeha, and Winston) and was created from lands obtained through the 1930s Resettlement Administration. Before Government ownership, the land area within the refuge was intensively farmed and over-grazed.  After years of proper land stewardship, the refuge is now an excellent example of forest and wildlife management.  The refuge provides needed habitat protection for the extremely valuable, rapidly disappearing bottomland hardwood forest communities.<br><br>The endangered red-cockaded woodpecker relies on the refuge for its existence in east-central Mississippi.  This population of woodpeckers is one of only four sites the species can be seen in the state.  In addition, many neotropical migratory bird species greatly benefit from the variety of habitats the refuge provides.  Four green-tree reservoirs (GTRs), two major lakes (Bluff Lake – 900 acres and Loakfoma Lake – 400 acres), 16 small impoundments, and assorted wetland areas provide important habitat for the wood stork, American alligator, bald eagle, and wintering waterfowl.<br><br>Over 150,000 visitors annually participate in activities including fishing, hunting, hiking, wildlife photography, wildlife observation, environmental education, and research.  The refuge serves as an outdoor classroom for Mississippi State University and other local educational institutions. The National Audubon Society has designated Sam D. Hamilton Noxubee National Wildlife Refuge as an Important Bird Area (IBA), one of five of global importance in Mississippi.",
+        "activities": ["Fishing", "Hunting", "Hiking", "Wildlife Photography", "Wildlife Observation"]
       },
       "geometry": {
         "type": "Point",
