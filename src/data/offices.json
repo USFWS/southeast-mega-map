@@ -1705,7 +1705,6 @@
         "url": "http://www.fws.gov/athens",
         "facebook": "https://www.facebook.com/GeorgiaFieldOffice",
         "narrative": "Serving the entire state of Georgia, our biologists work with partners to provide scientific expertise on a variety of projects. They also administer permits under the Endangered Species Act.",
-        "image": "georgia_es.jpg",
         "activities": ["Office"]
       },
       "geometry": {
@@ -1747,7 +1746,12 @@
         "city": "Marksville",
         "state": "LA",
         "zip": "71351",
-        "url": "http://www.fws.gov/grandcote/"
+        "url": "http://www.fws.gov/grandcote/",
+        "image": "grand-cote.jpg",
+        "alt": "Hundreds of birds fly across a dormant vegetated marsh in winter.",
+        "caption": "Ducks and geese fly above wetlands at Grand Cote National Wildlife Refuge in Louisiana. Photo by Stacy Shelton, USFWS.",
+        "imageurl": "https://flic.kr/p/9CcHLx",
+        "narrative": "Grand Cote National Wildlife Refuge was established in 1989 to provide valuable waterfowl habitat in the Mississippi/Red River floodplain as part of the North American Waterfowl Management Plan. Due to its location in east-central Louisiana, the refuge is influenced by both the Mississippi and Central Flyways and the large expanses of shallow wetlands draw a diversity of waterfowl species.<br><br>Although Northern pintails, mallards, wood ducks, and green-winged teal are the dominant species, blue-winged teal, northern shovelers, gadwall and American wigeon are also common during the fall and winter months. Large numbers of snow and white-fronted geese winter on the refuge. During the spring and summer months, a variety of migratory songbirds utilize the bayous, scattered forested tracts, and shallow marsh habitat. Numerous native species of mammals, reptiles, amphibians, fishes and insects are common residents of the refuge."
       },
       "geometry": {
         "type": "Point",
