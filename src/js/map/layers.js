@@ -9,10 +9,7 @@
   require('leaflet-providers');
   require('./marker-cluster-layer-support');
 
-  var offices,
-      control,
-      map,
-      overlays,
+  var offices, control, map, overlays,
       cluster = L.markerClusterGroup.layerSupport({ showCoverageOnHover: false });
 
   var baseLayers = {

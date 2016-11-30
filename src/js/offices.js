@@ -27,8 +27,14 @@
 
   function getOffice(officeName) {
     return _.find(offices.features, function (office) {
-      return office.properties.name.toLowerCase() === officeName.toLowerCase();
+      var name = normalizeOfficeName(office.properties.name);
+      return name.toLowerCase() === officeName.toLowerCase();
     });
+  }
+
+  // Remove special characters from office name
+  function normalizeOfficeName(officeName) {
+    return officeName.replace(/[^a-zA-Z ]+/g, '');
   }
 
   function getRandomOffice() {
@@ -42,6 +48,7 @@
   exports.getOffices = getOffices;
   exports.getOffice = getOffice;
   exports.getRandomOffice = getRandomOffice;
+  exports.normalizeOfficeName = normalizeOfficeName;
   exports.getBounds = getBounds;
   exports.init = init;
 
