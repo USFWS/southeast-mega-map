@@ -1966,13 +1966,19 @@
         "name": "Hillside National Wildlife Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
-        "address": "C/o Morgan Brake Nwr",
+        "address": "C/O Morgan Brake Nwr",
         "PHYSADD2": "4349 Christmas Place Road",
         "city": "Lexington",
         "state": "MS",
         "zip": "39095",
         "url": "http://www.fws.gov/refuge/hillside/",
-        "facebook": "https://www.facebook.com/TRComplex"
+        "facebook": "https://www.facebook.com/TRComplex",
+        "image": "hillside.jpg",
+        "imageurl": "https://flic.kr/p/gUCFbX",
+        "alt": "A beautiful, bright orange cottonwood tree in fall with sandhill cranes in the foreground.",
+        "caption": "Cottonwood and sandhill cranes in wetland in fall. Photo by Robert Dunn.",
+        "narrative": "Hillside National Wildlife Refuge was established in 1975 for the conservation, maintenance and management of the wildlife resource and habitat. The majority of land comprising the refuge was transferred from the U.S. Army Corps of Engineers after the completion of the Hillside Floodway/Yazoo Basin Headwater Project. Hillside National Wildlife Refuge encompasses 15,572 acres on the eastern edge of the lower Delta between the loess bluffs and the USACOE levee on the west.<br><br>Management activities on Hillside NWR include moist soil management, water management, forest management, law enforcement, public hunting and fishing, invasive species control, research, inventory and monitoring, education and interpretation.",
+        "activities": ["Fishing", "Hunting"]
       },
       "geometry": {
         "type": "Point",
@@ -1992,7 +1998,12 @@
         "city": "Hobe Sound",
         "state": "FL",
         "zip": "33455",
-        "url": "http://www.fws.gov/hobesound/"
+        "url": "http://www.fws.gov/refuge/hobe_sound/",
+        "image": "hobe-sound.jpg",
+        "imageurl": "https://flic.kr/p/dfQCEP",
+        "alt": "A bright pink sunrise in the distance between two palm trees.",
+        "caption": "Sunrise at Hobe Sound National Wildlife Refuge. Photo by Cindy Dohner, USFWS.",
+        "narrative": "Hobe Sound National Wildlife Refuge contains the largest contiguous section of undeveloped beach in Southeastern Florida and is considered one of the most productive sea turtle nesting areas in the Southeastern United States. The Refuge is a sanctuary for nearly 40 species listed as either threatened, endangered, or of special concern. It is an oasis for people who wish to experience what the early days of Florida must have been like. This biodiversity is supported by a large remnant of sand pine scrub, nearly 10 miles of mangrove communities along the Indian River Lagoon, and 3.5 miles of Atlantic Ocean beach. The beauty and uniqueness of Hobe Sound National Wildlife Refuge inspires others to protect our wild places for future generations."
       },
       "geometry": {
         "type": "Point",
