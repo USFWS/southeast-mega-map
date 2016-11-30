@@ -3,7 +3,7 @@ h2= office.name
 if office.image
   - var url = './images/' + office.image;
   a(href=office.imageurl, target="_blank")
-    img(src=url, alt="office.alt", class="detail-image")
+    img(src=url, alt=office.alt, class="detail-image")
   p.office-photo-caption| !{office.caption}
 
 ul.detail-links
