@@ -1892,7 +1892,13 @@
         "city": "Farmerville",
         "state": "LA",
         "zip": "71241",
-        "url": "http://www.fws.gov/handybrake/"
+        "url": "http://www.fws.gov/handybrake/",
+        "image": "handy-brake.jpg",
+        "imageurl": "https://flic.kr/p/GCjmQA",
+        "caption": "Female northern shoveler. Photo by Eve Turek.",
+        "alt": "A brown bird with black and white patches and a wide, rounded beak swims through glassy water.",
+        "narrative": "Handy Brake National Wildlife Refuge is located just north of Bastrop in Morehouse Parish, north central Louisiana. The refuge was established in 1988 with the southeast's first fee title transfer of a Farmer's Home Administration tract (466 acres) to the U.S. Fish and Wildlife Service. A free lease of 38 acres from International Paper Company increased the refuge to the current 501 acres. An observation platform overlooks a permanent wetland, which is excellent habitat for wintering waterfowl, wading birds and many other wetland dependent species.",
+        "activities": ["Wildlife Observation", "Wildlife Photography"]
       },
       "geometry": {
         "type": "Point",
@@ -1915,7 +1921,10 @@
         "url": "http://www.fws.gov/refuge/harris_neck/",
         "facebook": "https://www.facebook.com/HarrisNeckNWR",
         "narrative": "Harris Neck serves as an important link in the chain of refuges along the eastern seaboard, and is the inland base for two neighboring barrier island refuges, Blackbeard Island and Wolf Island. Since its designation as a wildlife refuge in 1962, Harris Neck has served as a premier nesting, foraging, and wintering habitat for many species of wildlife.  Signature species include wood storks, which nest in a large colony on Woody Pond, and the colorful and uncommon painted bunting, which favors nesting habitat in the refuge's maritime scrub areas.",
-        "image": "georgia_blackbeard-island.jpg",
+        "image": "harris-neck.jpg",
+        "imageurl": "https://flic.kr/p/nCBaVY",
+        "alt": "Young, fuzzy white birds with red bands on their long legs.",
+        "caption": "A group of banded wood stork chicks.  Photo by Mary Ellen Urbanski.",
         "activities": ["Wildlife Observation", "Wildlife Photography", "Hiking", "Biking", "Hunting", "Fishing"]
       },
       "geometry": {
@@ -1936,7 +1945,12 @@
         "city": "Stanton",
         "state": "TN",
         "zip": "38069",
-        "url": "http://www.fws.gov/hatchie/"
+        "url": "http://www.fws.gov/refuge/hatchie/",
+        "image": "hatchie.jpg",
+        "imageurl": "https://flic.kr/p/fCVNRD",
+        "alt": "An odd looking bird with a long hood off the back of its head and bright green and brown coloring.",
+        "caption": "Wood duck. Photo by Robin Koch, USFWS volunteer.",
+        "narrative": "Hatchie Refuge is located along 23 miles of the Hatchie River in Haywood County in west Tennessee and was established primarily for migratory birds. The refuge encompasses the middle reaches of the Hatchie River and consists of bottomland hardwoods, moist soil units, agricultural fields, and associated uplands. The large forested tracts, open lands, and aquatic features found on the refuge provide an important ecological niche for fish, wildlife, and plant species within the Lower Mississippi River Ecosystem."
       },
       "geometry": {
         "type": "Point",
