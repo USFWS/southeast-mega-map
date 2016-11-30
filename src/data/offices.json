@@ -2432,7 +2432,7 @@
         "city": "Natchez",
         "state": "MS",
         "zip": "39120",
-        "url": "http://www.fws.gov/lowermississippiriver/",
+        "url": "http://www.fws.gov/refuge/st_catherine_creek/about_the_complex.html",
         "facebook": "https://www.facebook.com/LowerMissNWRComplex"
       },
       "geometry": {
@@ -2453,7 +2453,12 @@
         "city": "Vicksburg",
         "state": "MS",
         "zip": "39180",
-        "url": "http://www.lmvjv.org/"
+        "url": "http://www.lmvjv.org/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2473,8 +2478,13 @@
         "city": "Chiefland",
         "state": "FL",
         "zip": "32626",
-        "url": "http://www.fws.gov/lowersuwannee/",
-        "facebook": "https://www.facebook.com/LowerSuwanneeNationalWildifeRefuge"
+        "url": "http://www.fws.gov/refuge/lower_suwannee/",
+        "facebook": "https://www.facebook.com/LowerSuwanneeNationalWildifeRefuge",
+        "image": "lower-suwannee.jpg",
+        "imageurl": "https://flic.kr/p/nYs4Nk",
+        "alt": "A raptor photographed from below with a white body, black feathers on it's wings and forked tail.",
+        "caption": "Swallow-tailed kite. Photo by <a href=\"https://www.flickr.com/photos/36021475@N07/\" target=\"_blank\">Lawrence Crovo</a>, <a href=\"https://creativecommons.org/licenses/by-nd/2.0/\" target=\"_blank\">CC BY-ND 2.0.</a>.",
+        "narrative": "The Lower Suwannee National Wildlife Refuge is unlike other Refuges in that it was not established for the protection of a specific species, but in order to protect the high water quality of the historic Suwannee River. The flow of the Suwannee feeds the estuarine waters of the Gulf of Mexico, habitat for the Gulf sturgeon and feeding grounds for resident and migratory shorebirds, wading birds and waterfowl.<br><br>Our mission is to provide habitat for native and migratory species. We thin non-native trees, plant native long-leaf pines and wiregrass;returning the habitat close to it's original state. We build a variety of bat houses for native bats like the Brazilian free tail and Rafinesque’s big-eared bat. To provide habitat for native pollinators, we use bee blocks, plant a pollinator garden and refrain from mowing wildflowers until butterflies have finished laying eggs and migrate south."
       },
       "geometry": {
         "type": "Point",
@@ -2494,7 +2504,12 @@
         "city": "Knotts Island",
         "state": "NC",
         "zip": "27950",
-        "url": "http://www.fws.gov/refuge/mackay_island/"
+        "url": "http://www.fws.gov/refuge/mackay_island/",
+        "image": "mackay-island.jpg",
+        "imageurl": "https://flic.kr/p/Dg4WK",
+        "alt": "A firey orange and red sunset with smoke from a fire.",
+        "caption": "Sunset and smoke from a fire. Photo by <a href=\"https://www.flickr.com/photos/gilliamhome/\" target=\"_blank\">Tim Gilliam</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0.</a>",
+        "narrative": "The Fish and Wildlife Service administers Mackay Island National Wildlife Refuge located on Knotts Island along the North Landing River. The refuge staff administers 8,219 acres of fee title land in Currituck County, North Carolina, and Virginia Beach, Virginia, and 4,383 acres of the fee title land and 3,931 acres of conservation easement land at the Currituck National Wildlife Refuge on the Outer Banks of Currituck County, North Carolina. The marshes on the western edge of Currituck National Wildlife Refuge are located 6 miles east of the Mackay Island Refuge headquarters across the Currituck Sound.<br><br>The first recorded history of Mackay Island began in 1761 when John Jones bought the island, which at that time was called Orphan's Island. John Mackie purchased it around 1768 and over the years the name was somehow changed to Mackay Island. Other previous owners include Thomas Dixon, author of &ldquo;The Klansmen&rdquo; and &ldquo;Birth of a Nation&rdquo; and Joseph P. Knapp, founder of &ldquo;More Game Birds In America&rdquo; which is now known as &ldquo;Ducks Unlimited&rdquo;. He built a private resort and experimented with various wildlife management techniques, some of which are still used today. After Knapps' death, Mackay Island passed through several owners until the U.S. Fish & Wildlife Service recognized the value of the area as a refuge and acquired it in 1961."
       },
       "geometry": {
         "type": "Point",
@@ -2515,7 +2530,12 @@
         "state": "AR",
         "zip": "72554",
         "url": "http://www.fws.gov/mammothspring/",
-        "facebook": "https://www.facebook.com/MammothSpringNFH"
+        "facebook": "https://www.facebook.com/MammothSpringNFH",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2535,7 +2555,12 @@
         "city": "Houma",
         "state": "LA",
         "zip": "70360",
-        "url": "http://www.fws.gov/mandalay/"
+        "url": "http://www.fws.gov/mandalay/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2557,7 +2582,12 @@
         "state": "MS",
         "zip": "38924",
         "url": "http://www.fws.gov/refuge/mathews_brake/",
-        "facebook": "https://www.facebook.com/TRComplex"
+        "facebook": "https://www.facebook.com/TRComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2578,7 +2608,12 @@
         "city": "Sanibel",
         "state": "FL",
         "zip": "33957",
-        "url": "http://www.fws.gov/dingdarling/matlachapass/"
+        "url": "http://www.fws.gov/dingdarling/matlachapass/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2598,7 +2633,12 @@
         "city": "Swanquarter",
         "state": "NC",
         "zip": "27885",
-        "url": "http://www.fws.gov/refuge/mattamuskeet/"
+        "url": "http://www.fws.gov/refuge/mattamuskeet/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2619,7 +2659,12 @@
         "state": "FL",
         "zip": "32796",
         "url": "http://www.fws.gov/merrittisland/",
-        "facebook": "https://www.facebook.com/MerrittIslandNWR"
+        "facebook": "https://www.facebook.com/MerrittIslandNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2639,7 +2684,12 @@
         "city": "Jackson",
         "state": "MS",
         "zip": "39213",
-        "url": "http://www.fws.gov/mississippies"
+        "url": "http://www.fws.gov/mississippies",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2659,7 +2709,12 @@
         "city": "Jackson",
         "state": "MS",
         "zip": "39213",
-        "url": "http://www.fws.gov/jacksonwildlife/"
+        "url": "http://www.fws.gov/jacksonwildlife/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2680,7 +2735,12 @@
         "state": "MS",
         "zip": "39553",
         "url": "http://www.fws.gov/refuge/mississippi_sandhill_crane/",
-        "facebook": "https://www.facebook.com/MSSandhillCraneNWR"
+        "facebook": "https://www.facebook.com/MSSandhillCraneNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2702,7 +2762,12 @@
         "state": "MS",
         "zip": "38924",
         "url": "http://www.fws.gov/refuge/morgan_brake/",
-        "facebook": "https://www.facebook.com/TRComplex"
+        "facebook": "https://www.facebook.com/TRComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2723,7 +2788,12 @@
         "state": "AL",
         "zip": "36205",
         "url": "http://www.fws.gov/southeast/mountainlongleaf/",
-        "facebook": "https://www.facebook.com/MountainLongleafNWR"
+        "facebook": "https://www.facebook.com/MountainLongleafNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2744,7 +2814,12 @@
         "state": "FL",
         "zip": "33043",
         "url": "http://www.fws.gov/nationalkeydeer/",
-        "facebook": "https://www.facebook.com/floridakeysrefuges"
+        "facebook": "https://www.facebook.com/floridakeysrefuges",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2765,7 +2840,12 @@
         "city": "Boqueron",
         "state": "PR",
         "zip": "00622",
-        "url": "http://www.fws.gov/caribbean/refuges/Navassa/"
+        "url": "http://www.fws.gov/caribbean/refuges/Navassa/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2785,7 +2865,12 @@
         "city": "Mountain Home",
         "state": "AR",
         "zip": "72653",
-        "url": "http://www.fws.gov/norfork/"
+        "url": "http://www.fws.gov/norfork/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2804,7 +2889,12 @@
         "address": "100 Conservation Way",
         "city": "Manteo",
         "state": "NC",
-        "zip": "27954"
+        "zip": "27954",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2824,7 +2914,12 @@
         "city": "Columbia",
         "state": "NC",
         "zip": "27925",
-        "url": "http://www.fws.gov/columbiawildlife/"
+        "url": "http://www.fws.gov/columbiawildlife/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -2844,7 +2939,12 @@
         "city": "Jacksonville",
         "state": "FL",
         "zip": "32256",
-        "url": "http://www.fws.gov/northflorida"
+        "url": "http://www.fws.gov/northflorida",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
