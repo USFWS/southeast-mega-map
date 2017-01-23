@@ -75,7 +75,7 @@
     "npm-watch": "^0.1.1",
     "postcss-cli": "^2.3.3",
     "rimraf": "^2.5.4",
-    "sharp": "^0.16.0",
+    "sharp": "^0.16.2",
     "tape": "^4.6.0",
     "testling": "^1.7.1",
     "uglifyjs": "^2.4.10",
