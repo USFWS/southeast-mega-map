@@ -3678,7 +3678,13 @@
         "city": "Summerton",
         "state": "SC",
         "zip": "29148",
-        "url": "http://www.fws.gov/santee/"
+        "url": "http://www.fws.gov/santee/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
+
       },
       "geometry": {
         "type": "Point",
@@ -3699,7 +3705,12 @@
         "city": "Decatur",
         "state": "AL",
         "zip": "35603",
-        "url": "http://www.fws.gov/sautacave/"
+        "url": "http://www.fws.gov/sautacave/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3744,7 +3755,12 @@
         "city": "Bell City",
         "state": "LA",
         "zip": "70630",
-        "url": "http://www.fws.gov/swlarefugecomplex/shellkeys/"
+        "url": "http://www.fws.gov/swlarefugecomplex/shellkeys/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3764,7 +3780,12 @@
         "city": "Crossett",
         "state": "AR",
         "zip": "71635",
-        "facebook": "https://www.facebook.com/southarkansasrefugescomplex"
+        "facebook": "https://www.facebook.com/southarkansasrefugescomplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3784,7 +3805,12 @@
         "PHYSADD2": "North Carolina State University Campus, Department Of Zoology",
         "city": "Raleigh",
         "state": "NC",
-        "zip": "27695"
+        "zip": "27695",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3805,7 +3831,12 @@
         "city": "Raleigh",
         "state": "NC",
         "zip": "27606",
-        "url": "http://www.southatlanticlcc.org/"
+        "url": "http://www.southatlanticlcc.org/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3825,7 +3856,12 @@
         "city": "Charleston",
         "state": "SC",
         "zip": "29407",
-        "url": "http://www.fws.gov/charleston"
+        "url": "http://www.fws.gov/charleston",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3845,7 +3881,12 @@
         "city": "Awendaw",
         "state": "SC",
         "zip": "29429",
-        "url": "http://www.fws.gov/screfugescomplex/"
+        "url": "http://www.fws.gov/screfugescomplex/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3865,7 +3906,12 @@
         "city": "Vero Beach",
         "state": "FL",
         "zip": "32960",
-        "url": "http://www.fws.gov/verobeach"
+        "url": "http://www.fws.gov/verobeach",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3885,7 +3931,12 @@
         "city": "Lacombe",
         "state": "LA",
         "zip": "70445",
-        "url": "http://www.fws.gov/southeastlouisiana/"
+        "url": "http://www.fws.gov/southeastlouisiana/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3906,7 +3957,12 @@
         "state": "MS",
         "zip": "39120",
         "url": "http://www.fws.gov/refuge/St_Catherine_Creek/",
-        "facebook": "https://www.facebook.com/LowerMissNWRComplex"
+        "facebook": "https://www.facebook.com/LowerMissNWRComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3927,7 +3983,12 @@
         "city": "Titusville",
         "state": "FL",
         "zip": "32796",
-        "url": "http://www.fws.gov/refuge/st_johns/"
+        "url": "http://www.fws.gov/refuge/st_johns/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3948,7 +4009,12 @@
         "state": "FL",
         "zip": "32355",
         "url": "http://www.fws.gov/refuge/st_marks/",
-        "facebook": "https://www.facebook.com/SMSVNWRS"
+        "facebook": "https://www.facebook.com/SMSVNWRS",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3969,7 +4035,12 @@
         "state": "FL",
         "zip": "32320",
         "url": "http://www.fws.gov/saintvincent/",
-        "facebook": "https://www.facebook.com/SMSVNWRS"
+        "facebook": "https://www.facebook.com/SMSVNWRS",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -3990,7 +4061,12 @@
         "city": "Swanquarter",
         "state": "NC",
         "zip": "27885",
-        "url": "http://www.fws.gov/refuge/swanquarter/"
+        "url": "http://www.fws.gov/refuge/swanquarter/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4011,7 +4087,12 @@
         "city": "Grenada",
         "state": "MS",
         "zip": "38901",
-        "url": "http://www.fws.gov/refuge/tallahatchie/"
+        "url": "http://www.fws.gov/refuge/tallahatchie/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4032,7 +4113,12 @@
         "city": "Naples",
         "state": "FL",
         "zip": "34114",
-        "url": "http://www.fws.gov/floridapanther/TenThousandIslands/"
+        "url": "http://www.fws.gov/floridapanther/TenThousandIslands/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4052,7 +4138,12 @@
         "city": "Cookeville",
         "state": "TN",
         "zip": "38501",
-        "url": "http://www.fws.gov/cookeville"
+        "url": "http://www.fws.gov/cookeville",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4073,7 +4164,12 @@
         "state": "TN",
         "zip": "38242",
         "url": "http://www.fws.gov/refuge/tennessee/",
-        "facebook": "https://www.facebook.com/tennesseenwr"
+        "facebook": "https://www.facebook.com/tennesseenwr",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4093,7 +4189,12 @@
         "city": "Tallulah",
         "state": "LA",
         "zip": "71282",
-        "url": "http://www.fws.gov/refuge/tensas_river/"
+        "url": "http://www.fws.gov/refuge/tensas_river/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4114,7 +4215,12 @@
         "city": "Hollandale",
         "state": "MS",
         "zip": "38748",
-        "url": "http://www.fws.gov/refuge/theodore_roosevelt/"
+        "url": "http://www.fws.gov/refuge/theodore_roosevelt/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4135,7 +4241,12 @@
         "state": "MS",
         "zip": "39194",
         "url": "http://www.fws.gov/refuge/panther_swamp/",
-        "facebook": "https://www.facebook.com/TRComplex"
+        "facebook": "https://www.facebook.com/TRComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4180,7 +4291,12 @@
         "city": "Farmerville",
         "state": "LA",
         "zip": "71241",
-        "url": "http://www.fws.gov/upperouachita/"
+        "url": "http://www.fws.gov/upperouachita/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4202,7 +4318,12 @@
         "state": "PR",
         "zip": "00765",
         "url": "http://www.fws.gov/caribbean/Refuges/Vieques/",
-        "facebook": "https://www.facebook.com/ViequesNWR"
+        "facebook": "https://www.facebook.com/ViequesNWR",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4223,7 +4344,12 @@
         "state": "SC",
         "zip": "29440",
         "url": "http://www.fws.gov/waccamaw/",
-        "facebook": "https://www.facebook.com/waccamawnwr"
+        "facebook": "https://www.facebook.com/waccamawnwr",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4243,7 +4369,12 @@
         "PHYSADD2": "7030 Bears Bluff Road",
         "city": "Wadmalaw Island",
         "state": "SC",
-        "zip": "29487"
+        "zip": "29487",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4264,7 +4395,12 @@
         "state": "AR",
         "zip": "72384",
         "url": "http://www.fws.gov/wapanocca/",
-        "facebook": "https://www.facebook.com/wapanocca"
+        "facebook": "https://www.facebook.com/wapanocca",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4331,7 +4467,12 @@
         "city": "Anniston",
         "state": "AL",
         "zip": "36205",
-        "url": "http://www.fws.gov/watercressdarter/"
+        "url": "http://www.fws.gov/watercressdarter/",
+        "image": "watercress-darter.jpg",
+        "imageurl": "https://commons.wikimedia.org/wiki/File:Watercress_Darter.jpg",
+        "alt": "A small, brightly colored fish with orange and blue markings on several of it's fins.",
+        "caption": "Watercress darter. Photo By Geological Survey of Alabama <a href=\"http://creativecommons.org/licenses/by-sa/3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/wiki/File%3AWatercress_Darter.jpg\">via Wikimedia Commons.</a>",
+        "narrative": "Watercress Darter National Wildlife Refuge, near Bessemer, Jefferson County, Alabama, was established by the Service in 1980 to provide protection for the endangered watercress darter. Although the Refuge is only about 24 acres of ponds, mixed pine-hardwood forest, and a residence, and contains Thomas Spring. A second pond was constructed on the Refuge in 1983 to provide additional darter habitat. The Refuge is unstaffed and administered by Mountain Longleaf NWR.<br><br>The watercress darter is a small, very colorful fish measuring up to 2.5 inches in length. The fish is currently found in only five sites in the upper Black Warrior River drainage near Birmingham, Alabama. They are found only at mid-depths in dense accumulations of aquatic vegetation including watercress, in springs and spring runs. Green sunfish, bluegills, and sculpins are known to prey on watercress darters. The darters feed on snails, crustaceans, and insect larvae that inhabit springs and spring runs."
       },
       "geometry": {
         "type": "Point",
@@ -4352,7 +4493,12 @@
         "city": "Welaka",
         "state": "FL",
         "zip": "32193",
-        "url": "http://www.fws.gov/welaka/"
+        "url": "http://www.fws.gov/welaka/",
+        "image": "welaka.jpg",
+        "imageurl": "https://flic.kr/p/xdRpUD",
+        "alt": "An employee in an orange vest shows a young girl how to cast a rod.",
+        "caption": "Let's go Fishing event at Welaka National Fish Hatchery. Photo by John Galvez, USFWS.",
+        "narrative": "The Welaka National Fish Hatchery was built in 1926 and originally operated by the State of Florida. In 1938 the hatchery was transferred to the U.S. Fish and Wildlife Service. Welaka is a warmwater hatchery. That is, the species of fish raised here do best in summer water temperatures that reach 75 to 85 degrees Fahrenheit. In it's 41 ponds, the facility raises between 4.5 to 5 million fish annually. Species vital to the fishery resources of Florida, Georgia, Alabama, and the coastal United States are raised here and stocked in cooperation with the various State game and fish agencies."
       },
       "geometry": {
         "type": "Point",
@@ -4373,7 +4519,12 @@
         "city": "Dyersburg",
         "state": "TN",
         "zip": "38024",
-        "url": "http://www.fws.gov/westtnrefuges/"
+        "url": "http://www.fws.gov/westtnrefuges/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4394,7 +4545,12 @@
         "state": "AL",
         "zip": "35603",
         "url": "http://www.fws.gov/refuge/wheeler/",
-        "facebook": "https://www.facebook.com/WheelerNWRComplex"
+        "facebook": "https://www.facebook.com/WheelerNWRComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4414,7 +4570,12 @@
         "city": "St Charles",
         "state": "AR",
         "zip": "72140",
-        "url": "http://www.fws.gov/refuge/white_river/"
+        "url": "http://www.fws.gov/refuge/white_river/",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4434,7 +4595,12 @@
         "PHYSADD2": null,
         "city": "Atlanta",
         "state": "GA",
-        "zip": "30354"
+        "zip": "30354",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4454,7 +4620,12 @@
         "PHYSADD2": null,
         "city": "Memphis",
         "state": "TN",
-        "zip": "38118"
+        "zip": "38118",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4474,7 +4645,12 @@
         "PHYSADD2": "Room 134",
         "city": "Miami",
         "state": "FL",
-        "zip": "33122"
+        "zip": "33122",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4494,7 +4670,12 @@
         "PHYSADD2": null,
         "city": "Metairie",
         "state": "LA",
-        "zip": "70001"
+        "zip": "70001",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4513,7 +4694,12 @@
         "address": "4662 Air Cargo Road, #1200",
         "city": "Tampa",
         "state": "FL",
-        "zip": "33614"
+        "zip": "33614",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4534,7 +4720,12 @@
         "state": "KY",
         "zip": "42629",
         "url": "http://www.fws.gov/wolfcreek/",
-        "facebook": "https://www.facebook.com/WolfCreekNFH"
+        "facebook": "https://www.facebook.com/WolfCreekNFH",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
@@ -4578,7 +4769,12 @@
         "state": "MS",
         "zip": "38748",
         "url": "http://www.fws.gov/refuge/yazoo/",
-        "facebook": "https://www.facebook.com/TRComplex"
+        "facebook": "https://www.facebook.com/TRComplex",
+        "image": "",
+        "imageurl": "",
+        "alt": "",
+        "caption": "",
+        "narrative": ""
       },
       "geometry": {
         "type": "Point",
