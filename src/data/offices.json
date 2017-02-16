@@ -4437,7 +4437,10 @@
         "zip": "31830",
         "url": "http://www.fws.gov/warmsprings/FishHatchery/",
         "narrative": "Warm Springs is an all-in-one fish center, providing warmwater hatchery services for species such as striped bass, sturgeon, and paddlefish, as well as scientific innovations in fish health and technology. The health center provides state-of-the-art fish disease diagnostic and fish health certification services to a variety of national fish hatcheries, state fish hatcheries, and private fish farms.",
-        "image": "georgia_warm-springs.jpg",
+        "image": "warm-springs.jpg",
+        "imageurl": "https://flic.kr/p/a1vqu1",
+        "caption": "Campers Learn How to Sein in Creek. Photo by USFWS.",
+        "alt": "An employee in uniform helps children in a shallow stream sein for fish.",
         "activities": ["Office", "Fishing"]
       },
       "geometry": {
