@@ -41,8 +41,8 @@
       data: offices
     };
     if (params.layers) mapOptions.layers = normalizeParams(params.layers);
-    if (params.office) mapOptions.initOnOffice = normalizeParams(params.office)[0];
     if (params.scroll === 'false') mapOptions.scrollWheelZoom = false;
+    if (params.office) mapOptions.initOnOffice = normalizeParams(params.office)[0];
 
     map.init(mapOptions);
     officeList.init();
@@ -58,6 +58,11 @@
     detail.init({
       output: document.querySelector('.autocomplete-detail')
     });
+
+    if (params.office) {
+      var initialOffice = OfficeService.getOffice(params.office);
+      detail.renderOffice(initialOffice);
+    };
 
     if (params.detail === 'true' || wideScreen ) detail.show();
 

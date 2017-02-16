@@ -95,5 +95,6 @@
   exports.toggle = toggleDetail;
   exports.show = showDetail;
   exports.hide = hideDetail;
+  exports.renderOffice = renderOffice;
 
 })();
