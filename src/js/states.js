@@ -1,58 +1,36 @@
-(function () {
-  'use strict';
+const madison = require('madison');
+const L = require('leaflet');
 
-  var xhr = require('xhr');
-  var madison = require('madison');
-  var L = require('leaflet');
-  var _ = require('./util');
+const StateService = function(data) {
+  this.states = data;
+}
 
-  var states = null;
+module.exports = StateService
 
-  function init(cb) {
-    xhr.get('./data/states.json', function (err, res) {
-      if (err) return cb(err);
-      if (res.statusCode !== 200) return cb(new Error('Could not download offices.'));
-      states = JSON.parse(res.body);
-      return cb(null, states);
-    });
-  }
+StateService.prototype.getBounds = function(stateList, key) {
+  const list = this.normalizeStateList(stateList);
 
-  function getBounds(stateList, key) {
-    if (!states) return null;
+  const layer = L.geoJson(this.states, {
+    filter: function(feature, layer) {
+      const name = feature.properties[key];
+      const state = (name.length === 2) ? madison.getStateNameSync(name) : name;
+      return list.includes(state.toLowerCase());
+    }
+  });
+  return layer.getBounds();
+}
 
-    var layer, name, state;
+StateService.prototype.getStateName = function(state) {
+  if (state.length === 2) return madison.getStateNameSync(state).toLowerCase();
+  else return state.toLowerCase();
+}
 
-    stateList = normalizeStateList(stateList);
-
-    layer = L.geoJson(states, {
-      filter: function(feature, layer) {
-        name = feature.properties[key];
-        state = (name.length === 2) ? madison.getStateNameSync(name).toLowerCase() : name.toLowerCase();
-        return _.includes(stateList, state);
-      }
-    });
-    return layer.getBounds();
-  }
-
-  // Send back an array of lowercase state names
-  function normalizeStateList(stateList) {
-    if (!stateList) return null;
-    var normalized = [];
-
-    if (typeof stateList === 'string') normalized.push( stateList.toLowerCase() );
-    else normalized = stateList;
-
-    return normalized.map(function(state) { return getStateName(state); });
-  }
-
-  function getStateName(state) {
-    if (state.length === 2) return madison.getStateNameSync(state).toLowerCase();
-    else return state.toLowerCase();
-  }
-
-  module.exports = {
-    init: init,
-    getBounds: getBounds
-  };
-
-})();
+// Send back an array of lowercase state names
+StateService.prototype.normalizeStateList = function(stateList) {
+  if (!stateList) return null;
+  const self = this;
+  let list = [];
+  if (typeof stateList === 'string') list.push(stateList);
+  else list = [...stateList];
+  return list.map(state => this.getStateName(state) );
+}
