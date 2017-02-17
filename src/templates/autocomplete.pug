@@ -1,0 +1,7 @@
+- var _ = require('../js/util');
+each office in offices
+  - var name = normalize(office.properties.name);
+  - var slug = "/?q=" + _.slugify(name).toLowerCase();
+  li
+    a.autocomplete-link(href=slug)
+      = office.properties.name

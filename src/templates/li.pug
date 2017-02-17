@@ -1,0 +1,14 @@
+for o in offices
+  li
+    .office-image
+      img.office-list-icon(src=o.icon.src, alt=o.icon.alt)
+    .office-details
+      h2= o.name
+      img.nested-office-list-icon(src=o.icon.src, alt=o.icon.alt)
+      address| #{o.address} #[br] #{o.city}, #{o.state} #{o.zip}
+      if o.url
+        p| #[a(href=o.url, target='_blank') Visit us on the web!]
+      if o.facebook
+        p| #[a(href=o.facebook, target='_blank') Like us on Facebook!]
+      if o.twitter
+        p| #[a(href=o.twitter, target='_blank') Follow us on Twitter!]

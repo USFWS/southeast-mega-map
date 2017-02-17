@@ -1,8 +1,0 @@
-- var _ = require('../js/util');
-- var OfficeService = require('../js/offices');
-each office in offices
-  - var name = OfficeService.normalizeOfficeName(office.name);
-  - var slug = "/?q=" + _.slugify(name).toLowerCase();
-  li
-    a(href=slug, class="autocomplete-link")
-      = office.name
