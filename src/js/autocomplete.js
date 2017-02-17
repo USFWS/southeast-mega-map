@@ -1,175 +1,128 @@
-(function() {
-  'use strict';
+const emitter = require('./mediator');
+const _ = require('./util');
 
-  var lunr = require('lunr');
-  var emitter = require('./mediator');
-  var _ = require('./util');
+const querystring = require('query-string');
+const template = require('../templates/autocomplete.pug');
 
-  var querystring = require('query-string');
-  var template = require('../templates/autocomplete.jade');
-  var OfficeService = require('./offices');
+const Autocomplete = function(data) {
+  this.input = data.input;
+  this.output = data.output;
+  this.offices = data.offices;
+  this.minLength = data.minLength || 2;
+  this.displayResults = data.displayResults || true;
 
-  var opts, index;
-  var defaults = {
-    minLength: 2,
-    displayResults: true
-  };
+  this.container = _.create('div', 'autocomplete-widget', document.body);
+  this.form = _.create('form', 'autocomplete-form', this.container);
+  this.label = _.create('label', '', this.form);
+  this.label.innerHTML = 'Search:';
+  this.label.setAttribute('for', 'autocomplete-input');
+  this.input = _.create('input', 'autocomplete-input', this.form);
+  this.input.setAttribute('id', 'autocomplete-input');
+  this.input.setAttribute('autocomplete', 'off');
+  this.clear = _.create('button', 'autocomplete-clear', this.form);
+  this.clear.innerHTML = 'Clear';
+  this.output = _.create('ul', 'autocomplete-results', this.container);
 
-  function init(options) {
-    opts = _.defaults({}, options, defaults);
-    if (!opts.data) throw new Error('You must provide an array of offices');
+  this.output.addEventListener('click', delegatedOfficeLink.bind(this));
+  this.form.addEventListener('submit',e => e.preventDefault());
+  this.input.addEventListener('keyup', this.inputKeyup.bind(this));
+  this.input.addEventListener('focus', this.focusInput.bind(this));
+  this.clear.addEventListener('click', this.clearInput.bind(this));
+  this.container.addEventListener('keyup', navigationHandler.bind(this));
+  emitter.on('marker:click', this.updateInputValue.bind(this));
+  emitter.on('blur:input', this.blurInput.bind(this));
+  emitter.on('view:changed', this.toggleDisplayResults.bind(this));
 
-    createElements();
-    registerHandlers();
-    createIndex();
-    seedIndex();
+  this.input.focus();
+};
+
+module.exports = Autocomplete;
+
+Autocomplete.prototype.toggleDisplayResults = function(view) {
+  this.displayResults = !this.displayResults;
+}
+
+Autocomplete.prototype.updateInputValue = function(office) {
+  this.input.value = office.properties.name;
+}
+
+Autocomplete.prototype.clearInput = function() {
+  this.input.value = '';
+  this.input.focus();
+  this.output.innerHTML = '';
+  emitter.emit('autocomplete:empty', this.offices.getOffices());
+}
+
+Autocomplete.prototype.focusInput = function() {
+  this.container.classList.add('active');
+  this.input.setAttribute('placeholder', 'Search');
+}
+
+Autocomplete.prototype.blurInput = function() {
+  this.container.classList.remove('active');
+  this.input.setAttribute('placeholder', '');
+}
+
+function delegatedOfficeLink (e) {
+  e.preventDefault();
+
+  if (e.target.nodeName === 'A') {
+    const officeName = querystring.parse(e.target.search).q.replace(/-/g, ' ');
+    const office = this.offices.search(officeName)[0];
+    this.output.innerHTML = '';
+    this.input.value = e.target.textContent;
+    emitter.emit('office:selected', office);
+    this.blurInput();
   }
+}
 
-  function createElements() {
-    opts.container = _.create('div', 'autocomplete-widget', document.body);
-    opts.form = _.create('form', 'autocomplete-form', opts.container);
-    opts.label = _.create('label', '', opts.form);
-    opts.label.innerHTML = 'Search:';
-    opts.label.setAttribute('for', 'autocomplete-input');
-    opts.input = _.create('input', 'autocomplete-input', opts.form);
-    opts.input.setAttribute('id', 'autocomplete-input');
-    opts.input.setAttribute('autocomplete', 'off');
-    opts.clear = _.create('button', 'autocomplete-clear', opts.form);
-    opts.clear.innerHTML = 'Clear';
-    opts.output = _.create('ul', 'autocomplete-results', opts.container);
+Autocomplete.prototype.inputKeyup = function(e) {
+  emitter.emit('autocomplete:keyup');
+  if (this.input.value.length === 0) {
+    // What's this?
+    emitter.emit('autocomplete:empty', this.offices.getOffices());
+    this.output.innerHTML = '';
+    this.output.classList.remove('active');
+    return;
+  } else if (this.input.value.length < this.minLength) return;
+  this.search(this.input.value);
+}
+
+Autocomplete.prototype.search = function(query) {
+  const hits = this.offices.search(query);
+  if (this.displayResults) this.render(hits);
+  emitter.emit('autocomplete:results', hits);
+}
+
+Autocomplete.prototype.render = function(data) {
+  if (data.length === 0) this.output.classList.remove('active');
+  else this.output.classList.add('active');
+  this.output.innerHTML = template({ offices: data, normalize: this.offices.normalizeOfficeName });
+}
+
+function goToTabbableElement(direction) {
+  if ( !this.container.classList.contains('active') ) return;
+  const tabbable = _.tabbable(this.container);
+
+  let index = tabbable.filter((el, i) => {
+    if ( document.activeElement === el ) return i + direction;
+  })[0];
+
+  if (index === -1) index = 0; // Don't go further than the first element
+  else if (index === tabbable.length) index = index -1; // Don't go further than the last element
+  tabbable[index].focus();
+}
+
+function navigationHandler(e) {
+  const key = e.code || e.keyCode || e.which || 0;
+  // Up Key should go to the previous result in the list
+  if (key === 38) goToTabbableElement(-1);
+  // Down Key should go to the next result in the list
+  if (key === 40) goToTabbableElement(1);
+  // Escape should clear the results and focus on the input
+  if (key === 27) {
+    this.input.focus();
+    this.output.innerHTML = '';
+    this.output.classList.remove('active');
   }
-
-  function registerHandlers() {
-    opts.output.addEventListener('click', delegatedOfficeLink);
-    opts.form.addEventListener('submit', function (e) { e.preventDefault(); });
-    opts.input.addEventListener('keyup', inputKeyup);
-    opts.input.addEventListener('focus', focusInput);
-    opts.clear.addEventListener('click', clearInput);
-    opts.container.addEventListener('keyup', navigationHandler);
-    emitter.on('marker:click', updateInputValue);
-    emitter.on('blur:input', blurInput);
-    emitter.on('view:changed', toggleDisplayResults)
-    opts.input.focus();
-  }
-
-  function toggleDisplayResults(view) {
-    if (view === 'map') opts.displayResults = true;
-    else opts.displayResults = false;
-  }
-
-  function updateInputValue(office) {
-    opts.input.value = office.properties.name;
-  }
-
-  function clearInput() {
-    opts.input.value = '';
-    opts.input.focus();
-    opts.output.innerHTML = '';
-  }
-
-  function focusInput() {
-    _.addClass(opts.container, 'active');
-    opts.input.setAttribute('placeholder', 'Search');
-  }
-
-  function blurInput() {
-    _.removeClass(opts.container, 'active');
-    opts.input.setAttribute('placeholder', '');
-  }
-
-  function delegatedOfficeLink (e) {
-    e.preventDefault();
-
-    if (e.target.nodeName === 'A') {
-      var officeName = querystring.parse(e.target.search).q.replace(/-/g, ' ');
-      var office = OfficeService.getOffice(officeName);
-      opts.output.innerHTML = '';
-      opts.input.value = e.target.textContent;
-      emitter.emit('office:selected', office);
-      blurInput();
-    }
-  }
-
-  function inputKeyup(e) {
-    emitter.emit('autocomplete:keyup');
-    if (opts.input.value.length === 0) {
-      emitter.emit('autocomplete:empty', opts.data);
-      opts.output.innerHTML = '';
-      _.removeClass(opts.output, 'active');
-      return;
-    } else if (opts.input.value.length < opts.minLength) return;
-    search(opts.input.value);
-  }
-
-  function navigationHandler(e) {
-    // Up Key should go to the previous result in the list
-    if (e.which === 38) goToTabbableElement('previous');
-    // Down Key should go to the next result in the list
-    if (e.which === 40) goToTabbableElement('next');
-    // Escape should clear the results and focus on the input
-    if (e.which === 27) {
-      opts.input.focus();
-      opts.output.innerHTML = '';
-      _.removeClass(opts.output, 'active');
-    }
-  }
-
-  function goToTabbableElement(direction) {
-    if ( !_.hasClass(opts.container, 'active') ) return;
-    var index, modifier;
-    var tabbable = _.tabbable(opts.container);
-    if (direction === 'next') modifier = 1;
-    else if (direction === 'previous') modifier = -1;
-    else throw new Error('Direction for _goToTabbableElement must be \'next\' or \'last\'.');
-
-    _.each(tabbable, function (el, i) {
-      if ( document.activeElement === el ) index = i + modifier;
-    });
-
-    if (index === -1) index = 0; // Don't go further than the first element
-    else if (index === tabbable.length) index = index -1; // Don't go further than the last element
-    tabbable[index].focus();
-  }
-
-  function createIndex () {
-    index = lunr(function() {
-      this.field('name', { boost: 10 });
-      this.field('type', { boost: 3 });
-      this.field('program');
-      this.field('address');
-      this.field('city', { boost: 5 });
-      this.field('state', { boost: 5 });
-      this.field('zip');
-      this.ref('id');
-    });
-  }
-
-  function seedIndex () {
-    opts.data.forEach(function (obj, i) {
-      obj.properties.id = i;
-      index.add(obj.properties);
-    });
-  }
-
-  function search (query) {
-    var hits = index.search(query);
-    var results = [];
-
-    // Need to sort the hits based on lunrjs score
-    hits.forEach(function (hit, i) {
-      results.push(opts.data[hit.ref].properties);
-    });
-
-    if (opts.displayResults) render(results);
-    emitter.emit('autocomplete:results', results);
-  }
-
-  function render(data) {
-    if (data.length === 0) _.removeClass(opts.output, 'active');
-    else _.addClass(opts.output, 'active');
-    opts.output.innerHTML = template({ offices: data });
-  }
-
-  module.exports.init = init;
-
-})();
+}
