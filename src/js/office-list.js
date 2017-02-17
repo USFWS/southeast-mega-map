@@ -1,58 +1,45 @@
-(function () {
-  'use strict';
+const emitter = require('./mediator');
+const objectAssign = require('object-assign');
+const template = require('../templates/li.pug');
 
-  var emitter = require('./mediator');
-  var _ = require('./util');
-  var template = require('../templates/li.jade');
-  var list = document.querySelector('.office-list');
+const OfficeList = function(data) {
+  this.list = data.list;
+  this.offices = data.offices;
 
-  function init() {
-    registerHandlers();
-  }
+  emitter.on('autocomplete:results', this.render.bind(this));
+  emitter.on('autocomplete:empty', this.emptyHandler.bind(this));
+};
 
-  function registerHandlers() {
-    emitter.on('autocomplete:results', resultsHandler);
-    emitter.on('autocomplete:empty', emptyHandler);
-  }
+module.exports = OfficeList;
 
-  function resultsHandler(offices) {
-    var data = offices.map(function (office) { return { properties: office } });
-    render(data);
-  }
+OfficeList.prototype.emptyHandler = function(offices) {
+  this.render(this.offices.getOffices().features);
+}
 
-  function emptyHandler(offices) {
-    render(offices);
-  }
-  function render(offices) {
-    offices = _.map(offices, function (office) {
-      office.properties.icon = getIconPath(office.properties);
-      return office;
-    });
-    list.innerHTML = template({ offices: offices });
-  }
+OfficeList.prototype.render = function(offices) {
+  const data = offices
+    .map(o => o.properties)
+    .map(o => objectAssign({icon: getIconPath(o)}, o));
 
-  function getIconPath(office) {
-    var path = ['./svg/'],
-        alt;
-    switch (office.type) {
-      case 'National Wildlife Refuge':
-        path.push('blue-goose.svg');
-        alt = 'Official Logo of the National Wildlife Refuge System';
-        break;
-      case 'National Fish Hatchery':
-        path.push('fisheries.svg');
-        alt = 'Logo for the Fisheries program';
-        break;
-      default:
-        path.push('building.svg');
-        alt = 'Icon representing a Field Station';
-        break;
-     }
-     return {
-       src: path.join(''),
-       alt: alt
-     };
-  }
+  this.list.innerHTML = template({ offices: data });
+}
 
-  module.exports.init = init;
-})();
+function getIconPath(office) {
+  switch (office.type) {
+    case 'National Wildlife Refuge':
+      return {
+        src: './svg/blue-goose.svg',
+        alt: 'Official Logo of the National Wildlife Refuge System'
+      }
+    case 'National Fish Hatchery':
+      return {
+        src: './svg/fisheries.svg',
+        alt: 'Logo for the Fisheries program'
+      }
+    default:
+      return {
+        src: './svg/building.svg',
+        alt: 'Icon representing a Field Station'
+      }
+    }
+}
