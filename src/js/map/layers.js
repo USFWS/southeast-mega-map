@@ -4,7 +4,7 @@
   var L = require('leaflet');
   var emitter = require('../mediator');
   var _ = require('../util');
-  var template = require('../../templates/popup.jade');
+  var template = require('../../templates/popup.pug');
   require('leaflet.markercluster');
   require('leaflet-providers');
   require('./marker-cluster-layer-support');
@@ -59,12 +59,12 @@
   }
 
   function addSomeLayers(overlays, layers) {
-    _.map(overlays, function(layer, key) {
+    overlays.map((layer, key) => {
       cluster.checkIn(layer);
       if (_.includes(layers, key.toLowerCase())) cluster.addLayer(layer);
     });
 
-    _.map(wms, function(layer, key) {
+    wms.map((layer, key) => {
       if (_.includes(layers, key.toLowerCase())) map.addLayer(layer);
     });
   }
@@ -114,11 +114,6 @@
   }
 
   function flyToOffice(office) {
-    var type = office.properties.type.toLowerCase();
-    var filtered = _.filter(cluster.getLayers(), function(layer) {
-      return layer.feature == office;
-    });
-    if (filtered.length === 0) toggleByType(type);
     // Clone the coordinates array
     var latlng = office.geometry.coordinates.slice(0).reverse();
     // Account for detail panel opening
