@@ -18,8 +18,29 @@ const fisheries = L.icon({
   popupAnchor: [7, -25]
 });
 
+function getIcon(type) {
+  switch (type) {
+    case 'National Wildlife Refuge':
+      return {
+        alt: 'Official Logo of the National Wildlife Refuge System',
+        icon: blueGoose
+      };
+    case 'National Fish Hatchery':
+      return {
+        alt: 'Official Logo of America\'s Fisheries',
+        icon: fisheries
+      };
+    default:
+      return {
+        alt: 'A generic office building icon',
+        icon: office
+      };
+    }
+}
+
 module.exports = {
   blueGoose,
   office,
-  fisheries
+  fisheries,
+  getIcon
 };
