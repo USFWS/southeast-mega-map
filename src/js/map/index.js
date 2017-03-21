@@ -1,103 +1,94 @@
-(function () {
+const L = require('leaflet');
+const leafletKnn = require('leaflet-knn');
+const emitter = require('../mediator');
+const mapLayers = require('./layers');
+const Layer = require('./layer');
 
-  var L = require('leaflet');
-  var leafletKnn = require('leaflet-knn');
-  var emitter = require('../mediator');
-  var mapLayers = require('./layers');
-  var OfficeService = require('../offices');
+const _  = require('../util');
 
-  var _  = require('../util');
+L.Icon.Default.imagePath = './images';
 
-  L.Icon.Default.imagePath = './images';
+const Map = function(data) {
+  this.zoom = data.zoom || 7;
+  this.mapId = data.mapId || 'map';
+  this.offices = data.offices;
+  this.bounds = data.bounds;
+  this.initialOffice = data.initialOffice;
+  this.scroll = data.scroll;
+  this.layers = data.layers;
 
-  var opts, map, cluster, index, layers;
-  var defaults = {
-    zoom: 7,
-    mapId: 'map',
-    disableScrollSelector: '.disable-scroll-wheel'
+  this.index = leafletKnn( L.geoJson(this.offices.getOffices()) );
+  this.fullExtent = _.create('button', ['tt-w', 'zoom-to-full-extent', 'leaflet-control-roy'], document.body);
+  this.fullExtent.setAttribute('data-tt', 'Zoom to full extent');
+  this.nearest = _.create('button', ['find-nearest', 'tt-w', 'leaflet-control-roy'], document.body);
+  this.nearest.setAttribute('data-tt', 'Find nearest offices');
+  this.imgLocate = _.create('img', '', this.nearest);
+  this.imgLocate.setAttribute('src', './svg/current-location.svg');
+  this.imgLocate.setAttribute('alt', 'Icon representing your current location');
+  this.imgExtent = _.create('img', '', this.fullExtent);
+  this.imgExtent.setAttribute('src', './svg/full-extent.svg');
+  this.imgExtent.setAttribute('alt', 'Icon representing zoom to full extent');
+
+  this.createMap.call(this);
+
+  emitter.on('office:selected', mapLayers.flyToOffice);
+  emitter.on('detail:hide', this.panMap.bind(this));
+  emitter.on('detail:show', this.panMap.bind(this));
+  this.fullExtent.addEventListener('click', this.zoomToFullExtent.bind(this));
+  this.nearest.addEventListener('click', this.getLocation.bind(this));
+  this.map.on('click', this.blurInput.bind(this));
+  this.map.on('locationfound', this.findNearest.bind(this));
+};
+
+module.exports = Map;
+
+Map.prototype.getLocation = function() {
+  this.nearest.classList.add('loading');
+  this.imgLocate.setAttribute('src', './svg/loading.svg');
+  this.map.locate();
+}
+
+Map.prototype.panMap = function(distance) {
+  this.map.panBy([distance, 0]);
+}
+
+Map.prototype.blurInput = function() {
+  emitter.emit('blur:input');
+}
+
+Map.prototype.zoomToFullExtent = function() {
+  this.map.flyToBounds(mapLayers.getBounds());
+  emitter.emit('zoom:fullextent');
+}
+
+Map.prototype.createMap = function() {
+  const mapOptions = {
+    zoom: this.zoom,
+    scrollWheelZoom: this.scroll,
+    zoomControl: false,
+    layers: [mapLayers.baseLayers['ESRI National Geographic']]
   };
 
-  function init(options) {
-    opts = _.defaults({}, options, defaults);
-    index = leafletKnn( L.geoJson(opts.data) );
-    opts.fullExtent = _.create('button', ['tt-w', 'zoom-to-full-extent', 'leaflet-control-roy'], document.body);
-    opts.fullExtent.setAttribute('data-tt', 'Zoom to full extent');
-    opts.nearest = _.create('button', ['find-nearest', 'tt-w', 'leaflet-control-roy'], document.body);
-    opts.nearest.setAttribute('data-tt', 'Find nearest offices');
-    opts.imgLocate = _.create('img', '', opts.nearest);
-    opts.imgLocate.setAttribute('src', './svg/current-location.svg');
-    opts.imgLocate.setAttribute('alt', 'Icon representing your current location');
-    opts.imgExtent = _.create('img', '', opts.fullExtent);
-    opts.imgExtent.setAttribute('src', './svg/full-extent.svg');
-    opts.imgExtent.setAttribute('alt', 'Icon representing zoom to full extent');
-    createMap();
-    registerHandlers();
-    return opts.map;
-  }
+  const refuges = new Layer({
+    offices: this.offices,
+    type: 'National Wildlife Refuge'
+  });
 
-  function registerHandlers() {
-    emitter.on('office:selected', mapLayers.flyToOffice);
-    emitter.on('detail:hide', panMap);
-    emitter.on('detail:show', panMap);
-    opts.fullExtent.addEventListener('click', zoomToFullExtent);
-    opts.nearest.addEventListener('click', getLocation);
-    map.on('click', blurInput);
-    map.on('locationfound', findNearest);
-  }
+  console.log(refuges);
 
-  function getLocation() {
-    _.addClass(opts.nearest, 'loading');
-    opts.imgLocate.setAttribute('src', './svg/loading.svg');
-    map.locate();
-  }
+  this.map = L.map(this.mapId, mapOptions);
+  if (this.bounds) this.map.fitBounds(this.bounds);
 
-  function panMap(distance) {
-    map.panBy([distance, 0]);
-  }
+  mapLayers.init(this.offices.getOffices(), this.layers, this.map);
+  if (this.initialOffice) mapLayers.flyToOffice( this.initialOffice );
 
-  function blurInput() {
-    emitter.emit('blur:input');
-  }
+  new L.Control.Zoom({ position: 'bottomright' }).addTo(this.map);
+}
 
-  function zoomToFullExtent() {
-    map.flyToBounds(mapLayers.getBounds());
-    emitter.emit('zoom:fullextent');
-  }
-
-  function createMap() {
-    var mapOptions = {
-      zoomControl: false,
-      layers: [mapLayers.baseLayers['ESRI National Geographic']]
-    };
-    if (opts.scrollWheelZoom == false) mapOptions.scrollWheelZoom = false;
-
-    map = L.map(opts.mapId, mapOptions);
-    map.fitBounds(opts.bounds);
-    mapLayers.init(opts.data, opts.layers, map);
-
-    if (opts.initOnOffice)
-      mapLayers.flyToOffice( OfficeService.getOffice(opts.initOnOffice) );
-
-    new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
-
-    return map;
-  }
-
-  function findNearest(e) {
-    L.popup().setLatLng(e.latlng).setContent('Your Current Location').openOn(map);
-    var nearest = index.nearest(e.latlng, 10);
-    _.removeClass(opts.nearest, 'loading');
-    opts.imgLocate.setAttribute('src', './svg/current-location.svg');
-    emitter.emit('found:nearest', nearest);
-  }
-
-  function shouldDisableScrollWheel(node) {
-    var nodeHasClass = _.hasClass(node, opts.disableScrollClass);
-    var parentHasClass = _.hasClass(node.parentNode, opts.disableScrollClass);
-    if (nodeHasClass || parentHasClass) return true;
-    else return false;
-  }
-
-  module.exports.init = init;
-
-})();
+Map.prototype.findNearest = function(e) {
+  L.popup().setLatLng(e.latlng).setContent('Your Current Location').openOn(this.map);
+  const nearest = this.index.nearest(e.latlng, 10);
+  this.nearest.classList.remove('loading');
+  this.imgLocate.setAttribute('src', './svg/current-location.svg');
+  emitter.emit('found:nearest', nearest);
+}
