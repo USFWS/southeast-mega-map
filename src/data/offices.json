@@ -2021,6 +2021,31 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Holla Bend National Wildlife Refuge",
+        "type": "National Wildlife Refuge",
+        "program": "National Wildlife Refuge System",
+        "address": "Center Road",
+        "city": "Pottsville",
+        "state": "AR",
+        "zip": "72858",
+        "url": "http://www.fws.gov/hollabend/",
+        "image": "holla-bend.jpg",
+        "imageurl": "https://flic.kr/p/8d9u4j",
+        "alt": "Several dark black butterflies with white and yellow spots.",
+        "caption": "Black Swallowtail (Papilio polyxenex) at Holla Bend National Wildlife Refuge. Photo by <a href=\"https://www.flickr.com/photos/38686613@N08/\" target=\"_blank\">pondhawk</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/legalcode\" target=\"_blank\">CC BY 2.0.</a>",
+        "narrative": "Holla Bend NWR, established in 1957, is located 8 miles down river from Dardanelle, Arkansas. The refuge is situated on a bend of the Arkansas River which was cut off when the U.S. Army Corps of Engineers straightened the river in 1954 for flood control. Refuge lands include over 7,000 acres of agricultural fields, bottomland forest, and open water.  <br><br>The refuge's primary purpose is to provide a winter home for a portion of the millions of ducks and geese that use the Mississippi Flyway each year. During these spring and fall migrations as many as fourteen species of ducks and four kinds of geese will stop by the refuge for a short visit. During the winter, it is not uncommon for the refuge to host up to 100,000 ducks and geese at once. Bald eagles are also common in the winter from December through February.  <br><br>Spring brings thousands of neotropical migratory songbirds that use the refuge as a rest area on their journey from Central and South America. Many species of vireos, warblers, buntings, and orioles inhabit the woodlands, during this time. Most only stay for a short time to rest, but others use the refuge as a nesting area. Herons, egrets, and other wading birds feed in shallow pools and alligators can be seen in the refuge lakes and ponds."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.059490,
+          35.140511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Holt Collier National Wildlife Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
@@ -2819,6 +2844,33 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Natchitoches National Fish Hatchery",
+        "type": "National Fish Hatchery",
+        "program": "Fisheries and Aquatic Conservation",
+        "address": "615 South Drive",
+        "city": "Natchitoches",
+        "state": "LA",
+        "zip": "71457",
+        "facebook": "https://www.facebook.com/natchitochesnfh/",
+        "url": "https://www.fws.gov/natchitoches/",
+        "image": "natchitoches.jpg",
+        "imageurl": "https://flic.kr/p/uDRVw1",
+        "alt": "A young girl fishing on from the bank of a pond.",
+        "caption": "Kid's Fishing Derby at Natchitoches, LA. Photo by USFWS.",
+        "narrative": "Natchitoches National Fish Hatchery is the only Federal fish hatchery located in Louisiana.  Opened in 1931, the hatchery raises many different species including Alligator gar, Alligator snapping turtles, recreational fish species, and freshwater mussels.  Louisiana is called Sportsman’s Paradise reflecting a history steeped in the environment.  As we work to protect our natural resources, we also aim to protect the cultural heritage of the people who were here long before us.  Natchitoches NFH has been working with the Caddo Indian Nation for years to develop educational resources for the local school systems that teach about the Caddo way of life.  The Aquarium at Natchitoches NFH contains displays featuring the Caddo people who use to inhabit the very land the hatchery is built on.  In addition to our indoor displays there is also a memorial plaza located on the side of the Aquarium, dedicated to remembering the Caddo people who lived, died and were buried on now what is known at Natchitoches National Fish Hatchery.",
+        "activities": ["Fishing"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.081075,
+          31.739115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "National Key Deer Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
@@ -3498,6 +3550,32 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Pond Creek National Wildlife Refuge",
+        "type": "National Wildlife Refuge",
+        "program": "National Wildlife Refuge System",
+        "address": "1958 Central Road",
+        "city": "Lockesburg",
+        "state": "AR",
+        "zip": "71846",
+        "url": "https://www.fws.gov/refuge/pond_creek/",
+        "facebook": "https://www.facebook.com/southarkansasrefugescomplex",
+        "image": "pond-creek.jpg",
+        "imageurl": "https://flic.kr/p/ceDX8N",
+        "alt": "A yellow and brown bird with round white eyes.",
+        "caption": "White-eyed vireo. Photo by <a href=\"https://www.flickr.com/photos/puttefin/\" target=\"_blank\">Kelly Colgan Azar</a>, <a href=\"https://creativecommons.org/licenses/by-nd/2.0/\" target=\"_blank\">CC BY-ND 2.0.</a>",
+        "narrative": "Pond Creek Refuge was originally named Cossatot National Wildlife Refuge in 1994 but was then changed in 1997 to retain the area's local name - &ldquo;Pond Creek Bottoms&rdquo;. Situated in an area where the Central and Mississippi flyways overlap, Pond Creek provides protection for extremely valuable, yet rapidly disappearing wetland hardwood forest."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.204916,
+          33.888101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Private John Allen National Fish Hatchery",
         "type": "National Fish Hatchery",
         "program": "Fisheries And Aquatic Conservation",
@@ -3576,6 +3654,33 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Red River National Wildlife Refuge",
+        "type": "National Wildlife Refuge",
+        "program": "National Wildlife Refuge System",
+        "address": "150 Eagle Bend Point",
+        "city": "Bossier City",
+        "state": "LA",
+        "zip": "71112",
+        "facebook": "https://www.facebook.com/RedRiverNWR/",
+        "url": "http://www.fws.gov/refuge/red_river/",
+        "image": "red-river.jpg",
+        "imageurl": "https://flic.kr/p/pu8Zja",
+        "alt": "A group of five ducks with bright green spots on their head and feathers.",
+        "caption": "Green-winged teal ducks at Red River National Wildlife Refuge. Photo by Ronnie Maum, USFWS Volunteer.",
+        "narrative": "Red River National Wildlife Refuge is located in the Red River Valley in northwestern Louisiana. The refuge is important to waterfowl, wading birds and songbirds especially.<br><br>The Red River Valley was historically forested with bottomland hardwoods, cypress sloughs and shrub/scrub swamps, providing a variety of habitats for wildlife. In the early 1800’s, settlers began clearing land for homesteads and farms after the Louisiana Purchase.<br><br>Once the 50,000 acres has been acquired, the refuge will connect with other conservation areas reducing habitat fragmentation and providing wildlife corridors and stop-over areas for migrating waterfowl and songbirds.",
+        "activities": ["Hunting", "Fishing", "Hiking", "Wildlife Photography", "Wildlife Observation"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.672268,
+          32.447368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Reelfoot National Wildlife Refuge",
         "type": "National Wildlife Refuge",
         "program": "National Wildlife Refuge System",
@@ -3588,7 +3693,7 @@
         "alt": "Children gather on the bank of a lake to catch insects.",
         "caption": "Catching macro-invertebrates is just plain fun! You can also learn a lot about water quality based on what you catch. Photo by USFWS.",
         "narrative": "Reelfoot National Wildlife Refuge is located within four miles of the Mississippi River in rural northwest Tennessee, about 35 miles north of the city of Dyersburg and 15 miles southwest of Union City.  It encompasses part of Lake and Obion counties in Tennessee, and extends northward into Fulton County, Kentucky.<br><br>Reelfoot National Wildlife Refuge was established on August 28, 1941. The primary stated purpose of the refuge is to protect and enhance populations of migratory birds.<br><br>In conjunction with their primary establishing purposes, these refuges will provide inviolate sanctuaries for migratory birds and preserve for the public benefit a representative portion of the bottomland hardwood forests of the Lower Mississippi Alluvial Valley. The refuges would also help support the priorities established by the Service’s Lower Mississippi River Valley Ecosystem Team.  These ecosystem priorities involve migratory bird populations and their habitats; wetlands; threatened and endangered species and their habitats; fisheries and aquatic resources; and national wildlife refuges and national fish hatcheries.",
-        "activities": ["Fishing", "Canoeing"]
+        "activities": ["Fishing", "Canoeing", "Wildlife Observation", "Wildlife Photography"]
       },
       "geometry": {
         "type": "Point",
