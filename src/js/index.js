@@ -1,79 +1,91 @@
-(function() {
-  'use strict';
+require('classlist-polyfill');
 
-  var xhr = require('xhr');
-  var qs = require('query-string');
-  var parallel = require('async/parallel');
+const xhr = require('xhr');
+const qs = require('query-string');
+const parallel = require('async/parallel');
+const objectAssign = require('object-assign');
+const _ = require('./util');
+const Autocomplete = require('./autocomplete');
+const OfficeList = require('./office-list');
+const OfficeService = require('./offices');
+const StateService = require('./states');
+const Detail = require('./detail');
+const Switcher = require('./view-switcher');
+const Toolbar = require('./toolbar');
+const Map = require('./map/');
+const emitter = require('./mediator');
 
-  var _ = require('./util');
-  var autocomplete = require('./autocomplete');
-  var officeList = require('./office-list');
-  var toolbar = require('./toolbar');
-  var detail = require('./detail');
-  var emitter = require('./mediator');
-  var map = require('./map/index.js');
-  var OfficeService = require('./offices');
-  var StateService = require('./states');
-  var switcher = require('./view-switcher');
+const wideScreen = _.getDimensions().width > 1100;
+const params = objectAssign({}, qs.parse(location.search));
+const landing = document.querySelector('.landing-screen');
+const textViewContainer = document.querySelector('.office-list');
+const mapViewContainer = document.querySelector('#map');
 
-  var wideScreen = _.getDimensions().width > 1100;
-  var params = qs.parse(location.search);
-  var landing = document.querySelector('.landing-screen');
+const tasks = [getOffices];
+if (params.state) tasks.push(getStates);
+parallel(tasks, initialize);
 
-  init();
+function getOffices(cb) {
+  xhr.get('./data/offices.json', (err, res) => {
+    if (err) return cb(err);
+    if (res.statusCode !== 200) return cb(new Error('Could not download offices.'));
+    return cb(null, JSON.parse(res.body));
+  });
+}
 
-  function init() {
-    var tasks = [OfficeService.init];
-    if (params.state) tasks.push( StateService.init );
+function getStates(cb) {
+  xhr.get('./data/states.json', (err, res) => {
+    if (err) return cb(err);
+    if (res.statusCode !== 200) return cb(new Error('Could not download states.'));
+    return cb(null, JSON.parse(res.body));
+  });
+}
 
-    parallel(tasks, displayOffices);
-  }
+function initialize(err, data) {
+  if (err) console.log(err);
+  const offices = new OfficeService(data[0]);
+  const states = new StateService(data[1]);
+  const initialOffice = (params.office) ? offices.search(params.office)[0] : null;
+  const bounds = (params.state) ? states.getBounds(params.state, 'NAME') : offices.getBounds();
 
-  function displayOffices(err, data) {
-    if (err) console.log(err);
-    var offices = data[0];
-    var initOnOffice = null;
+  const detail = new Detail({
+    offices,
+    initialOffice,
+    initialView: params.hasOwnProperty('detail') || wideScreen
+  });
 
-    var bounds = (params.state) ? StateService.getBounds(params.state, 'NAME') : OfficeService.getBounds();
+  const autocomplete = new Autocomplete({
+    input: document.querySelector('.autocomplete-input'),
+    output: document.querySelector('.autocomplete-results'),
+    offices
+  });
 
-    var mapOptions = {
-      bounds: bounds,
-      data: offices
-    };
-    if (params.layers) mapOptions.layers = normalizeParams(params.layers);
-    if (params.scroll === 'false') mapOptions.scrollWheelZoom = false;
-    if (params.office) mapOptions.initOnOffice = normalizeParams(params.office)[0];
+  const map = new Map({
+    scroll: (params.scroll === 'false') ? false : true,
+    layers: (params.layers) ? normalizeParams(params.layers) : null,
+    offices,
+    bounds,
+    initialOffice
+  });
 
-    map.init(mapOptions);
-    officeList.init();
+  const officeList = new OfficeList({
+    list: document.querySelector('.office-list'),
+    offices
+  });
 
-    switcher.init();
+  const switcher = new Switcher({
+    textViewContainer,
+    mapViewContainer,
+    view: params.view === 'text' ? 'text' : 'map'
+  });
 
-    autocomplete.init({
-      data: offices.features,
-      input: document.querySelector('.autocomplete-input'),
-      output: document.querySelector('.autocomplete-results')
-    });
+  const toolbar = new Toolbar();
+  _.remove(landing);
+}
 
-    detail.init({
-      output: document.querySelector('.autocomplete-detail')
-    });
-
-    if (params.office) {
-      var initialOffice = OfficeService.getOffice(params.office);
-      detail.renderOffice(initialOffice);
-    };
-
-    if (params.detail === 'true' || wideScreen ) detail.show();
-
-    toolbar.init();
-    _.remove(landing);
-  }
-
-  function normalizeParams(params) {
-    var normalized = [];
-    if (typeof params === 'string') normalized.push(params);
-    else normalized = params;
-    return normalized.map(function (p) { return p.toLowerCase(); });
-  }
-})();
+function normalizeParams(params) {
+  let normalized = [];
+  if (typeof params === 'string') normalized.push(params);
+  else normalized = params;
+  return normalized.map(p => p.toLowerCase());
+}
