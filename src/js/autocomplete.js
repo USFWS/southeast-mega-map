@@ -32,8 +32,6 @@ const Autocomplete = function(data) {
   emitter.on('marker:click', this.updateInputValue.bind(this));
   emitter.on('blur:input', this.blurInput.bind(this));
   emitter.on('view:changed', this.toggleDisplayResults.bind(this));
-
-  this.input.focus();
 };
 
 module.exports = Autocomplete;
