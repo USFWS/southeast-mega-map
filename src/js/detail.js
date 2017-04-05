@@ -21,7 +21,6 @@ const Detail = function(data) {
   this.content.innerHTML = templates.init();
   this.container.addEventListener('click', this.blur.bind(this));
   this.close.addEventListener('click', this.toggle.bind(this));
-  this.content.addEventListener('click', delegatedOfficeLink.bind(this));
   emitter.on('office:selected', this.renderOffice.bind(this));
   emitter.on('marker:click', this.renderOffice.bind(this));
   emitter.on('autocomplete:keyup', this.hide.bind(this));
@@ -35,17 +34,6 @@ const Detail = function(data) {
 }
 
 module.exports = Detail;
-
-function delegatedOfficeLink (e) {
-  e.preventDefault();
-
-  if (e.target.nodeName === 'A'){
-    const officeName = querystring.parse(e.target.search).q.replace(/-/g, ' ');
-    const office = this.offices.search(officeName)[0];
-    this.renderOffice(office);
-    emitter.emit('office:selected', office);
-  }
-}
 
 Detail.prototype.blur = function() {
   emitter.emit('blur:input');
