@@ -28,6 +28,7 @@
     margin-right: 5px;
     vertical-align: middle;
   }
+
   li {
     margin-bottom: 10px;
   }
@@ -105,12 +106,19 @@
   border-bottom: 1px solid rgb(230, 230, 230);
   list-stye: none;
   margin: 0;
-  padding: 1em;
+  padding: .5em;
   text-align: center;
 
   svg {
     height: 30px;
+    fill: $green;
     width: 30px;
+  }
+
+  p {
+    font-size: .8em;
+    margin: 0;
+    text-align: center;
   }
 
   li {
@@ -120,6 +128,7 @@
 
   a {
     color: $green;
+    display: block;
     text-decoration: none;
 
     &:hover {
