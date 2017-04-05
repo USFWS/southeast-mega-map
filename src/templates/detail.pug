@@ -9,16 +9,19 @@ if office.image
 ul.detail-links
   if office.url
     li
-      a(href=office.url, title='Website')
+      a(href=office.url, title='Website', target='_blank')
         include ../svg/webpage.svg
+        p Website
   if office.facebook
     li
-      a(href=office.facebook, title='Facebook')
+      a(href=office.facebook, title='Facebook', target='_blank')
         include ../svg/facebook.svg
+        p Facebook
   if office.twitter
     li
-      a(href=office.twitter, title='Twitter')
+      a(href=office.twitter, title='Twitter', target='_blank')
         include ../svg/twitter.svg
+        p Twitter
 
 .detail-content-wrap
   p.detail-description| !{office.narrative}
