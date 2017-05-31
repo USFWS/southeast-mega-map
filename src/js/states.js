@@ -1,5 +1,6 @@
 const madison = require('madison');
 const L = require('leaflet');
+const _ = require('./util');
 
 const StateService = function(data) {
   this.states = data;
@@ -14,7 +15,7 @@ StateService.prototype.getBounds = function(stateList, key) {
     filter: function(feature, layer) {
       const name = feature.properties[key];
       const state = (name.length === 2) ? madison.getStateNameSync(name) : name;
-      return list.includes(state.toLowerCase());
+      return _.includes(list, state.toLowerCase());
     }
   });
   return layer.getBounds();
