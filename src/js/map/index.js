@@ -2,7 +2,7 @@ const L = require('leaflet');
 const leafletKnn = require('leaflet-knn');
 const emitter = require('../mediator');
 const mapLayers = require('./layers');
-const Layer = require('./layer');
+// const Layer = require('./layer');
 
 const _  = require('../util');
 
@@ -69,12 +69,12 @@ Map.prototype.createMap = function() {
     layers: [mapLayers.baseLayers['ESRI National Geographic']]
   };
 
-  const refuges = new Layer({
-    offices: this.offices,
-    type: 'National Wildlife Refuge'
-  });
-
-  console.log(refuges);
+  // const refuges = new Layer({
+  //   offices: this.offices,
+  //   type: 'National Wildlife Refuge'
+  // });
+  //
+  // console.log(refuges);
 
   this.map = L.map(this.mapId, mapOptions);
   if (this.bounds) this.map.fitBounds(this.bounds);
