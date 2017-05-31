@@ -59,12 +59,12 @@
   }
 
   function addSomeLayers(overlays, layers) {
-    overlays.map((layer, key) => {
+    _.map(overlays, (layer, key) => {
       cluster.checkIn(layer);
       if (_.includes(layers, key.toLowerCase())) cluster.addLayer(layer);
     });
 
-    wms.map((layer, key) => {
+    _.map(wms, (layer, key) => {
       if (_.includes(layers, key.toLowerCase())) map.addLayer(layer);
     });
   }
