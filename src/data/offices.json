@@ -2360,13 +2360,60 @@
         "city": "Lafayette",
         "state": "LA",
         "zip": "70506",
-        "url": "https://www.fws.gov/lafayette"
+        "url": "https://www.fws.gov/lafayette",
+        "facebook": "https://www.facebook.com/Louisiana-Ecological-Services-Office-364376830424514/"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -92.044199,
           30.224331999178776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Polk Ecological Services Sub Office",
+        "parent": "Louisiana Ecological Services Field Office",
+        "type": "Ecological Services Field Office",
+        "program": "Ecological Services",
+        "phone": "(337) 531-8761",
+        "address": "1697 23rd St., Building 2543",
+        "city": "Fort Polk",
+        "state": "LA",
+        "zip": "71459",
+        "url": "https://www.fws.gov/lafayette",
+        "facebook": "https://www.facebook.com/Louisiana-Ecological-Services-Office-364376830424514/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.210117,
+          31.030904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Orleans Ecological Services Sub Office",
+        "parent": "Louisiana Ecological Services Field Office",
+        "type": "Ecological Services Field Office",
+        "program": "Ecological Services",
+        "phone": "(504) 862-2689",
+        "address": "7400 Leake Ave.",
+        "city": "New Orleans",
+        "state": "LA",
+        "zip": "70118",
+        "url": "https://www.fws.gov/lafayette",
+        "facebook": "https://www.facebook.com/Louisiana-Ecological-Services-Office-364376830424514/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.134472,
+          29.935860
         ]
       }
     },
