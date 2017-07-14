@@ -45,7 +45,15 @@
         "alt": "Two black bear cubs running down a rocky path.",
         "imageurl": "https://flic.kr/p/GZw5Jd",
         "caption": "Black bear cubs. Photo: Jackie Orsulak, USFWS.",
-        "narrative": "Alligator River National Wildlife Refuge was established to protect and preserve unique wetland habitat types and associated wildlife species, endangered species such as red wolves, red-cockaded woodpeckers, and American alligators as well as other Trust species including black bears, waterfowl and other migratory birds. In addition to conservation efforts the Refuge provides wildlife-dependent opportunities for the public including hunting; fishing; wildlife interpretation; observation; photography; and environmental education."
+        "narrative": "Alligator River National Wildlife Refuge was established to protect and preserve unique wetland habitat types and associated wildlife species, endangered species such as red wolves, red-cockaded woodpeckers, and American alligators as well as other Trust species including black bears, waterfowl and other migratory birds. In addition to conservation efforts the Refuge provides wildlife-dependent opportunities for the public including hunting; fishing; wildlife interpretation; observation; photography; and environmental education.",
+        "activities": [
+          "Hunting",
+          "Fishing",
+          "Wildlife Photography",
+          "Environmental Education",
+          "Interpretation",
+          "Wildlife Observation"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -3017,10 +3025,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "North Carolina Migratory Bird Program",
+        "name": "North Carolina Migratory Bird Field Office",
         "type": "Migratory Bird Coordinator Office",
         "program": "Migratory Birds",
-        "address": "155a L.a Keiser Drive",
+        "address": "155a L A Keiser Drive",
         "city": "Columbia",
         "state": "NC",
         "zip": "27925",
@@ -3034,8 +3042,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -76.241265,
-          35.916226999103323
+          -76.241006,
+          35.916712
         ]
       }
     },
