@@ -33,5 +33,5 @@ StateService.prototype.normalizeStateList = function(stateList) {
   let list = [];
   if (typeof stateList === 'string') list.push(stateList);
   else list = [...stateList];
-  return list.map(state => this.getStateName(state) );
+  return list.map(function(state) { return this.getStateName(state); });
 }

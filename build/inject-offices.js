@@ -1,13 +1,12 @@
 const cheerio = require('cheerio');
 const parallel = require('async/parallel');
 const objectAssign = require('object-assign');
-const pug = require('pug');
 const fs = require('fs');
 
 const officePath = './src/data/offices.json';
 const htmlPath = './dist/index.html';
 
-const template = pug.compileFile('./src/templates/li.pug');
+const template = require('../src/templates/li');
 
 const tasks = [
   getFile.bind(null, htmlPath),
@@ -17,7 +16,7 @@ const tasks = [
 parallel(tasks, injectOffices);
 
 function getFile (url, cb) {
-  fs.readFile(url, 'utf-8', (err, file) => {
+  fs.readFile(url, 'utf-8', function(err, file) {
     if (err) return cb(err);
     cb(null, file);
   });
@@ -29,15 +28,15 @@ function injectOffices(err, results) {
   const offices = JSON.parse(results[1]);
 
   const data = offices.features
-    .map(o => o.properties)
-    .map(o => objectAssign({icon: getIconPath(o)}, o));
+    .map(function(o) { return o.properties; })
+    .map(function(o) { return objectAssign({icon: getIconPath(o)}, o); });
 
-  const html = template({ offices: data });
+  const html = template(data);
   const $list = $('.office-list');
 
   $list.append(html);
 
-  fs.writeFile(htmlPath, $.html(), 'utf-8', err => {
+  fs.writeFile(htmlPath, $.html(), 'utf-8', function(err) {
     if (err) console.error(err);
   });
 }

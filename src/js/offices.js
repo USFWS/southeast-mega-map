@@ -43,11 +43,11 @@ OfficeService.prototype.search = function(query) {
   return this.index
     .search(query)
     .sort(sortByScore)
-    .map(result => self.offices.features[result.ref]);
+    .map(function(result) { return self.offices.features[result.ref]; });
 };
 
 OfficeService.prototype.getOffice = function(officeName) {
-  return offices.features.find(office => {
+  return offices.features.find(function(office) {
     const name = normalizeOfficeName(office.properties.name);
     return name.toLowerCase() === officeName.toLowerCase();
   });

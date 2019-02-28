@@ -1,8 +1,8 @@
 const emitter = require('./mediator');
 const _ = require('./util');
 
-const querystring = require('query-string');
-const template = require('../templates/autocomplete.pug');
+const querystring = require('./query-string');
+const template = require('../templates/autocomplete');
 
 const Autocomplete = function(data) {
   this.input = data.input;
@@ -24,7 +24,7 @@ const Autocomplete = function(data) {
   this.output = _.create('ul', 'autocomplete-results', this.container);
 
   this.output.addEventListener('click', delegatedOfficeLink.bind(this));
-  this.form.addEventListener('submit',e => e.preventDefault());
+  this.form.addEventListener('submit', function(e) {e.preventDefault()});
   this.input.addEventListener('keyup', this.inputKeyup.bind(this));
   this.input.addEventListener('focus', this.focusInput.bind(this));
   this.clear.addEventListener('click', this.clearInput.bind(this));
@@ -95,14 +95,14 @@ Autocomplete.prototype.search = function(query) {
 Autocomplete.prototype.render = function(data) {
   if (data.length === 0) this.output.classList.remove('active');
   else this.output.classList.add('active');
-  this.output.innerHTML = template({ offices: data, normalize: this.offices.normalizeOfficeName });
+  this.output.innerHTML = template(data, this.offices.normalizeOfficeName);
 }
 
 function goToTabbableElement(direction) {
   if ( !this.container.classList.contains('active') ) return;
   const tabbable = _.tabbable(this.container);
 
-  let index = tabbable.filter((el, i) => {
+  let index = tabbable.filter(function(el, i) {
     if ( document.activeElement === el ) return i + direction;
   })[0];
 

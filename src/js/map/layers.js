@@ -1,7 +1,7 @@
 const L = require('leaflet');
 const emitter = require('../mediator');
 const _ = require('../util');
-const template = require('../../templates/popup.pug');
+const template = require('../../templates/popup');
 const wms = require('./wms');
 require('leaflet.markercluster');
 require('leaflet-providers');
@@ -39,11 +39,11 @@ function init(officeData, layersOnLoad, theMap) {
 }
 
 function addOverlaysToLayersControl() {
-  _.map(wms, (layer, name) => control.addOverlay(layer, name));
+  _.map(wms, function(layer, name) {control.addOverlay(layer, name)});
 }
 
 function addAllLayers(overlays) {
-  _.map(overlays, (layer, key) => {
+  _.map(overlays, function(layer) {
     cluster.checkIn(layer);
     cluster.addLayer(layer);
   });
@@ -54,12 +54,12 @@ function getBounds() {
 }
 
 function addSomeLayers(overlays, layers) {
-  _.map(overlays, (layer, key) => {
+  _.map(overlays, function(layer, key) {
     cluster.checkIn(layer);
     if (_.includes(layers, key.toLowerCase())) cluster.addLayer(layer);
   });
 
-  _.map(wms, (layer, key) => {
+  _.map(wms, function(layer, key) {
     if (_.includes(layers, key.toLowerCase())) map.addLayer(layer);
   });
 }
@@ -90,7 +90,7 @@ function createOfficeLayer(type) {
 }
 
 function onEachFeature(feature, layer) {
-  layer.bindPopup(template({ office: feature.properties }));
+  layer.bindPopup(template(feature.properties));
   layer.on({ click: onMarkerClick });
 }
 
