@@ -1,6 +1,7 @@
 'use strict';
 const strictUriEncode = require('./strict-uri-encode');
 const decodeComponent = require('decode-uri-component');
+const objectAssign = require('object-assign');
 
 function encoderForArrayFormat(options) {
 	switch (options.arrayFormat) {
@@ -128,7 +129,7 @@ function extract(input) {
 }
 
 function parse(input, options) {
-	options = Object.assign({decode: true, arrayFormat: 'none'}, options);
+	options = objectAssign({decode: true, arrayFormat: 'none'}, options);
 
 	const formatter = parserForArrayFormat(options);
 
@@ -176,7 +177,7 @@ exports.stringify = (obj, options) => {
 		return '';
 	}
 
-	options = Object.assign({
+	options = objectAssign({
 		encode: true,
 		strict: true,
 		arrayFormat: 'none'
